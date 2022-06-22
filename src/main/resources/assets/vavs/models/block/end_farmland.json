@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "vavs:block/end_soil",
+    "top": "vavs:block/end_farmland"
+  }
+}

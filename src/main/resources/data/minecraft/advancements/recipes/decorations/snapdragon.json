@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:snapdragon"
+    ]
+  },
+  "criteria": {
+    "has_snapdragon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:snapdragon"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:snapdragon"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_snapdragon",
+      "has_the_recipe"
+    ]
+  ]
+}

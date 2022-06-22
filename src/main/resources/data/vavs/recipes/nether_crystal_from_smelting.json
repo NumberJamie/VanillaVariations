@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "vavs:nether_crystal_ore"
+  },
+  "result": "vavs:nether_crystal",
+  "experience": 0.1,
+  "cookingtime": 200
+}

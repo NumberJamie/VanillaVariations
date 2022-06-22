@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "vavs:block/salt_ore" }
+  }
+}

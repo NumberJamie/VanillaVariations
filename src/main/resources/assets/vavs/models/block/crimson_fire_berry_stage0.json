@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "vavs:block/crimson_fire_berry_stage0"
+  }
+}

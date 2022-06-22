@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:crystallized_honey_block"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:crystallized_honey",
+    "count": 9
+  }
+}

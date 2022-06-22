@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xwx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    "w":
+    {
+      "item": "vavs:dragons_breath_torch"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:dragons_breath_lantern",
+    "count": 1
+  }
+}

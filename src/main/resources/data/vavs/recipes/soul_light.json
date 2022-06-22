@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x#x",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:soul_sprout"
+    },
+    "#":
+    {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:soul_light",
+    "count": 1
+  }
+}

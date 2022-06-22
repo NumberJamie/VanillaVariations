@@ -1,0 +1,32 @@
+modLoader="javafml" #mandatory
+loaderVersion="[37,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+modId="vavs" #mandatory
+version="0.2.3" #mandatory
+displayName="Vanilla Variations" #mandatory
+logoFile="logo.png" #optional
+credits="No one for now" #optional
+authors="NrJam" #optional
+description='''
+Thank you for downloading §bVanilla Variations§r!
+
+A mod that adds vanilla-like features.
+All textures custom made.
+
+For more info, other versions and to report bugs check the link below:
+
+https://www.curseforge.com/minecraft/mc-mods/vanilla-variations
+'''
+[[dependencies.examplemod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[37,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"

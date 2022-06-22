@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:crystallized_coal"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:crystallized_coal_block",
+    "count": 1
+  }
+}

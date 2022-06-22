@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "vavs:compressed_reinforced_leather",
+    "vavs:walnut_leaves",
+    "vavs:soul_light",
+    "vavs:sprouted_light",
+    "vavs:crystallized_honey_block",
+    "vavs:crystallized_honey_lamp"
+  ]
+}

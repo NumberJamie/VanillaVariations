@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:story/get_raw_salt",
+  "display": {
+    "icon": {
+      "item": "vavs:salt",
+    },
+    "title": {
+      "translate": "advancements.story.get_salt.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_salt.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "salt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:salt"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "salt"
+    ]
+  ]
+}

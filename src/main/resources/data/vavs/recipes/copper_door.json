@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "xx",
+    "xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:copper_door",
+    "count": 3
+  }
+}

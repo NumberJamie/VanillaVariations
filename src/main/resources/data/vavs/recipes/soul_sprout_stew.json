@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:soul_sprout"
+    },
+    {
+      "item": "vavs:soul_sprout"
+    },
+    {
+      "item": "vavs:soul_sprout"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:soul_sprout_stew",
+    "count": 1
+  }
+}

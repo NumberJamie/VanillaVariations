@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "w",
+    "|",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    "|":
+    {
+      "item": "minecraft:stick"
+    },
+    "w": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
+    ]
+  },
+  "result":
+  {
+    "item": "vavs:dragons_breath_torch",
+    "count": 4
+  }
+}

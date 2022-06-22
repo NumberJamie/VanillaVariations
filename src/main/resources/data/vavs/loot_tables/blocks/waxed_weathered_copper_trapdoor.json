@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vavs:waxed_weathered_copper_trapdoor"
+        }
+      ]
+    }
+  ]
+}

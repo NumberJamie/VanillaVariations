@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:compressed_reinforced_leather"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:reinforced_leather",
+    "count": 9
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xwx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    "w":
+    {
+      "item": "vavs:soul_sprout"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:ender_sprout",
+    "count": 1
+  }
+}

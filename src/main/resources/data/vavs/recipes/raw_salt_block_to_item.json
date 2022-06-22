@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:raw_salt_block"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:raw_salt",
+    "count": 9
+  }
+}

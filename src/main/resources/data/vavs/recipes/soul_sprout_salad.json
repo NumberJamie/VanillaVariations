@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "vavs:soul_sprout"
+    },
+    {
+      "item": "vavs:soul_sprout"
+    },
+    {
+      "item": "vavs:soul_sprout"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:soul_sprout_salad",
+    "count": 1
+  }
+}

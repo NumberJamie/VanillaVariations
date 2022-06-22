@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:nether_crystal_leggings"
+    ]
+  },
+  "criteria": {
+    "has_nether_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:nether_crystal"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:nether_crystal_leggings"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_nether_crystal",
+      "has_the_recipe"
+    ]
+  ]
+}

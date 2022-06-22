@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "w ",
+    "w "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:nether_crystal"
+    },
+    "w":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:nether_crystal_hoe",
+    "count": 1
+  }
+}

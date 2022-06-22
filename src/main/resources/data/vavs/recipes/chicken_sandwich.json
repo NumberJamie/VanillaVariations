@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "minecraft:cooked_chicken"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:chicken_sandwich",
+    "count": 1
+  }
+}

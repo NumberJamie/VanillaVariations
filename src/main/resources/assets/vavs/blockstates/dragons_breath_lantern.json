@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "vavs:block/dragons_breath_lantern"
+    },
+    "hanging=true": {
+      "model": "vavs:block/dragons_breath_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:nether_crystal"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:nether_crystal_leggings",
+    "count": 1
+  }
+}

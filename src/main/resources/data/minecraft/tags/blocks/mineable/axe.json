@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "vavs:walnut_log",
+    "vavs:walnut_fence",
+    "vavs:walnut_fence_gate",
+    "vavs:walnut_wood",
+    "vavs:stripped_walnut_log",
+    "vavs:stripped_walnut_wood",
+    "vavs:walnut_planks",
+    "vavs:walnut_slab",
+    "vavs:walnut_stairs",
+    "vavs:walnut_button",
+    "vavs:walnut_pressure_plate",
+    "vavs:walnut_door",
+    "vavs:walnut_door_heart",
+    "vavs:walnut_trapdoor",
+    "vavs:walnut_trapdoor_round",
+    "vavs:walnut_trapdoor_heart"
+  ]
+}

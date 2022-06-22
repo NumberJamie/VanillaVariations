@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:nether_crystal_block"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:nether_crystal",
+    "count": 9
+  }
+}

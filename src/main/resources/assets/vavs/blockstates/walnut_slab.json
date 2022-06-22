@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vavs:block/walnut_slab"
+    },
+    "type=double": {
+      "model": "vavs:block/walnut_planks"
+    },
+    "type=top": {
+      "model": "vavs:block/walnut_slab_top"
+    }
+  }
+}

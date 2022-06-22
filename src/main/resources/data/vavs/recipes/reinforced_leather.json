@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xcx",
+    "ccc",
+    "xcx"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:leather"
+    },
+    "x":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:reinforced_leather",
+    "count": 1
+  }
+}

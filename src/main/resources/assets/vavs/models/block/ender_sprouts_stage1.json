@@ -1,0 +1,6 @@
+{
+  "parent": "vavs:block/cross_crop",
+  "textures": {
+    "cross_crop": "vavs:block/ender_sprouts_stage1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xcx",
+    "xxx"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "x":
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:chocolate_enchanted_golden_apple",
+    "count": 1
+  }
+}

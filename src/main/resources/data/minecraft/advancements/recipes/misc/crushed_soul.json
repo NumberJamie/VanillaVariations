@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:crushed_soul"
+    ]
+  },
+  "criteria": {
+    "has_soul_flower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:soul_flower"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:crushed_soul"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_soul_flower",
+      "has_the_recipe"
+    ]
+  ]
+}

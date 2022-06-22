@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_other"
+    }
+  ],
+  "addition": "vavs:heart",
+  "type": "vavs:heart_from_bastion"
+}

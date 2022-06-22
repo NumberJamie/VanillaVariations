@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:walnut_trapdoor"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:rose_bush"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:walnut_trapdoor_heart",
+    "count": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "///",
+    "xcx",
+    "www"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:egg"
+    },
+    "x":
+    {
+      "item": "minecraft:sugar"
+    },
+    "w":
+    {
+      "item": "minecraft:wheat"
+    },
+    "/":
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:honey_cake",
+    "count": 1
+  }
+}

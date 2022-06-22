@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "vavs:ash_root"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:ash_root_salad",
+    "count": 1
+  }
+}

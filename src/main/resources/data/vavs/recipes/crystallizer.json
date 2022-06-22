@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "kkk",
+    "kwk",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:copper_block"
+    },
+    "w":
+    {
+      "item": "minecraft:tinted_glass"
+    },
+    "k":
+    {
+      "item": "vavs:nether_crystal"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:crystallizer",
+    "count": 1
+  }
+}

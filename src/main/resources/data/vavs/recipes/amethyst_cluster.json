@@ -1,0 +1,17 @@
+{
+  "type": "vavs:crystallizing",
+  "ingredients": [
+    {
+      "item": "vavs:salt"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "output": {
+    "item": "minecraft:amethyst_cluster"
+  }
+}

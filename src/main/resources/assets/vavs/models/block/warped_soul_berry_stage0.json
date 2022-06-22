@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "vavs:block/warped_soul_berry_stage0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:walnut_planks"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:walnut_slab",
+    "count": 2
+  }
+}

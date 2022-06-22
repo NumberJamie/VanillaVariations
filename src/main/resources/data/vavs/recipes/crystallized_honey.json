@@ -1,0 +1,17 @@
+{
+  "type": "vavs:crystallizing",
+  "ingredients": [
+    {
+      "item": "vavs:salt"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "output": {
+    "item": "vavs:crystallized_honey"
+  }
+}

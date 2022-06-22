@@ -1,0 +1,6 @@
+{
+  "parent": "vavs:block/cross_crop",
+  "textures": {
+    "cross_crop": "vavs:block/ash_root_stage1"
+  }
+}

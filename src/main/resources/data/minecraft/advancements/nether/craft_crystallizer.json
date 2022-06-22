@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/obtain_nether_crystal",
+  "display": {
+    "icon": {
+      "item": "vavs:crystallizer"
+    },
+    "title": {
+      "translate": "advancements.nether.craft_crystallizer.title"
+    },
+    "description": {
+      "translate": "advancements.nether.craft_crystallizer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallizer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:crystallizer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crystallizer"
+    ]
+  ]
+}

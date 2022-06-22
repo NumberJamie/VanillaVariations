@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "vavs:block/crystallizer_front",
+    "north": "vavs:block/crystallizer_front",
+    "south": "vavs:block/crystallizer_back",
+    "east": "vavs:block/crystallizer_side",
+    "west": "vavs:block/crystallizer_side",
+    "up": "vavs:block/crystallizer_top",
+    "down": "vavs:block/crystallizer_bottom"
+  }
+}

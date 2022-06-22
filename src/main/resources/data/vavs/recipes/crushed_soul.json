@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:soul_flower"
+    },
+    {
+      "item": "vavs:soul_flower"
+    },
+    {
+      "item": "vavs:soul_flower"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:crushed_soul",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "vavs:soul_stone"
+  },
+  "result": "vavs:soul_stone_slab",
+  "count": 2
+}

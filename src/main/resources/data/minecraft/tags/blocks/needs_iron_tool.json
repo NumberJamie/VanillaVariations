@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "vavs:compressed_reinforced_leather",
+    "vavs:salt_ore",
+    "vavs:deepslate_salt_ore",
+    "vavs:salt_block",
+    "vavs:raw_salt_block"
+  ]
+}

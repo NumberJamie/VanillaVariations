@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:ender_sprout"
+    },
+    {
+      "item": "vavs:ender_sprout"
+    },
+    {
+      "item": "vavs:ender_sprout"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:ender_sprout_stew",
+    "count": 1
+  }
+}

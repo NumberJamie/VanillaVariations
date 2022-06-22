@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:honeyed_golden_carrot",
+    "count": 1
+  }
+}

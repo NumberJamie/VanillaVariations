@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "item": "vavs:nether_crystal"
+  },
+  "result": {
+    "item": "vavs:nether_crystal_bow"
+  }
+}

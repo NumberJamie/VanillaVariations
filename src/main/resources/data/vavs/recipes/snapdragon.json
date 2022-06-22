@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:viola"
+    }
+  ],
+  "result":
+  {
+    "item": "minecraft:red_dye",
+    "count": 1
+  }
+}

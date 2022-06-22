@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "vavs:block/walnut_door_top",
+    "bottom": "vavs:block/walnut_door_bottom"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:nether/obtain_nether_crystal",
+  "display": {
+    "icon": {
+      "item": "vavs:nether_crystal_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.nether.nether_crystal_armor.title"
+    },
+    "description": {
+      "translate": "advancements.nether.nether_crystal_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "nether_crystal_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:nether_crystal_helmet"
+            ]
+          },
+          {
+            "items": [
+              "vavs:nether_crystal_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "vavs:nether_crystal_leggings"
+            ]
+          },
+          {
+            "items": [
+              "vavs:nether_crystal_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nether_crystal_armor"
+    ]
+  ]
+}

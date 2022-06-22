@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_lantern",
+  "textures": {
+    "lantern": "vavs:block/dragons_breath_lantern"
+  }
+}

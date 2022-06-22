@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:flower_crown"
+    ]
+  },
+  "criteria": {
+    "in_grass": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:grass"
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:flower_crown"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_grass",
+      "has_the_recipe"
+    ]
+  ]
+}

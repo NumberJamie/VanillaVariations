@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " w ",
+    " w "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:nether_crystal"
+    },
+    "w":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:nether_crystal_pickaxe",
+    "count": 1
+  }
+}

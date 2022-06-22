@@ -1,0 +1,6 @@
+{
+  "parent": "vavs:item/nether_crystal_bow",
+  "textures": {
+    "layer0": "vavs:item/nether_crystal_bow_pulling_2"
+  }
+}

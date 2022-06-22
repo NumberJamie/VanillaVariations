@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:soul_stone"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:soul_stone_slab",
+    "count": 2
+  }
+}

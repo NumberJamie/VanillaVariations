@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vavs:cabbage"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:cabbage_seed",
+    "count": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "display": {
+    "icon": {
+      "item": "vavs:raw_salt"
+    },
+    "title": {
+      "translate": "advancements.story.get_raw_salt.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_raw_salt.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "raw_salt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:raw_salt"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "raw_salt"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "vavs:crystallizing",
+  "ingredients": [
+    {
+      "item": "vavs:salt"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "vavs:cursed_heart"
+    }
+  ],
+  "output": {
+    "item": "vavs:heart"
+  }
+}

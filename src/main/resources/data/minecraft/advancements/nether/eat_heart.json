@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:nether/eat_cursed_heart",
+  "display": {
+    "icon": {
+      "item": "vavs:heart"
+    },
+    "title": {
+      "translate": "advancements.nether.eat_heart.title"
+    },
+    "description": {
+      "translate": "advancements.nether.eat_heart.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "heart": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vavs:heart"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "heart"
+    ]
+  ]
+}
+

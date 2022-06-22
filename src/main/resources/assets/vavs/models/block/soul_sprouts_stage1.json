@@ -1,0 +1,6 @@
+{
+  "parent": "vavs:block/cross_crop",
+  "textures": {
+    "cross_crop": "vavs:block/soul_sprouts_stage1"
+  }
+}

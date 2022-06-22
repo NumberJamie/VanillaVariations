@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:soul_sprout_pie"
+    ]
+  },
+  "criteria": {
+    "has_soul_sprout": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:soul_sprout"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:soul_sprout_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_soul_sprout",
+      "has_the_recipe"
+    ]
+  ]
+}

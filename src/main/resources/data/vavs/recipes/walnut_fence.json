@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x|x",
+    "x|x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "vavs:walnut_planks"
+    },
+    "|":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "vavs:walnut_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "result":
+  {
+    "item": "vavs:honey_bread",
+    "count": 1
+  }
+}

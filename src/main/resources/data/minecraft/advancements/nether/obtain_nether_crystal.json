@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": {
+      "item": "vavs:nether_crystal"
+    },
+    "title": {
+      "translate": "advancements.nether.obtain_nether_crystal.title"
+    },
+    "description": {
+      "translate": "advancements.nether.obtain_nether_crystal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nether_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:nether_crystal"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nether_crystal"
+    ]
+  ]
+}

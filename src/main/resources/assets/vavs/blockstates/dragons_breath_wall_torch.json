@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vavs:block/dragons_breath_wall_torch"
+    },
+    "facing=north": {
+      "model": "vavs:block/dragons_breath_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "vavs:block/dragons_breath_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vavs:block/dragons_breath_wall_torch",
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:reinforced_leather_helmet"
+    ]
+  },
+  "criteria": {
+    "has_reinforced_leather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:reinforced_leather"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:reinforced_leather_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_reinforced_leather",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "entries": [
+    "vavs:cabbage_seed_from_village",
+    "vavs:dragons_breath_torch_from_end_city",
+    "vavs:dragons_breath_lantern_from_end_city",
+    "vavs:wild_cabbage_from_village",
+    "vavs:heart_from_bastion"
+  ]
+}

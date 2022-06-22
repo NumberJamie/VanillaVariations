@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vavs:fused_soul_leggings"
+    ]
+  },
+  "criteria": {
+    "has_crushed_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vavs:crushed_soul"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "vavs:fused_soul_leggings"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crushed_soul",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "vavs:nether_crystal_ore",
+    "vavs:nether_crystal_block"
+  ]
+}

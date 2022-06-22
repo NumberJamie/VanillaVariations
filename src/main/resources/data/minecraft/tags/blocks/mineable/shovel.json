@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "vavs:end_soil",
+    "vavs:end_farmland",
+    "vavs:nether_farmland"
+  ]
+}
