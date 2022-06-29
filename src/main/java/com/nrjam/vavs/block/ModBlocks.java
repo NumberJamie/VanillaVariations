@@ -53,7 +53,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHER_CRYSTAL_ORE = registerBlock( "nether_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 6f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SOUL_LIGHT = registerBlock("soul_light", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).lightLevel((p_50886_) -> 14).sound(SoundType.GLASS).strength(1.6f, 1.6f)));
-/*
+
     public static final RegistryObject<Block> CRYSTALLIZED_GLASS_PANE = registerBlock("crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> WHITE_CRYSTALLIZED_GLASS_PANE = registerBlock("white_crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> ORANGE_CRYSTALLIZED_GLASS_PANE = registerBlock("orange_crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
@@ -71,8 +71,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> GREEN_CRYSTALLIZED_GLASS_PANE = registerBlock("green_crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> RED_CRYSTALLIZED_GLASS_PANE = registerBlock("red_crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> BLACK_CRYSTALLIZED_GLASS_PANE = registerBlock("black_crystallized_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
-*/
-    public static final RegistryObject<Block> CRYSTALLIZED_GLASS = registerBlock("crystallized_glass", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion().isViewBlocking(Blocks::False)));
+
+    public static final RegistryObject<Block> CRYSTALLIZED_GLASS = registerBlock("crystallized_glass", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> WHITE_CRYSTALLIZED_GLASS = registerBlock("white_crystallized_glass", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> ORANGE_CRYSTALLIZED_GLASS = registerBlock("orange_crystallized_glass", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
     public static final RegistryObject<Block> MAGENTA_CRYSTALLIZED_GLASS = registerBlock("magenta_crystallized_glass", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
