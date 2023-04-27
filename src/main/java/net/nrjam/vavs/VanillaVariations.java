@@ -44,13 +44,22 @@ public class VanillaVariations
             event.accept(ModItems.REINFORCED_LEATHER);
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.REINFORCED_LEATHER_BLOCK);
+            event.accept(ModBlocks.WALNUT_LOG);
+            event.accept(ModBlocks.WALNUT_WOOD);
+            event.accept(ModBlocks.STRIPPED_WALNUT_LOG);
+            event.accept(ModBlocks.STRIPPED_WALNUT_WOOD);
+            event.accept(ModBlocks.WALNUT_PLANKS);
         }
         if(event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.REINFORCED_LEATHER_HELMET);
             event.accept(ModItems.REINFORCED_LEATHER_CHESTPLATE);
             event.accept(ModItems.REINFORCED_LEATHER_LEGGINGS);
             event.accept(ModItems.REINFORCED_LEATHER_BOOTS);
+        }
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.WALNUT_LOG);
+            event.accept(ModBlocks.WALNUT_LEAVES);
+            event.accept(ModBlocks.WALNUT_SAPLING);
         }
     }
 

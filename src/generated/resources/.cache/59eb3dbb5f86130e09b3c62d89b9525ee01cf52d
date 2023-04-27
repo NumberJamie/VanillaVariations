@@ -1,2 +1,9 @@
-// 1.19.4	2023-04-27T12:30:53.026878	Loot Tables
+// 1.19.4	2023-04-27T14:59:58.7154753	Loot Tables
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
+c5efc7328081cb155e00d64c8a2066de88370fb1 data/vavs/loot_tables/blocks/stripped_walnut_log.json
+fa44abc3a427080cca41f364bed0aa76b7ebb467 data/vavs/loot_tables/blocks/stripped_walnut_wood.json
+6347aa4f812adda57fe8652a4ec88b5f44b15772 data/vavs/loot_tables/blocks/walnut_leaves.json
+10c8eaa8876468b0da820511db5f052567cfdeed data/vavs/loot_tables/blocks/walnut_log.json
+adceb46e72354c9727e93797bcd5a93fc2e83dfc data/vavs/loot_tables/blocks/walnut_planks.json
+3f7e5525e6a09afb79f2e9ba353f8592ec8519e1 data/vavs/loot_tables/blocks/walnut_sapling.json
+ed33aa284bfa46b342f7102626b811ed0cbac863 data/vavs/loot_tables/blocks/walnut_wood.json

@@ -7,5 +7,13 @@
   "item.vavs.reinforced_leather_leggings": "Reinforced leather leggings",
   "item.vavs.reinforced_leather_boots": "Reinforced leather boots",
 
+  "block.vavs.walnut_log": "Walnut log",
+  "block.vavs.walnut_wood": "Walnut wood",
+  "block.vavs.stripped_walnut_log": "Stripped walnut log",
+  "block.vavs.stripped_walnut_wood": "Stripped walnut wood",
+  "block.vavs.walnut_planks": "Walnut planks",
+  "block.vavs.walnut_leaves": "Walnut leaves",
+  "block.vavs.walnut_sapling": "Walnut sapling",
+
   "block.vavs.reinforced_leather_block": "Reinforced leather block"
 }
