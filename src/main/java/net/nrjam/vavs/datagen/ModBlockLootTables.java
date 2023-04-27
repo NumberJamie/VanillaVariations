@@ -26,6 +26,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_WALNUT_LOG.get());
         this.dropSelf(ModBlocks.WALNUT_SAPLING.get());
 
+        this.dropSelf(ModBlocks.WALNUT_SLAB.get());
+        this.dropSelf(ModBlocks.WALNUT_STAIRS.get());
+        this.dropSelf(ModBlocks.WALNUT_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.WALNUT_DOOR.get());
+        this.dropSelf(ModBlocks.WALNUT_FENCE.get());
+        this.dropSelf(ModBlocks.WALNUT_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WALNUT_BUTTON.get());
+
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->
                 createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }

@@ -1,7 +1,8 @@
-// 1.19.4	2023-04-27T14:47:40.703417	Recipes
+// 1.19.4	2023-04-28T00:39:33.1776793	Recipes
 bfd7b35083f99f90d8dc4b1b1527b55aa954dbe1 data/vavs/advancements/recipes/building_blocks/reinforced_leather_compressed.json
 ed472737aeac44793bb92c2fa7f81ec8e0909822 data/vavs/advancements/recipes/building_blocks/stripped_walnut_log.json
 1b78d560359d862a69eeac523685b35cef5f9664 data/vavs/advancements/recipes/building_blocks/walnut_log.json
+cc632cf55743605d83b18b501b253707358806ca data/vavs/advancements/recipes/building_blocks/walnut_planks.json
 f0bc12c39328721c68e26d9cbd43d332663d5535 data/vavs/advancements/recipes/combat/reinforced_leather_boots.json
 4d0dde9b5f2d1530f714db745498f8fed553a018 data/vavs/advancements/recipes/combat/reinforced_leather_chestplate.json
 b344c39593a7443087efadaaf164dc2a65a6c9bc data/vavs/advancements/recipes/combat/reinforced_leather_helmet.json
@@ -17,3 +18,4 @@ dd93dac5fef09b3cc9289a01590e8769c80e7d27 data/vavs/recipes/reinforced_leather_he
 832e5e59d231db4c486ba7c0ab46faa950d8d1a0 data/vavs/recipes/reinforced_leather_leggings.json
 c48f58973c8a9cbb6eb3db4f2e0df4b87956cbca data/vavs/recipes/stripped_walnut_log.json
 611ec39ec5a7177c59e8c94dc83b67dbc1fe438a data/vavs/recipes/walnut_log.json
+adc304bc103ed3683c3cd56a91521590207174d9 data/vavs/recipes/walnut_planks.json

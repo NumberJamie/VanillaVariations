@@ -8,6 +8,8 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.nrjam.vavs.VanillaVariations;
+import net.nrjam.vavs.datagen.tags.ModBlockTags;
+import net.nrjam.vavs.datagen.tags.ModItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,5 +27,8 @@ public class DataGenerators {
         generator.addProvider(true, new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(true, new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+        ModBlockTags blockTags = new ModBlockTags(packOutput, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new ModItemTags(packOutput, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
     }
 }

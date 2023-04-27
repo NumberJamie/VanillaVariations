@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
     "vavs:walnut_log",
-    "vavs:walnut_wood",
     "vavs:stripped_walnut_log",
+    "vavs:walnut_wood",
     "vavs:stripped_walnut_wood"
   ]
 }

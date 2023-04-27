@@ -49,6 +49,14 @@ public class VanillaVariations
             event.accept(ModBlocks.STRIPPED_WALNUT_LOG);
             event.accept(ModBlocks.STRIPPED_WALNUT_WOOD);
             event.accept(ModBlocks.WALNUT_PLANKS);
+            event.accept(ModBlocks.WALNUT_STAIRS);
+            event.accept(ModBlocks.WALNUT_SLAB);
+            event.accept(ModBlocks.WALNUT_FENCE);
+            event.accept(ModBlocks.WALNUT_FENCE_GATE);
+            event.accept(ModBlocks.WALNUT_DOOR);
+            event.accept(ModBlocks.WALNUT_TRAPDOOR);
+            event.accept(ModBlocks.WALNUT_PRESSURE_PLATE);
+            event.accept(ModBlocks.WALNUT_BUTTON);
         }
         if(event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.REINFORCED_LEATHER_HELMET);
