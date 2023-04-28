@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-28T22:01:04.4204871	Block States: vavs
+// 1.19.4	2023-04-28T22:19:26.3381414	Block States: vavs
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 636cc094bfaddecbf4070400ad2ff7596baffc26 assets/vavs/blockstates/ender_root.json
 68619fad2fd6b3e4d9acd92cb364130394de82d6 assets/vavs/blockstates/end_soil.json
@@ -30,8 +30,8 @@ b349ea223654f0d2acd4db5c25f41c7e80945db4 assets/vavs/models/block/blossoming_roo
 9264e611acf70296c160805e59dd0e368fc85971 assets/vavs/models/block/ender_root.json
 4fa5a6a7fc4ddda76dfd883bd387e89892d95829 assets/vavs/models/block/end_soil.json
 96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_blossoming_root.json
-96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_ender_root.json
-96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_walnut_sapling.json
+dd148d3bebcd0a7d6b21850bf58797d989affefd assets/vavs/models/block/potted_ender_root.json
+aecfc2da5f3b4acea34662cc4ea0f6bbcce55947 assets/vavs/models/block/potted_walnut_sapling.json
 acf2625a6a0c376ec67e613d60901e3fc45292ba assets/vavs/models/block/reinforced_leather_block.json
 5a65516af20e767ec18e99a3a4e26dcddb85ef61 assets/vavs/models/block/soul_light.json
 3efce6e44b3eb1503e3b66997e501c1edf91b77d assets/vavs/models/block/soul_stone.json

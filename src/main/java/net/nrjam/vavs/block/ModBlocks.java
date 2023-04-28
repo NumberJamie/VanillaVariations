@@ -89,7 +89,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> WALNUT_SAPLING = registerBlock("walnut_sapling",
             () -> new SaplingBlock(new WalnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> POTTED_WALNUT_SAPLING = BLOCKS.register("potted_walnut_sapling",
-            () -> new PottedFlower(ModBlocks.WALNUT_SAPLING.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
+            () -> new PottedFlower(ModBlocks.WALNUT_SAPLING.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
     public static final RegistryObject<StairBlock> WALNUT_STAIRS = registerBlock("walnut_stairs",
             () -> new StairBlock(() -> WALNUT_PLANKS.get().defaultBlockState(), Block.Properties.copy(ModBlocks.WALNUT_PLANKS.get())));
@@ -118,9 +118,9 @@ public class ModBlocks {
             () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> POTTED_BLOSSOMING_ROOT = BLOCKS.register("potted_blossoming_root",
-            () -> new PottedFlower(ModBlocks.BLOSSOMING_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().lightLevel((p_50886_) -> 12).noCollission()));
+            () -> new PottedFlower(ModBlocks.BLOSSOMING_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().lightLevel((p_50886_) -> 12)));
     public static final RegistryObject<Block> POTTED_ENDER_ROOT = BLOCKS.register("potted_ender_root",
-            () -> new PottedFlower(ModBlocks.ENDER_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
+            () -> new PottedFlower(ModBlocks.ENDER_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
