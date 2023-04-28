@@ -63,6 +63,10 @@ public class VanillaVariations
             event.accept(ModItems.REINFORCED_LEATHER_CHESTPLATE);
             event.accept(ModItems.REINFORCED_LEATHER_LEGGINGS);
             event.accept(ModItems.REINFORCED_LEATHER_BOOTS);
+            event.accept(ModItems.FUSED_SOUL_HELMET);
+            event.accept(ModItems.FUSED_SOUL_CHESTPLATE);
+            event.accept(ModItems.FUSED_SOUL_LEGGINGS);
+            event.accept(ModItems.FUSED_SOUL_BOOTS);
         }
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WALNUT_LOG);

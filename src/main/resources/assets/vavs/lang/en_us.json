@@ -7,6 +7,11 @@
   "item.vavs.reinforced_leather_leggings": "Reinforced leather leggings",
   "item.vavs.reinforced_leather_boots": "Reinforced leather boots",
 
+  "item.vavs.fused_soul_helmet": "Fused soul helmet",
+  "item.vavs.fused_soul_chestplate": "Fused soul chestplate",
+  "item.vavs.fused_soul_leggings": "Fused soul leggings",
+  "item.vavs.fused_soul_boots": "Fused soul boots",
+
   "block.vavs.walnut_log": "Walnut log",
   "block.vavs.walnut_wood": "Walnut wood",
   "block.vavs.stripped_walnut_log": "Stripped walnut log",
@@ -23,5 +28,7 @@
   "block.vavs.walnut_leaves": "Walnut leaves",
   "block.vavs.walnut_sapling": "Walnut sapling",
 
-  "block.vavs.reinforced_leather_block": "Reinforced leather block"
+  "block.vavs.reinforced_leather_block": "Reinforced leather block",
+
+  "tooltip.vavs.fused_soul": "When wearing the full set you are immune to wither"
 }

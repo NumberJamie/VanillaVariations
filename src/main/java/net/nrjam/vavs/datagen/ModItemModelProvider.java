@@ -27,6 +27,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REINFORCED_LEATHER_LEGGINGS);
         simpleItem(ModItems.REINFORCED_LEATHER_BOOTS);
 
+        simpleItem(ModItems.FUSED_SOUL_HELMET);
+        simpleItem(ModItems.FUSED_SOUL_CHESTPLATE);
+        simpleItem(ModItems.FUSED_SOUL_LEGGINGS);
+        simpleItem(ModItems.FUSED_SOUL_BOOTS);
+
         saplingItem(ModBlocks.WALNUT_SAPLING);
 
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);

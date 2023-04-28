@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
+import net.nrjam.vavs.item.custom.FusedSoulItem;
 import net.nrjam.vavs.item.custom.ReinforcedLeatherItem;
 
 public class ModItems {
@@ -25,6 +26,15 @@ public class ModItems {
             () -> new ReinforcedLeatherItem(ModArmorMaterials.REINFORCED_LEATHER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> REINFORCED_LEATHER_BOOTS = ITEMS.register("reinforced_leather_boots",
             () -> new ReinforcedLeatherItem(ModArmorMaterials.REINFORCED_LEATHER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> FUSED_SOUL_HELMET = ITEMS.register("fused_soul_helmet",
+            () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> FUSED_SOUL_CHESTPLATE = ITEMS.register("fused_soul_chestplate",
+            () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> FUSED_SOUL_LEGGINGS = ITEMS.register("fused_soul_leggings",
+            () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> FUSED_SOUL_BOOTS = ITEMS.register("fused_soul_boots",
+            () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
