@@ -36,7 +36,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
-        trapdoorBlock(ModBlocks.WALNUT_TRAPDOOR.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/walnut_door_top"), true);
+        trapdoorBlockWithRenderType(ModBlocks.WALNUT_TRAPDOOR.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/walnut_trapdoor"), true, "cutout");
         doorBlockWithRenderType(ModBlocks.WALNUT_DOOR.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/walnut_door_bottom"),
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/walnut_door_top"), "cutout");
         buttonBlock(ModBlocks.WALNUT_BUTTON.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
@@ -44,6 +44,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(ModBlocks.WALNUT_FENCE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         fenceGateBlock(ModBlocks.WALNUT_FENCE_GATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
 
+        simpleBlockItem(ModBlocks.WALNUT_SLAB.get(), models().withExistingParent("vavs:walnut_slab", "minecraft:block/slab"));
+        simpleBlockItem(ModBlocks.WALNUT_STAIRS.get(), models().withExistingParent("vavs:walnut_stairs", "minecraft:block/stairs"));
+        simpleBlockItem(ModBlocks.WALNUT_TRAPDOOR.get(), models().withExistingParent("vavs:walnut_trapdoor_bottom", "minecraft:block/template_trapdoor_bottom"));
+        simpleBlockItem(ModBlocks.WALNUT_PRESSURE_PLATE.get(), models().withExistingParent("vavs:walnut_pressure_plate", "minecraft:block/pressure_plate_up"));
+        simpleBlockItem(ModBlocks.WALNUT_FENCE_GATE.get(), models().withExistingParent("vavs:walnut_fence_gate", "minecraft:block/template_fence_gate"));
         simpleBlockItem(ModBlocks.WALNUT_LOG.get(), models().withExistingParent("vavs:walnut_log", "minecraft:block/cube_column"));
         simpleBlockItem(ModBlocks.WALNUT_WOOD.get(), models().withExistingParent("vavs:walnut_wood", "minecraft:block/cube_column"));
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_LOG.get(), models().withExistingParent("vavs:stripped_walnut_log", "minecraft:block/cube_column"));

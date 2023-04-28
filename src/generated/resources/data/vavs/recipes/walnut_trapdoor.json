@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_trapdoor_top",
+  "key": {
+    "#": {
+      "item": "vavs:walnut_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "vavs:walnut_trapdoor"
+  },
+  "show_notification": true
+}

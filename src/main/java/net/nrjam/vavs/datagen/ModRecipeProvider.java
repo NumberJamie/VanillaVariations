@@ -3,8 +3,6 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -45,14 +43,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodFromLogs(consumer, ModBlocks.WALNUT_LOG.get(), ModBlocks.WALNUT_WOOD.get());
         woodFromLogs(consumer, ModBlocks.STRIPPED_WALNUT_LOG.get(), ModBlocks.STRIPPED_WALNUT_WOOD.get());
         planksFromLogs(consumer, ModBlocks.WALNUT_PLANKS.get(), ModTags.Items.WALNUT_LOGS, 4);
-    }
-
-    protected static void planksFromLogs(@NotNull Consumer<FinishedRecipe> consumer, ItemLike p_259193_, TagKey<Item> p_259818_, int p_259807_) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, p_259193_, p_259807_).requires(p_259818_).group("planks").unlockedBy("has_logs", has(p_259818_)).save(consumer);
-    }
-
-    protected static void woodFromLogs(@NotNull Consumer<FinishedRecipe> consumer, ItemLike p_126004_, @NotNull ItemLike p_126005_) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, p_126004_, 3).define('#', p_126005_).pattern("##").pattern("##").group("bark").unlockedBy("has_log", has(p_126005_)).save(consumer);
+        stairBuilder(ModBlocks.WALNUT_STAIRS.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_stairs").save(consumer);
+        fenceBuilder(ModBlocks.WALNUT_FENCE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_fence").save(consumer);
+        fenceGateBuilder(ModBlocks.WALNUT_FENCE_GATE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_fence").save(consumer);
+        slab(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WALNUT_SLAB.get(), ModBlocks.WALNUT_PLANKS.get());
+        doorBuilder(ModBlocks.WALNUT_DOOR.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_door").save(consumer);
+        trapdoorBuilder(ModBlocks.WALNUT_TRAPDOOR.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_trapdoor_top").save(consumer);
+        buttonBuilder(ModBlocks.WALNUT_BUTTON.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_button").save(consumer);
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.WALNUT_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_pressure_plate").save(consumer);
     }
 
     protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> consumer, @NotNull RecipeCategory recipeCategory, ItemLike itemLike, @NotNull RecipeCategory recipeCategory1, ItemLike itemLike1) {

@@ -3,7 +3,7 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -28,12 +28,36 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REINFORCED_LEATHER_BOOTS);
 
         saplingItem(ModBlocks.WALNUT_SAPLING);
+
+        itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
+        itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
+
+        customDoorItemBlock(ModBlocks.WALNUT_DOOR);
     }
 
-    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
-        return withExistingParent(item.getId().getPath(),
+    public void itemButton(RegistryObject<ButtonBlock> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(),
+                new ResourceLocation("block/button_inventory")).texture("texture",
+                new ResourceLocation(VanillaVariations.MOD_ID,"block/" + baseBlock.getId().getPath()));
+
+    }
+
+    public void itemFence(RegistryObject<FenceBlock> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(),
+                new ResourceLocation("block/fence_inventory")).texture("texture",
+                new ResourceLocation(VanillaVariations.MOD_ID,"block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> block) {
+        return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(VanillaVariations.MOD_ID,"block/" + item.getId().getPath()));
+                new ResourceLocation(VanillaVariations.MOD_ID,"block/" + block.getId().getPath()));
+    }
+
+    private ItemModelBuilder customDoorItemBlock(RegistryObject<DoorBlock> block) {
+        return withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VanillaVariations.MOD_ID,"item/" + block.getId().getPath()));
     }
 
     private void simpleItem(RegistryObject<Item> item) {

@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-28T00:53:08.2467226	Block States: vavs
+// 1.19.4	2023-04-28T12:03:00.2847859	Block States: vavs
 d7a03932ee66250801ebc476edc88380baada32f assets/vavs/blockstates/reinforced_leather_block.json
 2773bbc1abd3fa92f8e2aa1c85b719e956997454 assets/vavs/blockstates/stripped_walnut_log.json
 1099076baa7e0180480d0513720367d1c2c0190e assets/vavs/blockstates/stripped_walnut_wood.json
@@ -48,15 +48,20 @@ b1062658548ed9f58b30bf3c503f45f4d592a4df assets/vavs/models/block/walnut_slab_to
 24909ec85006199f2111d1436c58e0598cbec3f8 assets/vavs/models/block/walnut_stairs.json
 b9fdbe3a1b1e59fa8294c19fd1abde38a85bd6a2 assets/vavs/models/block/walnut_stairs_inner.json
 cd75c5ae9126a8f13bb34ecb706f491426932609 assets/vavs/models/block/walnut_stairs_outer.json
-19d8e287ab2dbc8da12e73b418c6030fc6530429 assets/vavs/models/block/walnut_trapdoor_bottom.json
-8e91af49ed92666de82eb7c4367b60b795b9a579 assets/vavs/models/block/walnut_trapdoor_open.json
-dcac36a9fb8cd7cf05f99a9fb1b672e07da1bce0 assets/vavs/models/block/walnut_trapdoor_top.json
+3d05f11970e8a9bf2004112580ea85ac7a58dd2e assets/vavs/models/block/walnut_trapdoor_bottom.json
+c556ac211cc1820d92f1e1e02e5d94d610b30560 assets/vavs/models/block/walnut_trapdoor_open.json
+5b0c561be3e4bce129d80a81ee30ab14e7e101dd assets/vavs/models/block/walnut_trapdoor_top.json
 3973454ed56d562bc825a27fb2ef1cde1aa10902 assets/vavs/models/block/walnut_wood.json
 b09882391caee482a3480514c5d1456cec859b7a assets/vavs/models/block/walnut_wood_horizontal.json
 6d47e59f17f81222423362d3230be6e030f060f3 assets/vavs/models/item/reinforced_leather_block.json
 b8d3b6985bcaffcf8138edec507c38d40280608e assets/vavs/models/item/stripped_walnut_log.json
 1a909ba2821b3ddc33d8ec16f9e437a6a40e6f5b assets/vavs/models/item/stripped_walnut_wood.json
+67bca3f7a09bbc1962cc0450a1bb54d2e198d09c assets/vavs/models/item/walnut_fence_gate.json
 0dfaf08b6c2f32b0dde97dcd65af572bed93be1b assets/vavs/models/item/walnut_leaves.json
 fd7930388f56fa6239c557d8ac3fa04c56273c61 assets/vavs/models/item/walnut_log.json
 dfedaf2ae29a1dfc65d3100cef342894ef47eead assets/vavs/models/item/walnut_planks.json
+be7327211a58864449da9dc0c6385a29070ce6ea assets/vavs/models/item/walnut_pressure_plate.json
+80f143656073b3153a9dc275d3e3d732b72c8a1c assets/vavs/models/item/walnut_slab.json
+961b066aba4ba0e0fc445642dca3ec0bce2904a5 assets/vavs/models/item/walnut_stairs.json
+0c8fc0d2e84af2bbeff344c65b2c7d19b39ec222 assets/vavs/models/item/walnut_trapdoor.json
 a5c1b9114f97783aed4aec03dc26d186554bcd0c assets/vavs/models/item/walnut_wood.json

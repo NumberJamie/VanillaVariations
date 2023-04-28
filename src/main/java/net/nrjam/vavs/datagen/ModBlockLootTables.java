@@ -29,7 +29,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WALNUT_SLAB.get());
         this.dropSelf(ModBlocks.WALNUT_STAIRS.get());
         this.dropSelf(ModBlocks.WALNUT_TRAPDOOR.get());
-        this.dropSelf(ModBlocks.WALNUT_DOOR.get());
+        this.add(ModBlocks.WALNUT_DOOR.get(), createDoorTable(ModBlocks.WALNUT_DOOR.get()));
         this.dropSelf(ModBlocks.WALNUT_FENCE.get());
         this.dropSelf(ModBlocks.WALNUT_FENCE_GATE.get());
         this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());

@@ -1,10 +1,18 @@
-// 1.19.4	2023-04-28T00:59:54.8558289	Tags for minecraft:block mod id vavs
+// 1.19.4	2023-04-28T12:03:00.2696874	Tags for minecraft:block mod id vavs
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/completes_find_tree_tutorial.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/fences.json
 e27cc73a624a8dfd9ab8bc3a2689b2240d4a308b data/minecraft/tags/blocks/fence_gates.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs_that_burn.json
+f521d5db868ddd507511fe3b83bb23d5263242d9 data/minecraft/tags/blocks/mineable/axe.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/overworld_natural_logs.json
+acf73caa2140292d5f666858c52d1217234107c3 data/minecraft/tags/blocks/planks.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/snaps_goat_horn.json
+0681da9952c17380a87342ba8ea92d83f27c97b4 data/minecraft/tags/blocks/wooden_buttons.json
+3a154265bfb475d64997d5523bacb2bce1226f04 data/minecraft/tags/blocks/wooden_doors.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/wooden_fences.json
+f690be3dc866e64ea3138381d215e8ae5a32589a data/minecraft/tags/blocks/wooden_pressure_plates.json
+547992ddc060fd6db7eefd9e08522f2cc1a06430 data/minecraft/tags/blocks/wooden_slabs.json
+fbf04c126ceb2fac0f39368df4660f9a0538f832 data/minecraft/tags/blocks/wooden_stairs.json
+588b4225d52e9eff907ba6b0e72dd9661e0df9a8 data/minecraft/tags/blocks/wooden_trapdoors.json
 7edd497de56f1c1c03bf4b176b21754f52ecd675 data/vavs/tags/blocks/walnut_logs.json
