@@ -3,6 +3,7 @@ package net.nrjam.vavs.worldgen;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
@@ -12,9 +13,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
@@ -29,6 +28,8 @@ import net.nrjam.vavs.block.ModBlocks;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WALNUT_KEY = registerKey("walnut");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOIL_KEY = registerKey("end_soil");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLOSSOMING_ROOT_KEY = registerKey("blossoming_root");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDER_ROOT_KEY = registerKey("ender_root");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -43,6 +44,16 @@ public class ModConfiguredFeatures {
         register(context, END_SOIL_KEY, Feature.ORE, new OreConfiguration(
                 endStoneReplaceable,
                 ModBlocks.END_SOIL.get().defaultBlockState(), 64));
+
+        register(context, BLOSSOMING_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
+                128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLOSSOMING_ROOT.get())))
+        ));
+
+        register(context, ENDER_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
+                128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ENDER_ROOT.get())))
+        ));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

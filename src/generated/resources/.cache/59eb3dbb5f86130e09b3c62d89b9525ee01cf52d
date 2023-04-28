@@ -1,5 +1,10 @@
-// 1.19.4	2023-04-28T19:00:06.9462766	Loot Tables
+// 1.19.4	2023-04-28T20:30:11.5073972	Loot Tables
+f698d4287c21b21e00607d09c4e9275cfe393a73 data/vavs/loot_tables/blocks/blossoming_root.json
+bcf1b5dd73cee37d6230dcbf609532a4af5cb222 data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json
+48e080b9d051a28a5ac30591f3e7a688edabd753 data/vavs/loot_tables/blocks/potted_blossoming_root.json
+cfd71719fa68c54611c7df67cce6fb39ddf7ba3c data/vavs/loot_tables/blocks/potted_ender_root.json
+fc5a0fcb3c22e9b8a17f6762d1d54b4cba67a142 data/vavs/loot_tables/blocks/potted_walnut_sapling.json
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
 c5efc7328081cb155e00d64c8a2066de88370fb1 data/vavs/loot_tables/blocks/stripped_walnut_log.json
 fa44abc3a427080cca41f364bed0aa76b7ebb467 data/vavs/loot_tables/blocks/stripped_walnut_wood.json

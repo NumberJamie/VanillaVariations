@@ -2,7 +2,12 @@ package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.block.ModBlocks;
 import org.jetbrains.annotations.NotNull;
@@ -25,7 +30,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_WALNUT_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_WALNUT_LOG.get());
         this.dropSelf(ModBlocks.WALNUT_SAPLING.get());
-
         this.dropSelf(ModBlocks.WALNUT_SLAB.get());
         this.dropSelf(ModBlocks.WALNUT_STAIRS.get());
         this.dropSelf(ModBlocks.WALNUT_TRAPDOOR.get());
@@ -39,6 +43,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->
                 createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(ModBlocks.BLOSSOMING_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK))));
+        this.add(ModBlocks.ENDER_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK))));
+
+        this.dropPottedContents(ModBlocks.POTTED_BLOSSOMING_ROOT.get());
+        this.dropPottedContents(ModBlocks.POTTED_ENDER_ROOT.get());
+        this.dropPottedContents(ModBlocks.POTTED_WALNUT_SAPLING.get());
     }
 
     @Override

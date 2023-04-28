@@ -74,6 +74,8 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
             event.accept(ModBlocks.END_SOIL);
+            event.accept(ModBlocks.ENDER_ROOT);
+            event.accept(ModBlocks.BLOSSOMING_ROOT);
         }
     }
 

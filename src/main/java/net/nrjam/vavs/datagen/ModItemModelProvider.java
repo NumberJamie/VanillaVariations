@@ -33,6 +33,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FUSED_SOUL_BOOTS);
 
         saplingItem(ModBlocks.WALNUT_SAPLING);
+        saplingItem(ModBlocks.BLOSSOMING_ROOT);
+        saplingItem(ModBlocks.ENDER_ROOT);
 
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);

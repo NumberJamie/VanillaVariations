@@ -1,5 +1,10 @@
-// 1.19.4	2023-04-28T19:03:44.507068	Block States: vavs
+// 1.19.4	2023-04-28T20:30:11.5083982	Block States: vavs
+41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
+636cc094bfaddecbf4070400ad2ff7596baffc26 assets/vavs/blockstates/ender_root.json
 68619fad2fd6b3e4d9acd92cb364130394de82d6 assets/vavs/blockstates/end_soil.json
+319319f9ebc6500232855a8ba1b26f574a9290ec assets/vavs/blockstates/potted_blossoming_root.json
+85989d682e88d14bd5d2d65042f90d5079b0ae92 assets/vavs/blockstates/potted_ender_root.json
+80978a566ab4376e995f12b3637f5f2bb1b91c7d assets/vavs/blockstates/potted_walnut_sapling.json
 d7a03932ee66250801ebc476edc88380baada32f assets/vavs/blockstates/reinforced_leather_block.json
 2773bbc1abd3fa92f8e2aa1c85b719e956997454 assets/vavs/blockstates/stripped_walnut_log.json
 1099076baa7e0180480d0513720367d1c2c0190e assets/vavs/blockstates/stripped_walnut_wood.json
@@ -16,7 +21,12 @@ d8957393bddf6551783dd547f9062879059d304b assets/vavs/blockstates/walnut_slab.jso
 88a35432febec0b884b0d17b7d5bd670bcc87fe2 assets/vavs/blockstates/walnut_stairs.json
 0210aa895800809294997b6ed93cc63675ac1da6 assets/vavs/blockstates/walnut_trapdoor.json
 ccd9c212c5399e6874645d54f56f7cf1796ee598 assets/vavs/blockstates/walnut_wood.json
+b349ea223654f0d2acd4db5c25f41c7e80945db4 assets/vavs/models/block/blossoming_root.json
+9264e611acf70296c160805e59dd0e368fc85971 assets/vavs/models/block/ender_root.json
 4fa5a6a7fc4ddda76dfd883bd387e89892d95829 assets/vavs/models/block/end_soil.json
+96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_blossoming_root.json
+96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_ender_root.json
+96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_walnut_sapling.json
 acf2625a6a0c376ec67e613d60901e3fc45292ba assets/vavs/models/block/reinforced_leather_block.json
 796c28d23885483ddf6bed13883e857ab6b66d30 assets/vavs/models/block/stripped_walnut_log.json
 a0012737e33dbaefa721f09123f278610f1be71d assets/vavs/models/block/stripped_walnut_log_horizontal.json

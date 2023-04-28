@@ -6,6 +6,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +35,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.WALNUT_PLANKS);
         blockWithItem(ModBlocks.WALNUT_LEAVES);
         saplingBlock(ModBlocks.WALNUT_SAPLING);
+        saplingBlock(ModBlocks.BLOSSOMING_ROOT);
+        saplingBlock(ModBlocks.ENDER_ROOT);
+
+        PottedPlant(ModBlocks.POTTED_BLOSSOMING_ROOT.get(), ModBlocks.BLOSSOMING_ROOT.get());
+        PottedPlant(ModBlocks.POTTED_ENDER_ROOT.get(), ModBlocks.BLOSSOMING_ROOT.get());
+        PottedPlant(ModBlocks.POTTED_WALNUT_SAPLING.get(), ModBlocks.BLOSSOMING_ROOT.get());
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
@@ -55,6 +63,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_WOOD.get(), models().withExistingParent("vavs:stripped_walnut_wood", "minecraft:block/cube_column"));
 
         blockWithItem(ModBlocks.END_SOIL);
+    }
+
+    public void PottedPlant(Block block, Block flower) {
+        ModelFile pot = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), this.mcLoc("block/flower_pot_cross")).texture("plant", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(flower).getPath())).renderType("cutout");
+        this.getVariantBuilder(block).partialState().addModels(new ConfiguredModel(pot));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

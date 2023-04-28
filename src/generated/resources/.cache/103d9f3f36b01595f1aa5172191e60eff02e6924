@@ -1,5 +1,9 @@
-// 1.19.4	2023-04-28T19:25:28.6878094	Registries
+// 1.19.4	2023-04-28T20:38:23.5499991	Registries
+c12760e51a74249eefe54b1ec2952d114cd05b38 data/vavs/worldgen/configured_feature/blossoming_root.json
+35648478eea9ac8a379f94a7626ffb8d93d75bc7 data/vavs/worldgen/configured_feature/ender_root.json
 b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/end_soil.json
 d1a0dc983f2b8c967c1880027e52b7174d2f3b37 data/vavs/worldgen/configured_feature/walnut.json
+44daa613040acb09b1e0dcfc24b1a3471b3b845f data/vavs/worldgen/placed_feature/blossoming_root_placed.json
+c7508e58135ee9193bb8c2a49f3e0d68c1ae9fcb data/vavs/worldgen/placed_feature/ender_root_placed.json
 e891781df2fa605fd3efb71cad21678d6c4767e4 data/vavs/worldgen/placed_feature/end_soil_placed.json
 c30add8c9693f3f6674782030928ab4323c16536 data/vavs/worldgen/placed_feature/walnut_placed.json

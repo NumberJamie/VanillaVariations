@@ -26,7 +26,6 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_WALNUT_LOG.get())
                 .add(ModBlocks.WALNUT_WOOD.get())
                 .add(ModBlocks.STRIPPED_WALNUT_WOOD.get());
-
         this.tag(BlockTags.SNAPS_GOAT_HORN).addTags(ModTags.Blocks.WALNUT_LOGS);
         this.tag(BlockTags.OVERWORLD_NATURAL_LOGS).addTags(ModTags.Blocks.WALNUT_LOGS);
         this.tag(BlockTags.LOGS_THAT_BURN).addTags(ModTags.Blocks.WALNUT_LOGS);
@@ -52,5 +51,8 @@ public class ModBlockTags extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.DRAGON_IMMUNE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.SCULK_REPLACEABLE).add(ModBlocks.END_SOIL.get());
+        this.tag(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_BLOSSOMING_ROOT.get())
+                .add(ModBlocks.POTTED_ENDER_ROOT.get())
+                .add(ModBlocks.POTTED_WALNUT_SAPLING.get());
     }
 }
