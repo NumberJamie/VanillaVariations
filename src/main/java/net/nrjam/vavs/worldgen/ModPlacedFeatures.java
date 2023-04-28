@@ -21,6 +21,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_SOIL_PLACED_KEY = createKey("end_soil_placed");
     public static final ResourceKey<PlacedFeature> BLOSSOMING_ROOT_PLACED_KEY = createKey("blossoming_root_placed");
     public static final ResourceKey<PlacedFeature> ENDER_ROOT_PLACED_KEY = createKey("ender_root_placed");
+    public static final ResourceKey<PlacedFeature> DEAD_ROOTS_PLACED_KEY = createKey("dead_roots_placed");
+    public static final ResourceKey<PlacedFeature> SOUL_FLOWER_PLACED_KEY = createKey("soul_flower_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -33,10 +35,16 @@ public class ModPlacedFeatures {
                 ModPlacementUtils.endSoilPlaced(28, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top())));
 
         register(context, BLOSSOMING_ROOT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLOSSOMING_ROOT_KEY),
-                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP);
 
         register(context, ENDER_ROOT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDER_ROOT_KEY),
-                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP);
+
+        register(context, DEAD_ROOTS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEAD_ROOTS_KEY),
+                RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
+
+        register(context, SOUL_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_FLOWER_KEY),
+                PlacementUtils.FULL_RANGE, BiomeFilter.biome());
     }
 
 

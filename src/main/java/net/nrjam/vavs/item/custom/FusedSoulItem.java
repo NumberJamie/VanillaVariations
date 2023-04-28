@@ -30,7 +30,7 @@ public class FusedSoulItem extends ArmorItem {
 
     @Override
     public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
-        return super.makesPiglinsNeutral(stack, wearer);
+        return true;
     }
 
     @Override

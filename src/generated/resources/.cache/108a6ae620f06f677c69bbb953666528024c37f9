@@ -1,5 +1,6 @@
-// 1.19.4	2023-04-28T21:55:40.4989746	Item Models: vavs
+// 1.19.4	2023-04-28T22:57:52.1135987	Item Models: vavs
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
+b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json
 f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boots.json
 5d89bd95623d142fa2d6ddce029911e9a27ba04c assets/vavs/models/item/fused_soul_chestplate.json
@@ -11,6 +12,7 @@ d136009ae59a1d557a8e3317a7baac37d3560bd5 assets/vavs/models/item/fused_soul_helm
 bf602faf06dc2177c83ae6713351e2bb706ec8a5 assets/vavs/models/item/reinforced_leather_helmet.json
 52be79fd3fde91e3061ca2cc21a974d5cac296d0 assets/vavs/models/item/reinforced_leather_leggings.json
 383c69de7f47c78ddf119e2c42db5c7ee1ffd42c assets/vavs/models/item/soul_essence.json
+29205fa5bee4f6cd3556876c74ce86cafd7e3f41 assets/vavs/models/item/soul_flower.json
 7a6e0d5f8b9688aa10657fc74f336ae122281962 assets/vavs/models/item/walnut_button.json
 1bc9f428a4ab9973961463dd1d9a514fa8e01619 assets/vavs/models/item/walnut_door.json
 7d8d4c24f0f0c4c72e2e26613edd5be1c4d6a5cc assets/vavs/models/item/walnut_fence.json

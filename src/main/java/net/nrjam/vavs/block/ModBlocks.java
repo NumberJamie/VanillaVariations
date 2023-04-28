@@ -15,10 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
-import net.nrjam.vavs.block.custom.EndSoilFlower;
-import net.nrjam.vavs.block.custom.ModFlammableRotatedPillarBlock;
-import net.nrjam.vavs.block.custom.ModWoodTypes;
-import net.nrjam.vavs.block.custom.PottedFlower;
+import net.nrjam.vavs.block.custom.*;
 import net.nrjam.vavs.item.ModItems;
 import net.nrjam.vavs.worldgen.tree.WalnutTreeGrower;
 
@@ -116,11 +113,21 @@ public class ModBlocks {
             () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDER_ROOT = registerBlock("ender_root",
             () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower",
+            () -> new SoulSoilFlower(MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots",
+            () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+
+
 
     public static final RegistryObject<Block> POTTED_BLOSSOMING_ROOT = BLOCKS.register("potted_blossoming_root",
             () -> new PottedFlower(ModBlocks.BLOSSOMING_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().lightLevel((p_50886_) -> 12)));
     public static final RegistryObject<Block> POTTED_ENDER_ROOT = BLOCKS.register("potted_ender_root",
             () -> new PottedFlower(ModBlocks.ENDER_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_SOUL_FLOWER = BLOCKS.register("potted_soul_flower",
+            () -> new PottedFlower(ModBlocks.SOUL_FLOWER.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_DEAD_ROOTS = BLOCKS.register("potted_dead_roots",
+            () -> new PottedFlower(ModBlocks.DEAD_ROOTS.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

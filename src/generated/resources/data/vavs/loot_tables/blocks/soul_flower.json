@@ -37,20 +37,20 @@
                   ]
                 }
               ],
-              "name": "vavs:ender_root"
+              "name": "vavs:soul_flower"
             },
             {
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "chance": 0.125,
+                  "chance": 0.05,
                   "condition": "minecraft:random_chance"
                 },
                 {
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:stick"
+              "name": "vavs:soul_essence"
             }
           ]
         }

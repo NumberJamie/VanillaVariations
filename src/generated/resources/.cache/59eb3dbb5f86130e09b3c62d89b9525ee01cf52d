@@ -1,11 +1,15 @@
-// 1.19.4	2023-04-28T21:03:49.9104878	Loot Tables
-f698d4287c21b21e00607d09c4e9275cfe393a73 data/vavs/loot_tables/blocks/blossoming_root.json
-bcf1b5dd73cee37d6230dcbf609532a4af5cb222 data/vavs/loot_tables/blocks/ender_root.json
+// 1.19.4	2023-04-28T23:05:01.4421607	Loot Tables
+7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
+0cb619167f6e373aff0c7224b4e9be28d36dacf8 data/vavs/loot_tables/blocks/dead_roots.json
+50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json
 48e080b9d051a28a5ac30591f3e7a688edabd753 data/vavs/loot_tables/blocks/potted_blossoming_root.json
+1824d1176d4da257a6ce8807bea867f4f06c5fbc data/vavs/loot_tables/blocks/potted_dead_roots.json
 cfd71719fa68c54611c7df67cce6fb39ddf7ba3c data/vavs/loot_tables/blocks/potted_ender_root.json
+56c9021839c3028169db1725b68376512415d60e data/vavs/loot_tables/blocks/potted_soul_flower.json
 fc5a0fcb3c22e9b8a17f6762d1d54b4cba67a142 data/vavs/loot_tables/blocks/potted_walnut_sapling.json
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
+6f186ffd77cdf0a82501ae46996a905e32f24e11 data/vavs/loot_tables/blocks/soul_flower.json
 b9db50b01779da72e7063651e76085c683250405 data/vavs/loot_tables/blocks/soul_light.json
 11d26c5f9a11e3d34534b88333772e447ae0aa57 data/vavs/loot_tables/blocks/soul_stone.json
 3a6a0a2ac387e4fae7dab2b7df4a3fd500a41e63 data/vavs/loot_tables/blocks/soul_stone_slab.json

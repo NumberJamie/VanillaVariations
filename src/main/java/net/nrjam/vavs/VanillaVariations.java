@@ -79,8 +79,10 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
             event.accept(ModBlocks.END_SOIL);
-            event.accept(ModBlocks.ENDER_ROOT);
             event.accept(ModBlocks.BLOSSOMING_ROOT);
+            event.accept(ModBlocks.ENDER_ROOT);
+            event.accept(ModBlocks.SOUL_FLOWER);
+            event.accept(ModBlocks.DEAD_ROOTS);
         }
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);

@@ -30,6 +30,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOIL_KEY = registerKey("end_soil");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLOSSOMING_ROOT_KEY = registerKey("blossoming_root");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDER_ROOT_KEY = registerKey("ender_root");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_FLOWER_KEY = registerKey("soul_flower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_ROOTS_KEY = registerKey("dead_roots");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -53,6 +55,15 @@ public class ModConfiguredFeatures {
         register(context, ENDER_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
                 128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ENDER_ROOT.get())))
+        ));
+
+        register(context, SOUL_FLOWER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
+                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SOUL_FLOWER.get()))
+        ));
+
+        register(context, DEAD_ROOTS_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
+                256, 12, 12, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEAD_ROOTS.get())))
         ));
     }
 

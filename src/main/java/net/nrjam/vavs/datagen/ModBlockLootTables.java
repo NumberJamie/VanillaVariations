@@ -7,9 +7,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.datagen.tags.ModItemTags;
+import net.nrjam.vavs.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
 
@@ -50,12 +53,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->
                 createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
-        this.add(ModBlocks.BLOSSOMING_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK))));
-        this.add(ModBlocks.ENDER_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK))));
+        this.add(ModBlocks.BLOSSOMING_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
+        this.add(ModBlocks.ENDER_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
+        this.add(ModBlocks.SOUL_FLOWER.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(ModItems.SOUL_ESSENCE.get()).when(LootItemRandomChanceCondition.randomChance(0.05F)))));
+        this.add(ModBlocks.DEAD_ROOTS.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
 
         this.dropPottedContents(ModBlocks.POTTED_BLOSSOMING_ROOT.get());
         this.dropPottedContents(ModBlocks.POTTED_ENDER_ROOT.get());
         this.dropPottedContents(ModBlocks.POTTED_WALNUT_SAPLING.get());
+        this.dropPottedContents(ModBlocks.POTTED_DEAD_ROOTS.get());
+        this.dropPottedContents(ModBlocks.POTTED_SOUL_FLOWER.get());
     }
 
     @Override
