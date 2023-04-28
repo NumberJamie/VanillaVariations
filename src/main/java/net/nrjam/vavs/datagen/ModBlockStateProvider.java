@@ -41,8 +41,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SOUL_LIGHT);
 
         PottedPlant(ModBlocks.POTTED_BLOSSOMING_ROOT.get(), ModBlocks.BLOSSOMING_ROOT.get());
-        PottedPlant(ModBlocks.POTTED_ENDER_ROOT.get(), ModBlocks.BLOSSOMING_ROOT.get());
-        PottedPlant(ModBlocks.POTTED_WALNUT_SAPLING.get(), ModBlocks.BLOSSOMING_ROOT.get());
+        PottedPlant(ModBlocks.POTTED_ENDER_ROOT.get(), ModBlocks.ENDER_ROOT.get());
+        PottedPlant(ModBlocks.POTTED_WALNUT_SAPLING.get(), ModBlocks.WALNUT_SAPLING.get());
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
