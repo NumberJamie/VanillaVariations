@@ -49,5 +49,8 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.WALNUT_PRESSURE_PLATE.get())
                 .add(ModBlocks.WALNUT_TRAPDOOR.get())
                 .add(ModBlocks.WALNUT_PLANKS.get());
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get());
+        this.tag(BlockTags.DRAGON_IMMUNE).add(ModBlocks.END_SOIL.get());
+        this.tag(BlockTags.SCULK_REPLACEABLE).add(ModBlocks.END_SOIL.get());
     }
 }

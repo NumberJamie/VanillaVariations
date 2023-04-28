@@ -35,6 +35,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.WALNUT_BUTTON.get());
 
+        this.dropSelf(ModBlocks.END_SOIL.get());
+
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->
                 createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }

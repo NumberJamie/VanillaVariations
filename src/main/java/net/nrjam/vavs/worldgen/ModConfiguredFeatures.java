@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
@@ -20,13 +21,17 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePla
 import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WALNUT_KEY = registerKey("walnut");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOIL_KEY = registerKey("end_soil");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+        RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
 
         register(context, WALNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WALNUT_LOG.get()),
@@ -34,6 +39,10 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WALNUT_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(0, 0, 0)).build());
+
+        register(context, END_SOIL_KEY, Feature.ORE, new OreConfiguration(
+                endStoneReplaceable,
+                ModBlocks.END_SOIL.get().defaultBlockState(), 64));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

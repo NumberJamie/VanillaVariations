@@ -91,7 +91,8 @@ public class ModBlocks {
             () -> new ButtonBlock(Block.Properties.copy(Blocks.OAK_BUTTON), ModWoodTypes.WALNUT_BLOCK_SET, 30, true));
     public static final RegistryObject<PressurePlateBlock> WALNUT_PRESSURE_PLATE = registerBlock("walnut_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.copy(Blocks.OAK_PRESSURE_PLATE), ModWoodTypes.WALNUT_BLOCK_SET));
-
+    public static final RegistryObject<Block> END_SOIL = registerBlock("end_soil",
+            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SOUL_SOIL).strength(1.6f, 1.6f)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

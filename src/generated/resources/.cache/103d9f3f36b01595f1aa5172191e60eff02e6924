@@ -1,3 +1,5 @@
-// 1.19.4	2023-04-27T16:52:36.3587934	Registries
+// 1.19.4	2023-04-28T19:25:28.6878094	Registries
+b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/end_soil.json
 d1a0dc983f2b8c967c1880027e52b7174d2f3b37 data/vavs/worldgen/configured_feature/walnut.json
+e891781df2fa605fd3efb71cad21678d6c4767e4 data/vavs/worldgen/placed_feature/end_soil_placed.json
 c30add8c9693f3f6674782030928ab4323c16536 data/vavs/worldgen/placed_feature/walnut_placed.json

@@ -44,6 +44,7 @@ public class VanillaVariations
             event.accept(ModItems.REINFORCED_LEATHER);
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.END_SOIL);
             event.accept(ModBlocks.WALNUT_LOG);
             event.accept(ModBlocks.WALNUT_WOOD);
             event.accept(ModBlocks.STRIPPED_WALNUT_LOG);
@@ -72,6 +73,7 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_LOG);
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
+            event.accept(ModBlocks.END_SOIL);
         }
     }
 
