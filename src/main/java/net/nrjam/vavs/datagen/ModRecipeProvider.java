@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
@@ -40,13 +41,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REINFORCED_LEATHER.get()).define('Y', Items.LEATHER).define('X', Items.IRON_INGOT)
                 .pattern("XYX").pattern("YYY").pattern("XYX")
                 .unlockedBy("has_leather", has(Items.LEATHER)).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE.get()).define('X', Blocks.SOUL_SOIL)
+                .pattern("XX").pattern("XX")
+                .unlockedBy("has_soul_soil", has(Blocks.SOUL_SOIL)).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_LIGHT.get()).define('X', Blocks.GLOWSTONE).define('Y', ModItems.SOUL_ESSENCE.get())
+                .pattern("YYY").pattern("YXY").pattern("YYY")
+                .unlockedBy("has_soul_essence", has(ModItems.SOUL_ESSENCE.get())).save(consumer);
+        wallBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE_WALL.get(), Ingredient.of(ModBlocks.SOUL_STONE.get())).unlockedBy(getHasName(ModBlocks.SOUL_STONE.get()), has(ModBlocks.SOUL_STONE.get())).save(consumer);
         woodFromLogs(consumer, ModBlocks.WALNUT_LOG.get(), ModBlocks.WALNUT_WOOD.get());
         woodFromLogs(consumer, ModBlocks.STRIPPED_WALNUT_LOG.get(), ModBlocks.STRIPPED_WALNUT_WOOD.get());
         planksFromLogs(consumer, ModBlocks.WALNUT_PLANKS.get(), ModTags.Items.WALNUT_LOGS, 4);
         stairBuilder(ModBlocks.WALNUT_STAIRS.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_stairs").save(consumer);
+        stairBuilder(ModBlocks.SOUL_STONE_STAIRS.get(), Ingredient.of(ModBlocks.SOUL_STONE.get())).unlockedBy(getHasName(ModBlocks.SOUL_STONE.get()), has(ModBlocks.SOUL_STONE.get())).group("stone_wall").save(consumer);
         fenceBuilder(ModBlocks.WALNUT_FENCE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_fence").save(consumer);
         fenceGateBuilder(ModBlocks.WALNUT_FENCE_GATE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_fence").save(consumer);
         slab(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WALNUT_SLAB.get(), ModBlocks.WALNUT_PLANKS.get());
+        slab(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE_SLAB.get(), ModBlocks.SOUL_STONE.get());
         doorBuilder(ModBlocks.WALNUT_DOOR.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_door").save(consumer);
         trapdoorBuilder(ModBlocks.WALNUT_TRAPDOOR.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_trapdoor_top").save(consumer);
         buttonBuilder(ModBlocks.WALNUT_BUTTON.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_button").save(consumer);

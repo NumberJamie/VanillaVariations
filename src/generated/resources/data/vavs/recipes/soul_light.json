@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:glowstone"
+    },
+    "Y": {
+      "item": "vavs:soul_essence"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "YXY",
+    "YYY"
+  ],
+  "result": {
+    "item": "vavs:soul_light"
+  },
+  "show_notification": true
+}

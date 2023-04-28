@@ -46,7 +46,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(),
                 new ResourceLocation("block/button_inventory")).texture("texture",
                 new ResourceLocation(VanillaVariations.MOD_ID,"block/" + baseBlock.getId().getPath()));
-
     }
 
     public void itemFence(RegistryObject<FenceBlock> block, RegistryObject<Block> baseBlock) {

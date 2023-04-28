@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-28T20:30:11.5083982	Block States: vavs
+// 1.19.4	2023-04-28T22:01:04.4204871	Block States: vavs
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 636cc094bfaddecbf4070400ad2ff7596baffc26 assets/vavs/blockstates/ender_root.json
 68619fad2fd6b3e4d9acd92cb364130394de82d6 assets/vavs/blockstates/end_soil.json
@@ -6,6 +6,11 @@
 85989d682e88d14bd5d2d65042f90d5079b0ae92 assets/vavs/blockstates/potted_ender_root.json
 80978a566ab4376e995f12b3637f5f2bb1b91c7d assets/vavs/blockstates/potted_walnut_sapling.json
 d7a03932ee66250801ebc476edc88380baada32f assets/vavs/blockstates/reinforced_leather_block.json
+78f336b24a75c1cec4fff2424de1f345b1230dc3 assets/vavs/blockstates/soul_light.json
+76e224534dc7fa5ef0a6b8d7457829a961c3fc26 assets/vavs/blockstates/soul_stone.json
+ba46a96cb3e6e99ceb3588d2a75cd0132dd9dc83 assets/vavs/blockstates/soul_stone_slab.json
+8345f1869c73285ecead3416d1dc8c5d95804bab assets/vavs/blockstates/soul_stone_stairs.json
+63ea7cd51361400c255dd9f5b3cd5908a8253c26 assets/vavs/blockstates/soul_stone_wall.json
 2773bbc1abd3fa92f8e2aa1c85b719e956997454 assets/vavs/blockstates/stripped_walnut_log.json
 1099076baa7e0180480d0513720367d1c2c0190e assets/vavs/blockstates/stripped_walnut_wood.json
 8d15bebfe465933aca2cb4b962abd6cfb46a1d9b assets/vavs/blockstates/walnut_button.json
@@ -28,6 +33,17 @@ b349ea223654f0d2acd4db5c25f41c7e80945db4 assets/vavs/models/block/blossoming_roo
 96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_ender_root.json
 96fabe38781575418de703ffc29add50dd1df62d assets/vavs/models/block/potted_walnut_sapling.json
 acf2625a6a0c376ec67e613d60901e3fc45292ba assets/vavs/models/block/reinforced_leather_block.json
+5a65516af20e767ec18e99a3a4e26dcddb85ef61 assets/vavs/models/block/soul_light.json
+3efce6e44b3eb1503e3b66997e501c1edf91b77d assets/vavs/models/block/soul_stone.json
+7ed07d8088178b8c96721797d9eaaabf81f1a0c1 assets/vavs/models/block/soul_stone_slab.json
+81d7bd4b3f801682524b94c9d9d7a3a2faba7e36 assets/vavs/models/block/soul_stone_slab_top.json
+9c6da7de423e4af66ec352c67ec7040e66ce887d assets/vavs/models/block/soul_stone_stairs.json
+658433ddee334d1b46aa6140d33e294eeacaa651 assets/vavs/models/block/soul_stone_stairs_inner.json
+6edf7840f15d58dc1018ecf34483cf6c694233fc assets/vavs/models/block/soul_stone_stairs_outer.json
+64d1cfa6318bfc66276a3ed6c1810f8dafe3359a assets/vavs/models/block/soul_stone_wall.json
+f8ea1f1402ea6bac908cc13cbc15f19557d74ff4 assets/vavs/models/block/soul_stone_wall_post.json
+1937188598a3e87ca74c2efcd811095f24883cca assets/vavs/models/block/soul_stone_wall_side.json
+d3f5701b526a495a3666770a27eaa11eecb390c6 assets/vavs/models/block/soul_stone_wall_side_tall.json
 796c28d23885483ddf6bed13883e857ab6b66d30 assets/vavs/models/block/stripped_walnut_log.json
 a0012737e33dbaefa721f09123f278610f1be71d assets/vavs/models/block/stripped_walnut_log_horizontal.json
 c05add1685fc63ae3184f19d49b017bb1cc6e4ac assets/vavs/models/block/stripped_walnut_wood.json
@@ -67,6 +83,11 @@ c556ac211cc1820d92f1e1e02e5d94d610b30560 assets/vavs/models/block/walnut_trapdoo
 b09882391caee482a3480514c5d1456cec859b7a assets/vavs/models/block/walnut_wood_horizontal.json
 4cafe94990294e4f616c8dc60242ff8848b41452 assets/vavs/models/item/end_soil.json
 6d47e59f17f81222423362d3230be6e030f060f3 assets/vavs/models/item/reinforced_leather_block.json
+6b4bfdc594f5a7e5c461a14b028e8a3ecbe44319 assets/vavs/models/item/soul_light.json
+14d0f6592a76501a4e7221d8248b03f6f4e5ef6f assets/vavs/models/item/soul_stone.json
+b925b068b274946201a2181f93a7ef309bf91c0d assets/vavs/models/item/soul_stone_slab.json
+aea50c2e20d5aa7f226095460a7ea8efa8b5afff assets/vavs/models/item/soul_stone_stairs.json
+fe64a89fd6dbdd66b8a4ff23e1370df134f88a4e assets/vavs/models/item/soul_stone_wall.json
 b8d3b6985bcaffcf8138edec507c38d40280608e assets/vavs/models/item/stripped_walnut_log.json
 1a909ba2821b3ddc33d8ec16f9e437a6a40e6f5b assets/vavs/models/item/stripped_walnut_wood.json
 67bca3f7a09bbc1962cc0450a1bb54d2e198d09c assets/vavs/models/item/walnut_fence_gate.json

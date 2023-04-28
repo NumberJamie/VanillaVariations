@@ -1,5 +1,10 @@
-// 1.19.4	2023-04-28T11:24:21.5599502	Recipes
+// 1.19.4	2023-04-28T21:32:34.1463676	Recipes
 bfd7b35083f99f90d8dc4b1b1527b55aa954dbe1 data/vavs/advancements/recipes/building_blocks/reinforced_leather_compressed.json
+be0aa658c685b188a94d3174d643c997b4f649e1 data/vavs/advancements/recipes/building_blocks/soul_light.json
+21e21f81e7745510d22463b05aa9dd49d48064f7 data/vavs/advancements/recipes/building_blocks/soul_stone.json
+53d65813d9dec438d7c9049c989ff8182edc1252 data/vavs/advancements/recipes/building_blocks/soul_stone_slab.json
+50bdacd86ecbd52ec06cf4745d767660c88461ef data/vavs/advancements/recipes/building_blocks/soul_stone_stairs.json
+b5a1d6975b2a7d4702bb7dec46d8a947adf16663 data/vavs/advancements/recipes/building_blocks/soul_stone_wall.json
 ed472737aeac44793bb92c2fa7f81ec8e0909822 data/vavs/advancements/recipes/building_blocks/stripped_walnut_log.json
 1b78d560359d862a69eeac523685b35cef5f9664 data/vavs/advancements/recipes/building_blocks/walnut_log.json
 cc632cf55743605d83b18b501b253707358806ca data/vavs/advancements/recipes/building_blocks/walnut_planks.json
@@ -24,6 +29,11 @@ bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone
 945101723165549cf8c8d89fa77883cdccbc6b97 data/vavs/recipes/reinforced_leather_compressed.json
 dd93dac5fef09b3cc9289a01590e8769c80e7d27 data/vavs/recipes/reinforced_leather_helmet.json
 832e5e59d231db4c486ba7c0ab46faa950d8d1a0 data/vavs/recipes/reinforced_leather_leggings.json
+860cfdd3459ca0fc4d71ac6ed9584517ecb7449b data/vavs/recipes/soul_light.json
+46b1204e9e1398403fea662444039cececf5e491 data/vavs/recipes/soul_stone.json
+fa3b8721b546bc2379f265b04760afd16cfaec13 data/vavs/recipes/soul_stone_slab.json
+43847bef318cc264e3b58ce78eb1ca016c488b31 data/vavs/recipes/soul_stone_stairs.json
+3e9823b3c18607a163d8643a76018190ddd267ea data/vavs/recipes/soul_stone_wall.json
 c48f58973c8a9cbb6eb3db4f2e0df4b87956cbca data/vavs/recipes/stripped_walnut_log.json
 b00444221db9b1289399a86f1f130d1c1c7a08ea data/vavs/recipes/walnut_button.json
 6315fec3cd6c6452618b02f3855eb133551661cc data/vavs/recipes/walnut_door.json

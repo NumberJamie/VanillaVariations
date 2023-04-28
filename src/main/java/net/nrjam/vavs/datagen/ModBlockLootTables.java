@@ -39,6 +39,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.WALNUT_BUTTON.get());
 
+        this.dropSelf(ModBlocks.SOUL_LIGHT.get());
+        this.dropSelf(ModBlocks.SOUL_STONE.get());
+        this.dropSelf(ModBlocks.SOUL_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SOUL_STONE_SLAB.get());
+        this.dropSelf(ModBlocks.SOUL_STONE_WALL.get());
+
         this.dropSelf(ModBlocks.END_SOIL.get());
 
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->

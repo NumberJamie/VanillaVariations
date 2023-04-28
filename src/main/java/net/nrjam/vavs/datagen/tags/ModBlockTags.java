@@ -26,6 +26,10 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_WALNUT_LOG.get())
                 .add(ModBlocks.WALNUT_WOOD.get())
                 .add(ModBlocks.STRIPPED_WALNUT_WOOD.get());
+        this.tag(ModTags.Blocks.SOUL_STONES).add(ModBlocks.SOUL_STONE.get())
+                .add(ModBlocks.SOUL_STONE_SLAB.get())
+                .add(ModBlocks.SOUL_STONE_STAIRS.get())
+                .add(ModBlocks.SOUL_STONE_WALL.get());
         this.tag(BlockTags.SNAPS_GOAT_HORN).addTags(ModTags.Blocks.WALNUT_LOGS);
         this.tag(BlockTags.OVERWORLD_NATURAL_LOGS).addTags(ModTags.Blocks.WALNUT_LOGS);
         this.tag(BlockTags.LOGS_THAT_BURN).addTags(ModTags.Blocks.WALNUT_LOGS);
@@ -48,11 +52,16 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.WALNUT_PRESSURE_PLATE.get())
                 .add(ModBlocks.WALNUT_TRAPDOOR.get())
                 .add(ModBlocks.WALNUT_PLANKS.get());
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.SOUL_LIGHT.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.DRAGON_IMMUNE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.SCULK_REPLACEABLE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_BLOSSOMING_ROOT.get())
                 .add(ModBlocks.POTTED_ENDER_ROOT.get())
                 .add(ModBlocks.POTTED_WALNUT_SAPLING.get());
+        this.tag(BlockTags.INFINIBURN_NETHER).addTag(ModTags.Blocks.SOUL_STONES)
+                .add(ModBlocks.SOUL_LIGHT.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(ModTags.Blocks.SOUL_STONES);
+        this.tag(BlockTags.WALLS).add(ModBlocks.SOUL_STONE_WALL.get());
     }
 }

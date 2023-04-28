@@ -58,6 +58,11 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_TRAPDOOR);
             event.accept(ModBlocks.WALNUT_PRESSURE_PLATE);
             event.accept(ModBlocks.WALNUT_BUTTON);
+            event.accept(ModBlocks.SOUL_LIGHT);
+            event.accept(ModBlocks.SOUL_STONE);
+            event.accept(ModBlocks.SOUL_STONE_STAIRS);
+            event.accept(ModBlocks.SOUL_STONE_SLAB);
+            event.accept(ModBlocks.SOUL_STONE_WALL);
         }
         if(event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.REINFORCED_LEATHER_HELMET);
@@ -76,6 +81,9 @@ public class VanillaVariations
             event.accept(ModBlocks.END_SOIL);
             event.accept(ModBlocks.ENDER_ROOT);
             event.accept(ModBlocks.BLOSSOMING_ROOT);
+        }
+        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.SOUL_LIGHT);
         }
     }
 

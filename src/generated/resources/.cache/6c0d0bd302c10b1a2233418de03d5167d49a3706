@@ -1,17 +1,20 @@
-// 1.19.4	2023-04-28T20:30:11.5063974	Tags for minecraft:block mod id vavs
+// 1.19.4	2023-04-28T21:03:49.9104878	Tags for minecraft:block mod id vavs
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/completes_find_tree_tutorial.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/dragon_immune.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/fences.json
 e27cc73a624a8dfd9ab8bc3a2689b2240d4a308b data/minecraft/tags/blocks/fence_gates.json
 3d07dc9b87ee14ac7fbff19e3eedc62a8239172f data/minecraft/tags/blocks/flower_pots.json
+60960bb7b65f637031821e490affd6585b64d15d data/minecraft/tags/blocks/infiniburn_nether.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs_that_burn.json
-f521d5db868ddd507511fe3b83bb23d5263242d9 data/minecraft/tags/blocks/mineable/axe.json
+b2fc28e990c5c65eeb66f52207530531ee6d86aa data/minecraft/tags/blocks/mineable/axe.json
+12bbdee1aa422fd20331422adca40c48016852d7 data/minecraft/tags/blocks/mineable/pickaxe.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/mineable/shovel.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/overworld_natural_logs.json
 acf73caa2140292d5f666858c52d1217234107c3 data/minecraft/tags/blocks/planks.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/sculk_replaceable.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/snaps_goat_horn.json
+db71fe7f7a919d5b4889320f9721a2a383993013 data/minecraft/tags/blocks/walls.json
 0681da9952c17380a87342ba8ea92d83f27c97b4 data/minecraft/tags/blocks/wooden_buttons.json
 3a154265bfb475d64997d5523bacb2bce1226f04 data/minecraft/tags/blocks/wooden_doors.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/wooden_fences.json
@@ -19,4 +22,5 @@ f690be3dc866e64ea3138381d215e8ae5a32589a data/minecraft/tags/blocks/wooden_press
 547992ddc060fd6db7eefd9e08522f2cc1a06430 data/minecraft/tags/blocks/wooden_slabs.json
 fbf04c126ceb2fac0f39368df4660f9a0538f832 data/minecraft/tags/blocks/wooden_stairs.json
 588b4225d52e9eff907ba6b0e72dd9661e0df9a8 data/minecraft/tags/blocks/wooden_trapdoors.json
+117baba6dc788376473ad9d9dca633216a2ef240 data/vavs/tags/blocks/soul_stones.json
 7edd497de56f1c1c03bf4b176b21754f52ecd675 data/vavs/tags/blocks/walnut_logs.json

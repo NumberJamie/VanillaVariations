@@ -30,6 +30,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> REINFORCED_LEATHER_BLOCK = registerBlock("reinforced_leather_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).strength(1.6f).sound(SoundType.WOOL)));
 
+    public static final RegistryObject<Block> SOUL_LIGHT = registerBlock("soul_light",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).lightLevel((p_50886_) -> 14).sound(SoundType.GLASS).strength(1.6f, 1.6f)));
+
+    public static final RegistryObject<Block> SOUL_STONE = registerBlock("soul_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1.25f, 4.2f)));
+    public static final RegistryObject<StairBlock> SOUL_STONE_STAIRS = registerBlock("soul_stone_stairs",
+            () -> new StairBlock(() -> SOUL_STONE.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).strength(1.25f, 4.2f)));
+    public static final RegistryObject<SlabBlock> SOUL_STONE_SLAB = registerBlock("soul_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.25f, 4.2f)));
+    public static final RegistryObject<WallBlock> SOUL_STONE_WALL = registerBlock("soul_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.25f, 4.2f)));
+
     public static final RegistryObject<Block> WALNUT_LOG = registerBlock("walnut_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(2.0F, 3.0F)));
     public static final RegistryObject<Block> WALNUT_WOOD = registerBlock("walnut_wood",
