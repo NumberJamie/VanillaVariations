@@ -10,12 +10,17 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.custom.*;
+import net.nrjam.vavs.block.natural.EndSoilFlower;
+import net.nrjam.vavs.block.natural.NetherFlower;
+import net.nrjam.vavs.block.natural.PottedFlower;
+import net.nrjam.vavs.block.natural.SoulSoilFlower;
 import net.nrjam.vavs.item.ModItems;
 import net.nrjam.vavs.worldgen.tree.WalnutTreeGrower;
 
@@ -118,7 +123,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots",
             () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
-
+    public static final RegistryObject<FarmBlock> NETHER_FARMLAND = registerBlock("nether_farmland",
+            () -> new NetherFarmland((BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SOUL_SOIL).randomTicks().strength(1.6f, 1.6f))));
 
     public static final RegistryObject<Block> POTTED_BLOSSOMING_ROOT = BLOCKS.register("potted_blossoming_root",
             () -> new PottedFlower(ModBlocks.BLOSSOMING_ROOT.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().lightLevel((p_50886_) -> 12)));

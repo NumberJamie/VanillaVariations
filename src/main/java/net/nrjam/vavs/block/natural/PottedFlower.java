@@ -1,4 +1,4 @@
-package net.nrjam.vavs.block.custom;
+package net.nrjam.vavs.block.natural;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FlowerPotBlock;

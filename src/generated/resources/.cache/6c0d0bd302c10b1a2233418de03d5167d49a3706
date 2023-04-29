@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-28T21:03:49.9104878	Tags for minecraft:block mod id vavs
+// 1.19.4	2023-04-29T21:42:26.72022	Tags for minecraft:block mod id vavs
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/completes_find_tree_tutorial.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/dragon_immune.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/fences.json
@@ -9,7 +9,7 @@ e27cc73a624a8dfd9ab8bc3a2689b2240d4a308b data/minecraft/tags/blocks/fence_gates.
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs_that_burn.json
 b2fc28e990c5c65eeb66f52207530531ee6d86aa data/minecraft/tags/blocks/mineable/axe.json
 12bbdee1aa422fd20331422adca40c48016852d7 data/minecraft/tags/blocks/mineable/pickaxe.json
-3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/mineable/shovel.json
+93d379d1e8b23094235889b4fd69ec0f02153a7c data/minecraft/tags/blocks/mineable/shovel.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/overworld_natural_logs.json
 acf73caa2140292d5f666858c52d1217234107c3 data/minecraft/tags/blocks/planks.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/sculk_replaceable.json

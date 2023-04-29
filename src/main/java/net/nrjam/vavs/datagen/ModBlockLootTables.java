@@ -42,6 +42,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.WALNUT_BUTTON.get());
 
+        this.dropOther(ModBlocks.NETHER_FARMLAND.get(), Blocks.SOUL_SOIL);
+
         this.dropSelf(ModBlocks.SOUL_LIGHT.get());
         this.dropSelf(ModBlocks.SOUL_STONE.get());
         this.dropSelf(ModBlocks.SOUL_STONE_STAIRS.get());

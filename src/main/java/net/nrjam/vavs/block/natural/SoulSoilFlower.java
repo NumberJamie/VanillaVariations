@@ -1,4 +1,4 @@
-package net.nrjam.vavs.block.custom;
+package net.nrjam.vavs.block.natural;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

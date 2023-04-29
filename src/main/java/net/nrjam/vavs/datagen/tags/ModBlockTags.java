@@ -53,7 +53,8 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.WALNUT_TRAPDOOR.get())
                 .add(ModBlocks.WALNUT_PLANKS.get());
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.SOUL_LIGHT.get());
-        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get());
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get())
+                .add(ModBlocks.NETHER_FARMLAND.get());
         this.tag(BlockTags.DRAGON_IMMUNE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.SCULK_REPLACEABLE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_BLOSSOMING_ROOT.get())

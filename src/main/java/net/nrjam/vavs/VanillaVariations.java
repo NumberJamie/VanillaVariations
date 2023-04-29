@@ -35,7 +35,6 @@ public class VanillaVariations
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -79,6 +78,7 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
             event.accept(ModBlocks.END_SOIL);
+            event.accept(ModBlocks.NETHER_FARMLAND);
             event.accept(ModBlocks.BLOSSOMING_ROOT);
             event.accept(ModBlocks.ENDER_ROOT);
             event.accept(ModBlocks.SOUL_FLOWER);

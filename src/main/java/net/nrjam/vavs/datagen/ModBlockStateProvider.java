@@ -1,10 +1,16 @@
 package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -14,6 +20,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.block.custom.NetherFarmland;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -62,8 +69,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         wallBlock(ModBlocks.SOUL_STONE_WALL.get(), blockTexture(ModBlocks.SOUL_STONE.get()));
 
+        farmland(ModBlocks.NETHER_FARMLAND.get(), Blocks.SOUL_SOIL);
+
         simpleBlockItem(ModBlocks.SOUL_STONE_WALL.get(), models().withExistingParent("vavs:soul_stone_wall", "minecraft:block/wall_inventory").texture("wall", "vavs:block/soul_stone"));
         simpleBlockItem(ModBlocks.WALNUT_SLAB.get(), models().withExistingParent("vavs:walnut_slab", "minecraft:block/slab"));
+        simpleBlockItem(ModBlocks.NETHER_FARMLAND.get(), models().withExistingParent("vavs:nether_farmland", "minecraft:block/template_farmland"));
         simpleBlockItem(ModBlocks.SOUL_STONE_SLAB.get(), models().withExistingParent("vavs:soul_stone_slab", "minecraft:block/slab"));
         simpleBlockItem(ModBlocks.WALNUT_STAIRS.get(), models().withExistingParent("vavs:walnut_stairs", "minecraft:block/stairs"));
         simpleBlockItem(ModBlocks.SOUL_STONE_STAIRS.get(), models().withExistingParent("vavs:soul_stone_stairs", "minecraft:block/stairs"));
@@ -76,6 +86,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_WOOD.get(), models().withExistingParent("vavs:stripped_walnut_wood", "minecraft:block/cube_column"));
 
         blockWithItem(ModBlocks.END_SOIL);
+    }
+
+    public void farmland(Block block, Block dirtBlock) {
+        ModelFile farmland = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), this.mcLoc("block/template_farmland"))
+                .texture("dirt", "minecraft:block/" + ForgeRegistries.BLOCKS.getKey(dirtBlock).getPath())
+                .texture("top", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
+        ModelFile moist = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath() + "_moist", this.mcLoc("block/template_farmland"))
+                .texture("dirt", "minecraft:block/" + ForgeRegistries.BLOCKS.getKey(dirtBlock).getPath())
+                .texture("top", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block).getPath() + "_moist"));
+        this.getVariantBuilder(block).forAllStatesExcept(state -> {
+            int moisture = state.getValue(NetherFarmland.MOISTURE);
+            return ConfiguredModel.builder()
+                    .modelFile(moisture < NetherFarmland.MAX_MOISTURE ? farmland : moist)
+                    .build();
+        });
     }
 
     public void PottedPlant(Block block, Block flower) {
