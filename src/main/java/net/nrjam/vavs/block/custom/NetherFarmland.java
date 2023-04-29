@@ -135,14 +135,4 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
     public boolean isPathfindable(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull PathComputationType computationType) {
         return false;
     }
-
-    @Override
-    public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if (context.getItemInHand().getItem() instanceof HoeItem) {
-            if (state.is(ModBlocks.NETHER_FARMLAND.get()) && context.getLevel().getBlockState(context.getClickedPos().above()).isAir()) {
-                return ModBlocks.END_SOIL.get().defaultBlockState();
-            }
-        }
-        return null;
-    }
 }
