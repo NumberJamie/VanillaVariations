@@ -3,9 +3,11 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.nrjam.vavs.VanillaVariations;
@@ -61,6 +63,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.WALNUT_TRAPDOOR.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_trapdoor_top").save(consumer);
         buttonBuilder(ModBlocks.WALNUT_BUTTON.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_button").save(consumer);
         pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.WALNUT_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.WALNUT_PLANKS.get())).unlockedBy(getHasName(ModBlocks.WALNUT_PLANKS.get()), has(ModBlocks.WALNUT_PLANKS.get())).group("wooden_pressure_plate").save(consumer);
+
+        pieRecipe(consumer, ModItems.SWEET_BERRY_PIE.get(), Items.SWEET_BERRIES);
+        pieRecipe(consumer, ModItems.APPLE_PIE.get(), Items.APPLE);
+        pieRecipe(consumer, ModItems.CHORUS_FRUIT_PIE.get(), Items.CHORUS_FRUIT);
+        pieRecipe(consumer, ModItems.SOUL_SPROUT_PIE.get(), ModItems.SOUL_SPROUT.get());
+        pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRY.get());
+        pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRY.get());
+    }
+
+    protected static void pieRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(Items.SUGAR).requires(Items.EGG).unlockedBy(getHasName(Items.EGG), has(Items.EGG)).save(consumer);
     }
 
     protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> consumer, @NotNull RecipeCategory recipeCategory, ItemLike itemLike, @NotNull RecipeCategory recipeCategory1, ItemLike itemLike1) {

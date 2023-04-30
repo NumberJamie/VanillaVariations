@@ -15,11 +15,19 @@
   "item.vavs.soul_sprout": "Soul sprout",
   "block.vavs.soul_sprouts": "Soul sprout",
 
-  "item.vavs.crimson_berry": "Crimson Berry",
-  "block.vavs.crimson_berry": "Crimson Berry",
+  "item.vavs.crimson_berry": "Crimson berry",
+  "block.vavs.crimson_berry": "Crimson berry",
 
-  "item.vavs.warped_berry": "Warped Berry",
-  "block.vavs.warped_berry": "Warped Berry",
+  "item.vavs.warped_berry": "Warped berry",
+  "block.vavs.warped_berry": "Warped berry",
+
+  "item.vavs.sweet_berry_pie": "Sweet berry pie",
+  "item.vavs.apple_pie": "Apple pie",
+  "item.vavs.chorus_fruit_pie": "Chorus fruit pie",
+  "item.vavs.soul_sprout_pie": "Soul sprout pie",
+  "item.vavs.warped_berry_pie": "Warped berry pie",
+  "item.vavs.crimson_berry_pie": "Crimson berry pie",
+
 
   "block.vavs.walnut_log": "Walnut log",
   "block.vavs.walnut_wood": "Walnut wood",

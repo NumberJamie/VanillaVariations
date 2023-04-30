@@ -25,6 +25,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CRIMSON_BERRY);
         simpleItem(ModItems.WARPED_BERRY);
 
+        simpleItem(ModItems.SWEET_BERRY_PIE);
+        simpleItem(ModItems.APPLE_PIE);
+        simpleItem(ModItems.CHORUS_FRUIT_PIE);
+        simpleItem(ModItems.SOUL_SPROUT_PIE);
+        simpleItem(ModItems.WARPED_BERRY_PIE);
+        simpleItem(ModItems.CRIMSON_BERRY_PIE);
+
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);
         simpleItem(ModItems.REINFORCED_LEATHER_LEGGINGS);
@@ -59,16 +66,16 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(VanillaVariations.MOD_ID,"block/" + baseBlock.getId().getPath()));
     }
 
-    private ItemModelBuilder saplingItem(RegistryObject<Block> block) {
-        return withExistingParent(block.getId().getPath(),
+    private void saplingItem(RegistryObject<Block> block) {
+        withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(VanillaVariations.MOD_ID,"block/" + block.getId().getPath()));
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + block.getId().getPath()));
     }
 
-    private ItemModelBuilder customDoorItemBlock(RegistryObject<DoorBlock> block) {
-        return withExistingParent(block.getId().getPath(),
+    private void customDoorItemBlock(RegistryObject<DoorBlock> block) {
+        withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(VanillaVariations.MOD_ID,"item/" + block.getId().getPath()));
+                new ResourceLocation(VanillaVariations.MOD_ID, "item/" + block.getId().getPath()));
     }
 
     private void simpleItem(RegistryObject<Item> item) {

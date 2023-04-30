@@ -93,6 +93,13 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT);
             event.accept(ModItems.WARPED_BERRY);
             event.accept(ModItems.CRIMSON_BERRY);
+            event.accept(ModItems.SWEET_BERRY_PIE);
+            event.accept(ModItems.APPLE_PIE);
+            event.accept(ModItems.CHORUS_FRUIT_PIE);
+            event.accept(ModItems.SOUL_SPROUT_PIE);
+            event.accept(ModItems.WARPED_BERRY_PIE);
+            event.accept(ModItems.CRIMSON_BERRY_PIE);
+
         }
     }
 
