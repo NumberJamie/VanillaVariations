@@ -1,12 +1,14 @@
 package net.nrjam.vavs.item;
 
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
+import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.item.custom.FusedSoulItem;
 import net.nrjam.vavs.item.custom.ReinforcedLeatherItem;
 
@@ -35,6 +37,8 @@ public class ModItems {
             () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> FUSED_SOUL_BOOTS = ITEMS.register("fused_soul_boots",
             () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_SPROUT = ITEMS.register("soul_sprout",
+            () -> new BlockItem(ModBlocks.SOUL_SPROUTS.get(), (new Item.Properties()).food(ModFoodItems.SOUL_SPROUT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

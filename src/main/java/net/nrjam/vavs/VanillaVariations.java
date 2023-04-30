@@ -87,6 +87,9 @@ public class VanillaVariations
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);
         }
+        if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.SOUL_SPROUT);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

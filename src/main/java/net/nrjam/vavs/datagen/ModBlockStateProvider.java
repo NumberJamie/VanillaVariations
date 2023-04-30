@@ -1,26 +1,30 @@
 package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
-import net.minecraft.data.models.model.TextureSlot;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.block.custom.NetherFarmland;
+import net.nrjam.vavs.block.natural.SoulSprouts;
+
+import java.util.function.Function;
+
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -67,6 +71,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(ModBlocks.WALNUT_FENCE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         fenceGateBlock(ModBlocks.WALNUT_FENCE_GATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
 
+        makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage");
+
         wallBlock(ModBlocks.SOUL_STONE_WALL.get(), blockTexture(ModBlocks.SOUL_STONE.get()));
 
         farmland(ModBlocks.NETHER_FARMLAND.get(), Blocks.SOUL_SOIL);
@@ -86,6 +92,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_WOOD.get(), models().withExistingParent("vavs:stripped_walnut_wood", "minecraft:block/cube_column"));
 
         blockWithItem(ModBlocks.END_SOIL);
+    }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(block.getAgeProperty()),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     public void farmland(Block block, Block dirtBlock) {
