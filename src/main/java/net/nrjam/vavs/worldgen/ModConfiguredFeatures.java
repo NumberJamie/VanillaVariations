@@ -10,6 +10,7 @@ import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -19,11 +20,16 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePl
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.block.natural.CrimsonBerry;
+import net.nrjam.vavs.block.natural.WarpedBerry;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WALNUT_KEY = registerKey("walnut");
@@ -32,6 +38,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDER_ROOT_KEY = registerKey("ender_root");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_FLOWER_KEY = registerKey("soul_flower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_ROOTS_KEY = registerKey("dead_roots");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_BERRY_KEY = registerKey("crimson_berry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_BERRY_KEY = registerKey("warped_berry");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -65,6 +73,12 @@ public class ModConfiguredFeatures {
                 256, 12, 12, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEAD_ROOTS.get())))
         ));
+
+        register(context, CRIMSON_BERRY_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.CRIMSON_BERRY.get().defaultBlockState().setValue(CrimsonBerry.AGE, 3))), List.of(Blocks.CRIMSON_NYLIUM)));
+
+        register(context, WARPED_BERRY_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.WARPED_BERRY.get().defaultBlockState().setValue(WarpedBerry.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

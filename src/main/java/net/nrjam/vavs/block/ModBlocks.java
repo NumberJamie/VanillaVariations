@@ -135,6 +135,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_SPROUTS = BLOCKS.register("soul_sprouts",
             () -> new SoulSprouts(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.CROP)));
 
+    public static final RegistryObject<Block> WARPED_BERRY = BLOCKS.register("warped_berry",
+            () -> new WarpedBerry(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+    public static final RegistryObject<Block> CRIMSON_BERRY = BLOCKS.register("crimson_berry",
+            () -> new CrimsonBerry(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

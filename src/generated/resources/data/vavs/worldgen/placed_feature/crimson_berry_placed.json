@@ -1,6 +1,13 @@
 {
-  "feature": "vavs:soul_flower",
+  "feature": "vavs:crimson_berry",
   "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1
+    },
+    {
+      "type": "minecraft:in_square"
+    },
     {
       "type": "minecraft:height_range",
       "height": {

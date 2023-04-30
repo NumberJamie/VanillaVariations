@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REINFORCED_LEATHER);
         simpleItem(ModItems.SOUL_ESSENCE);
         simpleItem(ModItems.SOUL_SPROUT);
+        simpleItem(ModItems.CRIMSON_BERRY);
+        simpleItem(ModItems.WARPED_BERRY);
 
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);

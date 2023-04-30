@@ -37,8 +37,15 @@ public class ModItems {
             () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> FUSED_SOUL_BOOTS = ITEMS.register("fused_soul_boots",
             () -> new FusedSoulItem(ModArmorMaterials.FUSED_SOUL, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> SOUL_SPROUT = ITEMS.register("soul_sprout",
             () -> new BlockItem(ModBlocks.SOUL_SPROUTS.get(), (new Item.Properties()).food(ModFoodItems.SOUL_SPROUT)));
+    public static final RegistryObject<Item> WARPED_BERRY = ITEMS.register("warped_berry",
+            () -> new BlockItem(ModBlocks.WARPED_BERRY.get(), (new Item.Properties()).food(ModFoodItems.WARPED_BERRY)));
+    public static final RegistryObject<Item> CRIMSON_BERRY = ITEMS.register("crimson_berry",
+            () -> new BlockItem(ModBlocks.CRIMSON_BERRY.get(), (new Item.Properties()).food(ModFoodItems.CRIMSON_BERRY)));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -6,10 +6,7 @@ import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -21,7 +18,9 @@ import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.block.custom.NetherFarmland;
+import net.nrjam.vavs.block.natural.CrimsonBerry;
 import net.nrjam.vavs.block.natural.SoulSprouts;
+import net.nrjam.vavs.block.natural.WarpedBerry;
 
 import java.util.function.Function;
 
@@ -73,6 +72,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage");
 
+        makeBush((WarpedBerry)ModBlocks.WARPED_BERRY.get(), "warped_berry_stage", "warped_berry_stage");
+        makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRY.get(), "crimson_berry_stage", "crimson_berry_stage");
+
         wallBlock(ModBlocks.SOUL_STONE_WALL.get(), blockTexture(ModBlocks.SOUL_STONE.get()));
 
         farmland(ModBlocks.NETHER_FARMLAND.get(), Blocks.SOUL_SOIL);
@@ -103,6 +105,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(block.getAgeProperty()),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeBush(WarpedBerry block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> bushStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] bushStates(BlockState state, WarpedBerry block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(block.getAgeProperty()),
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
 
         return models;

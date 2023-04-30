@@ -1,5 +1,6 @@
-// 1.19.4	2023-04-30T02:11:38.151004	Item Models: vavs
+// 1.19.4	2023-04-30T13:43:46.5465036	Item Models: vavs
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
+d63e539bd6144675fdb3474a73601225bd4ebb54 assets/vavs/models/item/crimson_berry.json
 b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json
 f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boots.json
@@ -18,3 +19,4 @@ bf602faf06dc2177c83ae6713351e2bb706ec8a5 assets/vavs/models/item/reinforced_leat
 1bc9f428a4ab9973961463dd1d9a514fa8e01619 assets/vavs/models/item/walnut_door.json
 7d8d4c24f0f0c4c72e2e26613edd5be1c4d6a5cc assets/vavs/models/item/walnut_fence.json
 b6a44844c04dea2dc46d30a0142f49bba947907d assets/vavs/models/item/walnut_sapling.json
+934075b502ed26263e1663c719d2837f1d8dd390 assets/vavs/models/item/warped_berry.json

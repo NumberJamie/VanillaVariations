@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
@@ -23,6 +24,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ENDER_ROOT_PLACED_KEY = createKey("ender_root_placed");
     public static final ResourceKey<PlacedFeature> DEAD_ROOTS_PLACED_KEY = createKey("dead_roots_placed");
     public static final ResourceKey<PlacedFeature> SOUL_FLOWER_PLACED_KEY = createKey("soul_flower_placed");
+    public static final ResourceKey<PlacedFeature> CRIMSON_BERRY_PLACED_KEY = createKey("crimson_berry_placed");
+    public static final ResourceKey<PlacedFeature> WARPED_BERRY_PLACED_KEY = createKey("warped_berry_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -44,7 +47,13 @@ public class ModPlacedFeatures {
                 RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
 
         register(context, SOUL_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_FLOWER_KEY),
-                PlacementUtils.FULL_RANGE, BiomeFilter.biome());
+                PlacementUtils.FULL_RANGE);
+
+        register(context, CRIMSON_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BERRY_KEY),
+                RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
+
+        register(context, WARPED_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WARPED_BERRY_KEY),
+                RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
     }
 
 
