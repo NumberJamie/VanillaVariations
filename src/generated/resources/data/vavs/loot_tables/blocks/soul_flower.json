@@ -43,16 +43,39 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "chance": 0.05,
+                  "chance": 0.1,
                   "condition": "minecraft:random_chance"
-                },
+                }
+              ],
+              "functions": [
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "function": "minecraft:explosion_decay"
                 }
               ],
               "name": "vavs:soul_essence"
             }
           ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.01,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "vavs:soul_sprout"
         }
       ],
       "rolls": 1.0

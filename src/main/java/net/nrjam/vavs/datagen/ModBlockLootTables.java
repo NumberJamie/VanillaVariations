@@ -1,5 +1,8 @@
 package net.nrjam.vavs.datagen;
 
+import net.minecraft.advancements.critereon.EnchantmentPredicate;
+import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -7,24 +10,20 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarrotBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraft.world.level.storage.loot.predicates.MatchTool;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.block.natural.SoulSprouts;
-import net.nrjam.vavs.datagen.tags.ModItemTags;
 import net.nrjam.vavs.item.ModItems;
 import org.jetbrains.annotations.NotNull;
-
 
 import java.util.Set;
 
@@ -67,11 +66,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.BLOSSOMING_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
         this.add(ModBlocks.ENDER_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
-        this.add(ModBlocks.SOUL_FLOWER.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(ModItems.SOUL_ESSENCE.get()).when(LootItemRandomChanceCondition.randomChance(0.05F)))));
+        this.add(ModBlocks.SOUL_FLOWER.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionDecay(p_250546_, LootItem.lootTableItem(ModItems.SOUL_ESSENCE.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)))).withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(this.applyExplosionDecay(p_250546_, LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).when(LootItemRandomChanceCondition.randomChance(0.01F))))));
+
         this.add(ModBlocks.DEAD_ROOTS.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
 
         LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.SOUL_SPROUTS.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SoulSprouts.AGE, 3));
-        this.add(ModBlocks.SOUL_SPROUTS.get(), this.applyExplosionDecay(ModBlocks.SOUL_SPROUTS.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder2).add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.2514286F, 1))))));
+        this.add(ModBlocks.SOUL_SPROUTS.get(), this.applyExplosionDecay(ModBlocks.SOUL_SPROUTS.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(0.45F)).add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder2).add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.2714286F, 1))))));
 
         this.dropPottedContents(ModBlocks.POTTED_BLOSSOMING_ROOT.get());
         this.dropPottedContents(ModBlocks.POTTED_ENDER_ROOT.get());

@@ -14,7 +14,7 @@
           "name": "vavs:soul_sprout"
         }
       ],
-      "rolls": 1.0
+      "rolls": 0.45
     },
     {
       "bonus_rolls": 0.0,
@@ -37,7 +37,7 @@
               "function": "minecraft:apply_bonus",
               "parameters": {
                 "extra": 1,
-                "probability": 0.2514286
+                "probability": 0.2714286
               }
             }
           ],
