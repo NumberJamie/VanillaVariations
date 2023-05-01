@@ -41,6 +41,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_BERRIES_KEY = registerKey("crimson_berries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_BERRIES_KEY = registerKey("warped_berries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_CABBAGE_KEY = registerKey("wild_cabbage");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VIOLA_KEY = registerKey("viola");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SNAPDRAGON_KEY = registerKey("snapdragon");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MARIGOLD_KEY = registerKey("marigold");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -83,6 +87,18 @@ public class ModConfiguredFeatures {
 
         register(context, WILD_CABBAGE_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                 BlockStateProvider.simple(ModBlocks.WILD_CABBAGE.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
+
+        register(context, VIOLA_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.VIOLA.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
+
+        register(context, MARIGOLD_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.MARIGOLD.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
+
+        register(context, LAVENDER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.LAVENDER.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
+
+        register(context, SNAPDRAGON_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.SNAPDRAGON.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

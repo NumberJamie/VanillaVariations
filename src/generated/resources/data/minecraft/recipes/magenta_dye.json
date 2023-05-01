@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:snapdragon"
+    }
+  ],
+  "result": {
+    "item": "minecraft:magenta_dye"
+  }
+}

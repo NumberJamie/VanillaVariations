@@ -145,9 +145,25 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
             () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> VIOLA = registerBlock("viola",
+            () -> new GrassFlower(MobEffects.POISON, 5*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> MARIGOLD = registerBlock("marigold",
+            () -> new GrassFlower(MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> SNAPDRAGON = registerBlock("snapdragon",
+            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
+            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> POTTED_WILD_CABBAGE = BLOCKS.register("potted_wild_cabbage",
             () -> new PottedFlower(ModBlocks.WILD_CABBAGE.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_VIOLA = BLOCKS.register("potted_viola",
+            () -> new PottedFlower(ModBlocks.VIOLA.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_MARIGOLD = BLOCKS.register("potted_marigold",
+            () -> new PottedFlower(ModBlocks.MARIGOLD.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_SNAPDRAGON = BLOCKS.register("potted_snapdragon",
+            () -> new PottedFlower(ModBlocks.SNAPDRAGON.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
+    public static final RegistryObject<Block> POTTED_LAVENDER = BLOCKS.register("potted_lavender",
+            () -> new PottedFlower(ModBlocks.LAVENDER.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

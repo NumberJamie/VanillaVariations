@@ -70,6 +70,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pieRecipe(consumer, ModItems.SOUL_SPROUT_PIE.get(), ModItems.SOUL_SPROUT.get());
         pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRIES.get());
         pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRIES.get());
+
+        flowerRecipe(consumer, Items.BLACK_DYE, ModBlocks.VIOLA.get());
+        flowerRecipe(consumer, Items.PURPLE_DYE, ModBlocks.LAVENDER.get());
+        flowerRecipe(consumer, Items.ORANGE_DYE, ModBlocks.MARIGOLD.get());
+        flowerRecipe(consumer, Items.MAGENTA_DYE, ModBlocks.SNAPDRAGON.get());
+    }
+
+    protected static void flowerRecipe(Consumer<FinishedRecipe> consumer, Item result, Block item){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result, 1).requires(item).unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
     protected static void pieRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

@@ -27,6 +27,12 @@
   "item.vavs.cabbage_seed": "Cabbage seed",
   "block.vavs.cabbage_crop": "Cabbage seed",
 
+  "block.vavs.viola": "Viola",
+  "block.vavs.snapdragon": "Snapdragon",
+  "block.vavs.lavender": "Lavender",
+  "block.vavs.marigold": "Marigold",
+
+
   "item.vavs.sweet_berry_pie": "Sweet berry pie",
   "item.vavs.apple_pie": "Apple pie",
   "item.vavs.chorus_fruit_pie": "Chorus fruit pie",

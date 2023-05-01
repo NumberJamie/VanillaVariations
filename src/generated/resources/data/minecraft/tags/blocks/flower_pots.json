@@ -2,6 +2,13 @@
   "values": [
     "vavs:potted_blossoming_root",
     "vavs:potted_ender_root",
+    "vavs:potted_wild_cabbage",
+    "vavs:potted_viola",
+    "vavs:potted_dead_roots",
+    "vavs:potted_soul_flower",
+    "vavs:potted_snapdragon",
+    "vavs:potted_marigold",
+    "vavs:potted_lavender",
     "vavs:potted_walnut_sapling"
   ]
 }

@@ -59,10 +59,22 @@ public class ModBlockTags extends BlockTagsProvider {
         this.tag(BlockTags.SCULK_REPLACEABLE).add(ModBlocks.END_SOIL.get());
         this.tag(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_BLOSSOMING_ROOT.get())
                 .add(ModBlocks.POTTED_ENDER_ROOT.get())
+                .add(ModBlocks.POTTED_WILD_CABBAGE.get())
+                .add(ModBlocks.POTTED_VIOLA.get())
+                .add(ModBlocks.POTTED_DEAD_ROOTS.get())
+                .add(ModBlocks.POTTED_SOUL_FLOWER.get())
+                .add(ModBlocks.POTTED_SNAPDRAGON.get())
+                .add(ModBlocks.POTTED_MARIGOLD.get())
+                .add(ModBlocks.POTTED_LAVENDER.get())
                 .add(ModBlocks.POTTED_WALNUT_SAPLING.get());
         this.tag(BlockTags.INFINIBURN_NETHER).addTag(ModTags.Blocks.SOUL_STONES)
                 .add(ModBlocks.SOUL_LIGHT.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(ModTags.Blocks.SOUL_STONES);
         this.tag(BlockTags.WALLS).add(ModBlocks.SOUL_STONE_WALL.get());
+        this.tag(BlockTags.FLOWERS).add(ModBlocks.VIOLA.get())
+                .add(ModBlocks.SOUL_FLOWER.get())
+                .add(ModBlocks.SNAPDRAGON.get())
+                .add(ModBlocks.MARIGOLD.get())
+                .add(ModBlocks.LAVENDER.get());
     }
 }

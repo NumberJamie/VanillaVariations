@@ -62,6 +62,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SOUL_STONE_SLAB.get());
         this.dropSelf(ModBlocks.SOUL_STONE_WALL.get());
 
+        this.dropSelf(ModBlocks.LAVENDER.get());
+        this.dropSelf(ModBlocks.VIOLA.get());
+        this.dropSelf(ModBlocks.MARIGOLD.get());
+        this.dropSelf(ModBlocks.SNAPDRAGON.get());
+
         this.dropSelf(ModBlocks.END_SOIL.get());
 
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) ->
@@ -88,6 +93,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropPottedContents(ModBlocks.POTTED_DEAD_ROOTS.get());
         this.dropPottedContents(ModBlocks.POTTED_SOUL_FLOWER.get());
         this.dropPottedContents(ModBlocks.POTTED_WILD_CABBAGE.get());
+
+        this.dropPottedContents(ModBlocks.POTTED_VIOLA.get());
+        this.dropPottedContents(ModBlocks.POTTED_LAVENDER.get());
+        this.dropPottedContents(ModBlocks.POTTED_MARIGOLD.get());
+        this.dropPottedContents(ModBlocks.POTTED_SNAPDRAGON.get());
+
     }
 
     @Override

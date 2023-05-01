@@ -1,18 +1,25 @@
-// 1.19.4	2023-05-01T12:59:51.6137632	Loot Tables
+// 1.19.4	2023-05-01T13:37:24.6080488	Loot Tables
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
 ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
 7a4eb97092b47f011e1bdcf1a3ca1f6f8a3e5d00 data/vavs/loot_tables/blocks/crimson_berries.json
 0cb619167f6e373aff0c7224b4e9be28d36dacf8 data/vavs/loot_tables/blocks/dead_roots.json
 50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json
+55b20c103a6a33ced9b957030478f125632915c9 data/vavs/loot_tables/blocks/lavender.json
+3b45c5ccb71a78e0ee4e31a6e1bf019f57665cda data/vavs/loot_tables/blocks/marigold.json
 2309ec2303c718943c3377f42ff8afe47b02075b data/vavs/loot_tables/blocks/nether_farmland.json
 48e080b9d051a28a5ac30591f3e7a688edabd753 data/vavs/loot_tables/blocks/potted_blossoming_root.json
 1824d1176d4da257a6ce8807bea867f4f06c5fbc data/vavs/loot_tables/blocks/potted_dead_roots.json
 cfd71719fa68c54611c7df67cce6fb39ddf7ba3c data/vavs/loot_tables/blocks/potted_ender_root.json
+4b037c570d1e1756c3fc61f78b727c4bbb2187e5 data/vavs/loot_tables/blocks/potted_lavender.json
+905ded538281ecc86a9f7b66126ba73c41968427 data/vavs/loot_tables/blocks/potted_marigold.json
+42ebf3c38c05c1fb204500b658dd01a6eed4d9e2 data/vavs/loot_tables/blocks/potted_snapdragon.json
 56c9021839c3028169db1725b68376512415d60e data/vavs/loot_tables/blocks/potted_soul_flower.json
+4ef0fd00484b359d80e956add8b15ca599622c36 data/vavs/loot_tables/blocks/potted_viola.json
 fc5a0fcb3c22e9b8a17f6762d1d54b4cba67a142 data/vavs/loot_tables/blocks/potted_walnut_sapling.json
 eca49a23c0de5d0a3f2dbc603eb52bfda2b2e324 data/vavs/loot_tables/blocks/potted_wild_cabbage.json
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
+608f040fe809f3a4d99ff2da6700b223b0be8e8e data/vavs/loot_tables/blocks/snapdragon.json
 1afe14b3dd4544ea4fabffd5b24c040f127c4e91 data/vavs/loot_tables/blocks/soul_flower.json
 b9db50b01779da72e7063651e76085c683250405 data/vavs/loot_tables/blocks/soul_light.json
 d69cd69e88b4fbad37938bdbef49460997e11b7e data/vavs/loot_tables/blocks/soul_sprouts.json
@@ -22,6 +29,7 @@ fbf52d2f07fe84bbfc7c8e75be51ab0756d5d559 data/vavs/loot_tables/blocks/soul_stone
 b41e30784c7c07d02ce3f400acec29ab217d0a70 data/vavs/loot_tables/blocks/soul_stone_wall.json
 c5efc7328081cb155e00d64c8a2066de88370fb1 data/vavs/loot_tables/blocks/stripped_walnut_log.json
 fa44abc3a427080cca41f364bed0aa76b7ebb467 data/vavs/loot_tables/blocks/stripped_walnut_wood.json
+2cd511a65635275239961a783ec65108ea18a66f data/vavs/loot_tables/blocks/viola.json
 179ede491ac40c5c138678762d3f20f3918b4e2c data/vavs/loot_tables/blocks/walnut_button.json
 4e79bdf3173c96ced538a53072cf524425a6e16b data/vavs/loot_tables/blocks/walnut_door.json
 fe52514943e1e2279ea93cf08cc5ddc8c9cdb24c data/vavs/loot_tables/blocks/walnut_fence.json

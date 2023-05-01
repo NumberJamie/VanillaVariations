@@ -1,4 +1,12 @@
-// 1.19.4	2023-05-01T10:55:45.5526913	Recipes
+// 1.19.4	2023-05-01T13:37:24.6080488	Recipes
+c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
+96a12e9312754478bfa23b6a78e9eaafed2dd7a8 data/minecraft/advancements/recipes/misc/magenta_dye.json
+cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/misc/orange_dye.json
+2eea376ecc2f41b0b4ff3b59148db5a32ec9fa41 data/minecraft/advancements/recipes/misc/purple_dye.json
+99d45ecaf23420b6ae8ca4649da5214d98507aab data/minecraft/recipes/black_dye.json
+99649a81d2579178a357f60a980eea8f66423949 data/minecraft/recipes/magenta_dye.json
+37c6dd44f8117294ca9107d202c24553a391aa77 data/minecraft/recipes/orange_dye.json
+7e7260915563da8298f778e944b9205c2e134de2 data/minecraft/recipes/purple_dye.json
 bfd7b35083f99f90d8dc4b1b1527b55aa954dbe1 data/vavs/advancements/recipes/building_blocks/reinforced_leather_compressed.json
 be0aa658c685b188a94d3174d643c997b4f649e1 data/vavs/advancements/recipes/building_blocks/soul_light.json
 21e21f81e7745510d22463b05aa9dd49d48064f7 data/vavs/advancements/recipes/building_blocks/soul_stone.json

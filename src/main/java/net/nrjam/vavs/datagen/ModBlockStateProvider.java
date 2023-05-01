@@ -47,6 +47,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.DEAD_ROOTS);
         saplingBlock(ModBlocks.ENDER_ROOT);
         saplingBlock(ModBlocks.WILD_CABBAGE);
+        saplingBlock(ModBlocks.LAVENDER);
+        saplingBlock(ModBlocks.MARIGOLD);
+        saplingBlock(ModBlocks.VIOLA);
+        saplingBlock(ModBlocks.SNAPDRAGON);
         blockWithItem(ModBlocks.SOUL_STONE);
         blockWithItem(ModBlocks.SOUL_LIGHT);
 
@@ -56,6 +60,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         PottedPlant(ModBlocks.POTTED_SOUL_FLOWER.get(), ModBlocks.SOUL_FLOWER.get());
         PottedPlant(ModBlocks.POTTED_DEAD_ROOTS.get(), ModBlocks.DEAD_ROOTS.get());
         PottedPlant(ModBlocks.POTTED_WILD_CABBAGE.get(), ModBlocks.WILD_CABBAGE.get());
+        PottedPlant(ModBlocks.POTTED_LAVENDER.get(), ModBlocks.LAVENDER.get());
+        PottedPlant(ModBlocks.POTTED_MARIGOLD.get(), ModBlocks.MARIGOLD.get());
+        PottedPlant(ModBlocks.POTTED_VIOLA.get(), ModBlocks.VIOLA.get());
+        PottedPlant(ModBlocks.POTTED_SNAPDRAGON.get(), ModBlocks.SNAPDRAGON.get());
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));

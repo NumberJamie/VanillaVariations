@@ -52,6 +52,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.DEAD_ROOTS);
         saplingItem(ModBlocks.WILD_CABBAGE);
 
+        saplingItem(ModBlocks.VIOLA);
+        saplingItem(ModBlocks.SNAPDRAGON);
+        saplingItem(ModBlocks.MARIGOLD);
+        saplingItem(ModBlocks.LAVENDER);
+
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
 

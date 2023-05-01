@@ -88,6 +88,10 @@ public class VanillaVariations
             event.accept(ModItems.CRIMSON_BERRIES);
             event.accept(ModItems.CABBAGE_SEED);
             event.accept(ModBlocks.WILD_CABBAGE);
+            event.accept(ModBlocks.VIOLA);
+            event.accept(ModBlocks.MARIGOLD);
+            event.accept(ModBlocks.LAVENDER);
+            event.accept(ModBlocks.SNAPDRAGON);
         }
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);

@@ -27,6 +27,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CRIMSON_BERRIES_PLACED_KEY = createKey("crimson_berries_placed");
     public static final ResourceKey<PlacedFeature> WARPED_BERRIES_PLACED_KEY = createKey("warped_berries_placed");
     public static final ResourceKey<PlacedFeature> WILD_CABBAGE_PLACED_KEY = createKey("wild_cabbage_placed");
+    public static final ResourceKey<PlacedFeature> VIOLA_PLACED_KEY = createKey("viola_placed");
+    public static final ResourceKey<PlacedFeature> MARIGOLD_PLACED_KEY = createKey("marigold_placed");
+    public static final ResourceKey<PlacedFeature> LAVENDER_PLACED_KEY = createKey("lavender_placed");
+    public static final ResourceKey<PlacedFeature> SNAPDRAGON_PLACED_KEY = createKey("snapdragon_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -57,6 +61,18 @@ public class ModPlacedFeatures {
                 RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
 
         register(context, WILD_CABBAGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WILD_CABBAGE_KEY),
+                RarityFilter.onAverageOnceEvery(4), PlacementUtils.FULL_RANGE);
+
+        register(context, SNAPDRAGON_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SNAPDRAGON_KEY),
+                RarityFilter.onAverageOnceEvery(2), PlacementUtils.FULL_RANGE);
+
+        register(context, LAVENDER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDER_KEY),
+                RarityFilter.onAverageOnceEvery(2), PlacementUtils.FULL_RANGE);
+
+        register(context, VIOLA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VIOLA_KEY),
+                RarityFilter.onAverageOnceEvery(2), PlacementUtils.FULL_RANGE);
+
+        register(context, MARIGOLD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MARIGOLD_KEY),
                 RarityFilter.onAverageOnceEvery(4), PlacementUtils.FULL_RANGE);
     }
 
