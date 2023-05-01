@@ -1,6 +1,6 @@
-// 1.19.4	2023-04-30T13:43:46.5465036	Loot Tables
+// 1.19.4	2023-05-01T10:55:45.5516907	Loot Tables
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
-3af296c95c2988bffbbb0f1e1c242f6661751346 data/vavs/loot_tables/blocks/crimson_berry.json
+7a4eb97092b47f011e1bdcf1a3ca1f6f8a3e5d00 data/vavs/loot_tables/blocks/crimson_berries.json
 0cb619167f6e373aff0c7224b4e9be28d36dacf8 data/vavs/loot_tables/blocks/dead_roots.json
 50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json
@@ -33,4 +33,4 @@ aeba1f01e6e3db0a2ffacd741dac3bcc9a269106 data/vavs/loot_tables/blocks/walnut_sla
 a1a012b55e75f308a3f9fbdb3e813689b22326fd data/vavs/loot_tables/blocks/walnut_stairs.json
 c7e93f79934357ccbf112682aa63da2e3bc1540a data/vavs/loot_tables/blocks/walnut_trapdoor.json
 ed33aa284bfa46b342f7102626b811ed0cbac863 data/vavs/loot_tables/blocks/walnut_wood.json
-c1063d7af21884b9ed1f0511d7b6538129c11b02 data/vavs/loot_tables/blocks/warped_berry.json
+526037d1fec3c72a8ce159a1d53855b80332ca8c data/vavs/loot_tables/blocks/warped_berries.json

@@ -70,8 +70,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage");
 
-        makeBush((WarpedBerry)ModBlocks.WARPED_BERRY.get(), "warped_berry_stage", "warped_berry_stage");
-        makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRY.get(), "crimson_berry_stage", "crimson_berry_stage");
+        makeBush((WarpedBerry)ModBlocks.WARPED_BERRIES.get(), "warped_berries_stage", "warped_berries_stage");
+        makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRIES.get(), "crimson_berries_stage", "crimson_berries_stage");
 
         wallBlock(ModBlocks.SOUL_STONE_WALL.get(), blockTexture(ModBlocks.SOUL_STONE.get()));
 

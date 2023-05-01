@@ -24,8 +24,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ENDER_ROOT_PLACED_KEY = createKey("ender_root_placed");
     public static final ResourceKey<PlacedFeature> DEAD_ROOTS_PLACED_KEY = createKey("dead_roots_placed");
     public static final ResourceKey<PlacedFeature> SOUL_FLOWER_PLACED_KEY = createKey("soul_flower_placed");
-    public static final ResourceKey<PlacedFeature> CRIMSON_BERRY_PLACED_KEY = createKey("crimson_berry_placed");
-    public static final ResourceKey<PlacedFeature> WARPED_BERRY_PLACED_KEY = createKey("warped_berry_placed");
+    public static final ResourceKey<PlacedFeature> CRIMSON_BERRIES_PLACED_KEY = createKey("crimson_berries_placed");
+    public static final ResourceKey<PlacedFeature> WARPED_BERRIES_PLACED_KEY = createKey("warped_berries_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -49,10 +49,10 @@ public class ModPlacedFeatures {
         register(context, SOUL_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_FLOWER_KEY),
                 PlacementUtils.FULL_RANGE);
 
-        register(context, CRIMSON_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BERRY_KEY),
+        register(context, CRIMSON_BERRIES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BERRIES_KEY),
                 RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
 
-        register(context, WARPED_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WARPED_BERRY_KEY),
+        register(context, WARPED_BERRIES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WARPED_BERRIES_KEY),
                 RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
     }
 

@@ -41,10 +41,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SOUL_SPROUT = ITEMS.register("soul_sprout",
             () -> new BlockItem(ModBlocks.SOUL_SPROUTS.get(), (new Item.Properties()).food(ModFoodItems.SOUL_SPROUT)));
-    public static final RegistryObject<Item> WARPED_BERRY = ITEMS.register("warped_berry",
-            () -> new BlockItem(ModBlocks.WARPED_BERRY.get(), (new Item.Properties()).food(ModFoodItems.WARPED_BERRY)));
-    public static final RegistryObject<Item> CRIMSON_BERRY = ITEMS.register("crimson_berry",
-            () -> new BlockItem(ModBlocks.CRIMSON_BERRY.get(), (new Item.Properties()).food(ModFoodItems.CRIMSON_BERRY)));
+    public static final RegistryObject<Item> WARPED_BERRIES = ITEMS.register("warped_berries",
+            () -> new BlockItem(ModBlocks.WARPED_BERRIES.get(), (new Item.Properties()).food(ModFoodItems.WARPED_BERRIES)));
+    public static final RegistryObject<Item> CRIMSON_BERRIES = ITEMS.register("crimson_berries",
+            () -> new BlockItem(ModBlocks.CRIMSON_BERRIES.get(), (new Item.Properties()).food(ModFoodItems.CRIMSON_BERRIES)));
 
     public static final RegistryObject<Item> SWEET_BERRY_PIE = ITEMS.register("sweet_berry_pie", () -> new Item(new Item.Properties().food(ModFoodItems.SWEET_BERRY_PIE)));
     public static final RegistryObject<Item> APPLE_PIE = ITEMS.register("apple_pie", () -> new Item(new Item.Properties().food(ModFoodItems.APPLE_PIE)));

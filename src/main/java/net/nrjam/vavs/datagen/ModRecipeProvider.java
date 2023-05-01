@@ -68,8 +68,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pieRecipe(consumer, ModItems.APPLE_PIE.get(), Items.APPLE);
         pieRecipe(consumer, ModItems.CHORUS_FRUIT_PIE.get(), Items.CHORUS_FRUIT);
         pieRecipe(consumer, ModItems.SOUL_SPROUT_PIE.get(), ModItems.SOUL_SPROUT.get());
-        pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRY.get());
-        pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRY.get());
+        pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRIES.get());
+        pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRIES.get());
     }
 
     protected static void pieRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

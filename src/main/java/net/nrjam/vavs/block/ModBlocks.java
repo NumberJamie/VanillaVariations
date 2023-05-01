@@ -135,9 +135,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_SPROUTS = BLOCKS.register("soul_sprouts",
             () -> new SoulSprouts(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.CROP)));
 
-    public static final RegistryObject<Block> WARPED_BERRY = BLOCKS.register("warped_berry",
+    public static final RegistryObject<Block> WARPED_BERRIES = BLOCKS.register("warped_berries",
             () -> new WarpedBerry(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
-    public static final RegistryObject<Block> CRIMSON_BERRY = BLOCKS.register("crimson_berry",
+    public static final RegistryObject<Block> CRIMSON_BERRIES = BLOCKS.register("crimson_berries",
             () -> new CrimsonBerry(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
 
 

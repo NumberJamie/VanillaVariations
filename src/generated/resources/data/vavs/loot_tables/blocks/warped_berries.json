@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "vavs:crimson_berry"
+          "name": "vavs:warped_berries"
         }
       ],
       "rolls": 1.0
@@ -20,7 +20,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "vavs:crimson_berry",
+          "block": "vavs:warped_berries",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"

@@ -83,16 +83,16 @@ public class VanillaVariations
             event.accept(ModBlocks.ENDER_ROOT);
             event.accept(ModBlocks.SOUL_FLOWER);
             event.accept(ModBlocks.DEAD_ROOTS);
-            event.accept(ModItems.WARPED_BERRY);
-            event.accept(ModItems.CRIMSON_BERRY);
+            event.accept(ModItems.WARPED_BERRIES);
+            event.accept(ModItems.CRIMSON_BERRIES);
         }
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);
         }
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.SOUL_SPROUT);
-            event.accept(ModItems.WARPED_BERRY);
-            event.accept(ModItems.CRIMSON_BERRY);
+            event.accept(ModItems.WARPED_BERRIES);
+            event.accept(ModItems.CRIMSON_BERRIES);
             event.accept(ModItems.SWEET_BERRY_PIE);
             event.accept(ModItems.APPLE_PIE);
             event.accept(ModItems.CHORUS_FRUIT_PIE);

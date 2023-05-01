@@ -48,7 +48,7 @@ public class WarpedBerry extends SweetBerryBushBlock {
     }
 
     public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter p_57256_, @NotNull BlockPos p_57257_, @NotNull BlockState p_57258_) {
-        return new ItemStack(ModItems.WARPED_BERRY.get());
+        return new ItemStack(ModItems.WARPED_BERRIES.get());
     }
 
     public @NotNull VoxelShape getShape(BlockState p_57291_, @NotNull BlockGetter p_57292_, @NotNull BlockPos p_57293_, @NotNull CollisionContext p_57294_) {
@@ -80,7 +80,7 @@ public class WarpedBerry extends SweetBerryBushBlock {
             return InteractionResult.PASS;
         } else if (i > 2) {
             int j = 1 + p_57276_.random.nextInt(2);
-            popResource(p_57276_, p_57277_, new ItemStack(ModItems.WARPED_BERRY.get(), j + (flag ? 1 :  0)));
+            popResource(p_57276_, p_57277_, new ItemStack(ModItems.WARPED_BERRIES.get(), j + (flag ? 1 :  0)));
             p_57276_.playSound((Player)null, p_57277_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_57276_.random.nextFloat() * 0.4F);
             p_57276_.setBlock(p_57277_, p_57275_.setValue(AGE, 1), 2);
             return InteractionResult.sidedSuccess(p_57276_.isClientSide);

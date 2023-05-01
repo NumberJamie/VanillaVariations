@@ -38,8 +38,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDER_ROOT_KEY = registerKey("ender_root");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_FLOWER_KEY = registerKey("soul_flower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_ROOTS_KEY = registerKey("dead_roots");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_BERRY_KEY = registerKey("crimson_berry");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_BERRY_KEY = registerKey("warped_berry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_BERRIES_KEY = registerKey("crimson_berries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_BERRIES_KEY = registerKey("warped_berries");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -74,11 +74,11 @@ public class ModConfiguredFeatures {
                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEAD_ROOTS.get())))
         ));
 
-        register(context, CRIMSON_BERRY_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
-                BlockStateProvider.simple(ModBlocks.CRIMSON_BERRY.get().defaultBlockState().setValue(CrimsonBerry.AGE, 3))), List.of(Blocks.CRIMSON_NYLIUM)));
+        register(context, CRIMSON_BERRIES_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.CRIMSON_BERRIES.get().defaultBlockState().setValue(CrimsonBerry.AGE, 3))), List.of(Blocks.CRIMSON_NYLIUM)));
 
-        register(context, WARPED_BERRY_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
-                BlockStateProvider.simple(ModBlocks.WARPED_BERRY.get().defaultBlockState().setValue(WarpedBerry.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
+        register(context, WARPED_BERRIES_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.WARPED_BERRIES.get().defaultBlockState().setValue(WarpedBerry.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

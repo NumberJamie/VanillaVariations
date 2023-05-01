@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vavs:item/warped_berry"
+    "layer0": "vavs:item/crimson_berries"
   }
 }

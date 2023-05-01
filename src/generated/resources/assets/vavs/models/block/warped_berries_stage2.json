@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "vavs:block/warped_berry_stage3"
+    "cross": "vavs:block/warped_berries_stage2"
   }
 }
