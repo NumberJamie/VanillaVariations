@@ -10,6 +10,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -68,10 +69,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.BLOSSOMING_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
         this.add(ModBlocks.ENDER_ROOT.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
+        this.add(ModBlocks.WILD_CABBAGE.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(ModItems.CABBAGE_SEED.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)))));
         this.add(ModBlocks.SOUL_FLOWER.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionDecay(p_250546_, LootItem.lootTableItem(ModItems.SOUL_ESSENCE.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)))).withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(this.applyExplosionDecay(p_250546_, LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).when(LootItemRandomChanceCondition.randomChance(0.01F))))));
 
         this.add(ModBlocks.DEAD_ROOTS.get(), (p_250546_) -> createSilkTouchOrShearsDispatchTable(p_250546_, this.applyExplosionCondition(p_250546_, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)))));
 
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CABBAGE_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CropBlock.AGE, 7));
+        this.add(ModBlocks.CABBAGE_CROP.get(), this.createCropDrops(ModBlocks.CABBAGE_CROP.get(), ModItems.CABBAGE.get(), ModItems.CABBAGE_SEED.get(), lootitemcondition$builder1));
         LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.SOUL_SPROUTS.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SoulSprouts.AGE, 3));
         this.add(ModBlocks.SOUL_SPROUTS.get(), this.applyExplosionDecay(ModBlocks.SOUL_SPROUTS.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(0.45F)).add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder2).add(LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.2714286F, 1))))));
 
@@ -83,6 +87,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropPottedContents(ModBlocks.POTTED_WALNUT_SAPLING.get());
         this.dropPottedContents(ModBlocks.POTTED_DEAD_ROOTS.get());
         this.dropPottedContents(ModBlocks.POTTED_SOUL_FLOWER.get());
+        this.dropPottedContents(ModBlocks.POTTED_WILD_CABBAGE.get());
     }
 
     @Override

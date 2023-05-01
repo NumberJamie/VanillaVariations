@@ -1,6 +1,8 @@
-// 1.19.4	2023-05-01T10:55:45.5506805	Item Models: vavs
+// 1.19.4	2023-05-01T11:56:54.7963589	Item Models: vavs
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
+e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
+6600f5e587009996b7c4f060f37a4dfc40ece5b0 assets/vavs/models/item/cabbage_seed.json
 9695768577338f6c121ec7376c381bdec0224e83 assets/vavs/models/item/chorus_fruit_pie.json
 729285470959cb82065b95dbd4f239a4d99ecb62 assets/vavs/models/item/crimson_berries.json
 2c8e1c8094b914678e4ebce6bd4d93054472a68d assets/vavs/models/item/crimson_berry_pie.json
@@ -26,3 +28,4 @@ bf602faf06dc2177c83ae6713351e2bb706ec8a5 assets/vavs/models/item/reinforced_leat
 b6a44844c04dea2dc46d30a0142f49bba947907d assets/vavs/models/item/walnut_sapling.json
 f3604ef99df7808b9931efadd177f8e501b0e08d assets/vavs/models/item/warped_berries.json
 e28f87933454b7a01bf3add4939049f27aa69e9a assets/vavs/models/item/warped_berry_pie.json
+f705d35d95560d29319a4b0e5dadec7d9db1a85a assets/vavs/models/item/wild_cabbage.json

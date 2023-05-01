@@ -41,6 +41,7 @@ public class VanillaVariations
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SOUL_ESSENCE);
             event.accept(ModItems.REINFORCED_LEATHER);
+            event.accept(ModItems.CABBAGE_SEED);
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.END_SOIL);
@@ -85,11 +86,14 @@ public class VanillaVariations
             event.accept(ModBlocks.DEAD_ROOTS);
             event.accept(ModItems.WARPED_BERRIES);
             event.accept(ModItems.CRIMSON_BERRIES);
+            event.accept(ModItems.CABBAGE_SEED);
+            event.accept(ModBlocks.WILD_CABBAGE);
         }
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);
         }
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CABBAGE);
             event.accept(ModItems.SOUL_SPROUT);
             event.accept(ModItems.WARPED_BERRIES);
             event.accept(ModItems.CRIMSON_BERRIES);
@@ -99,7 +103,6 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT_PIE);
             event.accept(ModItems.WARPED_BERRY_PIE);
             event.accept(ModItems.CRIMSON_BERRY_PIE);
-
         }
     }
 

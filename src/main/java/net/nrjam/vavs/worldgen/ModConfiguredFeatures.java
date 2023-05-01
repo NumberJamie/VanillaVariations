@@ -40,6 +40,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_ROOTS_KEY = registerKey("dead_roots");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_BERRIES_KEY = registerKey("crimson_berries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_BERRIES_KEY = registerKey("warped_berries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_CABBAGE_KEY = registerKey("wild_cabbage");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -79,6 +80,9 @@ public class ModConfiguredFeatures {
 
         register(context, WARPED_BERRIES_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                 BlockStateProvider.simple(ModBlocks.WARPED_BERRIES.get().defaultBlockState().setValue(WarpedBerry.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
+
+        register(context, WILD_CABBAGE_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.WILD_CABBAGE.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

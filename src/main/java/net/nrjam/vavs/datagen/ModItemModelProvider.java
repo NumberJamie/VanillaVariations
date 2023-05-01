@@ -32,6 +32,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WARPED_BERRY_PIE);
         simpleItem(ModItems.CRIMSON_BERRY_PIE);
 
+        simpleItem(ModItems.CABBAGE);
+        simpleItem(ModItems.CABBAGE_SEED);
+
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);
         simpleItem(ModItems.REINFORCED_LEATHER_LEGGINGS);
@@ -47,6 +50,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.ENDER_ROOT);
         saplingItem(ModBlocks.SOUL_FLOWER);
         saplingItem(ModBlocks.DEAD_ROOTS);
+        saplingItem(ModBlocks.WILD_CABBAGE);
 
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);

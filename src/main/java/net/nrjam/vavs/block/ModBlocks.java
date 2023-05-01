@@ -2,6 +2,7 @@ package net.nrjam.vavs.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -10,7 +11,6 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
-import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -140,6 +140,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRIMSON_BERRIES = BLOCKS.register("crimson_berries",
             () -> new CrimsonBerry(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
 
+    public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
+            () -> new CabbageCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+
+    public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
+            () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+
+    public static final RegistryObject<Block> POTTED_WILD_CABBAGE = BLOCKS.register("potted_wild_cabbage",
+            () -> new PottedFlower(ModBlocks.WILD_CABBAGE.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

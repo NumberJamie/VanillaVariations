@@ -1,5 +1,6 @@
-// 1.19.4	2023-05-01T10:55:45.5516907	Loot Tables
+// 1.19.4	2023-05-01T12:59:51.6137632	Loot Tables
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
+ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
 7a4eb97092b47f011e1bdcf1a3ca1f6f8a3e5d00 data/vavs/loot_tables/blocks/crimson_berries.json
 0cb619167f6e373aff0c7224b4e9be28d36dacf8 data/vavs/loot_tables/blocks/dead_roots.json
 50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
@@ -10,6 +11,7 @@
 cfd71719fa68c54611c7df67cce6fb39ddf7ba3c data/vavs/loot_tables/blocks/potted_ender_root.json
 56c9021839c3028169db1725b68376512415d60e data/vavs/loot_tables/blocks/potted_soul_flower.json
 fc5a0fcb3c22e9b8a17f6762d1d54b4cba67a142 data/vavs/loot_tables/blocks/potted_walnut_sapling.json
+eca49a23c0de5d0a3f2dbc603eb52bfda2b2e324 data/vavs/loot_tables/blocks/potted_wild_cabbage.json
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
 1afe14b3dd4544ea4fabffd5b24c040f127c4e91 data/vavs/loot_tables/blocks/soul_flower.json
 b9db50b01779da72e7063651e76085c683250405 data/vavs/loot_tables/blocks/soul_light.json
@@ -34,3 +36,4 @@ a1a012b55e75f308a3f9fbdb3e813689b22326fd data/vavs/loot_tables/blocks/walnut_sta
 c7e93f79934357ccbf112682aa63da2e3bc1540a data/vavs/loot_tables/blocks/walnut_trapdoor.json
 ed33aa284bfa46b342f7102626b811ed0cbac863 data/vavs/loot_tables/blocks/walnut_wood.json
 526037d1fec3c72a8ce159a1d53855b80332ca8c data/vavs/loot_tables/blocks/warped_berries.json
+d85b706c4556156b07f78d7999f9172b9f4dc36f data/vavs/loot_tables/blocks/wild_cabbage.json

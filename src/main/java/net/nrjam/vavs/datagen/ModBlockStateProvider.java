@@ -2,10 +2,7 @@ package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -16,10 +13,12 @@ import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.block.custom.NetherFarmland;
+import net.nrjam.vavs.block.natural.CabbageCrop;
 import net.nrjam.vavs.block.natural.CrimsonBerry;
 import net.nrjam.vavs.block.natural.SoulSprouts;
 import net.nrjam.vavs.block.natural.WarpedBerry;
 
+import java.util.concurrent.Flow;
 import java.util.function.Function;
 
 
@@ -47,6 +46,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.SOUL_FLOWER);
         saplingBlock(ModBlocks.DEAD_ROOTS);
         saplingBlock(ModBlocks.ENDER_ROOT);
+        saplingBlock(ModBlocks.WILD_CABBAGE);
         blockWithItem(ModBlocks.SOUL_STONE);
         blockWithItem(ModBlocks.SOUL_LIGHT);
 
@@ -55,6 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         PottedPlant(ModBlocks.POTTED_WALNUT_SAPLING.get(), ModBlocks.WALNUT_SAPLING.get());
         PottedPlant(ModBlocks.POTTED_SOUL_FLOWER.get(), ModBlocks.SOUL_FLOWER.get());
         PottedPlant(ModBlocks.POTTED_DEAD_ROOTS.get(), ModBlocks.DEAD_ROOTS.get());
+        PottedPlant(ModBlocks.POTTED_WILD_CABBAGE.get(), ModBlocks.WILD_CABBAGE.get());
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
@@ -68,7 +69,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(ModBlocks.WALNUT_FENCE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         fenceGateBlock(ModBlocks.WALNUT_FENCE_GATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
 
-        makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage");
+        makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage", true);
+        makeCrop((CabbageCrop)ModBlocks.CABBAGE_CROP.get(), "cabbage_stage", "cabbage_stage", false);
 
         makeBush((WarpedBerry)ModBlocks.WARPED_BERRIES.get(), "warped_berries_stage", "warped_berries_stage");
         makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRIES.get(), "crimson_berries_stage", "crimson_berries_stage");
@@ -94,16 +96,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_SOIL);
     }
 
-    public void makeCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+    public void makeCrop(CropBlock block, String modelName, String textureName, boolean isCross) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName, isCross);
 
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName, boolean isCross) {
         ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(block.getAgeProperty()),
-                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+        if (isCross) {
+            models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(block.getAgeProperty()),
+                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+        } else {
+            models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(block.getAgeProperty()),
+                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+        }
         return models;
     }
 
