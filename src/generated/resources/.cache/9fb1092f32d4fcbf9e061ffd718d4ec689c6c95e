@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T19:18:13.3757259	Recipes
+// 1.19.4	2023-05-02T19:40:48.5744199	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 96a12e9312754478bfa23b6a78e9eaafed2dd7a8 data/minecraft/advancements/recipes/misc/magenta_dye.json
 cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/misc/orange_dye.json
@@ -27,9 +27,14 @@ c7a2a34305864db01c14bd289ad1bedaf7b004ee data/vavs/advancements/recipes/decorati
 07628b1733915d9f875127f9536a888bdfb865a3 data/vavs/advancements/recipes/food/chorus_fruit_pie.json
 baa3c3e3b90c36e6282dc152097a47c79c68c04c data/vavs/advancements/recipes/food/crimson_berry_pie.json
 18c724bccf3a31d12dfc30f791def15963d04ba7 data/vavs/advancements/recipes/food/dried_kelp_soup.json
+359b7ba03427d71c84acb179b2196a377c0b438e data/vavs/advancements/recipes/food/garden_salad.json
+91cb8b7d05ba3b9ef9ecfc9924104de03700ceee data/vavs/advancements/recipes/food/meat_salad.json
+4dae125db5a15b8f7aaf271bbf847055c81fc467 data/vavs/advancements/recipes/food/salmon_salad.json
 86f5f500b1f12c1a277f61305fc999d35c3f9f2f data/vavs/advancements/recipes/food/soul_sprout_pie.json
+03ea71fea91c461dd82420d5ea8093749d1db90c data/vavs/advancements/recipes/food/soul_sprout_salad.json
 4772fac6445abea4bd37f35512e6d9e136a6bce8 data/vavs/advancements/recipes/food/soul_sprout_stew.json
 3db8341ad2450834a2a97d7ae83b9e8a0acec876 data/vavs/advancements/recipes/food/sweet_berry_pie.json
+0954eabd19d2094550ed42b81147ff3e5572e706 data/vavs/advancements/recipes/food/sweet_salad.json
 af7284049efcc43d2f2810a2d05a5a9da591323b data/vavs/advancements/recipes/food/warped_berry_pie.json
 ac42acd410b2fe92556a3e8c2b78454cb7f0617f data/vavs/advancements/recipes/misc/reinforced_leather.json
 dfa92021a30dae5f6ae320d2909c68ea365c3403 data/vavs/advancements/recipes/misc/reinforced_leather_block.json
@@ -42,6 +47,8 @@ bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone
 8f705af94880d7da75d165463ef74325efe7c90a data/vavs/recipes/chorus_fruit_pie.json
 155481dff95c71db55c2c1cfd519bad4fe60f318 data/vavs/recipes/crimson_berry_pie.json
 02e20cf1daeac5f64d70af8b3c368b8d94a657c5 data/vavs/recipes/dried_kelp_soup.json
+93c853a726a30c0c39770c28ce4e27c7a390b276 data/vavs/recipes/garden_salad.json
+9e24c365864e977c1408ad53654b0c5180b58bf5 data/vavs/recipes/meat_salad.json
 214d67a5b6c2f6a6ee16dbdb642bd7540a9994eb data/vavs/recipes/reinforced_leather.json
 2131ee0288e314b41444906ac9c3b8d8ae81c407 data/vavs/recipes/reinforced_leather_block.json
 42e93cf4b1e0d6e303a58c88efb2c440a8ae95d2 data/vavs/recipes/reinforced_leather_boots.json
@@ -49,8 +56,10 @@ bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone
 945101723165549cf8c8d89fa77883cdccbc6b97 data/vavs/recipes/reinforced_leather_compressed.json
 dd93dac5fef09b3cc9289a01590e8769c80e7d27 data/vavs/recipes/reinforced_leather_helmet.json
 832e5e59d231db4c486ba7c0ab46faa950d8d1a0 data/vavs/recipes/reinforced_leather_leggings.json
+55b295180a62429540cbc6f6a19a5cc68015300c data/vavs/recipes/salmon_salad.json
 860cfdd3459ca0fc4d71ac6ed9584517ecb7449b data/vavs/recipes/soul_light.json
 c822d688344567a829d69cbe8fa86760e01dd82b data/vavs/recipes/soul_sprout_pie.json
+d9013651a7a61160e3dfa921ed1feee6602b6d6b data/vavs/recipes/soul_sprout_salad.json
 2b74fe5d222ee006663d16ad89537bc6095e4b36 data/vavs/recipes/soul_sprout_stew.json
 46b1204e9e1398403fea662444039cececf5e491 data/vavs/recipes/soul_stone.json
 fa3b8721b546bc2379f265b04760afd16cfaec13 data/vavs/recipes/soul_stone_slab.json
@@ -58,6 +67,7 @@ fa3b8721b546bc2379f265b04760afd16cfaec13 data/vavs/recipes/soul_stone_slab.json
 3e9823b3c18607a163d8643a76018190ddd267ea data/vavs/recipes/soul_stone_wall.json
 c48f58973c8a9cbb6eb3db4f2e0df4b87956cbca data/vavs/recipes/stripped_walnut_log.json
 1146423992748373c2f7c353894f76ec9dffef25 data/vavs/recipes/sweet_berry_pie.json
+483f2eeac26ebb9fe6b8508f44ca861842a81191 data/vavs/recipes/sweet_salad.json
 b00444221db9b1289399a86f1f130d1c1c7a08ea data/vavs/recipes/walnut_button.json
 6315fec3cd6c6452618b02f3855eb133551661cc data/vavs/recipes/walnut_door.json
 6bab24e095d2571423712a209e186df6c6bf6fd8 data/vavs/recipes/walnut_fence.json

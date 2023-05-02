@@ -38,6 +38,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOUL_SPROUT_STEW);
         simpleItem(ModItems.DRIED_KELP_SOUP);
 
+        simpleItem(ModItems.SALMON_SALAD);
+        simpleItem(ModItems.SWEET_SALAD);
+        simpleItem(ModItems.SOUL_SPROUT_SALAD);
+        simpleItem(ModItems.GARDEN_SALAD);
+        simpleItem(ModItems.MEAT_SALAD);
+
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);
         simpleItem(ModItems.REINFORCED_LEATHER_LEGGINGS);

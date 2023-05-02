@@ -101,14 +101,25 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT);
             event.accept(ModItems.WARPED_BERRIES);
             event.accept(ModItems.CRIMSON_BERRIES);
+
+            // pies
             event.accept(ModItems.SWEET_BERRY_PIE);
             event.accept(ModItems.APPLE_PIE);
             event.accept(ModItems.CHORUS_FRUIT_PIE);
             event.accept(ModItems.SOUL_SPROUT_PIE);
             event.accept(ModItems.WARPED_BERRY_PIE);
             event.accept(ModItems.CRIMSON_BERRY_PIE);
+
+            // stews
             event.accept(ModItems.DRIED_KELP_SOUP);
             event.accept(ModItems.SOUL_SPROUT_STEW);
+
+            // salads
+            event.accept(ModItems.SWEET_SALAD);
+            event.accept(ModItems.SALMON_SALAD);
+            event.accept(ModItems.MEAT_SALAD);
+            event.accept(ModItems.GARDEN_SALAD);
+            event.accept(ModItems.SOUL_SPROUT_SALAD);
         }
     }
 

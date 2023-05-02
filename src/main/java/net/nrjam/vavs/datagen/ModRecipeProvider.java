@@ -78,10 +78,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         stewRecipe(consumer, ModItems.DRIED_KELP_SOUP.get(), Items.DRIED_KELP);
         stewRecipe(consumer, ModItems.SOUL_SPROUT_STEW.get(), ModItems.SOUL_SPROUT.get());
+
+        saladRecipe(consumer, ModItems.MEAT_SALAD.get(), Items.COOKED_PORKCHOP, Items.COOKED_CHICKEN, Items.COOKED_BEEF);
+        saladRecipe(consumer, ModItems.SALMON_SALAD.get(), Items.DRIED_KELP, Items.DRIED_KELP, Items.COOKED_SALMON);
+        saladRecipe(consumer, ModItems.GARDEN_SALAD.get(), Items.SWEET_BERRIES, Items.APPLE, Items.MELON_SLICE);
+        saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get());
+        saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES);
     }
 
     protected static void flowerRecipe(Consumer<FinishedRecipe> consumer, Item result, Block item){
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result, 1).requires(item).unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void saladRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item1, Item item2){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item1).requires(item2).requires(ModItems.CABBAGE.get()).requires(Items.BOWL).unlockedBy(getHasName(ModItems.CABBAGE.get()), has(ModItems.CABBAGE.get())).save(consumer);
     }
 
     protected static void stewRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

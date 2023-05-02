@@ -70,6 +70,16 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_SPROUT_STEW = ITEMS.register("soul_sprout_stew",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_STEW)));
 
+    public static final RegistryObject<Item> GARDEN_SALAD = ITEMS.register("garden_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.GARDEN_SALAD)));
+    public static final RegistryObject<Item> MEAT_SALAD = ITEMS.register("meat_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.MEAT_SALAD)));
+    public static final RegistryObject<Item> SALMON_SALAD = ITEMS.register("salmon_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SALMON_SALAD)));
+    public static final RegistryObject<Item> SWEET_SALAD = ITEMS.register("sweet_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SWEET_SALAD)));
+    public static final RegistryObject<Item> SOUL_SPROUT_SALAD = ITEMS.register("soul_sprout_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_SALAD)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
