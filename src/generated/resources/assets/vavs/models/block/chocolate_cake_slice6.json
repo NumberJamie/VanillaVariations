@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cake_slice6",
+  "textures": {
+    "bottom": "vavs:block/chocolate_cake_bottom",
+    "inside": "vavs:block/chocolate_cake_inner",
+    "side": "vavs:block/chocolate_cake_side",
+    "top": "vavs:block/chocolate_cake_top"
+  }
+}

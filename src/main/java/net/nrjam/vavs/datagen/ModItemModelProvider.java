@@ -66,6 +66,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.MARIGOLD);
         saplingItem(ModBlocks.LAVENDER);
 
+        blockParentItem(ModBlocks.HONEY_CAKE);
+        blockParentItem(ModBlocks.CHOCOLATE_CAKE);
+
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
         customDoorItemBlock(ModBlocks.WALNUT_DOOR);
@@ -87,6 +90,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/" + block.getId().getPath()));
+    }
+
+    private void blockParentItem(RegistryObject<Block> block) {
+        withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VanillaVariations.MOD_ID, "item/" + block.getId().getPath()));
     }
 
     private void customDoorItemBlock(RegistryObject<DoorBlock> block) {

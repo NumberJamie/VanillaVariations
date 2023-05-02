@@ -165,6 +165,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_LAVENDER = BLOCKS.register("potted_lavender",
             () -> new PottedFlower(ModBlocks.LAVENDER.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
+    public static final RegistryObject<Block> CHOCOLATE_CAKE = registerBlock("chocolate_cake", () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> HONEY_CAKE = registerBlock("honey_cake", () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

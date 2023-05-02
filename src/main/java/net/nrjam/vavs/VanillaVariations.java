@@ -120,6 +120,9 @@ public class VanillaVariations
             event.accept(ModItems.MEAT_SALAD);
             event.accept(ModItems.GARDEN_SALAD);
             event.accept(ModItems.SOUL_SPROUT_SALAD);
+
+            event.accept(ModBlocks.CHOCOLATE_CAKE);
+            event.accept(ModBlocks.HONEY_CAKE);
         }
     }
 

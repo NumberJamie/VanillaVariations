@@ -39,6 +39,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.REINFORCED_LEATHER_BLOCK.get());
 
+        this.add(ModBlocks.HONEY_CAKE.get(), noDrop());
+        this.add(ModBlocks.CHOCOLATE_CAKE.get(), noDrop());
+
         this.dropSelf(ModBlocks.WALNUT_LOG.get());
         this.dropSelf(ModBlocks.WALNUT_WOOD.get());
         this.dropSelf(ModBlocks.WALNUT_PLANKS.get());

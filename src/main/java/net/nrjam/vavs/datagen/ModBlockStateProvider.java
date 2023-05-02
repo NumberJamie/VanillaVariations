@@ -1,24 +1,29 @@
 package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.*;
+import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.block.custom.ModCakeBlock;
 import net.nrjam.vavs.block.custom.NetherFarmland;
 import net.nrjam.vavs.block.natural.CabbageCrop;
 import net.nrjam.vavs.block.natural.CrimsonBerry;
 import net.nrjam.vavs.block.natural.SoulSprouts;
 import net.nrjam.vavs.block.natural.WarpedBerry;
 
-import java.util.concurrent.Flow;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 
@@ -65,6 +70,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         PottedPlant(ModBlocks.POTTED_VIOLA.get(), ModBlocks.VIOLA.get());
         PottedPlant(ModBlocks.POTTED_SNAPDRAGON.get(), ModBlocks.SNAPDRAGON.get());
 
+
+
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         slabBlock(ModBlocks.SOUL_STONE_SLAB.get(), blockTexture(ModBlocks.SOUL_STONE.get()), blockTexture(ModBlocks.SOUL_STONE.get()));
@@ -102,12 +109,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_WOOD.get(), models().withExistingParent("vavs:stripped_walnut_wood", "minecraft:block/cube_column"));
 
         blockWithItem(ModBlocks.END_SOIL);
+
+        makeCake(ModBlocks.CHOCOLATE_CAKE.get());
+        makeCake(ModBlocks.HONEY_CAKE.get());
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName, boolean isCross) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName, isCross);
 
         getVariantBuilder(block).forAllStates(function);
+    }
+
+    private void makeCake(Block cake) {
+        String side = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_side";
+        String top = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_top";
+        String bottom = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_bottom";
+        String inside = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_inner";
+
+        String path = ForgeRegistries.BLOCKS.getKey(cake).getPath();
+
+        VariantBlockStateBuilder builder = getVariantBuilder(cake);
+        builder.partialState().with(ModCakeBlock.BITES, 0).addModels(new ConfiguredModel(models().withExistingParent(path, this.mcLoc("cake"))
+                .texture("side", side)
+                .texture("top", top)
+                .texture("bottom", bottom)));
+
+        for (int i = 1; i < 7; i++) {
+            builder.partialState().with(ModCakeBlock.BITES, i).addModels(new ConfiguredModel(models().withExistingParent(path + "_slice" + i, this.mcLoc("cake_slice" + i))
+                    .texture("side", side)
+                    .texture("top", top)
+                    .texture("bottom", bottom)
+                    .texture("inside", inside)));
+        }
     }
 
     private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName, boolean isCross) {

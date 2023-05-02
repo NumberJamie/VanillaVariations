@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "X": {
+      "item": "minecraft:honey_bottle"
+    },
+    "Y": {
+      "item": "minecraft:sugar"
+    },
+    "Z": {
+      "item": "minecraft:egg"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "YZY",
+    "WWW"
+  ],
+  "result": {
+    "item": "vavs:honey_cake"
+  },
+  "show_notification": true
+}

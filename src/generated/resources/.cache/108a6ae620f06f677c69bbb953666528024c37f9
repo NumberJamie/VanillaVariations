@@ -1,8 +1,9 @@
-// 1.19.4	2023-05-02T19:34:31.9276989	Item Models: vavs
+// 1.19.4	2023-05-02T20:41:33.9769028	Item Models: vavs
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
 e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
 6600f5e587009996b7c4f060f37a4dfc40ece5b0 assets/vavs/models/item/cabbage_seed.json
+55047405bd1cd8e325fb4da15d2334b79aecbbc1 assets/vavs/models/item/chocolate_cake.json
 9695768577338f6c121ec7376c381bdec0224e83 assets/vavs/models/item/chorus_fruit_pie.json
 729285470959cb82065b95dbd4f239a4d99ecb62 assets/vavs/models/item/crimson_berries.json
 2c8e1c8094b914678e4ebce6bd4d93054472a68d assets/vavs/models/item/crimson_berry_pie.json
@@ -14,6 +15,7 @@ f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boot
 d136009ae59a1d557a8e3317a7baac37d3560bd5 assets/vavs/models/item/fused_soul_helmet.json
 2fbbea09694e6ec64a1e7fc2b3f833c1b756f5af assets/vavs/models/item/fused_soul_leggings.json
 225d5b3ac4e4936a06ee2f3bd1bfa973fa58ab72 assets/vavs/models/item/garden_salad.json
+062abb9c1f67b4cce745d80cffc531c5138b5c07 assets/vavs/models/item/honey_cake.json
 db7b9a86ddaa7f730ca1c73655ef2ec1dbb138f4 assets/vavs/models/item/lavender.json
 6a4aa8e64a0cf686788b0509a0af551b76419f07 assets/vavs/models/item/marigold.json
 de01a2567a724f4ab296089d6773be036528e598 assets/vavs/models/item/meat_salad.json

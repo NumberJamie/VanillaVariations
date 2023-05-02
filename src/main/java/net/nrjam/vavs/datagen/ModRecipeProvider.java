@@ -84,6 +84,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         saladRecipe(consumer, ModItems.GARDEN_SALAD.get(), Items.SWEET_BERRIES, Items.APPLE, Items.MELON_SLICE);
         saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get());
         saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES);
+
+        cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
+        cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
+    }
+
+    protected static void cakeRecipe(Consumer<FinishedRecipe> consumer, Block result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result).define('X', item).define('Y', Items.SUGAR).define('Z', Items.EGG).define('W', Items.WHEAT)
+                .pattern("XXX").pattern("YZY").pattern("WWW")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
     protected static void flowerRecipe(Consumer<FinishedRecipe> consumer, Item result, Block item){
