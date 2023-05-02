@@ -3,6 +3,7 @@ package net.nrjam.vavs.datagen.tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -21,6 +22,7 @@ public class ModItemTags extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.copy(ModTags.Blocks.WALNUT_LOGS, ModTags.Items.WALNUT_LOGS);
+        this.copy(BlockTags.FLOWERS, ItemTags.FLOWERS);
         this.tag(ItemTags.PLANKS).add(ModBlocks.WALNUT_PLANKS.get().asItem());
     }
 }

@@ -55,6 +55,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CRYSTAL_CHESTPLATE);
         simpleItem(ModItems.CRYSTAL_HELMET);
 
+        simpleItem(ModItems.FLOWER_CROWN);
+
         handheldItem(ModItems.CRYSTAL_SWORD);
         handheldItem(ModItems.CRYSTAL_AXE);
         handheldItem(ModItems.CRYSTAL_PICKAXE);

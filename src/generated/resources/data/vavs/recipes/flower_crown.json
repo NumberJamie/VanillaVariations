@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "Y": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "Y Y",
+    "YYY"
+  ],
+  "result": {
+    "item": "vavs:flower_crown"
+  },
+  "show_notification": true
+}

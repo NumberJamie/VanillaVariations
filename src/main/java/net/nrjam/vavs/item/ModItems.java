@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.item.custom.FlowerCrownItem;
 import net.nrjam.vavs.item.custom.FusedSoulItem;
 import net.nrjam.vavs.item.custom.ReinforcedLeatherItem;
 import net.nrjam.vavs.item.custom.TeleportItem;
@@ -101,8 +102,8 @@ public class ModItems {
     public static final RegistryObject<Item> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
             () -> new HoeItem(ModItemTier.CRYSTAL, -2, 0f, new Item.Properties().fireResistant()));
 
-
-
+    public static final RegistryObject<Item> FLOWER_CROWN = ITEMS.register("flower_crown",
+            () -> new FlowerCrownItem(ModArmorMaterials.FLOWER_CROWN, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -3,6 +3,8 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -47,6 +49,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_LIGHT.get()).define('X', Blocks.GLOWSTONE).define('Y', ModItems.SOUL_ESSENCE.get())
                 .pattern("YYY").pattern("YXY").pattern("YYY")
                 .unlockedBy("has_soul_essence", has(ModItems.SOUL_ESSENCE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLOWER_CROWN.get()).define('Y', ItemTags.FLOWERS)
+                .pattern("YYY").pattern("Y Y").pattern("YYY")
+                .unlockedBy("has_flowers", has(ItemTags.FLOWERS)).save(consumer);
         wallBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE_WALL.get(), Ingredient.of(ModBlocks.SOUL_STONE.get())).unlockedBy(getHasName(ModBlocks.SOUL_STONE.get()), has(ModBlocks.SOUL_STONE.get())).save(consumer);
         woodFromLogs(consumer, ModBlocks.WALNUT_LOG.get(), ModBlocks.WALNUT_WOOD.get());
         woodFromLogs(consumer, ModBlocks.STRIPPED_WALNUT_LOG.get(), ModBlocks.STRIPPED_WALNUT_WOOD.get());

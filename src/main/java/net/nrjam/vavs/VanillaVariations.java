@@ -76,6 +76,7 @@ public class VanillaVariations
         if(event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CRYSTAL_SWORD);
             event.accept(ModItems.CRYSTAL_AXE);
+            event.accept(ModItems.FLOWER_CROWN);
             event.accept(ModItems.REINFORCED_LEATHER_HELMET);
             event.accept(ModItems.REINFORCED_LEATHER_CHESTPLATE);
             event.accept(ModItems.REINFORCED_LEATHER_LEGGINGS);

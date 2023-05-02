@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T22:15:30.4593189	Item Models: vavs
+// 1.19.4	2023-05-02T22:36:45.6382135	Item Models: vavs
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
 e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
@@ -20,6 +20,7 @@ cfef384e6f4f9d747a4eed5eb7237b75ba81c82d assets/vavs/models/item/crystal_helmet.
 b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
 f2e901ad23d090000f5d11751fcc639f24e49d99 assets/vavs/models/item/dried_kelp_soup.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json
+4a27f44361647973c95ce8250dc51e6ca89d2f4f assets/vavs/models/item/flower_crown.json
 f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boots.json
 5d89bd95623d142fa2d6ddce029911e9a27ba04c assets/vavs/models/item/fused_soul_chestplate.json
 d136009ae59a1d557a8e3317a7baac37d3560bd5 assets/vavs/models/item/fused_soul_helmet.json

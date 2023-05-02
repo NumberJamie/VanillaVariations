@@ -97,5 +97,8 @@
   "item.vavs.crystal_axe": "Crystal axe",
   "item.vavs.crystal_hoe": "Crystal hoe",
 
+  "item.vavs.flower_crown": "Flower crown",
+
+  "tooltip.vavs.flower_crown": "Randomly gives regeneration II",
   "tooltip.vavs.fused_soul": "When wearing the full set you are immune to wither"
 }

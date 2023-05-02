@@ -38,6 +38,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266655_.put(ArmorItem.Type.HELMET, 4);
     }), 13, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.CRYSTAL.get());
+    }),
+    FLOWER_CROWN("flower_crown", 30, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 0);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 0);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 0);
+        p_266655_.put(ArmorItem.Type.HELMET, 0);
+    }), 20, SoundEvents.AMETHYST_BLOCK_CHIME, 0.0F, 0.0F, () -> {
+        return Ingredient.of(ModItems.CRYSTAL.get());
     });
 
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);
