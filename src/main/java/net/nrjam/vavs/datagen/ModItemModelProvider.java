@@ -25,6 +25,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CRIMSON_BERRIES);
         simpleItem(ModItems.WARPED_BERRIES);
 
+        simpleItem(ModItems.CABBAGE);
+        simpleItem(ModItems.CABBAGE_SEED);
+
         simpleItem(ModItems.SWEET_BERRY_PIE);
         simpleItem(ModItems.APPLE_PIE);
         simpleItem(ModItems.CHORUS_FRUIT_PIE);
@@ -32,8 +35,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WARPED_BERRY_PIE);
         simpleItem(ModItems.CRIMSON_BERRY_PIE);
 
-        simpleItem(ModItems.CABBAGE);
-        simpleItem(ModItems.CABBAGE_SEED);
+        simpleItem(ModItems.SOUL_SPROUT_STEW);
+        simpleItem(ModItems.DRIED_KELP_SOUP);
 
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);
@@ -59,7 +62,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
-
         customDoorItemBlock(ModBlocks.WALNUT_DOOR);
     }
 

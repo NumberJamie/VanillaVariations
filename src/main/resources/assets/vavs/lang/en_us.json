@@ -32,7 +32,6 @@
   "block.vavs.lavender": "Lavender",
   "block.vavs.marigold": "Marigold",
 
-
   "item.vavs.sweet_berry_pie": "Sweet berry pie",
   "item.vavs.apple_pie": "Apple pie",
   "item.vavs.chorus_fruit_pie": "Chorus fruit pie",
@@ -40,6 +39,8 @@
   "item.vavs.warped_berry_pie": "Warped berry pie",
   "item.vavs.crimson_berry_pie": "Crimson berry pie",
 
+  "item.vavs.dried_kelp_soup": "Dried kelp soup",
+  "item.vavs.soul_sprout_stew": "Soul sprout stew",
 
   "block.vavs.walnut_log": "Walnut log",
   "block.vavs.walnut_wood": "Walnut wood",

@@ -107,6 +107,8 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT_PIE);
             event.accept(ModItems.WARPED_BERRY_PIE);
             event.accept(ModItems.CRIMSON_BERRY_PIE);
+            event.accept(ModItems.DRIED_KELP_SOUP);
+            event.accept(ModItems.SOUL_SPROUT_STEW);
         }
     }
 

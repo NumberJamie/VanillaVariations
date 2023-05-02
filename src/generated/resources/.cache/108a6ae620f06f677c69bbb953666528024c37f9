@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-01T13:37:24.6080488	Item Models: vavs
+// 1.19.4	2023-05-02T19:13:50.3979049	Item Models: vavs
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
 e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
@@ -7,6 +7,7 @@ e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
 729285470959cb82065b95dbd4f239a4d99ecb62 assets/vavs/models/item/crimson_berries.json
 2c8e1c8094b914678e4ebce6bd4d93054472a68d assets/vavs/models/item/crimson_berry_pie.json
 b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
+f2e901ad23d090000f5d11751fcc639f24e49d99 assets/vavs/models/item/dried_kelp_soup.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json
 f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boots.json
 5d89bd95623d142fa2d6ddce029911e9a27ba04c assets/vavs/models/item/fused_soul_chestplate.json
@@ -24,6 +25,7 @@ b29f36097a3178bfd2874593eda936549ca8901d assets/vavs/models/item/snapdragon.json
 29205fa5bee4f6cd3556876c74ce86cafd7e3f41 assets/vavs/models/item/soul_flower.json
 5062e032d34b1fd71cb3396c5023cde6c73aea2f assets/vavs/models/item/soul_sprout.json
 9341925593fce87ea00c983b8a43ee96e97c916d assets/vavs/models/item/soul_sprout_pie.json
+f37fdee6639e1230b23a24820d38ba540c1e70ba assets/vavs/models/item/soul_sprout_stew.json
 8e4ac3b604c2031de5607d6a663eba8ecfc14003 assets/vavs/models/item/sweet_berry_pie.json
 70e5f5d044de58b7a4ef1f2fac45b24f86db3147 assets/vavs/models/item/viola.json
 7a6e0d5f8b9688aa10657fc74f336ae122281962 assets/vavs/models/item/walnut_button.json

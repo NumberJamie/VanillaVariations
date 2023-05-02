@@ -2,6 +2,7 @@ package net.nrjam.vavs.item;
 
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -63,6 +64,12 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.CABBAGE_CROP.get(), (new Item.Properties())));
     public static final RegistryObject<Item> CABBAGE = ITEMS.register("cabbage",
             () -> new Item(new Item.Properties().food(ModFoodItems.CABBAGE)));
+
+    public static final RegistryObject<Item> DRIED_KELP_SOUP = ITEMS.register("dried_kelp_soup",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.DRIED_KELP_SOUP)));
+    public static final RegistryObject<Item> SOUL_SPROUT_STEW = ITEMS.register("soul_sprout_stew",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_STEW)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

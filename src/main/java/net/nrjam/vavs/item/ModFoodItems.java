@@ -19,4 +19,6 @@ public class ModFoodItems {
     public static final FoodProperties CRIMSON_BERRY_PIE = (new FoodProperties.Builder().nutrition(3).saturationMod(1f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 15*20, 0), 1f).build());
     public static final FoodProperties CHORUS_FRUIT_PIE = (new FoodProperties.Builder().nutrition(5).saturationMod(1f).build());
 
+    public static final FoodProperties SOUL_SPROUT_STEW = (new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 45*20, 0), 1f).effect(() -> new MobEffectInstance(MobEffects.GLOWING, 15*20, 0), 1f).build());
+    public static final FoodProperties DRIED_KELP_SOUP = (new FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build());
 }
