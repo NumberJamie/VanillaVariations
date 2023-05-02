@@ -1,5 +1,7 @@
 {
   "values": [
-    "#vavs:soul_stones"
+    "#vavs:soul_stones",
+    "vavs:crystal_block",
+    "vavs:crystal_ore"
   ]
 }

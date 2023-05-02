@@ -31,6 +31,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MARIGOLD_PLACED_KEY = createKey("marigold_placed");
     public static final ResourceKey<PlacedFeature> LAVENDER_PLACED_KEY = createKey("lavender_placed");
     public static final ResourceKey<PlacedFeature> SNAPDRAGON_PLACED_KEY = createKey("snapdragon_placed");
+    public static final ResourceKey<PlacedFeature> CRYSTAL_ORE_PLACED_KEY = createKey("crystal_ore_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -74,6 +75,9 @@ public class ModPlacedFeatures {
 
         register(context, MARIGOLD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MARIGOLD_KEY),
                 RarityFilter.onAverageOnceEvery(4), PlacementUtils.FULL_RANGE);
+
+        register(context, CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRYSTAL_ORE_KEY),
+                ModPlacementUtils.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
     }
 
 

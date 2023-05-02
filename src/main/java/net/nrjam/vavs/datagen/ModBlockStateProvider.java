@@ -36,6 +36,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.REINFORCED_LEATHER_BLOCK);
+        blockWithItem(ModBlocks.CRYSTAL_BLOCK);
+        blockWithItem(ModBlocks.CRYSTAL_ORE);
 
         logBlock(((RotatedPillarBlock) ModBlocks.WALNUT_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.WALNUT_WOOD.get(), blockTexture(ModBlocks.WALNUT_LOG.get()), blockTexture(ModBlocks.WALNUT_LOG.get()));
@@ -69,8 +71,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         PottedPlant(ModBlocks.POTTED_MARIGOLD.get(), ModBlocks.MARIGOLD.get());
         PottedPlant(ModBlocks.POTTED_VIOLA.get(), ModBlocks.VIOLA.get());
         PottedPlant(ModBlocks.POTTED_SNAPDRAGON.get(), ModBlocks.SNAPDRAGON.get());
-
-
 
         slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
         stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));

@@ -52,7 +52,7 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.WALNUT_PRESSURE_PLATE.get())
                 .add(ModBlocks.WALNUT_TRAPDOOR.get())
                 .add(ModBlocks.WALNUT_PLANKS.get());
-        this.tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.SOUL_LIGHT.get());
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.SOUL_LIGHT.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.END_SOIL.get())
                 .add(ModBlocks.NETHER_FARMLAND.get());
         this.tag(BlockTags.DRAGON_IMMUNE).add(ModBlocks.END_SOIL.get());
@@ -69,12 +69,16 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_WALNUT_SAPLING.get());
         this.tag(BlockTags.INFINIBURN_NETHER).addTag(ModTags.Blocks.SOUL_STONES)
                 .add(ModBlocks.SOUL_LIGHT.get());
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(ModTags.Blocks.SOUL_STONES);
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(ModTags.Blocks.SOUL_STONES)
+                .add(ModBlocks.CRYSTAL_BLOCK.get())
+                .add(ModBlocks.CRYSTAL_ORE.get());
         this.tag(BlockTags.WALLS).add(ModBlocks.SOUL_STONE_WALL.get());
         this.tag(BlockTags.FLOWERS).add(ModBlocks.VIOLA.get())
                 .add(ModBlocks.SOUL_FLOWER.get())
                 .add(ModBlocks.SNAPDRAGON.get())
                 .add(ModBlocks.MARIGOLD.get())
                 .add(ModBlocks.LAVENDER.get());
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.CRYSTAL_BLOCK.get())
+                .add(ModBlocks.CRYSTAL_ORE.get());
     }
 }

@@ -28,18 +28,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_LEATHER.get(),
                 RecipeCategory.MISC, ModBlocks.REINFORCED_LEATHER_BLOCK.get());
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.REINFORCED_LEATHER_HELMET.get()).define('X', ModItems.REINFORCED_LEATHER.get())
-                .pattern("XXX").pattern("X X")
-                .unlockedBy("has_reinforced_leather", has(ModItems.REINFORCED_LEATHER.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.REINFORCED_LEATHER_CHESTPLATE.get()).define('X', ModItems.REINFORCED_LEATHER.get())
-                .pattern("X X").pattern("XXX").pattern("XXX")
-                .unlockedBy("has_reinforced_leather", has(ModItems.REINFORCED_LEATHER.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.REINFORCED_LEATHER_LEGGINGS.get()).define('X', ModItems.REINFORCED_LEATHER.get())
-                .pattern("XXX").pattern("X X").pattern("X X")
-                .unlockedBy("has_reinforced_leather", has(ModItems.REINFORCED_LEATHER.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.REINFORCED_LEATHER_BOOTS.get()).define('X', ModItems.REINFORCED_LEATHER.get())
-                .pattern("X X").pattern("X X")
-                .unlockedBy("has_reinforced_leather", has(ModItems.REINFORCED_LEATHER.get())).save(consumer);
+        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.CRYSTAL.get(),
+                RecipeCategory.MISC, ModBlocks.CRYSTAL_BLOCK.get());
+        helmetRecipe(consumer, ModItems.CRYSTAL_HELMET.get(), ModItems.CRYSTAL.get());
+        chestplateRecipe(consumer, ModItems.CRYSTAL_CHESTPLATE.get(), ModItems.CRYSTAL.get());
+        leggingsRecipe(consumer, ModItems.CRYSTAL_LEGGINGS.get(), ModItems.CRYSTAL.get());
+        bootsRecipe(consumer, ModItems.CRYSTAL_BOOTS.get(), ModItems.CRYSTAL.get());
+        helmetRecipe(consumer, ModItems.REINFORCED_LEATHER_HELMET.get(), ModItems.REINFORCED_LEATHER.get());
+        chestplateRecipe(consumer, ModItems.REINFORCED_LEATHER_CHESTPLATE.get(), ModItems.REINFORCED_LEATHER.get());
+        leggingsRecipe(consumer, ModItems.REINFORCED_LEATHER_LEGGINGS.get(), ModItems.REINFORCED_LEATHER.get());
+        bootsRecipe(consumer, ModItems.REINFORCED_LEATHER_BOOTS.get(), ModItems.REINFORCED_LEATHER.get());
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REINFORCED_LEATHER.get()).define('Y', Items.LEATHER).define('X', Items.IRON_INGOT)
                 .pattern("XYX").pattern("YYY").pattern("XYX")
                 .unlockedBy("has_leather", has(Items.LEATHER)).save(consumer);
@@ -87,6 +85,66 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
         cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
+
+        hoeRecipe(consumer, ModItems.CRYSTAL_HOE.get(), ModItems.CRYSTAL.get());
+        shovelRecipe(consumer, ModItems.CRYSTAL_SHOVEL.get(), ModItems.CRYSTAL.get());
+        axeRecipe(consumer, ModItems.CRYSTAL_AXE.get(), ModItems.CRYSTAL.get());
+        pickaxeRecipe(consumer, ModItems.CRYSTAL_PICKAXE.get(), ModItems.CRYSTAL.get());
+        swordRecipe(consumer, ModItems.CRYSTAL_SWORD.get(), ModItems.CRYSTAL.get());
+    }
+
+    protected static void hoeRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('W', Items.STICK)
+                .pattern("XX").pattern("W ").pattern("W ")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void axeRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('W', Items.STICK)
+                .pattern("XX").pattern("WX").pattern("W ")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void pickaxeRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('W', Items.STICK)
+                .pattern("XXX").pattern(" W ").pattern(" W ")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void shovelRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('W', Items.STICK)
+                .pattern("X").pattern("W").pattern("W")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void swordRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('W', Items.STICK)
+                .pattern("X").pattern("X").pattern("W")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void helmetRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item)
+                .pattern("XXX").pattern("X X")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void leggingsRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item)
+                .pattern("XXX").pattern("X X").pattern("X X")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void chestplateRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item)
+                .pattern("X X").pattern("XXX").pattern("XXX")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void bootsRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item)
+                .pattern("X X").pattern("X X")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
     protected static void cakeRecipe(Consumer<FinishedRecipe> consumer, Block result, Item item){

@@ -1,9 +1,6 @@
 package net.nrjam.vavs.item;
 
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.BowlFoodItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -80,6 +77,32 @@ public class ModItems {
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SWEET_SALAD)));
     public static final RegistryObject<Item> SOUL_SPROUT_SALAD = ITEMS.register("soul_sprout_salad",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_SALAD)));
+
+    public static final RegistryObject<Item> CRYSTAL = ITEMS.register("crystal",
+            () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> CRYSTAL_HELMET = ITEMS.register("crystal_helmet",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_BOOTS = ITEMS.register("crystal_boots",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> CRYSTAL_SHOVEL = ITEMS.register("crystal_shovel",
+            () -> new ShovelItem(ModItemTier.CRYSTAL, 3.5f, -3f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_SWORD = ITEMS.register("crystal_sword",
+            () -> new SwordItem(ModItemTier.CRYSTAL, 5, -2.4f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_PICKAXE = ITEMS.register("crystal_pickaxe",
+            () -> new PickaxeItem(ModItemTier.CRYSTAL, 3, -2.8f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_AXE = ITEMS.register("crystal_axe",
+            () -> new AxeItem(ModItemTier.CRYSTAL, 7, -3f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
+            () -> new HoeItem(ModItemTier.CRYSTAL, -2, 0f, new Item.Properties().fireResistant()));
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T20:41:33.9769028	Item Models: vavs
+// 1.19.4	2023-05-02T22:15:30.4593189	Item Models: vavs
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
 e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
@@ -7,6 +7,16 @@ e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
 9695768577338f6c121ec7376c381bdec0224e83 assets/vavs/models/item/chorus_fruit_pie.json
 729285470959cb82065b95dbd4f239a4d99ecb62 assets/vavs/models/item/crimson_berries.json
 2c8e1c8094b914678e4ebce6bd4d93054472a68d assets/vavs/models/item/crimson_berry_pie.json
+ff2f56e4dfbb9a16e5166dde392225addcf09caf assets/vavs/models/item/crystal.json
+b78062465a02fb618a5c9b020647ea964440aafe assets/vavs/models/item/crystal_axe.json
+60b1786447d3c9943b5d8a695a82be2da7cb33c8 assets/vavs/models/item/crystal_boots.json
+0554ba001580670fb9c4bbca38422cba8bb509a1 assets/vavs/models/item/crystal_chestplate.json
+cfef384e6f4f9d747a4eed5eb7237b75ba81c82d assets/vavs/models/item/crystal_helmet.json
+2a1217e4c3a15830d3887e7351e9d7f699cea3aa assets/vavs/models/item/crystal_hoe.json
+1a87ac91db3d5b0995f9fb782ab881b472b55bf3 assets/vavs/models/item/crystal_leggings.json
+37afddf14ced6251b6f1f656c5283f4102fd980e assets/vavs/models/item/crystal_pickaxe.json
+61546f1ac7d35ba92794e00ee051cd3cf2648212 assets/vavs/models/item/crystal_shovel.json
+14dc6c7c22beb94c6b43249198c4d824362fca3c assets/vavs/models/item/crystal_sword.json
 b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
 f2e901ad23d090000f5d11751fcc639f24e49d99 assets/vavs/models/item/dried_kelp_soup.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json

@@ -1,6 +1,7 @@
-// 1.19.4	2023-05-01T13:37:24.6080488	Registries
+// 1.19.4	2023-05-02T22:00:21.8377051	Registries
 c12760e51a74249eefe54b1ec2952d114cd05b38 data/vavs/worldgen/configured_feature/blossoming_root.json
 1a8b2955008827d0df786b2a01a7ff5576f62c8d data/vavs/worldgen/configured_feature/crimson_berries.json
+ad9d22114286f30e4d20c1730146c51cdfe1d6ef data/vavs/worldgen/configured_feature/crystal_ore.json
 1cc9a09566db3dd063fa7103c781033b8a98f6a5 data/vavs/worldgen/configured_feature/dead_roots.json
 35648478eea9ac8a379f94a7626ffb8d93d75bc7 data/vavs/worldgen/configured_feature/ender_root.json
 b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/end_soil.json
@@ -14,6 +15,7 @@ a5897f1a5b01969b9aaa994fbd0f0eec91a37156 data/vavs/worldgen/configured_feature/w
 66edae4c3cc087258cbe09ad0e7ad2323d5a7ee9 data/vavs/worldgen/configured_feature/wild_cabbage.json
 cd5fd5189a4c9078311731e292915b71d7f0978a data/vavs/worldgen/placed_feature/blossoming_root_placed.json
 f5b85d7c3f66a40f7caadcb86dd5c59ad59df073 data/vavs/worldgen/placed_feature/crimson_berries_placed.json
+bd83bfa8ae8adef31933e1f8efa73d89381a0a66 data/vavs/worldgen/placed_feature/crystal_ore_placed.json
 347553fb352d3e114c6119ad00f206897b99ae0c data/vavs/worldgen/placed_feature/dead_roots_placed.json
 a8f053d9128dd50c2800bdea5adf4f28e7065ac7 data/vavs/worldgen/placed_feature/ender_root_placed.json
 e891781df2fa605fd3efb71cad21678d6c4767e4 data/vavs/worldgen/placed_feature/end_soil_placed.json

@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T20:41:33.9804289	Recipes
+// 1.19.4	2023-05-02T22:15:30.4593189	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 96a12e9312754478bfa23b6a78e9eaafed2dd7a8 data/minecraft/advancements/recipes/misc/magenta_dye.json
 cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/misc/orange_dye.json
@@ -7,6 +7,7 @@ cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/mis
 99649a81d2579178a357f60a980eea8f66423949 data/minecraft/recipes/magenta_dye.json
 37c6dd44f8117294ca9107d202c24553a391aa77 data/minecraft/recipes/orange_dye.json
 7e7260915563da8298f778e944b9205c2e134de2 data/minecraft/recipes/purple_dye.json
+520f852f6268ce77f2f3e034d131527302d814c3 data/vavs/advancements/recipes/building_blocks/crystal_compressed.json
 bfd7b35083f99f90d8dc4b1b1527b55aa954dbe1 data/vavs/advancements/recipes/building_blocks/reinforced_leather_compressed.json
 be0aa658c685b188a94d3174d643c997b4f649e1 data/vavs/advancements/recipes/building_blocks/soul_light.json
 21e21f81e7745510d22463b05aa9dd49d48064f7 data/vavs/advancements/recipes/building_blocks/soul_stone.json
@@ -18,6 +19,15 @@ ed472737aeac44793bb92c2fa7f81ec8e0909822 data/vavs/advancements/recipes/building
 cc632cf55743605d83b18b501b253707358806ca data/vavs/advancements/recipes/building_blocks/walnut_planks.json
 b087b60d2bc3c7631474aa0570512d3390477ecc data/vavs/advancements/recipes/building_blocks/walnut_slab.json
 55d041576857e17bb1d5ed6eda48b53e4f5d2f56 data/vavs/advancements/recipes/building_blocks/walnut_stairs.json
+2087e0b212c7a422cfacc2ed7f3467892266c210 data/vavs/advancements/recipes/combat/crystal_axe.json
+70b20347631412a25734dcb607647870fa67f2ab data/vavs/advancements/recipes/combat/crystal_boots.json
+fe468d84501f9c45a9b4da0290ecb000b46fc790 data/vavs/advancements/recipes/combat/crystal_chestplate.json
+4b91950ee9e0f404fbf403743b2355a64ebbb761 data/vavs/advancements/recipes/combat/crystal_helmet.json
+54dda1ebf64d47527bb7705ddd2315aa12ec7c9b data/vavs/advancements/recipes/combat/crystal_hoe.json
+170685ad88c2be6c5a4e3d4691eb8e14afa7d93b data/vavs/advancements/recipes/combat/crystal_leggings.json
+8d810329f9c1f70ef492c91d5b5ee67fa087520a data/vavs/advancements/recipes/combat/crystal_pickaxe.json
+f3bd2440d549cf15d5318dfe631de10973e950ed data/vavs/advancements/recipes/combat/crystal_shovel.json
+9da710272a333e0fbf7780e2fda2f91af2dca44e data/vavs/advancements/recipes/combat/crystal_sword.json
 f0bc12c39328721c68e26d9cbd43d332663d5535 data/vavs/advancements/recipes/combat/reinforced_leather_boots.json
 4d0dde9b5f2d1530f714db745498f8fed553a018 data/vavs/advancements/recipes/combat/reinforced_leather_chestplate.json
 b344c39593a7443087efadaaf164dc2a65a6c9bc data/vavs/advancements/recipes/combat/reinforced_leather_helmet.json
@@ -38,6 +48,7 @@ b832f58a9bc4d37d3ebf96cb44ae75de5f32678e data/vavs/advancements/recipes/food/hon
 3db8341ad2450834a2a97d7ae83b9e8a0acec876 data/vavs/advancements/recipes/food/sweet_berry_pie.json
 0954eabd19d2094550ed42b81147ff3e5572e706 data/vavs/advancements/recipes/food/sweet_salad.json
 af7284049efcc43d2f2810a2d05a5a9da591323b data/vavs/advancements/recipes/food/warped_berry_pie.json
+0fc7b6401b6e403cfd173c73580267a744bb4f80 data/vavs/advancements/recipes/misc/crystal_block.json
 ac42acd410b2fe92556a3e8c2b78454cb7f0617f data/vavs/advancements/recipes/misc/reinforced_leather.json
 dfa92021a30dae5f6ae320d2909c68ea365c3403 data/vavs/advancements/recipes/misc/reinforced_leather_block.json
 e32cb56e71d1d5d2eb14ce0717dfc59135851794 data/vavs/advancements/recipes/redstone/walnut_button.json
@@ -49,6 +60,17 @@ bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone
 e07b8de3ff2aa9a07c077e8c644ca99e68b15765 data/vavs/recipes/chocolate_cake.json
 8f705af94880d7da75d165463ef74325efe7c90a data/vavs/recipes/chorus_fruit_pie.json
 155481dff95c71db55c2c1cfd519bad4fe60f318 data/vavs/recipes/crimson_berry_pie.json
+818a417a3b17dcd49bc45fedfd914944a3459392 data/vavs/recipes/crystal_axe.json
+2aae327476591f04d1839f04fb7dc365ab8a876e data/vavs/recipes/crystal_block.json
+3e6125c0054cdecd117d7ce8c8861d3d9e8f35d5 data/vavs/recipes/crystal_boots.json
+afcc66b3fcf6cfb159cd9ca22f75407fad808c6f data/vavs/recipes/crystal_chestplate.json
+77a2eb6324ed15372320df0480a1efa49e169bb5 data/vavs/recipes/crystal_compressed.json
+e2e44f3b220f6988df747f1b1d649618ccb47449 data/vavs/recipes/crystal_helmet.json
+ad579246afd0f2ea0f582d9923290fe6a6dd9e82 data/vavs/recipes/crystal_hoe.json
+64147ba6cf43943fd857c02d446d146616ecdb98 data/vavs/recipes/crystal_leggings.json
+b2783a229b8662d01e700fb4144ae3c76d3c6945 data/vavs/recipes/crystal_pickaxe.json
+0ebab244ea445be1ec4e3f3649db04c87e903404 data/vavs/recipes/crystal_shovel.json
+6b0ec9f93df5bd045e43204b2ee267c1b205febc data/vavs/recipes/crystal_sword.json
 02e20cf1daeac5f64d70af8b3c368b8d94a657c5 data/vavs/recipes/dried_kelp_soup.json
 93c853a726a30c0c39770c28ce4e27c7a390b276 data/vavs/recipes/garden_salad.json
 11ab04d788687050e55f1afe785aa06384e2754f data/vavs/recipes/honey_cake.json

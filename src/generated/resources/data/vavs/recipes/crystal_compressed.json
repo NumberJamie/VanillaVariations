@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "vavs:crystal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "vavs:crystal"
+  }
+}

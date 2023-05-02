@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "vavs:crystal"
+    }
+  },
+  "pattern": [
+    "XX",
+    "WX",
+    "W "
+  ],
+  "result": {
+    "item": "vavs:crystal_axe"
+  },
+  "show_notification": true
+}

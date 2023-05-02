@@ -1,8 +1,10 @@
-// 1.19.4	2023-05-02T21:02:33.9961614	Block States: vavs
+// 1.19.4	2023-05-02T21:52:34.3866487	Block States: vavs
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
 1cdf7c38462754331e0c8016c4839f8052126b8c assets/vavs/blockstates/chocolate_cake.json
 1ad3a51bb5df82bdc43a64af51a0470f46bddc6b assets/vavs/blockstates/crimson_berries.json
+05bb5aa3ec4fedf832bdd9ad9edf68412eaf3186 assets/vavs/blockstates/crystal_block.json
+b48ddda0c80692ba4496ac38f2637bf2547ef4a2 assets/vavs/blockstates/crystal_ore.json
 0de0488a14eedc1397242af29a1fc072e3947345 assets/vavs/blockstates/dead_roots.json
 636cc094bfaddecbf4070400ad2ff7596baffc26 assets/vavs/blockstates/ender_root.json
 68619fad2fd6b3e4d9acd92cb364130394de82d6 assets/vavs/blockstates/end_soil.json
@@ -67,6 +69,8 @@ c9459257bad407ef0c03669579283630aa05ff61 assets/vavs/models/block/chocolate_cake
 9f9d2d25d8c75256512d20e9e65d5350030aabbd assets/vavs/models/block/crimson_berries_stage1.json
 b246c66179b66c948c082713556fc7330c8988b8 assets/vavs/models/block/crimson_berries_stage2.json
 fd122af0ee9969a4ac5a00b112da4353b77cee50 assets/vavs/models/block/crimson_berries_stage3.json
+f2d9e902b311e92817cca84d17761ce51bcffaab assets/vavs/models/block/crystal_block.json
+5795633c3e90fc625177b89ad1d7319532de831d assets/vavs/models/block/crystal_ore.json
 db4012cd6e5195b1a05b3b31fb27b802f486ecfd assets/vavs/models/block/dead_roots.json
 9264e611acf70296c160805e59dd0e368fc85971 assets/vavs/models/block/ender_root.json
 4fa5a6a7fc4ddda76dfd883bd387e89892d95829 assets/vavs/models/block/end_soil.json
@@ -152,6 +156,8 @@ b09882391caee482a3480514c5d1456cec859b7a assets/vavs/models/block/walnut_wood_ho
 b9b3f3b4e3125681add2705edc00fb28ba07d937 assets/vavs/models/block/warped_berries_stage2.json
 f3686dc5b0a3037cd38f3706498ef93f6ce4e548 assets/vavs/models/block/warped_berries_stage3.json
 03508d2080712c1f4b1f0c88b0826045afb9f11a assets/vavs/models/block/wild_cabbage.json
+ea96fd446293bc74ff9ec0bc217abce8ab42941c assets/vavs/models/item/crystal_block.json
+4158c92cd4adeb4b1d8ceac3f51e7b53d3b55a93 assets/vavs/models/item/crystal_ore.json
 4cafe94990294e4f616c8dc60242ff8848b41452 assets/vavs/models/item/end_soil.json
 619c70f519f27bbee72fbe22c64dc8e6f61252fc assets/vavs/models/item/nether_farmland.json
 6d47e59f17f81222423362d3230be6e030f060f3 assets/vavs/models/item/reinforced_leather_block.json

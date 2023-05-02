@@ -165,8 +165,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_LAVENDER = BLOCKS.register("potted_lavender",
             () -> new PottedFlower(ModBlocks.LAVENDER.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak()));
 
-    public static final RegistryObject<Block> CHOCOLATE_CAKE = registerBlock("chocolate_cake", () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
-    public static final RegistryObject<Block> HONEY_CAKE = registerBlock("honey_cake", () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> CHOCOLATE_CAKE = registerBlock("chocolate_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> HONEY_CAKE = registerBlock("honey_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+
+    public static final RegistryObject<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(4.5f, 7.5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRYSTAL_ORE = registerBlock( "crystal_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 6f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

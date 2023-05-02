@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "vavs:crystal"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "W"
+  ],
+  "result": {
+    "item": "vavs:crystal_sword"
+  },
+  "show_notification": true
+}

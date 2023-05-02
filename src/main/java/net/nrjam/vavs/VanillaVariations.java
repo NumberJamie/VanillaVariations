@@ -39,11 +39,20 @@ public class VanillaVariations
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.CRYSTAL);
             event.accept(ModItems.SOUL_ESSENCE);
             event.accept(ModItems.REINFORCED_LEATHER);
             event.accept(ModItems.CABBAGE_SEED);
         }
+        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CRYSTAL_SHOVEL);
+            event.accept(ModItems.CRYSTAL_PICKAXE);
+            event.accept(ModItems.CRYSTAL_AXE);
+            event.accept(ModItems.CRYSTAL_HOE);
+        }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CRYSTAL_BLOCK);
+            event.accept(ModBlocks.CRYSTAL_ORE);
             event.accept(ModBlocks.END_SOIL);
             event.accept(ModBlocks.WALNUT_LOG);
             event.accept(ModBlocks.WALNUT_WOOD);
@@ -65,6 +74,8 @@ public class VanillaVariations
             event.accept(ModBlocks.SOUL_STONE_WALL);
         }
         if(event.getTab() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.CRYSTAL_SWORD);
+            event.accept(ModItems.CRYSTAL_AXE);
             event.accept(ModItems.REINFORCED_LEATHER_HELMET);
             event.accept(ModItems.REINFORCED_LEATHER_CHESTPLATE);
             event.accept(ModItems.REINFORCED_LEATHER_LEGGINGS);
@@ -73,12 +84,17 @@ public class VanillaVariations
             event.accept(ModItems.FUSED_SOUL_CHESTPLATE);
             event.accept(ModItems.FUSED_SOUL_LEGGINGS);
             event.accept(ModItems.FUSED_SOUL_BOOTS);
+            event.accept(ModItems.CRYSTAL_HELMET);
+            event.accept(ModItems.CRYSTAL_CHESTPLATE);
+            event.accept(ModItems.CRYSTAL_LEGGINGS);
+            event.accept(ModItems.CRYSTAL_BOOTS);
         }
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WALNUT_LOG);
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
             event.accept(ModBlocks.END_SOIL);
+            event.accept(ModBlocks.CRYSTAL_ORE);
             event.accept(ModBlocks.NETHER_FARMLAND);
             event.accept(ModBlocks.BLOSSOMING_ROOT);
             event.accept(ModBlocks.ENDER_ROOT);

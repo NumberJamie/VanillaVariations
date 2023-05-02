@@ -1,11 +1,17 @@
 {
   "item.vavs.soul_essence": "Soul Essence",
   "item.vavs.reinforced_leather": "Reinforced leather",
+  "item.vavs.crystal": "Crystal",
 
   "item.vavs.reinforced_leather_helmet": "Reinforced leather helmet",
   "item.vavs.reinforced_leather_chestplate": "Reinforced leather chestplate",
   "item.vavs.reinforced_leather_leggings": "Reinforced leather leggings",
   "item.vavs.reinforced_leather_boots": "Reinforced leather boots",
+
+  "item.vavs.crystal_helmet": "Crystal helmet",
+  "item.vavs.crystal_chestplate": "Crystal chestplate",
+  "item.vavs.crystal_leggings": "Crystal leggings",
+  "item.vavs.crystal_boots": "Crystal boots",
 
   "item.vavs.fused_soul_helmet": "Fused soul helmet",
   "item.vavs.fused_soul_chestplate": "Fused soul chestplate",
@@ -82,6 +88,14 @@
   "block.vavs.nether_farmland": "Nether farmland",
 
   "block.vavs.reinforced_leather_block": "Reinforced leather block",
+  "block.vavs.crystal_block": "Crystal block",
+  "block.vavs.crystal_ore": "Crystal ore",
+
+  "item.vavs.crystal_sword": "Crystal sword",
+  "item.vavs.crystal_shovel": "Crystal shovel",
+  "item.vavs.crystal_pickaxe": "Crystal pickaxe",
+  "item.vavs.crystal_axe": "Crystal axe",
+  "item.vavs.crystal_hoe": "Crystal hoe",
 
   "tooltip.vavs.fused_soul": "When wearing the full set you are immune to wither"
 }

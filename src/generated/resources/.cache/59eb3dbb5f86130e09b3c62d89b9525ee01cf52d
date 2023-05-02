@@ -1,8 +1,10 @@
-// 1.19.4	2023-05-02T20:41:33.9804289	Loot Tables
+// 1.19.4	2023-05-02T21:52:34.3836469	Loot Tables
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
 ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
 1d4929d7d6176f60e5ea991a577527ed251ef375 data/vavs/loot_tables/blocks/chocolate_cake.json
 7a4eb97092b47f011e1bdcf1a3ca1f6f8a3e5d00 data/vavs/loot_tables/blocks/crimson_berries.json
+018fd07068284735657baba23ee862badd9c1b31 data/vavs/loot_tables/blocks/crystal_block.json
+a6a7e9e3f18e590f6807dcc6bcd2daa8aaf61d3c data/vavs/loot_tables/blocks/crystal_ore.json
 0cb619167f6e373aff0c7224b4e9be28d36dacf8 data/vavs/loot_tables/blocks/dead_roots.json
 50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json

@@ -30,6 +30,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266655_.put(ArmorItem.Type.HELMET, 2);
     }), 25, SoundEvents.SOUL_ESCAPE, 0F, 0.0F, () -> {
         return Ingredient.of(ModItems.SOUL_ESSENCE.get());
+    }),
+    CRYSTAL("crystal", 36, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 4);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 9);
+        p_266655_.put(ArmorItem.Type.HELMET, 4);
+    }), 13, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+        return Ingredient.of(ModItems.CRYSTAL.get());
     });
 
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);

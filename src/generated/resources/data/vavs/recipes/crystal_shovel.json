@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "vavs:crystal"
+    }
+  },
+  "pattern": [
+    "X",
+    "W",
+    "W"
+  ],
+  "result": {
+    "item": "vavs:crystal_shovel"
+  },
+  "show_notification": true
+}
