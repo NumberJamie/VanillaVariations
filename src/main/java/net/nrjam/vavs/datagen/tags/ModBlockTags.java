@@ -71,7 +71,10 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.SOUL_LIGHT.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(ModTags.Blocks.SOUL_STONES)
                 .add(ModBlocks.CRYSTAL_BLOCK.get())
-                .add(ModBlocks.CRYSTAL_ORE.get());
+                .add(ModBlocks.CRYSTAL_ORE.get())
+                .add(ModBlocks.CRYING_SMOOTH_BASALT.get())
+                .add(ModBlocks.CRYING_BASALT.get())
+                .add(ModBlocks.CRYING_POLISHED_BASALT.get());
         this.tag(BlockTags.WALLS).add(ModBlocks.SOUL_STONE_WALL.get());
         this.tag(BlockTags.FLOWERS).add(ModBlocks.VIOLA.get())
                 .add(ModBlocks.SOUL_FLOWER.get())

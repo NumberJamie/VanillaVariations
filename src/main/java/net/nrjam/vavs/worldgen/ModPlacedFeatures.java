@@ -33,6 +33,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SNAPDRAGON_PLACED_KEY = createKey("snapdragon_placed");
     public static final ResourceKey<PlacedFeature> CRYSTAL_ORE_PLACED_KEY = createKey("crystal_ore_placed");
     public static final ResourceKey<PlacedFeature> GINGER_PLACED_KEY = createKey("ginger_placed");
+    public static final ResourceKey<PlacedFeature> CRYING_BASALT_PLACED_KEY = createKey("crying_basalt_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -43,6 +44,9 @@ public class ModPlacedFeatures {
 
         register(context, END_SOIL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_SOIL_KEY),
                 ModPlacementUtils.endSoilPlaced(28, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top())));
+
+        register(context, CRYING_BASALT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRYING_BASALT_KEY),
+                ModPlacementUtils.endSoilPlaced(4, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top())));
 
         register(context, BLOSSOMING_ROOT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLOSSOMING_ROOT_KEY),
                 RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP);

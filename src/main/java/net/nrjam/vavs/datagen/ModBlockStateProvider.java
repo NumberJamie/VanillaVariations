@@ -35,6 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.REINFORCED_LEATHER_BLOCK);
         blockWithItem(ModBlocks.CRYSTAL_BLOCK);
         blockWithItem(ModBlocks.CRYSTAL_ORE);
+        blockWithItem(ModBlocks.CRYING_SMOOTH_BASALT);
 
         logBlock(((RotatedPillarBlock) ModBlocks.WALNUT_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.WALNUT_WOOD.get(), blockTexture(ModBlocks.WALNUT_LOG.get()), blockTexture(ModBlocks.WALNUT_LOG.get()));
@@ -42,6 +43,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/stripped_walnut_log_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_WALNUT_WOOD.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/stripped_walnut_log"),
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/stripped_walnut_log"));
+
+        axisBlock((RotatedPillarBlock) ModBlocks.CRYING_POLISHED_BASALT.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/crying_polished_basalt_side"),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/crying_polished_basalt_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.CRYING_BASALT.get(), new ResourceLocation(VanillaVariations.MOD_ID, "block/crying_basalt_side"),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/crying_basalt_top"));
 
         blockWithItem(ModBlocks.WALNUT_PLANKS);
         blockWithItem(ModBlocks.WALNUT_LEAVES);
@@ -104,6 +110,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.WALNUT_PRESSURE_PLATE.get(), models().withExistingParent("vavs:walnut_pressure_plate", "minecraft:block/pressure_plate_up"));
         simpleBlockItem(ModBlocks.WALNUT_FENCE_GATE.get(), models().withExistingParent("vavs:walnut_fence_gate", "minecraft:block/template_fence_gate"));
         simpleBlockItem(ModBlocks.WALNUT_LOG.get(), models().withExistingParent("vavs:walnut_log", "minecraft:block/cube_column"));
+        simpleBlockItem(ModBlocks.CRYING_POLISHED_BASALT.get(), models().withExistingParent("vavs:crying_polished_basalt", "minecraft:block/cube_column"));
+        simpleBlockItem(ModBlocks.CRYING_BASALT.get(), models().withExistingParent("vavs:crying_basalt", "minecraft:block/cube_column"));
         simpleBlockItem(ModBlocks.WALNUT_WOOD.get(), models().withExistingParent("vavs:walnut_wood", "minecraft:block/cube_column"));
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_LOG.get(), models().withExistingParent("vavs:stripped_walnut_log", "minecraft:block/cube_column"));
         simpleBlockItem(ModBlocks.STRIPPED_WALNUT_WOOD.get(), models().withExistingParent("vavs:stripped_walnut_wood", "minecraft:block/cube_column"));

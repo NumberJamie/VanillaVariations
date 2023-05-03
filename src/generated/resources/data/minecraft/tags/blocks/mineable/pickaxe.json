@@ -2,6 +2,9 @@
   "values": [
     "#vavs:soul_stones",
     "vavs:crystal_block",
-    "vavs:crystal_ore"
+    "vavs:crystal_ore",
+    "vavs:crying_smooth_basalt",
+    "vavs:crying_basalt",
+    "vavs:crying_polished_basalt"
   ]
 }

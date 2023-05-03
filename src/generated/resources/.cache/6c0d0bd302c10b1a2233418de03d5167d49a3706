@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T21:54:51.3307308	Tags for minecraft:block mod id vavs
+// 1.19.4	2023-05-04T00:10:55.7576955	Tags for minecraft:block mod id vavs
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/completes_find_tree_tutorial.json
 3af24f5855ee72056891920fbbb9e486fb7aab01 data/minecraft/tags/blocks/dragon_immune.json
 607f73d75746c0525365631312b639869ad67497 data/minecraft/tags/blocks/fences.json
@@ -10,7 +10,7 @@ b9f3cda84a4471d0ec181f2ed004d2be623aaad4 data/minecraft/tags/blocks/flowers.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/logs_that_burn.json
 f521d5db868ddd507511fe3b83bb23d5263242d9 data/minecraft/tags/blocks/mineable/axe.json
 c4677bdf53fa8c8e5d65c7045eeeeec00907ac36 data/minecraft/tags/blocks/mineable/hoe.json
-07575240246279c4725a7ffafbe58054f44707fe data/minecraft/tags/blocks/mineable/pickaxe.json
+9e38d68551c8977419375ddc650a31c6ece8d96d data/minecraft/tags/blocks/mineable/pickaxe.json
 93d379d1e8b23094235889b4fd69ec0f02153a7c data/minecraft/tags/blocks/mineable/shovel.json
 7472f21076f02bfd817ca793f0a26adf9272b12f data/minecraft/tags/blocks/needs_diamond_tool.json
 713e15d6c2601e5dbfc3fc307eef718ab59b60a0 data/minecraft/tags/blocks/overworld_natural_logs.json

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "vavs:block/crying_basalt_top",
+    "side": "vavs:block/crying_basalt_side"
+  }
+}

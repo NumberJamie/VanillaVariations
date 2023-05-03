@@ -1,9 +1,12 @@
-// 1.19.4	2023-05-03T22:09:07.6513227	Block States: vavs
+// 1.19.4	2023-05-04T00:13:47.8598498	Block States: vavs
 00e8efca4bede3d29edaff060dd82caf030fe339 assets/vavs/blockstates/amaranth_crop.json
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
 1cdf7c38462754331e0c8016c4839f8052126b8c assets/vavs/blockstates/chocolate_cake.json
 1ad3a51bb5df82bdc43a64af51a0470f46bddc6b assets/vavs/blockstates/crimson_berries.json
+2988ff9cc4efeb322ddae915fd66f15c7b8874fd assets/vavs/blockstates/crying_basalt.json
+3e93a68ff22aff201dd7da731ad7cf5c00784fab assets/vavs/blockstates/crying_polished_basalt.json
+14eb7536e3f7195a4a431cd18ee8743d98f7d97d assets/vavs/blockstates/crying_smooth_basalt.json
 05bb5aa3ec4fedf832bdd9ad9edf68412eaf3186 assets/vavs/blockstates/crystal_block.json
 b48ddda0c80692ba4496ac38f2637bf2547ef4a2 assets/vavs/blockstates/crystal_ore.json
 0de0488a14eedc1397242af29a1fc072e3947345 assets/vavs/blockstates/dead_roots.json
@@ -80,6 +83,11 @@ c9459257bad407ef0c03669579283630aa05ff61 assets/vavs/models/block/chocolate_cake
 9f9d2d25d8c75256512d20e9e65d5350030aabbd assets/vavs/models/block/crimson_berries_stage1.json
 b246c66179b66c948c082713556fc7330c8988b8 assets/vavs/models/block/crimson_berries_stage2.json
 fd122af0ee9969a4ac5a00b112da4353b77cee50 assets/vavs/models/block/crimson_berries_stage3.json
+ace651773bb99c8630c4c8c0822de740089ffa5a assets/vavs/models/block/crying_basalt.json
+6713ab7416d21eecfef47597ec65980b9785c370 assets/vavs/models/block/crying_basalt_horizontal.json
+dd28f5b6dd56b8accf93c1a716f2f0cb3afa24d5 assets/vavs/models/block/crying_polished_basalt.json
+1189d2cb4f21ef15dab78ce74c3e0f3d04b335b2 assets/vavs/models/block/crying_polished_basalt_horizontal.json
+89a4fcfe784b20725b32fee1586b6753dbc1ed54 assets/vavs/models/block/crying_smooth_basalt.json
 f2d9e902b311e92817cca84d17761ce51bcffaab assets/vavs/models/block/crystal_block.json
 5795633c3e90fc625177b89ad1d7319532de831d assets/vavs/models/block/crystal_ore.json
 db4012cd6e5195b1a05b3b31fb27b802f486ecfd assets/vavs/models/block/dead_roots.json
@@ -172,6 +180,9 @@ b9b3f3b4e3125681add2705edc00fb28ba07d937 assets/vavs/models/block/warped_berries
 f3686dc5b0a3037cd38f3706498ef93f6ce4e548 assets/vavs/models/block/warped_berries_stage3.json
 03508d2080712c1f4b1f0c88b0826045afb9f11a assets/vavs/models/block/wild_cabbage.json
 cae1c1cbafeef91e305ed0a5590b8a1ddb65819a assets/vavs/models/block/wild_ginger.json
+31cacacc4a51b105e438b2314da1ed7536ee1a23 assets/vavs/models/item/crying_basalt.json
+00f88da77ef8584d75108ab0c94e0c18a9fb2a60 assets/vavs/models/item/crying_polished_basalt.json
+13c09a9dd6372b7ecb37814d1197b41030a959b9 assets/vavs/models/item/crying_smooth_basalt.json
 ea96fd446293bc74ff9ec0bc217abce8ab42941c assets/vavs/models/item/crystal_block.json
 4158c92cd4adeb4b1d8ceac3f51e7b53d3b55a93 assets/vavs/models/item/crystal_ore.json
 4cafe94990294e4f616c8dc60242ff8848b41452 assets/vavs/models/item/end_soil.json

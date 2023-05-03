@@ -75,6 +75,9 @@ public class VanillaVariations
             event.accept(ModBlocks.WALNUT_TRAPDOOR);
             event.accept(ModBlocks.WALNUT_PRESSURE_PLATE);
             event.accept(ModBlocks.WALNUT_BUTTON);
+            event.accept(ModBlocks.CRYING_BASALT);
+            event.accept(ModBlocks.CRYING_SMOOTH_BASALT);
+            event.accept(ModBlocks.CRYING_POLISHED_BASALT);
             event.accept(ModBlocks.SOUL_LIGHT);
             event.accept(ModBlocks.SOUL_STONE);
             event.accept(ModBlocks.SOUL_STONE_STAIRS);
@@ -111,6 +114,7 @@ public class VanillaVariations
             event.accept(ModBlocks.END_SOIL);
             event.accept(ModBlocks.CRYSTAL_ORE);
             event.accept(ModBlocks.NETHER_FARMLAND);
+            event.accept(ModBlocks.CRYING_BASALT);
             event.accept(ModBlocks.BLOSSOMING_ROOT);
             event.accept(ModBlocks.ENDER_ROOT);
             event.accept(ModBlocks.SOUL_FLOWER);

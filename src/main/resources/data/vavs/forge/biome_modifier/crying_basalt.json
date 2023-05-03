@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_nether",
+  "features": "vavs:crying_basalt_placed",
+  "step": "underground_ores"
+}

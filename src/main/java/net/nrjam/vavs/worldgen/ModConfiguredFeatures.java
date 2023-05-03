@@ -50,10 +50,12 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRYSTAL_ORE_KEY = registerKey("crystal_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GINGER_KEY = registerKey("ginger");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRYING_BASALT_KEY = registerKey("crying_basalt");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
         RuleTest netherRackReplaceable = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest basaltReplaceable = new BlockMatchTest(Blocks.BASALT);
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 
         register(context, WALNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -66,6 +68,10 @@ public class ModConfiguredFeatures {
         register(context, END_SOIL_KEY, Feature.ORE, new OreConfiguration(
                 endStoneReplaceable,
                 ModBlocks.END_SOIL.get().defaultBlockState(), 64));
+
+        register(context, CRYING_BASALT_KEY, Feature.ORE, new OreConfiguration(
+                basaltReplaceable,
+                ModBlocks.CRYING_BASALT.get().defaultBlockState(), 24));
 
         register(context, BLOSSOMING_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
                 128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,

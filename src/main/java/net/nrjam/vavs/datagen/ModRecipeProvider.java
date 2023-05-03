@@ -19,6 +19,7 @@ import net.nrjam.vavs.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
@@ -46,6 +47,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE.get()).define('X', Blocks.SOUL_SOIL)
                 .pattern("XX").pattern("XX")
                 .unlockedBy("has_soul_soil", has(Blocks.SOUL_SOIL)).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYING_POLISHED_BASALT.get()).define('X', ModBlocks.CRYING_BASALT.get())
+                .pattern("XX").pattern("XX")
+                .unlockedBy("has_crying_basalt", has(ModBlocks.CRYING_BASALT.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_LIGHT.get()).define('X', Blocks.GLOWSTONE).define('Y', ModItems.SOUL_ESSENCE.get())
                 .pattern("YYY").pattern("YXY").pattern("YYY")
                 .unlockedBy("has_soul_essence", has(ModItems.SOUL_ESSENCE.get())).save(consumer);
@@ -75,6 +79,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRIES.get());
         pieRecipe(consumer, ModItems.AMARANTH_PIE.get(), ModItems.AMARANTH.get());
         pieRecipe(consumer, ModItems.GINGER_PIE.get(), ModItems.GINGER.get());
+
+        oreSmelting(consumer, List.of(ModBlocks.CRYING_BASALT.get()), RecipeCategory.MISC, ModBlocks.CRYING_SMOOTH_BASALT.get(), 0.7f, 200, "crying_smooth_basalt");
+        oreSmelting(consumer, List.of(ModBlocks.CRYSTAL_ORE.get()), RecipeCategory.MISC, ModItems.CRYSTAL.get(), 0.7f, 200, "crystal");
 
         flowerRecipe(consumer, Items.BLACK_DYE, ModBlocks.VIOLA.get());
         flowerRecipe(consumer, Items.PURPLE_DYE, ModBlocks.LAVENDER.get());
