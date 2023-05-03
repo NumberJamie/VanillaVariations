@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "vavs:amaranth_essence"
+    },
+    "Y": {
+      "item": "minecraft:golden_chestplate"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "item": "vavs:fused_amaranth_chestplate"
+  },
+  "show_notification": true
+}

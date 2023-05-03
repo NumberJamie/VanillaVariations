@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CRYSTAL);
         simpleItem(ModItems.REINFORCED_LEATHER);
         simpleItem(ModItems.SOUL_ESSENCE);
+        simpleItem(ModItems.AMARANTH_ESSENCE);
         simpleItem(ModItems.SOUL_SPROUT);
         simpleItem(ModItems.CRIMSON_BERRIES);
         simpleItem(ModItems.WARPED_BERRIES);
@@ -59,6 +60,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REINFORCED_LEATHER_LEGGINGS);
         simpleItem(ModItems.REINFORCED_LEATHER_BOOTS);
 
+        simpleItem(ModItems.FUSED_AMARANTH_HELMET);
+        simpleItem(ModItems.FUSED_AMARANTH_CHESTPLATE);
+        simpleItem(ModItems.FUSED_AMARANTH_LEGGINGS);
+        simpleItem(ModItems.FUSED_AMARANTH_BOOTS);
+
         simpleItem(ModItems.CRYSTAL_BOOTS);
         simpleItem(ModItems.CRYSTAL_LEGGINGS);
         simpleItem(ModItems.CRYSTAL_CHESTPLATE);
@@ -71,6 +77,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.CRYSTAL_PICKAXE);
         handheldItem(ModItems.CRYSTAL_HOE);
         handheldItem(ModItems.CRYSTAL_SHOVEL);
+
+        handheldItem(ModItems.FUSED_AMARANTH_SWORD);
+        handheldItem(ModItems.FUSED_AMARANTH_AXE);
+        handheldItem(ModItems.FUSED_AMARANTH_PICKAXE);
+        handheldItem(ModItems.FUSED_AMARANTH_HOE);
+        handheldItem(ModItems.FUSED_AMARANTH_SHOVEL);
 
         simpleItem(ModItems.FUSED_SOUL_HELMET);
         simpleItem(ModItems.FUSED_SOUL_CHESTPLATE);

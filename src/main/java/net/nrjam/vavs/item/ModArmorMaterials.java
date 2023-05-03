@@ -31,6 +31,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }), 25, SoundEvents.SOUL_ESCAPE, 0F, 0.0F, () -> {
         return Ingredient.of(ModItems.SOUL_ESSENCE.get());
     }),
+    FUSED_AMARANTH("fused_amaranth", 64, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 1);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 3);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 5);
+        p_266655_.put(ArmorItem.Type.HELMET, 2);
+    }), 22, SoundEvents.ARMOR_EQUIP_GENERIC, 0F, 0.0F, () -> {
+        return Ingredient.of(ModItems.AMARANTH.get());
+    }),
     CRYSTAL("crystal", 36, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
         p_266655_.put(ArmorItem.Type.BOOTS, 4);
         p_266655_.put(ArmorItem.Type.LEGGINGS, 6);

@@ -1,7 +1,8 @@
-// 1.19.4	2023-05-03T19:55:46.2835693	Item Models: vavs
+// 1.19.4	2023-05-03T21:03:52.8869229	Item Models: vavs
 ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
 67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
 1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
+957870d9c7883456f926abe7da2f263a965c6828 assets/vavs/models/item/amaranth_essence.json
 8e405dbb53c889bfb229f45dcab17d1ebf9e6721 assets/vavs/models/item/amaranth_pie.json
 c3ebb4a5d1035ef8580f6d892f25c1831e896ef8 assets/vavs/models/item/amaranth_salad.json
 9dd8167f8b10062099c4a379bb8334063b16d3a8 assets/vavs/models/item/amaranth_seed.json
@@ -28,6 +29,15 @@ b35a1316d540a8a6dee9db21906fc0c1eb4d2c31 assets/vavs/models/item/dead_roots.json
 f2e901ad23d090000f5d11751fcc639f24e49d99 assets/vavs/models/item/dried_kelp_soup.json
 6655a57e69ca84d9e44151a001d86170c5bdc286 assets/vavs/models/item/ender_root.json
 4a27f44361647973c95ce8250dc51e6ca89d2f4f assets/vavs/models/item/flower_crown.json
+1a5d2fe97fe5f6fdaa0ffcbc801e93ac913bf398 assets/vavs/models/item/fused_amaranth_axe.json
+48c2ea8fc809849c8067724411b0373c5cdc9edf assets/vavs/models/item/fused_amaranth_boots.json
+1b1b2d5764b51949539e14d12a5bfdc66f7052bb assets/vavs/models/item/fused_amaranth_chestplate.json
+19ce5bdeb2fbb85c0e5d01640a9cbba459d0cded assets/vavs/models/item/fused_amaranth_helmet.json
+2faf4d73a20a28c7b113c1f95c0f5521ed3ccc0b assets/vavs/models/item/fused_amaranth_hoe.json
+cdad0762e130491d701af5298da9103db55a793b assets/vavs/models/item/fused_amaranth_leggings.json
+66bb7878533d8d4f666c2f3c77f0bad6ac7a9efb assets/vavs/models/item/fused_amaranth_pickaxe.json
+c96e4cc271f5ae8e43a6817962d3aa3cf185a497 assets/vavs/models/item/fused_amaranth_shovel.json
+455240469630a0171abc9ca6af051bb71cda3255 assets/vavs/models/item/fused_amaranth_sword.json
 f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boots.json
 5d89bd95623d142fa2d6ddce029911e9a27ba04c assets/vavs/models/item/fused_soul_chestplate.json
 d136009ae59a1d557a8e3317a7baac37d3560bd5 assets/vavs/models/item/fused_soul_helmet.json

@@ -17,6 +17,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SOUL_ESSENCE = ITEMS.register("soul_essence",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AMARANTH_ESSENCE = ITEMS.register("amaranth_essence",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REINFORCED_LEATHER = ITEMS.register("reinforced_leather",
             () -> new Item(new Item.Properties()));
 
@@ -117,6 +119,26 @@ public class ModItems {
             () -> new AxeItem(ModItemTier.CRYSTAL, 7, -3f, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
             () -> new HoeItem(ModItemTier.CRYSTAL, -2, 0f, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> FUSED_AMARANTH_HELMET = ITEMS.register("fused_amaranth_helmet",
+            () -> new ArmorItem(ModArmorMaterials.FUSED_AMARANTH, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_CHESTPLATE = ITEMS.register("fused_amaranth_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.FUSED_AMARANTH, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_LEGGINGS = ITEMS.register("fused_amaranth_leggings",
+            () -> new ArmorItem(ModArmorMaterials.FUSED_AMARANTH, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_BOOTS = ITEMS.register("fused_amaranth_boots",
+            () -> new ArmorItem(ModArmorMaterials.FUSED_AMARANTH, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> FUSED_AMARANTH_SHOVEL = ITEMS.register("fused_amaranth_shovel",
+            () -> new ShovelItem(ModItemTier.FUSED_AMARANTH, 3.5f, -3f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_SWORD = ITEMS.register("fused_amaranth_sword",
+            () -> new SwordItem(ModItemTier.FUSED_AMARANTH, 5, -2.4f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_PICKAXE = ITEMS.register("fused_amaranth_pickaxe",
+            () -> new PickaxeItem(ModItemTier.FUSED_AMARANTH, 3, -2.8f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_AXE = ITEMS.register("fused_amaranth_axe",
+            () -> new AxeItem(ModItemTier.FUSED_AMARANTH, 7, -3f, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> FUSED_AMARANTH_HOE = ITEMS.register("fused_amaranth_hoe",
+            () -> new HoeItem(ModItemTier.FUSED_AMARANTH, -2, 0f, new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> FLOWER_CROWN = ITEMS.register("flower_crown",
             () -> new FlowerCrownItem(ModArmorMaterials.FLOWER_CROWN, ArmorItem.Type.HELMET, new Item.Properties()));

@@ -1,7 +1,8 @@
 {
-  "item.vavs.soul_essence": "Soul Essence",
+  "item.vavs.soul_essence": "Soul essence",
   "item.vavs.reinforced_leather": "Reinforced leather",
   "item.vavs.crystal": "Crystal",
+  "item.vavs.amaranth_essence": "Amaranth essence",
 
   "item.vavs.reinforced_leather_helmet": "Reinforced leather helmet",
   "item.vavs.reinforced_leather_chestplate": "Reinforced leather chestplate",
@@ -17,6 +18,11 @@
   "item.vavs.fused_soul_chestplate": "Fused soul chestplate",
   "item.vavs.fused_soul_leggings": "Fused soul leggings",
   "item.vavs.fused_soul_boots": "Fused soul boots",
+
+  "item.vavs.fused_amaranth_helmet": "Fused amaranth helmet",
+  "item.vavs.fused_amaranth_chestplate": "Fused amaranth chestplate",
+  "item.vavs.fused_amaranth_leggings": "Fused amaranth leggings",
+  "item.vavs.fused_amaranth_boots": "Fused amaranth boots",
 
   "item.vavs.soul_sprout": "Soul sprout",
   "block.vavs.soul_sprouts": "Soul sprout",
@@ -96,6 +102,12 @@
   "item.vavs.crystal_pickaxe": "Crystal pickaxe",
   "item.vavs.crystal_axe": "Crystal axe",
   "item.vavs.crystal_hoe": "Crystal hoe",
+
+  "item.vavs.fused_amaranth_sword": "Fused amaranth sword",
+  "item.vavs.fused_amaranth_shovel": "Fused amaranth shovel",
+  "item.vavs.fused_amaranth_pickaxe": "Fused amaranth pickaxe",
+  "item.vavs.fused_amaranth_axe": "Fused amaranth axe",
+  "item.vavs.fused_amaranth_hoe": "Fused amaranth hoe",
 
   "item.vavs.flower_crown": "Flower crown",
 

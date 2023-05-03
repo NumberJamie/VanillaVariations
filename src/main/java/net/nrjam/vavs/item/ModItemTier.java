@@ -1,6 +1,7 @@
 package net.nrjam.vavs.item;
 
 import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
@@ -10,8 +11,10 @@ import java.util.function.Supplier;
 public enum ModItemTier implements Tier {
     CRYSTAL(3, 1961, 9.6f, 2.0f, 14, () -> {
         return Ingredient.of(ModItems.CRYSTAL.get());
+    }),
+    FUSED_AMARANTH(0, 1000, 12.0f, 0.0f, 22, () -> {
+        return Ingredient.of(ModItems.AMARANTH.get());
     });
-
     private final int level;
     private final int uses;
     private final float speed;

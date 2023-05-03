@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "vavs:soul_essence"
+    },
+    "Y": {
+      "item": "minecraft:golden_chestplate"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "item": "vavs:fused_soul_chestplate"
+  },
+  "show_notification": true
+}

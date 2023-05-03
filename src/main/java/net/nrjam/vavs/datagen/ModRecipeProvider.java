@@ -100,6 +100,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pickaxeRecipe(consumer, ModItems.CRYSTAL_PICKAXE.get(), ModItems.CRYSTAL.get());
         swordRecipe(consumer, ModItems.CRYSTAL_SWORD.get(), ModItems.CRYSTAL.get());
 
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_SWORD.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_SWORD);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_SHOVEL.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_SHOVEL);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_PICKAXE.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_PICKAXE);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_AXE.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_AXE);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_HOE.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_HOE);
+
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_HELMET.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_HELMET);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_CHESTPLATE.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_CHESTPLATE);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_LEGGINGS.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_LEGGINGS);
+        surroundRecipe(consumer, ModItems.FUSED_AMARANTH_BOOTS.get(), ModItems.AMARANTH_ESSENCE.get(), Items.GOLDEN_BOOTS);
+
+        surroundRecipe(consumer, ModItems.FUSED_SOUL_HELMET.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_HELMET);
+        surroundRecipe(consumer, ModItems.FUSED_SOUL_CHESTPLATE.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_CHESTPLATE);
+        surroundRecipe(consumer, ModItems.FUSED_SOUL_LEGGINGS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_LEGGINGS);
+        surroundRecipe(consumer, ModItems.FUSED_SOUL_BOOTS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_BOOTS);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH_COOKIE.get()).requires(ModItems.AMARANTH_COOKIE.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH_COOKIE.get()), has(ModItems.AMARANTH_COOKIE.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AMARANTH_BREAD.get()).define('X', ModItems.AMARANTH.get()).pattern("XXX").unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
     }
@@ -161,6 +177,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void cakeRecipe(Consumer<FinishedRecipe> consumer, Block result, Item item){
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result).define('X', item).define('Y', Items.SUGAR).define('Z', Items.EGG).define('W', Items.WHEAT)
                 .pattern("XXX").pattern("YZY").pattern("WWW")
+                .unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void surroundRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item1){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result).define('X', item).define('Y', item1)
+                .pattern("XXX").pattern("XYX").pattern("XXX")
                 .unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
