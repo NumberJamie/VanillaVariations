@@ -73,6 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pieRecipe(consumer, ModItems.SOUL_SPROUT_PIE.get(), ModItems.SOUL_SPROUT.get());
         pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRIES.get());
         pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRIES.get());
+        pieRecipe(consumer, ModItems.AMARANTH_PIE.get(), ModItems.AMARANTH.get());
 
         flowerRecipe(consumer, Items.BLACK_DYE, ModBlocks.VIOLA.get());
         flowerRecipe(consumer, Items.PURPLE_DYE, ModBlocks.LAVENDER.get());
@@ -81,12 +82,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         stewRecipe(consumer, ModItems.DRIED_KELP_SOUP.get(), Items.DRIED_KELP);
         stewRecipe(consumer, ModItems.SOUL_SPROUT_STEW.get(), ModItems.SOUL_SPROUT.get());
+        stewRecipe(consumer, ModItems.AMARANTH_SOUP.get(), ModItems.AMARANTH.get());
 
         saladRecipe(consumer, ModItems.MEAT_SALAD.get(), Items.COOKED_PORKCHOP, Items.COOKED_CHICKEN, Items.COOKED_BEEF);
         saladRecipe(consumer, ModItems.SALMON_SALAD.get(), Items.DRIED_KELP, Items.DRIED_KELP, Items.COOKED_SALMON);
         saladRecipe(consumer, ModItems.GARDEN_SALAD.get(), Items.SWEET_BERRIES, Items.APPLE, Items.MELON_SLICE);
         saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get());
         saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES);
+        saladRecipe(consumer, ModItems.AMARANTH_SALAD.get(), ModItems.AMARANTH.get(), Items.DRIED_KELP, ModItems.AMARANTH.get());
 
         cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
         cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
@@ -96,6 +99,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         axeRecipe(consumer, ModItems.CRYSTAL_AXE.get(), ModItems.CRYSTAL.get());
         pickaxeRecipe(consumer, ModItems.CRYSTAL_PICKAXE.get(), ModItems.CRYSTAL.get());
         swordRecipe(consumer, ModItems.CRYSTAL_SWORD.get(), ModItems.CRYSTAL.get());
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH_COOKIE.get()).requires(ModItems.AMARANTH_COOKIE.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH_COOKIE.get()), has(ModItems.AMARANTH_COOKIE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AMARANTH_BREAD.get()).define('X', ModItems.AMARANTH.get()).pattern("XXX").unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
     }
 
     protected static void hoeRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

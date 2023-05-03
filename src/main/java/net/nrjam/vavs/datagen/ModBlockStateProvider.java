@@ -18,10 +18,7 @@ import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.block.custom.ModCakeBlock;
 import net.nrjam.vavs.block.custom.NetherFarmland;
-import net.nrjam.vavs.block.natural.CabbageCrop;
-import net.nrjam.vavs.block.natural.CrimsonBerry;
-import net.nrjam.vavs.block.natural.SoulSprouts;
-import net.nrjam.vavs.block.natural.WarpedBerry;
+import net.nrjam.vavs.block.natural.*;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -86,6 +83,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage", true);
         makeCrop((CabbageCrop)ModBlocks.CABBAGE_CROP.get(), "cabbage_stage", "cabbage_stage", false);
+        makeCrop((AmaranthCrop)ModBlocks.AMARANTH_CROP.get(), "amaranth_stage", "amaranth_stage", false);
 
         makeBush((WarpedBerry)ModBlocks.WARPED_BERRIES.get(), "warped_berries_stage", "warped_berries_stage");
         makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRIES.get(), "crimson_berries_stage", "crimson_berries_stage");

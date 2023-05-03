@@ -57,16 +57,30 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodItems.WARPED_BERRY_PIE)));
     public static final RegistryObject<Item> CRIMSON_BERRY_PIE = ITEMS.register("crimson_berry_pie",
             () -> new Item(new Item.Properties().food(ModFoodItems.CRIMSON_BERRY_PIE)));
+    public static final RegistryObject<Item> AMARANTH_PIE = ITEMS.register("amaranth_pie",
+            () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH_PIE)));
 
     public static final RegistryObject<Item> CABBAGE_SEED = ITEMS.register("cabbage_seed",
             () -> new BlockItem(ModBlocks.CABBAGE_CROP.get(), (new Item.Properties())));
     public static final RegistryObject<Item> CABBAGE = ITEMS.register("cabbage",
             () -> new Item(new Item.Properties().food(ModFoodItems.CABBAGE)));
 
+    public static final RegistryObject<Item> AMARANTH_SEED = ITEMS.register("amaranth_seed",
+            () -> new BlockItem(ModBlocks.AMARANTH_CROP.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> AMARANTH = ITEMS.register("amaranth",
+            () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH)));
+
+    public static final RegistryObject<Item> AMARANTH_BREAD = ITEMS.register("amaranth_bread",
+            () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH_BREAD)));
+    public static final RegistryObject<Item> AMARANTH_COOKIE = ITEMS.register("amaranth_cookie",
+            () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH_COOKIE)));
+
     public static final RegistryObject<Item> DRIED_KELP_SOUP = ITEMS.register("dried_kelp_soup",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.DRIED_KELP_SOUP)));
     public static final RegistryObject<Item> SOUL_SPROUT_STEW = ITEMS.register("soul_sprout_stew",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_STEW)));
+    public static final RegistryObject<Item> AMARANTH_SOUP = ITEMS.register("amaranth_soup",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.AMARANTH_SOUP)));
 
     public static final RegistryObject<Item> GARDEN_SALAD = ITEMS.register("garden_salad",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.GARDEN_SALAD)));
@@ -78,6 +92,8 @@ public class ModItems {
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SWEET_SALAD)));
     public static final RegistryObject<Item> SOUL_SPROUT_SALAD = ITEMS.register("soul_sprout_salad",
             () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.SOUL_SPROUT_SALAD)));
+    public static final RegistryObject<Item> AMARANTH_SALAD = ITEMS.register("amaranth_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.AMARANTH_SALAD)));
 
     public static final RegistryObject<Item> CRYSTAL = ITEMS.register("crystal",
             () -> new Item(new Item.Properties().fireResistant()));

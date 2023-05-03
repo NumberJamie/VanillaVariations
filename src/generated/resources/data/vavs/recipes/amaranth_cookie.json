@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:amaranth_cookie"
+    },
+    {
+      "item": "vavs:amaranth_cookie"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "vavs:amaranth_cookie"
+  }
+}

@@ -142,6 +142,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
             () -> new CabbageCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> AMARANTH_CROP = BLOCKS.register("amaranth_crop",
+            () -> new AmaranthCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
             () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));

@@ -1,4 +1,11 @@
-// 1.19.4	2023-05-02T22:36:45.6382135	Item Models: vavs
+// 1.19.4	2023-05-03T19:55:46.2835693	Item Models: vavs
+ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
+67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
+1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
+8e405dbb53c889bfb229f45dcab17d1ebf9e6721 assets/vavs/models/item/amaranth_pie.json
+c3ebb4a5d1035ef8580f6d892f25c1831e896ef8 assets/vavs/models/item/amaranth_salad.json
+9dd8167f8b10062099c4a379bb8334063b16d3a8 assets/vavs/models/item/amaranth_seed.json
+dbbfe8d1fc9107db16f6742cb4f6c2ea968339f7 assets/vavs/models/item/amaranth_soup.json
 6448026ca94d75625f710b4003dc2c0f91d65164 assets/vavs/models/item/apple_pie.json
 fc84dd1e83a7f272609ad49a5a74e1b86d14947e assets/vavs/models/item/blossoming_root.json
 e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json

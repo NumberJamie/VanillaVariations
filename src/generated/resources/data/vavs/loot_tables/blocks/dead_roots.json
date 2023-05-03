@@ -43,14 +43,14 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "chance": 0.125,
+                  "chance": 0.1,
                   "condition": "minecraft:random_chance"
                 },
                 {
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:stick"
+              "name": "vavs:amaranth_seed"
             }
           ]
         }

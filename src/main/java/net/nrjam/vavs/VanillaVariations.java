@@ -43,6 +43,7 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_ESSENCE);
             event.accept(ModItems.REINFORCED_LEATHER);
             event.accept(ModItems.CABBAGE_SEED);
+            event.accept(ModItems.AMARANTH_SEED);
         }
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.CRYSTAL_SHOVEL);
@@ -104,6 +105,7 @@ public class VanillaVariations
             event.accept(ModItems.WARPED_BERRIES);
             event.accept(ModItems.CRIMSON_BERRIES);
             event.accept(ModItems.CABBAGE_SEED);
+            event.accept(ModItems.AMARANTH_SEED);
             event.accept(ModBlocks.WILD_CABBAGE);
             event.accept(ModBlocks.VIOLA);
             event.accept(ModBlocks.MARIGOLD);
@@ -114,7 +116,9 @@ public class VanillaVariations
             event.accept(ModBlocks.SOUL_LIGHT);
         }
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            // ingredients
             event.accept(ModItems.CABBAGE);
+            event.accept(ModItems.AMARANTH);
             event.accept(ModItems.SOUL_SPROUT);
             event.accept(ModItems.WARPED_BERRIES);
             event.accept(ModItems.CRIMSON_BERRIES);
@@ -126,10 +130,12 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT_PIE);
             event.accept(ModItems.WARPED_BERRY_PIE);
             event.accept(ModItems.CRIMSON_BERRY_PIE);
+            event.accept(ModItems.AMARANTH_PIE);
 
             // stews
             event.accept(ModItems.DRIED_KELP_SOUP);
             event.accept(ModItems.SOUL_SPROUT_STEW);
+            event.accept(ModItems.AMARANTH_SOUP);
 
             // salads
             event.accept(ModItems.SWEET_SALAD);
@@ -137,7 +143,13 @@ public class VanillaVariations
             event.accept(ModItems.MEAT_SALAD);
             event.accept(ModItems.GARDEN_SALAD);
             event.accept(ModItems.SOUL_SPROUT_SALAD);
+            event.accept(ModItems.AMARANTH_SALAD);
 
+            // misc
+            event.accept(ModItems.AMARANTH_BREAD);
+            event.accept(ModItems.AMARANTH_COOKIE);
+
+            // cakes
             event.accept(ModBlocks.CHOCOLATE_CAKE);
             event.accept(ModBlocks.HONEY_CAKE);
         }

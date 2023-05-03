@@ -99,6 +99,18 @@
 
   "item.vavs.flower_crown": "Flower crown",
 
+  "item.vavs.amaranth": "Amaranth",
+
+  "item.vavs.amaranth_seed": "Amaranth seed",
+  "block.vavs.amaranth_crop": "Amaranth seed",
+
+  "item.vavs.amaranth_salad": "Amaranth salad",
+  "item.vavs.amaranth_soup": "Amaranth soup",
+  "item.vavs.amaranth_pie": "Amaranth pie",
+
+  "item.vavs.amaranth_bread": "Amaranth bread",
+  "item.vavs.amaranth_cookie": "Amaranth cookie",
+
   "tooltip.vavs.flower_crown": "Randomly gives regeneration II",
   "tooltip.vavs.fused_soul": "When wearing the full set you are immune to wither"
 }

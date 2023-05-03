@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-02T22:37:16.0173196	Recipes
+// 1.19.4	2023-05-03T19:55:46.29366	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 96a12e9312754478bfa23b6a78e9eaafed2dd7a8 data/minecraft/advancements/recipes/misc/magenta_dye.json
 cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/misc/orange_dye.json
@@ -19,6 +19,7 @@ ed472737aeac44793bb92c2fa7f81ec8e0909822 data/vavs/advancements/recipes/building
 cc632cf55743605d83b18b501b253707358806ca data/vavs/advancements/recipes/building_blocks/walnut_planks.json
 b087b60d2bc3c7631474aa0570512d3390477ecc data/vavs/advancements/recipes/building_blocks/walnut_slab.json
 55d041576857e17bb1d5ed6eda48b53e4f5d2f56 data/vavs/advancements/recipes/building_blocks/walnut_stairs.json
+e4fad6858f05c99d3b1b01c1c43972862f65e5da data/vavs/advancements/recipes/combat/amaranth_bread.json
 2087e0b212c7a422cfacc2ed7f3467892266c210 data/vavs/advancements/recipes/combat/crystal_axe.json
 70b20347631412a25734dcb607647870fa67f2ab data/vavs/advancements/recipes/combat/crystal_boots.json
 fe468d84501f9c45a9b4da0290ecb000b46fc790 data/vavs/advancements/recipes/combat/crystal_chestplate.json
@@ -34,6 +35,10 @@ f0bc12c39328721c68e26d9cbd43d332663d5535 data/vavs/advancements/recipes/combat/r
 b344c39593a7443087efadaaf164dc2a65a6c9bc data/vavs/advancements/recipes/combat/reinforced_leather_helmet.json
 00802e2a6de8a152007c432d1db05a2d584c89be data/vavs/advancements/recipes/combat/reinforced_leather_leggings.json
 c7a2a34305864db01c14bd289ad1bedaf7b004ee data/vavs/advancements/recipes/decorations/walnut_fence.json
+0b46a48086b24f24d9a64cef8b3fd5a9ea2dff11 data/vavs/advancements/recipes/food/amaranth_cookie.json
+063b204a835b71adc46de8697d88540533db49f4 data/vavs/advancements/recipes/food/amaranth_pie.json
+10b106e89eca72c613a6375059904c155fa99d34 data/vavs/advancements/recipes/food/amaranth_salad.json
+471203c221c6c142d59dc92dbf1f0ef5acadddc6 data/vavs/advancements/recipes/food/amaranth_soup.json
 40f2172d9deec83b4996408d4f6b203ab91da973 data/vavs/advancements/recipes/food/apple_pie.json
 0a843af7318edc869843e9e7c32d5a2a9ca30bbe data/vavs/advancements/recipes/food/chocolate_cake.json
 07628b1733915d9f875127f9536a888bdfb865a3 data/vavs/advancements/recipes/food/chorus_fruit_pie.json
@@ -57,6 +62,11 @@ e32cb56e71d1d5d2eb14ce0717dfc59135851794 data/vavs/advancements/recipes/redstone
 81d40d4d0c7c039e38f3f81f3f86112a87138bd7 data/vavs/advancements/recipes/redstone/walnut_fence_gate.json
 ba943c3f68bbe5917266da32f62c0eee721eaa2d data/vavs/advancements/recipes/redstone/walnut_pressure_plate.json
 bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone/walnut_trapdoor.json
+4022a2c92a5b9d0b90074981d2cf0dd050306cda data/vavs/recipes/amaranth_bread.json
+a484fed79d7b44c2dc0532ae6fb229c00250288d data/vavs/recipes/amaranth_cookie.json
+5a4665886aa69e6f1417efe85402eb410b83cc5b data/vavs/recipes/amaranth_pie.json
+f3fce1f5d6d048c67f11eea892f1b715ae1d3d86 data/vavs/recipes/amaranth_salad.json
+9eb286db7194648ca3d3a13f8d4349290455d556 data/vavs/recipes/amaranth_soup.json
 81bc855243beaf64ff5f870d624120f6fabe70b1 data/vavs/recipes/apple_pie.json
 e07b8de3ff2aa9a07c077e8c644ca99e68b15765 data/vavs/recipes/chocolate_cake.json
 8f705af94880d7da75d165463ef74325efe7c90a data/vavs/recipes/chorus_fruit_pie.json

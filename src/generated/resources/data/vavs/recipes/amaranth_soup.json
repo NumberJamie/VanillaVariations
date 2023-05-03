@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:amaranth"
+    },
+    {
+      "item": "vavs:amaranth"
+    },
+    {
+      "item": "vavs:amaranth"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "vavs:amaranth_soup"
+  }
+}

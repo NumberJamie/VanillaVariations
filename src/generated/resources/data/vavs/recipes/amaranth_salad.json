@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:amaranth"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "vavs:amaranth"
+    },
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "vavs:amaranth_salad"
+  }
+}

@@ -29,21 +29,30 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CABBAGE);
         simpleItem(ModItems.CABBAGE_SEED);
 
+        simpleItem(ModItems.AMARANTH);
+        simpleItem(ModItems.AMARANTH_SEED);
+
         simpleItem(ModItems.SWEET_BERRY_PIE);
         simpleItem(ModItems.APPLE_PIE);
         simpleItem(ModItems.CHORUS_FRUIT_PIE);
         simpleItem(ModItems.SOUL_SPROUT_PIE);
         simpleItem(ModItems.WARPED_BERRY_PIE);
         simpleItem(ModItems.CRIMSON_BERRY_PIE);
+        simpleItem(ModItems.AMARANTH_PIE);
+
+        simpleItem(ModItems.AMARANTH_BREAD);
+        simpleItem(ModItems.AMARANTH_COOKIE);
 
         simpleItem(ModItems.SOUL_SPROUT_STEW);
         simpleItem(ModItems.DRIED_KELP_SOUP);
+        simpleItem(ModItems.AMARANTH_SOUP);
 
         simpleItem(ModItems.SALMON_SALAD);
         simpleItem(ModItems.SWEET_SALAD);
         simpleItem(ModItems.SOUL_SPROUT_SALAD);
         simpleItem(ModItems.GARDEN_SALAD);
         simpleItem(ModItems.MEAT_SALAD);
+        simpleItem(ModItems.AMARANTH_SALAD);
 
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);

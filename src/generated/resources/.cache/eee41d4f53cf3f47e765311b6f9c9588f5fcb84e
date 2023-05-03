@@ -1,4 +1,5 @@
-// 1.19.4	2023-05-02T21:52:34.3866487	Block States: vavs
+// 1.19.4	2023-05-03T19:08:39.2082369	Block States: vavs
+00e8efca4bede3d29edaff060dd82caf030fe339 assets/vavs/blockstates/amaranth_crop.json
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
 1cdf7c38462754331e0c8016c4839f8052126b8c assets/vavs/blockstates/chocolate_cake.json
@@ -49,6 +50,14 @@ d8957393bddf6551783dd547f9062879059d304b assets/vavs/blockstates/walnut_slab.jso
 ccd9c212c5399e6874645d54f56f7cf1796ee598 assets/vavs/blockstates/walnut_wood.json
 13669818876bb800680a5710a848300a355d66ba assets/vavs/blockstates/warped_berries.json
 879a333ce0f6f12978863d372ff93ffb6f230be3 assets/vavs/blockstates/wild_cabbage.json
+141e4196d7c234c828595f42a66af8d1580b716c assets/vavs/models/block/amaranth_stage0.json
+88649788a35b9115579a1ae9a1ca65ad5ae87b57 assets/vavs/models/block/amaranth_stage1.json
+7b15206c7143e4c8123326a20390d5bff52fefb3 assets/vavs/models/block/amaranth_stage2.json
+e0a06d80d75123ab45c94c5c64398296af4d017b assets/vavs/models/block/amaranth_stage3.json
+fc957a21685ca2dbd4782c2b58cde3836e579308 assets/vavs/models/block/amaranth_stage4.json
+6c76ce0ab9143c3ba91e4eb32318223e8ea8a10b assets/vavs/models/block/amaranth_stage5.json
+361f63d89b94d3b4f6b478a92f97ccf99c040f90 assets/vavs/models/block/amaranth_stage6.json
+4618b736a9c9d346bb483a320bc310b6ecfa28aa assets/vavs/models/block/amaranth_stage7.json
 b349ea223654f0d2acd4db5c25f41c7e80945db4 assets/vavs/models/block/blossoming_root.json
 28957fbb35502caffd7c6788941c61f2bdc6bfda assets/vavs/models/block/cabbage_stage0.json
 b464da41f31edd97870fe901d30798eadc3fc1a7 assets/vavs/models/block/cabbage_stage1.json
