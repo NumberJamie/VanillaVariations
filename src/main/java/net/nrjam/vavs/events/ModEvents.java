@@ -1,13 +1,19 @@
 package net.nrjam.vavs.events;
 
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
+import net.nrjam.vavs.item.enchantments.Scorching;
 
 public class ModEvents {
     @Mod.EventBusSubscriber(modid = VanillaVariations.MOD_ID)
@@ -18,6 +24,21 @@ public class ModEvents {
                 if (event.getFinalState() == Blocks.SOUL_SOIL.defaultBlockState()) {
                     event.setFinalState(ModBlocks.NETHER_FARMLAND.get().defaultBlockState());
                 }
+            }
+        }
+
+        @SubscribeEvent
+        public static void noCropTrample(BlockEvent.FarmlandTrampleEvent event){
+            if (Scorching.hasScorching((LivingEntity) event.getEntity())) {
+                event.setCanceled(true);
+            }
+        }
+
+        @SubscribeEvent
+        public static void noMagmaDamage(LivingAttackEvent event){
+            if (event.getSource().is(DamageTypes.HOT_FLOOR) && Scorching.hasScorching(event.getEntity())) {
+                Scorching.hasScorching(event.getEntity());
+                event.setCanceled(true);
             }
         }
     }

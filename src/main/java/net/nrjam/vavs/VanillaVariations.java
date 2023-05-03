@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.item.ModItems;
+import net.nrjam.vavs.item.enchantments.ModEnchantments;
 import org.slf4j.Logger;
 
 @Mod(VanillaVariations.MOD_ID)
@@ -27,6 +28,7 @@ public class VanillaVariations
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
