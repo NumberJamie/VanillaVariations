@@ -31,6 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CABBAGE_SEED);
 
         simpleItem(ModItems.AMARANTH);
+        simpleItem(ModItems.GINGER);
         simpleItem(ModItems.AMARANTH_SEED);
 
         simpleItem(ModItems.SWEET_BERRY_PIE);
@@ -40,8 +41,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WARPED_BERRY_PIE);
         simpleItem(ModItems.CRIMSON_BERRY_PIE);
         simpleItem(ModItems.AMARANTH_PIE);
+        simpleItem(ModItems.GINGER_PIE);
 
         simpleItem(ModItems.AMARANTH_BREAD);
+        simpleItem(ModItems.GINGER_BREAD);
+        simpleItem(ModItems.AMARANTH_GINGER_BREAD);
         simpleItem(ModItems.AMARANTH_COOKIE);
 
         simpleItem(ModItems.SOUL_SPROUT_STEW);
@@ -54,6 +58,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GARDEN_SALAD);
         simpleItem(ModItems.MEAT_SALAD);
         simpleItem(ModItems.AMARANTH_SALAD);
+        simpleItem(ModItems.GINGER_SALAD);
 
         simpleItem(ModItems.REINFORCED_LEATHER_HELMET);
         simpleItem(ModItems.REINFORCED_LEATHER_CHESTPLATE);
@@ -95,6 +100,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.SOUL_FLOWER);
         saplingItem(ModBlocks.DEAD_ROOTS);
         saplingItem(ModBlocks.WILD_CABBAGE);
+        saplingItem(ModBlocks.WILD_GINGER);
 
         saplingItem(ModBlocks.VIOLA);
         saplingItem(ModBlocks.SNAPDRAGON);

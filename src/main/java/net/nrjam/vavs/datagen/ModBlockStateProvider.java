@@ -55,6 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.MARIGOLD);
         saplingBlock(ModBlocks.VIOLA);
         saplingBlock(ModBlocks.SNAPDRAGON);
+        saplingBlock(ModBlocks.WILD_GINGER);
         blockWithItem(ModBlocks.SOUL_STONE);
         blockWithItem(ModBlocks.SOUL_LIGHT);
 
@@ -82,6 +83,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(ModBlocks.WALNUT_FENCE_GATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
 
         makeCrop((SoulSprouts)ModBlocks.SOUL_SPROUTS.get(), "soul_sprouts_stage", "soul_sprouts_stage", true);
+        makeCrop((GingerCrop)ModBlocks.GINGER_CROP.get(), "ginger_stage", "ginger_stage", true);
         makeCrop((CabbageCrop)ModBlocks.CABBAGE_CROP.get(), "cabbage_stage", "cabbage_stage", false);
         makeCrop((AmaranthCrop)ModBlocks.AMARANTH_CROP.get(), "amaranth_stage", "amaranth_stage", false);
 

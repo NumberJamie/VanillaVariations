@@ -39,6 +39,15 @@
   "item.vavs.cabbage_seed": "Cabbage seed",
   "block.vavs.cabbage_crop": "Cabbage seed",
 
+  "block.vavs.wild_ginger": "Wild ginger",
+  "item.vavs.ginger": "Ginger",
+  "block.vavs.ginger_crop": "Ginger",
+
+  "item.vavs.ginger_pie": "Ginger pie",
+  "item.vavs.ginger_salad": "Ginger salad",
+  "item.vavs.ginger_bread": "Ginger bread",
+  "item.vavs.amaranth_ginger_bread": "Amaranth ginger bread",
+
   "block.vavs.viola": "Viola",
   "block.vavs.snapdragon": "Snapdragon",
   "block.vavs.lavender": "Lavender",

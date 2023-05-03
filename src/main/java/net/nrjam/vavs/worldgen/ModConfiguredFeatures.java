@@ -49,6 +49,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MARIGOLD_KEY = registerKey("marigold");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRYSTAL_ORE_KEY = registerKey("crystal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GINGER_KEY = registerKey("ginger");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
@@ -78,6 +79,10 @@ public class ModConfiguredFeatures {
 
         register(context, SOUL_FLOWER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
                 Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SOUL_FLOWER.get()))
+        ));
+
+        register(context, GINGER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
+                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WILD_GINGER.get()))
         ));
 
         register(context, DEAD_ROOTS_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(

@@ -1,10 +1,11 @@
-// 1.19.4	2023-05-02T22:00:21.8377051	Registries
+// 1.19.4	2023-05-03T22:09:07.6503158	Registries
 c12760e51a74249eefe54b1ec2952d114cd05b38 data/vavs/worldgen/configured_feature/blossoming_root.json
 1a8b2955008827d0df786b2a01a7ff5576f62c8d data/vavs/worldgen/configured_feature/crimson_berries.json
 ad9d22114286f30e4d20c1730146c51cdfe1d6ef data/vavs/worldgen/configured_feature/crystal_ore.json
 1cc9a09566db3dd063fa7103c781033b8a98f6a5 data/vavs/worldgen/configured_feature/dead_roots.json
 35648478eea9ac8a379f94a7626ffb8d93d75bc7 data/vavs/worldgen/configured_feature/ender_root.json
 b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/end_soil.json
+2b42700fbb73a14a1c83b06883d0550628780b3b data/vavs/worldgen/configured_feature/ginger.json
 2bb24d075e352d12d83867321f82069dd4b5c5c2 data/vavs/worldgen/configured_feature/lavender.json
 1665672b8747f5885759ea0a52e2f53504f6b82c data/vavs/worldgen/configured_feature/marigold.json
 324ec7b70422b5d33811b0d70657cac371e877f9 data/vavs/worldgen/configured_feature/snapdragon.json
@@ -19,6 +20,7 @@ bd83bfa8ae8adef31933e1f8efa73d89381a0a66 data/vavs/worldgen/placed_feature/cryst
 347553fb352d3e114c6119ad00f206897b99ae0c data/vavs/worldgen/placed_feature/dead_roots_placed.json
 a8f053d9128dd50c2800bdea5adf4f28e7065ac7 data/vavs/worldgen/placed_feature/ender_root_placed.json
 e891781df2fa605fd3efb71cad21678d6c4767e4 data/vavs/worldgen/placed_feature/end_soil_placed.json
+ae75995bc9710c442bece245a5cbfbd57b3f3415 data/vavs/worldgen/placed_feature/ginger_placed.json
 859063c62b22ac5932ee5bd0e1e7908fc14b8f5f data/vavs/worldgen/placed_feature/lavender_placed.json
 1b90aeca7f3526e5fa5efc238a7d62fbb742b6ec data/vavs/worldgen/placed_feature/marigold_placed.json
 4c808c7705b9f1638e759290dc16b1f88ce5b3f3 data/vavs/worldgen/placed_feature/snapdragon_placed.json

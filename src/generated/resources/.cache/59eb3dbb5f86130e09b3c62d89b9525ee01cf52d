@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-03T21:09:23.9438935	Loot Tables
+// 1.19.4	2023-05-03T22:09:07.6415654	Loot Tables
 51162b5f3e65be2ff8473c0200e950120f3f0563 data/vavs/loot_tables/blocks/amaranth_crop.json
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
 ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
@@ -9,6 +9,7 @@ a6a7e9e3f18e590f6807dcc6bcd2daa8aaf61d3c data/vavs/loot_tables/blocks/crystal_or
 952b1dd85ab02f72e2a3b6f5d6b524e120b0802e data/vavs/loot_tables/blocks/dead_roots.json
 50d04080b5256033630c2c1fad2e1e2e7293217e data/vavs/loot_tables/blocks/ender_root.json
 3575a6be4c59f41deb68d828238ec769f3b3c879 data/vavs/loot_tables/blocks/end_soil.json
+171975352550b6c04aa7e87ac6cd5614e4abc7b3 data/vavs/loot_tables/blocks/ginger_crop.json
 1d4929d7d6176f60e5ea991a577527ed251ef375 data/vavs/loot_tables/blocks/honey_cake.json
 55b20c103a6a33ced9b957030478f125632915c9 data/vavs/loot_tables/blocks/lavender.json
 3b45c5ccb71a78e0ee4e31a6e1bf019f57665cda data/vavs/loot_tables/blocks/marigold.json
@@ -50,3 +51,4 @@ c7e93f79934357ccbf112682aa63da2e3bc1540a data/vavs/loot_tables/blocks/walnut_tra
 ed33aa284bfa46b342f7102626b811ed0cbac863 data/vavs/loot_tables/blocks/walnut_wood.json
 526037d1fec3c72a8ce159a1d53855b80332ca8c data/vavs/loot_tables/blocks/warped_berries.json
 d85b706c4556156b07f78d7999f9172b9f4dc36f data/vavs/loot_tables/blocks/wild_cabbage.json
+f0c9d9346557152809ab4f1038d69430d8afe4b9 data/vavs/loot_tables/blocks/wild_ginger.json

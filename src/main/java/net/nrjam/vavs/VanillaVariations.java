@@ -118,6 +118,7 @@ public class VanillaVariations
             event.accept(ModItems.CABBAGE_SEED);
             event.accept(ModItems.AMARANTH_SEED);
             event.accept(ModBlocks.WILD_CABBAGE);
+            event.accept(ModBlocks.WILD_GINGER);
             event.accept(ModBlocks.VIOLA);
             event.accept(ModBlocks.MARIGOLD);
             event.accept(ModBlocks.LAVENDER);
@@ -129,6 +130,7 @@ public class VanillaVariations
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
             // ingredients
             event.accept(ModItems.CABBAGE);
+            event.accept(ModItems.GINGER);
             event.accept(ModItems.AMARANTH);
             event.accept(ModItems.SOUL_SPROUT);
             event.accept(ModItems.WARPED_BERRIES);
@@ -142,6 +144,7 @@ public class VanillaVariations
             event.accept(ModItems.WARPED_BERRY_PIE);
             event.accept(ModItems.CRIMSON_BERRY_PIE);
             event.accept(ModItems.AMARANTH_PIE);
+            event.accept(ModItems.GINGER_PIE);
 
             // stews
             event.accept(ModItems.DRIED_KELP_SOUP);
@@ -155,9 +158,12 @@ public class VanillaVariations
             event.accept(ModItems.GARDEN_SALAD);
             event.accept(ModItems.SOUL_SPROUT_SALAD);
             event.accept(ModItems.AMARANTH_SALAD);
+            event.accept(ModItems.GINGER_SALAD);
 
             // misc
             event.accept(ModItems.AMARANTH_BREAD);
+            event.accept(ModItems.GINGER_BREAD);
+            event.accept(ModItems.AMARANTH_GINGER_BREAD);
             event.accept(ModItems.AMARANTH_COOKIE);
 
             // cakes

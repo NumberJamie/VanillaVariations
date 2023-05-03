@@ -1,8 +1,9 @@
-// 1.19.4	2023-05-03T21:03:52.8869229	Item Models: vavs
+// 1.19.4	2023-05-03T22:55:36.35683	Item Models: vavs
 ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
 67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
 1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
 957870d9c7883456f926abe7da2f263a965c6828 assets/vavs/models/item/amaranth_essence.json
+53d63f6f1fedb1f6dcc3a576f9c877f2e8b837f6 assets/vavs/models/item/amaranth_ginger_bread.json
 8e405dbb53c889bfb229f45dcab17d1ebf9e6721 assets/vavs/models/item/amaranth_pie.json
 c3ebb4a5d1035ef8580f6d892f25c1831e896ef8 assets/vavs/models/item/amaranth_salad.json
 9dd8167f8b10062099c4a379bb8334063b16d3a8 assets/vavs/models/item/amaranth_seed.json
@@ -43,6 +44,10 @@ f78bd1d2d34fd334ebeea844f071b73f82cf3b7a assets/vavs/models/item/fused_soul_boot
 d136009ae59a1d557a8e3317a7baac37d3560bd5 assets/vavs/models/item/fused_soul_helmet.json
 2fbbea09694e6ec64a1e7fc2b3f833c1b756f5af assets/vavs/models/item/fused_soul_leggings.json
 225d5b3ac4e4936a06ee2f3bd1bfa973fa58ab72 assets/vavs/models/item/garden_salad.json
+5f9e4809902819bd9b704035c1a96c51709f0381 assets/vavs/models/item/ginger.json
+d35dde0058b8a3a5bb801ef03778756745e0fbc0 assets/vavs/models/item/ginger_bread.json
+04204e85d6b04c59ca9d837ff538864017617c44 assets/vavs/models/item/ginger_pie.json
+f515ff2191886ed8f74c11a70b2d6e47726dc222 assets/vavs/models/item/ginger_salad.json
 062abb9c1f67b4cce745d80cffc531c5138b5c07 assets/vavs/models/item/honey_cake.json
 db7b9a86ddaa7f730ca1c73655ef2ec1dbb138f4 assets/vavs/models/item/lavender.json
 6a4aa8e64a0cf686788b0509a0af551b76419f07 assets/vavs/models/item/marigold.json
@@ -70,3 +75,4 @@ b6a44844c04dea2dc46d30a0142f49bba947907d assets/vavs/models/item/walnut_sapling.
 f3604ef99df7808b9931efadd177f8e501b0e08d assets/vavs/models/item/warped_berries.json
 e28f87933454b7a01bf3add4939049f27aa69e9a assets/vavs/models/item/warped_berry_pie.json
 f705d35d95560d29319a4b0e5dadec7d9db1a85a assets/vavs/models/item/wild_cabbage.json
+5d943f1f5dce72c59620b232973f825a81d0e3a0 assets/vavs/models/item/wild_ginger.json

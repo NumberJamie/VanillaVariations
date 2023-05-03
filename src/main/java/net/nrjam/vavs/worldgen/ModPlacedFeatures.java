@@ -32,6 +32,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LAVENDER_PLACED_KEY = createKey("lavender_placed");
     public static final ResourceKey<PlacedFeature> SNAPDRAGON_PLACED_KEY = createKey("snapdragon_placed");
     public static final ResourceKey<PlacedFeature> CRYSTAL_ORE_PLACED_KEY = createKey("crystal_ore_placed");
+    public static final ResourceKey<PlacedFeature> GINGER_PLACED_KEY = createKey("ginger_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -53,6 +54,9 @@ public class ModPlacedFeatures {
                 RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE);
 
         register(context, SOUL_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_FLOWER_KEY),
+                PlacementUtils.FULL_RANGE);
+
+        register(context, GINGER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GINGER_KEY),
                 PlacementUtils.FULL_RANGE);
 
         register(context, CRIMSON_BERRIES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BERRIES_KEY),

@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-03T21:03:52.8869229	Recipes
+// 1.19.4	2023-05-03T22:55:36.35683	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 96a12e9312754478bfa23b6a78e9eaafed2dd7a8 data/minecraft/advancements/recipes/misc/magenta_dye.json
 cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/misc/orange_dye.json
@@ -49,6 +49,7 @@ b344c39593a7443087efadaaf164dc2a65a6c9bc data/vavs/advancements/recipes/combat/r
 00802e2a6de8a152007c432d1db05a2d584c89be data/vavs/advancements/recipes/combat/reinforced_leather_leggings.json
 c7a2a34305864db01c14bd289ad1bedaf7b004ee data/vavs/advancements/recipes/decorations/walnut_fence.json
 0b46a48086b24f24d9a64cef8b3fd5a9ea2dff11 data/vavs/advancements/recipes/food/amaranth_cookie.json
+395f95612795c312cc1a19ce551eb687af373527 data/vavs/advancements/recipes/food/amaranth_ginger_bread.json
 063b204a835b71adc46de8697d88540533db49f4 data/vavs/advancements/recipes/food/amaranth_pie.json
 10b106e89eca72c613a6375059904c155fa99d34 data/vavs/advancements/recipes/food/amaranth_salad.json
 471203c221c6c142d59dc92dbf1f0ef5acadddc6 data/vavs/advancements/recipes/food/amaranth_soup.json
@@ -58,6 +59,9 @@ c7a2a34305864db01c14bd289ad1bedaf7b004ee data/vavs/advancements/recipes/decorati
 baa3c3e3b90c36e6282dc152097a47c79c68c04c data/vavs/advancements/recipes/food/crimson_berry_pie.json
 18c724bccf3a31d12dfc30f791def15963d04ba7 data/vavs/advancements/recipes/food/dried_kelp_soup.json
 359b7ba03427d71c84acb179b2196a377c0b438e data/vavs/advancements/recipes/food/garden_salad.json
+55810b742a5ba6fa5f0129f8c4bff8d88b8b9d21 data/vavs/advancements/recipes/food/ginger_bread.json
+a5dd82888643dfadf26420ae9036a2d9985e42e7 data/vavs/advancements/recipes/food/ginger_pie.json
+0e4ba3eb54bafc720373767b922b2a89e7308121 data/vavs/advancements/recipes/food/ginger_salad.json
 b832f58a9bc4d37d3ebf96cb44ae75de5f32678e data/vavs/advancements/recipes/food/honey_cake.json
 91cb8b7d05ba3b9ef9ecfc9924104de03700ceee data/vavs/advancements/recipes/food/meat_salad.json
 4dae125db5a15b8f7aaf271bbf847055c81fc467 data/vavs/advancements/recipes/food/salmon_salad.json
@@ -77,6 +81,7 @@ ba943c3f68bbe5917266da32f62c0eee721eaa2d data/vavs/advancements/recipes/redstone
 bc496c4feeaa87698906ce9de933649cd105201a data/vavs/advancements/recipes/redstone/walnut_trapdoor.json
 4022a2c92a5b9d0b90074981d2cf0dd050306cda data/vavs/recipes/amaranth_bread.json
 a484fed79d7b44c2dc0532ae6fb229c00250288d data/vavs/recipes/amaranth_cookie.json
+4fbf52ffb1d5618331963793e1cf268d89989159 data/vavs/recipes/amaranth_ginger_bread.json
 5a4665886aa69e6f1417efe85402eb410b83cc5b data/vavs/recipes/amaranth_pie.json
 f3fce1f5d6d048c67f11eea892f1b715ae1d3d86 data/vavs/recipes/amaranth_salad.json
 9eb286db7194648ca3d3a13f8d4349290455d556 data/vavs/recipes/amaranth_soup.json
@@ -111,6 +116,9 @@ a70b78349ab7efca212843b3bd9dccb653cf38f3 data/vavs/recipes/fused_soul_boots.json
 bb987cf27c9daec232a04d7fab73bb3df920bfdb data/vavs/recipes/fused_soul_helmet.json
 f26663f63342fed2d70c51e0211bb1f4fe4e406b data/vavs/recipes/fused_soul_leggings.json
 93c853a726a30c0c39770c28ce4e27c7a390b276 data/vavs/recipes/garden_salad.json
+5e724a7bc5f727cf8294d568a46eb339692c5ef5 data/vavs/recipes/ginger_bread.json
+63f8193f1e4d3caca7b76ad74705c4a5d3f35d32 data/vavs/recipes/ginger_pie.json
+b16f5df08af0f2951614e3e56719c09af8269afb data/vavs/recipes/ginger_salad.json
 11ab04d788687050e55f1afe785aa06384e2754f data/vavs/recipes/honey_cake.json
 9e24c365864e977c1408ad53654b0c5180b58bf5 data/vavs/recipes/meat_salad.json
 214d67a5b6c2f6a6ee16dbdb642bd7540a9994eb data/vavs/recipes/reinforced_leather.json

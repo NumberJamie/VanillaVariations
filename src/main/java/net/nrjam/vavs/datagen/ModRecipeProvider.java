@@ -74,6 +74,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pieRecipe(consumer, ModItems.WARPED_BERRY_PIE.get(), ModItems.WARPED_BERRIES.get());
         pieRecipe(consumer, ModItems.CRIMSON_BERRY_PIE.get(), ModItems.CRIMSON_BERRIES.get());
         pieRecipe(consumer, ModItems.AMARANTH_PIE.get(), ModItems.AMARANTH.get());
+        pieRecipe(consumer, ModItems.GINGER_PIE.get(), ModItems.GINGER.get());
 
         flowerRecipe(consumer, Items.BLACK_DYE, ModBlocks.VIOLA.get());
         flowerRecipe(consumer, Items.PURPLE_DYE, ModBlocks.LAVENDER.get());
@@ -90,6 +91,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get());
         saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES);
         saladRecipe(consumer, ModItems.AMARANTH_SALAD.get(), ModItems.AMARANTH.get(), Items.DRIED_KELP, ModItems.AMARANTH.get());
+        saladRecipe(consumer, ModItems.GINGER_SALAD.get(), ModItems.GINGER.get(), ModItems.GINGER.get(), ModItems.GINGER.get());
 
         cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
         cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
@@ -115,6 +117,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         surroundRecipe(consumer, ModItems.FUSED_SOUL_CHESTPLATE.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_CHESTPLATE);
         surroundRecipe(consumer, ModItems.FUSED_SOUL_LEGGINGS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_LEGGINGS);
         surroundRecipe(consumer, ModItems.FUSED_SOUL_BOOTS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_BOOTS);
+
+        threeOneRecipe(consumer, ModItems.GINGER_BREAD.get(), ModItems.GINGER.get(), Items.BREAD);
+        threeOneRecipe(consumer, ModItems.AMARANTH_GINGER_BREAD.get(), ModItems.GINGER.get(), ModItems.AMARANTH_BREAD.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH_COOKIE.get()).requires(ModItems.AMARANTH_COOKIE.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH_COOKIE.get()), has(ModItems.AMARANTH_COOKIE.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AMARANTH_BREAD.get()).define('X', ModItems.AMARANTH.get()).pattern("XXX").unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
@@ -192,6 +197,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void saladRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item1, Item item2){
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item1).requires(item2).requires(ModItems.CABBAGE.get()).requires(Items.BOWL).unlockedBy(getHasName(ModItems.CABBAGE.get()), has(ModItems.CABBAGE.get())).save(consumer);
+    }
+
+    protected static void threeOneRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item2){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item).requires(item).requires(item2).unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
     protected static void stewRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

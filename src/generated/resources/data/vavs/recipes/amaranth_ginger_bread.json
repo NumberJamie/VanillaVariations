@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:ginger"
+    },
+    {
+      "item": "vavs:ginger"
+    },
+    {
+      "item": "vavs:ginger"
+    },
+    {
+      "item": "vavs:amaranth_bread"
+    }
+  ],
+  "result": {
+    "item": "vavs:amaranth_ginger_bread"
+  }
+}

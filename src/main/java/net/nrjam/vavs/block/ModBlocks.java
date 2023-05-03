@@ -119,6 +119,8 @@ public class ModBlocks {
             () -> new SoulSoilFlower(MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots",
             () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger",
+            () -> new BasaltFlower(MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<FarmBlock> NETHER_FARMLAND = registerBlock("nether_farmland",
             () -> new NetherFarmland((BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SOUL_SOIL).randomTicks().strength(1.6f, 1.6f))));
@@ -144,7 +146,8 @@ public class ModBlocks {
             () -> new CabbageCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> AMARANTH_CROP = BLOCKS.register("amaranth_crop",
             () -> new AmaranthCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
-
+    public static final RegistryObject<Block> GINGER_CROP = BLOCKS.register("ginger_crop",
+            () -> new GingerCrop(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
             () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
