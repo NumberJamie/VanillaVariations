@@ -35,6 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.REINFORCED_LEATHER_BLOCK);
         blockWithItem(ModBlocks.CRYSTAL_BLOCK);
         blockWithItem(ModBlocks.CRYSTAL_ORE);
+        blockWithItem(ModBlocks.ROCK_SALT_BLOCK);
         blockWithItem(ModBlocks.CRYING_SMOOTH_BASALT);
 
         logBlock(((RotatedPillarBlock) ModBlocks.WALNUT_LOG.get()));

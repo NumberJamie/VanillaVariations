@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T00:18:23.5210274	Registries
+// 1.19.4	2023-05-04T14:12:04.4470905	Registries
 c12760e51a74249eefe54b1ec2952d114cd05b38 data/vavs/worldgen/configured_feature/blossoming_root.json
 1a8b2955008827d0df786b2a01a7ff5576f62c8d data/vavs/worldgen/configured_feature/crimson_berries.json
 e222f41f7072fdf7633c9b437d2cc4b8394da54f data/vavs/worldgen/configured_feature/crying_basalt.json
@@ -9,6 +9,7 @@ b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/e
 2b42700fbb73a14a1c83b06883d0550628780b3b data/vavs/worldgen/configured_feature/ginger.json
 2bb24d075e352d12d83867321f82069dd4b5c5c2 data/vavs/worldgen/configured_feature/lavender.json
 1665672b8747f5885759ea0a52e2f53504f6b82c data/vavs/worldgen/configured_feature/marigold.json
+8bfc8217eb61c6989fe685a5437db27c1ef47ea9 data/vavs/worldgen/configured_feature/rock_salt.json
 324ec7b70422b5d33811b0d70657cac371e877f9 data/vavs/worldgen/configured_feature/snapdragon.json
 9928e20592ea987c1272dc563f51d35abd6de28a data/vavs/worldgen/configured_feature/soul_flower.json
 aa4fa7434b3c6dadf5bfbcf26609451813b05d1a data/vavs/worldgen/configured_feature/viola.json
@@ -17,7 +18,7 @@ a5897f1a5b01969b9aaa994fbd0f0eec91a37156 data/vavs/worldgen/configured_feature/w
 66edae4c3cc087258cbe09ad0e7ad2323d5a7ee9 data/vavs/worldgen/configured_feature/wild_cabbage.json
 cd5fd5189a4c9078311731e292915b71d7f0978a data/vavs/worldgen/placed_feature/blossoming_root_placed.json
 f5b85d7c3f66a40f7caadcb86dd5c59ad59df073 data/vavs/worldgen/placed_feature/crimson_berries_placed.json
-f2ce4364324d8f33b123e47b540f368ae170ffcb data/vavs/worldgen/placed_feature/crying_basalt_placed.json
+c454f6709840d92169af17ef5361e543bf31a9f7 data/vavs/worldgen/placed_feature/crying_basalt_placed.json
 bd83bfa8ae8adef31933e1f8efa73d89381a0a66 data/vavs/worldgen/placed_feature/crystal_ore_placed.json
 347553fb352d3e114c6119ad00f206897b99ae0c data/vavs/worldgen/placed_feature/dead_roots_placed.json
 a8f053d9128dd50c2800bdea5adf4f28e7065ac7 data/vavs/worldgen/placed_feature/ender_root_placed.json
@@ -25,6 +26,7 @@ e891781df2fa605fd3efb71cad21678d6c4767e4 data/vavs/worldgen/placed_feature/end_s
 ae75995bc9710c442bece245a5cbfbd57b3f3415 data/vavs/worldgen/placed_feature/ginger_placed.json
 859063c62b22ac5932ee5bd0e1e7908fc14b8f5f data/vavs/worldgen/placed_feature/lavender_placed.json
 1b90aeca7f3526e5fa5efc238a7d62fbb742b6ec data/vavs/worldgen/placed_feature/marigold_placed.json
+7be67a435c39e504c1390b140528bf5375fe4563 data/vavs/worldgen/placed_feature/rock_salt_placed.json
 4c808c7705b9f1638e759290dc16b1f88ce5b3f3 data/vavs/worldgen/placed_feature/snapdragon_placed.json
 e0be31cdf3091a8145425687466e7ca08e9ec202 data/vavs/worldgen/placed_feature/soul_flower_placed.json
 42564bb732202c16d990e06cf5e7d566b8a27445 data/vavs/worldgen/placed_feature/viola_placed.json

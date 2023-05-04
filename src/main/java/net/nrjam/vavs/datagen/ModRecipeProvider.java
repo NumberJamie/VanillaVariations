@@ -47,6 +47,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_STONE.get()).define('X', Blocks.SOUL_SOIL)
                 .pattern("XX").pattern("XX")
                 .unlockedBy("has_soul_soil", has(Blocks.SOUL_SOIL)).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROCK_SALT_BLOCK.get()).define('X', ModItems.ROCK_SALT.get())
+                .pattern("XX").pattern("XX")
+                .unlockedBy(getHasName(ModBlocks.ROCK_SALT_BLOCK.get()), has(ModBlocks.ROCK_SALT_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.ROCK_SALT.get(), 4).requires(ModBlocks.ROCK_SALT_BLOCK.get()).unlockedBy(getHasName(ModItems.ROCK_SALT.get()), has(ModItems.ROCK_SALT.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYING_POLISHED_BASALT.get()).define('X', ModBlocks.CRYING_BASALT.get())
                 .pattern("XX").pattern("XX")
                 .unlockedBy("has_crying_basalt", has(ModBlocks.CRYING_BASALT.get())).save(consumer);

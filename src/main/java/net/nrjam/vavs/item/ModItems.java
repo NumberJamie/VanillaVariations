@@ -19,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> REINFORCED_LEATHER = ITEMS.register("reinforced_leather",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ROCK_SALT = ITEMS.register("rock_salt",
+            () -> new SaltItem(new Item.Properties()));
+
     public static final RegistryObject<Item> REINFORCED_LEATHER_HELMET = ITEMS.register("reinforced_leather_helmet",
             () -> new ReinforcedLeatherItem(ModArmorMaterials.REINFORCED_LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> REINFORCED_LEATHER_CHESTPLATE = ITEMS.register("reinforced_leather_chestplate",

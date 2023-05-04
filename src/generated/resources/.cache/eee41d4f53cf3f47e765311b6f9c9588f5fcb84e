@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T11:02:58.827541	Block States: vavs
+// 1.19.4	2023-05-04T13:16:24.0673915	Block States: vavs
 00e8efca4bede3d29edaff060dd82caf030fe339 assets/vavs/blockstates/amaranth_crop.json
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
@@ -29,6 +29,7 @@ f9c89ebc621c2b6fc4a650047a07b84c71e06676 assets/vavs/blockstates/potted_dead_roo
 80978a566ab4376e995f12b3637f5f2bb1b91c7d assets/vavs/blockstates/potted_walnut_sapling.json
 f600f84713692f80aca7c36c70141e6f02f45379 assets/vavs/blockstates/potted_wild_cabbage.json
 d7a03932ee66250801ebc476edc88380baada32f assets/vavs/blockstates/reinforced_leather_block.json
+7851bbab67d989b5bd95fb7da01482d617e3e44c assets/vavs/blockstates/rock_salt_block.json
 9dd2518d7a257d5487af1eff12a9b2ff23b2c222 assets/vavs/blockstates/snapdragon.json
 031696c57e2b6b7babac011341b6da48382bd606 assets/vavs/blockstates/soul_flower.json
 78f336b24a75c1cec4fff2424de1f345b1230dc3 assets/vavs/blockstates/soul_light.json
@@ -128,6 +129,7 @@ f560f2939c899019bda4f019687186946dcc5f2b assets/vavs/models/block/potted_viola.j
 aecfc2da5f3b4acea34662cc4ea0f6bbcce55947 assets/vavs/models/block/potted_walnut_sapling.json
 067a4f33a77f3354fca1257721cf7faf11d6c1cd assets/vavs/models/block/potted_wild_cabbage.json
 acf2625a6a0c376ec67e613d60901e3fc45292ba assets/vavs/models/block/reinforced_leather_block.json
+ce5000aafd70059538d3148e6817a3b8d5a0bd1c assets/vavs/models/block/rock_salt_block.json
 7dc13eb09e599b4fad4be11f250fa9b033cfd372 assets/vavs/models/block/snapdragon.json
 47f66478f95d6e810e2e452cead08beb3a3b2b80 assets/vavs/models/block/soul_flower.json
 5a65516af20e767ec18e99a3a4e26dcddb85ef61 assets/vavs/models/block/soul_light.json
@@ -204,6 +206,7 @@ ea96fd446293bc74ff9ec0bc217abce8ab42941c assets/vavs/models/item/crystal_block.j
 4cafe94990294e4f616c8dc60242ff8848b41452 assets/vavs/models/item/end_soil.json
 619c70f519f27bbee72fbe22c64dc8e6f61252fc assets/vavs/models/item/nether_farmland.json
 6d47e59f17f81222423362d3230be6e030f060f3 assets/vavs/models/item/reinforced_leather_block.json
+c306f787557b159e7fbc23313c4501834430d7b7 assets/vavs/models/item/rock_salt_block.json
 6b4bfdc594f5a7e5c461a14b028e8a3ecbe44319 assets/vavs/models/item/soul_light.json
 14d0f6592a76501a4e7221d8248b03f6f4e5ef6f assets/vavs/models/item/soul_stone.json
 b925b068b274946201a2181f93a7ef309bf91c0d assets/vavs/models/item/soul_stone_slab.json

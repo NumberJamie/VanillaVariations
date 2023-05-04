@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.CRYSTAL);
+        simpleItem(ModItems.ROCK_SALT);
         simpleItem(ModItems.REINFORCED_LEATHER);
         simpleItem(ModItems.SOUL_ESSENCE);
         simpleItem(ModItems.AMARANTH_ESSENCE);

@@ -28,6 +28,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> REINFORCED_LEATHER_BLOCK = registerBlock("reinforced_leather_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).strength(1.6f).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> ROCK_SALT_BLOCK = registerBlock("rock_salt_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).strength(4.2f).sound(SoundType.COPPER)));
 
     public static final RegistryObject<Block> CRYING_BASALT = registerBlock("crying_basalt",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.25F, 4.2F).sound(SoundType.BASALT)));

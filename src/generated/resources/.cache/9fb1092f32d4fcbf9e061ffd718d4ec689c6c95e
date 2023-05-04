@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T11:02:58.8265329	Recipes
+// 1.19.4	2023-05-04T13:16:24.0673915	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 c6470014e6ad0a677a633ddb1bdaa1d2e91230ea data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 6c10603113634390774a4566f62f8a0bcac3ba10 data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -14,6 +14,8 @@ cc04f685a07d6426d89ac9e8460f40e7411a1dd0 data/minecraft/advancements/recipes/mis
 af8f0d3c303d4158c7261dfcaff70fcb7d718f29 data/vavs/advancements/recipes/building_blocks/crying_polished_basalt.json
 520f852f6268ce77f2f3e034d131527302d814c3 data/vavs/advancements/recipes/building_blocks/crystal_compressed.json
 bfd7b35083f99f90d8dc4b1b1527b55aa954dbe1 data/vavs/advancements/recipes/building_blocks/reinforced_leather_compressed.json
+f87162db4cf9f4270a94166d5114c91fd18d7a25 data/vavs/advancements/recipes/building_blocks/rock_salt.json
+a7b59bff0dbef1b59a9b302e80658a1075ec9467 data/vavs/advancements/recipes/building_blocks/rock_salt_block.json
 be0aa658c685b188a94d3174d643c997b4f649e1 data/vavs/advancements/recipes/building_blocks/soul_light.json
 21e21f81e7745510d22463b05aa9dd49d48064f7 data/vavs/advancements/recipes/building_blocks/soul_stone.json
 53d65813d9dec438d7c9049c989ff8182edc1252 data/vavs/advancements/recipes/building_blocks/soul_stone_slab.json
@@ -137,6 +139,8 @@ b16f5df08af0f2951614e3e56719c09af8269afb data/vavs/recipes/ginger_salad.json
 945101723165549cf8c8d89fa77883cdccbc6b97 data/vavs/recipes/reinforced_leather_compressed.json
 dd93dac5fef09b3cc9289a01590e8769c80e7d27 data/vavs/recipes/reinforced_leather_helmet.json
 832e5e59d231db4c486ba7c0ab46faa950d8d1a0 data/vavs/recipes/reinforced_leather_leggings.json
+2229cfffda14c47de55d4ce049989895d7f27045 data/vavs/recipes/rock_salt.json
+b1ce65021822114849e4b3ee552ac05d12fcf354 data/vavs/recipes/rock_salt_block.json
 55b295180a62429540cbc6f6a19a5cc68015300c data/vavs/recipes/salmon_salad.json
 860cfdd3459ca0fc4d71ac6ed9584517ecb7449b data/vavs/recipes/soul_light.json
 c822d688344567a829d69cbe8fa86760e01dd82b data/vavs/recipes/soul_sprout_pie.json

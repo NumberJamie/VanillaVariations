@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T11:02:58.8250276	Loot Tables
+// 1.19.4	2023-05-04T13:16:24.0673915	Loot Tables
 51162b5f3e65be2ff8473c0200e950120f3f0563 data/vavs/loot_tables/blocks/amaranth_crop.json
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
 ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
@@ -29,6 +29,7 @@ cfd71719fa68c54611c7df67cce6fb39ddf7ba3c data/vavs/loot_tables/blocks/potted_end
 fc5a0fcb3c22e9b8a17f6762d1d54b4cba67a142 data/vavs/loot_tables/blocks/potted_walnut_sapling.json
 eca49a23c0de5d0a3f2dbc603eb52bfda2b2e324 data/vavs/loot_tables/blocks/potted_wild_cabbage.json
 9ef2d5804881767ba8cda85784c6609d78543248 data/vavs/loot_tables/blocks/reinforced_leather_block.json
+f45e3464be8ea0ffb4c27707e7f45a31b7ea0fb5 data/vavs/loot_tables/blocks/rock_salt_block.json
 608f040fe809f3a4d99ff2da6700b223b0be8e8e data/vavs/loot_tables/blocks/snapdragon.json
 1afe14b3dd4544ea4fabffd5b24c040f127c4e91 data/vavs/loot_tables/blocks/soul_flower.json
 b9db50b01779da72e7063651e76085c683250405 data/vavs/loot_tables/blocks/soul_light.json

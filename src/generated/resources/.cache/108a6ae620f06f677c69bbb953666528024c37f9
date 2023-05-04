@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T11:32:29.2356159	Item Models: vavs
+// 1.19.4	2023-05-04T13:16:24.0673915	Item Models: vavs
 ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
 67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
 1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
@@ -58,8 +58,8 @@ de01a2567a724f4ab296089d6773be036528e598 assets/vavs/models/item/meat_salad.json
 03ef29cccca08bb0f1e0c975dbb6de6232841b98 assets/vavs/models/item/reinforced_leather_chestplate.json
 bf602faf06dc2177c83ae6713351e2bb706ec8a5 assets/vavs/models/item/reinforced_leather_helmet.json
 52be79fd3fde91e3061ca2cc21a974d5cac296d0 assets/vavs/models/item/reinforced_leather_leggings.json
+4723bd7bad6149a859aec3191b236af71ceecdcf assets/vavs/models/item/rock_salt.json
 71f0583c63b77ab61f9c5fd06eeea45e82226fc8 assets/vavs/models/item/salmon_salad.json
-b0621a14f8d90b7d301160ce68540865fcaf5768 assets/vavs/models/item/salt.json
 b29f36097a3178bfd2874593eda936549ca8901d assets/vavs/models/item/snapdragon.json
 383c69de7f47c78ddf119e2c42db5c7ee1ffd42c assets/vavs/models/item/soul_essence.json
 29205fa5bee4f6cd3556876c74ce86cafd7e3f41 assets/vavs/models/item/soul_flower.json

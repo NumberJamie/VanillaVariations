@@ -45,6 +45,7 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_ESSENCE);
             event.accept(ModItems.AMARANTH_ESSENCE);
             event.accept(ModItems.REINFORCED_LEATHER);
+            event.accept(ModItems.ROCK_SALT);
             event.accept(ModItems.CABBAGE_SEED);
             event.accept(ModItems.AMARANTH_SEED);
         }
@@ -59,6 +60,7 @@ public class VanillaVariations
             event.accept(ModItems.CRYSTAL_HOE);
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ROCK_SALT_BLOCK);
             event.accept(ModBlocks.CRYSTAL_BLOCK);
             event.accept(ModBlocks.CRYSTAL_ORE);
             event.accept(ModBlocks.END_SOIL);

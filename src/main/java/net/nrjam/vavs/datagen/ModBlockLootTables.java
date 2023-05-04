@@ -42,6 +42,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.CRYSTAL_BLOCK.get());
 
         this.add(ModBlocks.CRYSTAL_ORE.get(), (p_249219_) -> this.createOreDrop(p_249219_, ModItems.CRYSTAL.get()));
+        this.add(ModBlocks.ROCK_SALT_BLOCK.get(), (p_249219_) -> this.createOreDrop(p_249219_, ModItems.ROCK_SALT.get()));
         this.add(ModBlocks.HONEY_CAKE.get(), noDrop());
         this.add(ModBlocks.CHOCOLATE_CAKE.get(), noDrop());
         this.add(ModBlocks.WARPED_CAKE.get(), noDrop());

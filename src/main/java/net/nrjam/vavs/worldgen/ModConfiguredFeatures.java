@@ -51,12 +51,13 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRYSTAL_ORE_KEY = registerKey("crystal_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GINGER_KEY = registerKey("ginger");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRYING_BASALT_KEY = registerKey("crying_basalt");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ROCK_SALT_KEY = registerKey("rock_salt");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endStoneReplaceable = new BlockMatchTest(Blocks.END_STONE);
         RuleTest netherRackReplaceable = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest basaltReplaceable = new BlockMatchTest(Blocks.BASALT);
-        RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         register(context, WALNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WALNUT_LOG.get()),
@@ -68,6 +69,10 @@ public class ModConfiguredFeatures {
         register(context, END_SOIL_KEY, Feature.ORE, new OreConfiguration(
                 endStoneReplaceable,
                 ModBlocks.END_SOIL.get().defaultBlockState(), 64));
+
+        register(context, ROCK_SALT_KEY, Feature.ORE, new OreConfiguration(
+                deepslateReplaceable,
+                ModBlocks.ROCK_SALT_BLOCK.get().defaultBlockState(), 8));
 
         register(context, CRYING_BASALT_KEY, Feature.ORE, new OreConfiguration(
                 basaltReplaceable,
