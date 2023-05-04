@@ -148,7 +148,7 @@ public class ModItems {
     public static final RegistryObject<Item> FUSED_AMARANTH_AXE = ITEMS.register("fused_amaranth_axe",
             () -> new AxeItem(ModItemTier.FUSED_AMARANTH, 7, -3f, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> FUSED_AMARANTH_HOE = ITEMS.register("fused_amaranth_hoe",
-            () -> new HoeItem(ModItemTier.FUSED_AMARANTH, -2, 0f, new Item.Properties().fireResistant()));
+            () -> new HoeItem(ModItemTier.FUSED_AMARANTH, 0, 0f, new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> FLOWER_CROWN = ITEMS.register("flower_crown",
             () -> new FlowerCrownItem(ModArmorMaterials.FLOWER_CROWN, ArmorItem.Type.HELMET, new Item.Properties()));
