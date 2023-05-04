@@ -1,9 +1,10 @@
-// 1.19.4	2023-05-04T00:10:55.7576955	Loot Tables
+// 1.19.4	2023-05-04T11:02:58.8250276	Loot Tables
 51162b5f3e65be2ff8473c0200e950120f3f0563 data/vavs/loot_tables/blocks/amaranth_crop.json
 7e34a983de1d365613a1c83c6cbac31961e35b44 data/vavs/loot_tables/blocks/blossoming_root.json
 ef0e956e7ed0edebe8ea54fc77a501e6372de4ea data/vavs/loot_tables/blocks/cabbage_crop.json
 1d4929d7d6176f60e5ea991a577527ed251ef375 data/vavs/loot_tables/blocks/chocolate_cake.json
 7a4eb97092b47f011e1bdcf1a3ca1f6f8a3e5d00 data/vavs/loot_tables/blocks/crimson_berries.json
+1d4929d7d6176f60e5ea991a577527ed251ef375 data/vavs/loot_tables/blocks/crimson_cake.json
 25ad1b4b1c44e92f486a09889ee90e7b50c68053 data/vavs/loot_tables/blocks/crying_basalt.json
 a26c9e339d0473c5ed646da408c1ab00b8fbd073 data/vavs/loot_tables/blocks/crying_polished_basalt.json
 12079c3f4fda9d164f440bcbe2c862fcc38fccd0 data/vavs/loot_tables/blocks/crying_smooth_basalt.json
@@ -53,5 +54,6 @@ a1a012b55e75f308a3f9fbdb3e813689b22326fd data/vavs/loot_tables/blocks/walnut_sta
 c7e93f79934357ccbf112682aa63da2e3bc1540a data/vavs/loot_tables/blocks/walnut_trapdoor.json
 ed33aa284bfa46b342f7102626b811ed0cbac863 data/vavs/loot_tables/blocks/walnut_wood.json
 526037d1fec3c72a8ce159a1d53855b80332ca8c data/vavs/loot_tables/blocks/warped_berries.json
+1d4929d7d6176f60e5ea991a577527ed251ef375 data/vavs/loot_tables/blocks/warped_cake.json
 d85b706c4556156b07f78d7999f9172b9f4dc36f data/vavs/loot_tables/blocks/wild_cabbage.json
 f0c9d9346557152809ab4f1038d69430d8afe4b9 data/vavs/loot_tables/blocks/wild_ginger.json

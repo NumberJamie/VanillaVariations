@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-03T22:55:36.35683	Item Models: vavs
+// 1.19.4	2023-05-04T11:32:29.2356159	Item Models: vavs
 ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
 67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
 1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
@@ -16,6 +16,7 @@ e25ee40b3a3c276dbc06becb6e2a7dd2f219181e assets/vavs/models/item/cabbage.json
 9695768577338f6c121ec7376c381bdec0224e83 assets/vavs/models/item/chorus_fruit_pie.json
 729285470959cb82065b95dbd4f239a4d99ecb62 assets/vavs/models/item/crimson_berries.json
 2c8e1c8094b914678e4ebce6bd4d93054472a68d assets/vavs/models/item/crimson_berry_pie.json
+de2e8d678717326bfcdaec1a9fc9acdfa641d84e assets/vavs/models/item/crimson_cake.json
 ff2f56e4dfbb9a16e5166dde392225addcf09caf assets/vavs/models/item/crystal.json
 b78062465a02fb618a5c9b020647ea964440aafe assets/vavs/models/item/crystal_axe.json
 60b1786447d3c9943b5d8a695a82be2da7cb33c8 assets/vavs/models/item/crystal_boots.json
@@ -58,6 +59,7 @@ de01a2567a724f4ab296089d6773be036528e598 assets/vavs/models/item/meat_salad.json
 bf602faf06dc2177c83ae6713351e2bb706ec8a5 assets/vavs/models/item/reinforced_leather_helmet.json
 52be79fd3fde91e3061ca2cc21a974d5cac296d0 assets/vavs/models/item/reinforced_leather_leggings.json
 71f0583c63b77ab61f9c5fd06eeea45e82226fc8 assets/vavs/models/item/salmon_salad.json
+b0621a14f8d90b7d301160ce68540865fcaf5768 assets/vavs/models/item/salt.json
 b29f36097a3178bfd2874593eda936549ca8901d assets/vavs/models/item/snapdragon.json
 383c69de7f47c78ddf119e2c42db5c7ee1ffd42c assets/vavs/models/item/soul_essence.json
 29205fa5bee4f6cd3556876c74ce86cafd7e3f41 assets/vavs/models/item/soul_flower.json
@@ -74,5 +76,6 @@ f279c1cff1e9026e5c577cd312d1a672ff729f60 assets/vavs/models/item/sweet_salad.jso
 b6a44844c04dea2dc46d30a0142f49bba947907d assets/vavs/models/item/walnut_sapling.json
 f3604ef99df7808b9931efadd177f8e501b0e08d assets/vavs/models/item/warped_berries.json
 e28f87933454b7a01bf3add4939049f27aa69e9a assets/vavs/models/item/warped_berry_pie.json
+c34e5ab9d104cf792e8753db771e16a6d14fc141 assets/vavs/models/item/warped_cake.json
 f705d35d95560d29319a4b0e5dadec7d9db1a85a assets/vavs/models/item/wild_cabbage.json
 5d943f1f5dce72c59620b232973f825a81d0e3a0 assets/vavs/models/item/wild_ginger.json

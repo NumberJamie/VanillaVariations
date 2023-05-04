@@ -183,6 +183,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> HONEY_CAKE = registerBlock("honey_cake",
             () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
 
+    public static final RegistryObject<Block> CRIMSON_CAKE = registerBlock("crimson_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> WARPED_CAKE = registerBlock("warped_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.of(Material.CAKE).sound(SoundType.WOOL)));
+
     public static final RegistryObject<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(4.5f, 7.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRYSTAL_ORE = registerBlock( "crystal_ore",

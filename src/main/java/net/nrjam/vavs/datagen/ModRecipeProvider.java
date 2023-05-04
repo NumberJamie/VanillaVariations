@@ -102,6 +102,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
         cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
+        cakeRecipe(consumer, ModBlocks.CRIMSON_CAKE.get(), ModItems.CRIMSON_BERRIES.get());
+        cakeRecipe(consumer, ModBlocks.WARPED_CAKE.get(), ModItems.WARPED_BERRIES.get());
 
         hoeRecipe(consumer, ModItems.CRYSTAL_HOE.get(), ModItems.CRYSTAL.get());
         shovelRecipe(consumer, ModItems.CRYSTAL_SHOVEL.get(), ModItems.CRYSTAL.get());

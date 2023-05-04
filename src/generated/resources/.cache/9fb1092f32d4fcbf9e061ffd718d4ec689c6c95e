@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T00:10:55.7576955	Recipes
+// 1.19.4	2023-05-04T11:02:58.8265329	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 c6470014e6ad0a677a633ddb1bdaa1d2e91230ea data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 6c10603113634390774a4566f62f8a0bcac3ba10 data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -62,6 +62,7 @@ c7a2a34305864db01c14bd289ad1bedaf7b004ee data/vavs/advancements/recipes/decorati
 0a843af7318edc869843e9e7c32d5a2a9ca30bbe data/vavs/advancements/recipes/food/chocolate_cake.json
 07628b1733915d9f875127f9536a888bdfb865a3 data/vavs/advancements/recipes/food/chorus_fruit_pie.json
 baa3c3e3b90c36e6282dc152097a47c79c68c04c data/vavs/advancements/recipes/food/crimson_berry_pie.json
+b75d680cc5e8bae79bea83297441d801481e3456 data/vavs/advancements/recipes/food/crimson_cake.json
 18c724bccf3a31d12dfc30f791def15963d04ba7 data/vavs/advancements/recipes/food/dried_kelp_soup.json
 359b7ba03427d71c84acb179b2196a377c0b438e data/vavs/advancements/recipes/food/garden_salad.json
 55810b742a5ba6fa5f0129f8c4bff8d88b8b9d21 data/vavs/advancements/recipes/food/ginger_bread.json
@@ -76,6 +77,7 @@ b832f58a9bc4d37d3ebf96cb44ae75de5f32678e data/vavs/advancements/recipes/food/hon
 3db8341ad2450834a2a97d7ae83b9e8a0acec876 data/vavs/advancements/recipes/food/sweet_berry_pie.json
 0954eabd19d2094550ed42b81147ff3e5572e706 data/vavs/advancements/recipes/food/sweet_salad.json
 af7284049efcc43d2f2810a2d05a5a9da591323b data/vavs/advancements/recipes/food/warped_berry_pie.json
+3f3ade577f8983c0c942e32fe71c0d94ee1427f4 data/vavs/advancements/recipes/food/warped_cake.json
 0fc7b6401b6e403cfd173c73580267a744bb4f80 data/vavs/advancements/recipes/misc/crystal_block.json
 ac42acd410b2fe92556a3e8c2b78454cb7f0617f data/vavs/advancements/recipes/misc/reinforced_leather.json
 dfa92021a30dae5f6ae320d2909c68ea365c3403 data/vavs/advancements/recipes/misc/reinforced_leather_block.json
@@ -94,6 +96,7 @@ f3fce1f5d6d048c67f11eea892f1b715ae1d3d86 data/vavs/recipes/amaranth_salad.json
 e07b8de3ff2aa9a07c077e8c644ca99e68b15765 data/vavs/recipes/chocolate_cake.json
 8f705af94880d7da75d165463ef74325efe7c90a data/vavs/recipes/chorus_fruit_pie.json
 155481dff95c71db55c2c1cfd519bad4fe60f318 data/vavs/recipes/crimson_berry_pie.json
+a87dc01d515cccd96a0d67b3360bc8f6bf435ad2 data/vavs/recipes/crimson_cake.json
 9596cdc585d4b28a8960b4c0429d15a892ec3e26 data/vavs/recipes/crying_polished_basalt.json
 818a417a3b17dcd49bc45fedfd914944a3459392 data/vavs/recipes/crystal_axe.json
 2aae327476591f04d1839f04fb7dc365ab8a876e data/vavs/recipes/crystal_block.json
@@ -157,3 +160,4 @@ f4bf3bdd144e8b464f204aa40769884e55091d13 data/vavs/recipes/walnut_slab.json
 7df4dcfa24464312e2700211bc11346a32694d51 data/vavs/recipes/walnut_stairs.json
 c0ab8d26d3537785bf3e2c41750ea9f4e873ad8b data/vavs/recipes/walnut_trapdoor.json
 4a3495e8cb4808eb657500348a8805a148c27302 data/vavs/recipes/warped_berry_pie.json
+2d47afb42d4622a1b5f1af007fee368868b64862 data/vavs/recipes/warped_cake.json

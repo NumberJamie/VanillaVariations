@@ -109,6 +109,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockParentItem(ModBlocks.HONEY_CAKE);
         blockParentItem(ModBlocks.CHOCOLATE_CAKE);
+        blockParentItem(ModBlocks.CRIMSON_CAKE);
+        blockParentItem(ModBlocks.WARPED_CAKE);
 
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);

@@ -1,9 +1,10 @@
-// 1.19.4	2023-05-04T00:13:47.8598498	Block States: vavs
+// 1.19.4	2023-05-04T11:02:58.827541	Block States: vavs
 00e8efca4bede3d29edaff060dd82caf030fe339 assets/vavs/blockstates/amaranth_crop.json
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
 1cdf7c38462754331e0c8016c4839f8052126b8c assets/vavs/blockstates/chocolate_cake.json
 1ad3a51bb5df82bdc43a64af51a0470f46bddc6b assets/vavs/blockstates/crimson_berries.json
+0e73054bdfbafa58b712f39b8dea77ec6887c09d assets/vavs/blockstates/crimson_cake.json
 2988ff9cc4efeb322ddae915fd66f15c7b8874fd assets/vavs/blockstates/crying_basalt.json
 3e93a68ff22aff201dd7da731ad7cf5c00784fab assets/vavs/blockstates/crying_polished_basalt.json
 14eb7536e3f7195a4a431cd18ee8743d98f7d97d assets/vavs/blockstates/crying_smooth_basalt.json
@@ -53,6 +54,7 @@ d8957393bddf6551783dd547f9062879059d304b assets/vavs/blockstates/walnut_slab.jso
 0210aa895800809294997b6ed93cc63675ac1da6 assets/vavs/blockstates/walnut_trapdoor.json
 ccd9c212c5399e6874645d54f56f7cf1796ee598 assets/vavs/blockstates/walnut_wood.json
 13669818876bb800680a5710a848300a355d66ba assets/vavs/blockstates/warped_berries.json
+686011ecaa193578f746a4e8fa727dae1fbdb8d2 assets/vavs/blockstates/warped_cake.json
 879a333ce0f6f12978863d372ff93ffb6f230be3 assets/vavs/blockstates/wild_cabbage.json
 3181bf797c7e0a632d9e399fb2493467d196ec29 assets/vavs/blockstates/wild_ginger.json
 141e4196d7c234c828595f42a66af8d1580b716c assets/vavs/models/block/amaranth_stage0.json
@@ -83,6 +85,13 @@ c9459257bad407ef0c03669579283630aa05ff61 assets/vavs/models/block/chocolate_cake
 9f9d2d25d8c75256512d20e9e65d5350030aabbd assets/vavs/models/block/crimson_berries_stage1.json
 b246c66179b66c948c082713556fc7330c8988b8 assets/vavs/models/block/crimson_berries_stage2.json
 fd122af0ee9969a4ac5a00b112da4353b77cee50 assets/vavs/models/block/crimson_berries_stage3.json
+7c44f98c259c340580ffc77e071e20961d293fab assets/vavs/models/block/crimson_cake.json
+6b581a12b4a6adbb7696ddc5caa082a940c35913 assets/vavs/models/block/crimson_cake_slice1.json
+80c24d07f95cd3ea0ee45286d01ed88b94e027b5 assets/vavs/models/block/crimson_cake_slice2.json
+a8eaa4cc91e0d25e1d125a279d7038a076e72737 assets/vavs/models/block/crimson_cake_slice3.json
+2ecabab953b867920be41fedee7385f87e944bdb assets/vavs/models/block/crimson_cake_slice4.json
+7e4777b39440cfc39607528552718e17dbe207c9 assets/vavs/models/block/crimson_cake_slice5.json
+120f390445d99afa485f22941bc453a985c7f712 assets/vavs/models/block/crimson_cake_slice6.json
 ace651773bb99c8630c4c8c0822de740089ffa5a assets/vavs/models/block/crying_basalt.json
 6713ab7416d21eecfef47597ec65980b9785c370 assets/vavs/models/block/crying_basalt_horizontal.json
 dd28f5b6dd56b8accf93c1a716f2f0cb3afa24d5 assets/vavs/models/block/crying_polished_basalt.json
@@ -178,6 +187,13 @@ b09882391caee482a3480514c5d1456cec859b7a assets/vavs/models/block/walnut_wood_ho
 667eb8ea1e29b3f574215071c41813f00dc003f9 assets/vavs/models/block/warped_berries_stage1.json
 b9b3f3b4e3125681add2705edc00fb28ba07d937 assets/vavs/models/block/warped_berries_stage2.json
 f3686dc5b0a3037cd38f3706498ef93f6ce4e548 assets/vavs/models/block/warped_berries_stage3.json
+d87cfedb1a085da1dbf105a88abbf28cb227d15f assets/vavs/models/block/warped_cake.json
+606571b5af4c208928685fc01e4e2213f868fe17 assets/vavs/models/block/warped_cake_slice1.json
+2c846ce5d11b0ce60ed771cf9d49bdbd65afd401 assets/vavs/models/block/warped_cake_slice2.json
+d28421906c12d4b230642a7b2765f8b2b0396a66 assets/vavs/models/block/warped_cake_slice3.json
+92a6531242debef9f52a07ca662a7d01e0d008d0 assets/vavs/models/block/warped_cake_slice4.json
+843d7664052bbaf71155a7e23cd1f2839c13f1ac assets/vavs/models/block/warped_cake_slice5.json
+e454e096e4cfe9618d0d99cf98e673b76899fdec assets/vavs/models/block/warped_cake_slice6.json
 03508d2080712c1f4b1f0c88b0826045afb9f11a assets/vavs/models/block/wild_cabbage.json
 cae1c1cbafeef91e305ed0a5590b8a1ddb65819a assets/vavs/models/block/wild_ginger.json
 31cacacc4a51b105e438b2314da1ed7536ee1a23 assets/vavs/models/item/crying_basalt.json

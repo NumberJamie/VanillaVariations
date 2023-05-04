@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "X": {
+      "item": "vavs:crimson_berries"
+    },
+    "Y": {
+      "item": "minecraft:sugar"
+    },
+    "Z": {
+      "item": "minecraft:egg"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "YZY",
+    "WWW"
+  ],
+  "result": {
+    "item": "vavs:crimson_cake"
+  },
+  "show_notification": true
+}

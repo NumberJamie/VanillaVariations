@@ -120,6 +120,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCake(ModBlocks.CHOCOLATE_CAKE.get());
         makeCake(ModBlocks.HONEY_CAKE.get());
+        makeCake(ModBlocks.CRIMSON_CAKE.get());
+        makeCake(ModBlocks.WARPED_CAKE.get());
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName, boolean isCross) {

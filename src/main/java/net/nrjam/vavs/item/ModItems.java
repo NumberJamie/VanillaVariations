@@ -7,10 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
-import net.nrjam.vavs.item.custom.FlowerCrownItem;
-import net.nrjam.vavs.item.custom.FusedSoulItem;
-import net.nrjam.vavs.item.custom.ReinforcedLeatherItem;
-import net.nrjam.vavs.item.custom.TeleportItem;
+import net.nrjam.vavs.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, VanillaVariations.MOD_ID);

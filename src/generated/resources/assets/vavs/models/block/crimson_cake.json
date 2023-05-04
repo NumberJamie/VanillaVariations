@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cake",
+  "textures": {
+    "bottom": "vavs:block/crimson_cake_bottom",
+    "side": "vavs:block/crimson_cake_side",
+    "top": "vavs:block/crimson_cake_top"
+  }
+}

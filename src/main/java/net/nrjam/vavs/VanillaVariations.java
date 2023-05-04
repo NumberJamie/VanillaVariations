@@ -175,6 +175,8 @@ public class VanillaVariations
             // cakes
             event.accept(ModBlocks.CHOCOLATE_CAKE);
             event.accept(ModBlocks.HONEY_CAKE);
+            event.accept(ModBlocks.CRIMSON_CAKE);
+            event.accept(ModBlocks.WARPED_CAKE);
         }
     }
 
