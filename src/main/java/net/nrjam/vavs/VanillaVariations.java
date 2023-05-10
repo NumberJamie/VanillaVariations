@@ -61,6 +61,7 @@ public class VanillaVariations
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ROCK_SALT_BLOCK);
+            event.accept(ModBlocks.REINFORCED_LEATHER_BLOCK);
             event.accept(ModBlocks.CRYSTAL_BLOCK);
             event.accept(ModBlocks.CRYSTAL_ORE);
             event.accept(ModBlocks.END_SOIL);
