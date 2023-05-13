@@ -1,0 +1,147 @@
+{
+  "item.vavs.soul_essence": "魂粹",
+  "item.vavs.reinforced_leather": "强化皮革",
+  "item.vavs.crystal": "水晶",
+  "item.vavs.rock_salt": "岩盐",
+  "block.vavs.rock_salt_block": "岩盐块",
+  "item.vavs.amaranth_essence": "苋粹",
+
+  "item.vavs.reinforced_leather_helmet": "强化皮革头盔",
+  "item.vavs.reinforced_leather_chestplate": "强化皮革胸甲",
+  "item.vavs.reinforced_leather_leggings": "强化皮革护腿",
+  "item.vavs.reinforced_leather_boots": "强化皮革靴子",
+
+  "item.vavs.crystal_helmet": "水晶头盔",
+  "item.vavs.crystal_chestplate": "水晶胸甲",
+  "item.vavs.crystal_leggings": "水晶护腿",
+  "item.vavs.crystal_boots": "水晶靴子",
+
+  "item.vavs.fused_soul_helmet": "融魂头盔",
+  "item.vavs.fused_soul_chestplate": "融魂胸甲",
+  "item.vavs.fused_soul_leggings": "融魂护腿",
+  "item.vavs.fused_soul_boots": "融魂靴子",
+
+  "item.vavs.fused_amaranth_helmet": "融苋头盔",
+  "item.vavs.fused_amaranth_chestplate": "融苋胸甲",
+  "item.vavs.fused_amaranth_leggings": "融苋护腿",
+  "item.vavs.fused_amaranth_boots": "融苋靴子",
+
+  "item.vavs.soul_sprout": "灵魂豆芽",
+  "block.vavs.soul_sprouts": "灵魂豆芽",
+
+  "item.vavs.crimson_berries": "绯红浆果",
+  "block.vavs.crimson_berries": "绯红浆果",
+
+  "item.vavs.warped_berries": "诡异浆果",
+  "block.vavs.warped_berries": "诡异浆果",
+
+  "block.vavs.wild_cabbage": "甘蓝",
+  "item.vavs.cabbage": "卷心菜",
+
+  "item.vavs.cabbage_seed": "卷心菜种子",
+  "block.vavs.cabbage_crop": "卷心菜种子",
+
+  "block.vavs.wild_ginger": "野生姜",
+  "item.vavs.ginger": "生姜",
+  "block.vavs.ginger_crop": "生姜",
+
+  "item.vavs.ginger_pie": "生姜派",
+  "item.vavs.ginger_salad": "生姜沙拉",
+  "item.vavs.ginger_bread": "生姜面包",
+  "item.vavs.amaranth_ginger_bread": "苋菜生姜面包",
+
+  "enchantment.vavs.scorching": "灼烧",
+
+  "block.vavs.viola": "堇菜",
+  "block.vavs.snapdragon": "金鱼草",
+  "block.vavs.lavender": "薰衣草",
+  "block.vavs.marigold": "金盏花",
+
+  "item.vavs.sweet_berry_pie": "甜浆果派",
+  "item.vavs.apple_pie": "苹果派",
+  "item.vavs.chorus_fruit_pie": "紫颂果派",
+  "item.vavs.soul_sprout_pie": "灵魂豆芽派",
+  "item.vavs.warped_berry_pie": "诡异浆果派",
+  "item.vavs.crimson_berry_pie": "绯红浆果派",
+
+  "item.vavs.dried_kelp_soup": "干海带汤",
+  "item.vavs.soul_sprout_stew": "灵魂炖菜",
+
+  "item.vavs.garden_salad": "田园沙拉",
+  "item.vavs.meat_salad": "肉沙拉",
+  "item.vavs.salmon_salad": "鲑鱼沙拉",
+  "item.vavs.sweet_salad": "甜沙拉",
+  "item.vavs.soul_sprout_salad": "灵魂沙拉",
+
+  "block.vavs.walnut_log": "胡桃原木",
+  "block.vavs.walnut_wood": "胡桃木",
+  "block.vavs.stripped_walnut_log": "去皮胡桃原木",
+  "block.vavs.stripped_walnut_wood": "去皮胡桃木",
+  "block.vavs.walnut_planks": "胡桃木板",
+  "block.vavs.walnut_slab": "胡桃木台阶",
+  "block.vavs.walnut_stairs": "胡桃木楼梯",
+  "block.vavs.walnut_door": "胡桃木门",
+  "block.vavs.walnut_trapdoor": "胡桃木活板门",
+  "block.vavs.walnut_button": "胡桃木按钮",
+  "block.vavs.walnut_fence": "胡桃木栅栏",
+  "block.vavs.walnut_fence_gate": "胡桃木栅栏门",
+  "block.vavs.walnut_pressure_plate": "胡桃木压力板",
+  "block.vavs.walnut_leaves": "胡桃树叶",
+  "block.vavs.walnut_sapling": "胡桃树苗",
+
+  "block.vavs.soul_light": "灵魂灯",
+  "block.vavs.soul_stone": "灵魂石",
+  "block.vavs.soul_stone_stairs": "灵魂石楼梯",
+  "block.vavs.soul_stone_slab": "灵魂石台阶",
+  "block.vavs.soul_stone_wall": "灵魂石墙",
+
+  "block.vavs.crying_basalt": "哭泣的玄武岩",
+  "block.vavs.crying_smooth_basalt": "哭泣的平滑玄武岩",
+  "block.vavs.crying_polished_basalt": "哭泣的磨制玄武岩",
+
+  "block.vavs.end_soil": "末地土",
+  "block.vavs.ender_root": "末影茎",
+  "block.vavs.blossoming_root": "开花的末影茎",
+  "block.vavs.dead_roots": "枯死的茎",
+  "block.vavs.soul_flower": "灵魂花",
+
+  "block.vavs.chocolate_cake": "巧克力蛋糕",
+  "block.vavs.honey_cake": "蜂蜜蛋糕",
+  "block.vavs.crimson_cake": "绯红蛋糕",
+  "block.vavs.warped_cake": "诡异蛋糕",
+
+  "block.vavs.nether_farmland": "下界耕地",
+
+  "block.vavs.reinforced_leather_block": "强化皮革块",
+  "block.vavs.crystal_block": "水晶块",
+  "block.vavs.crystal_ore": "水晶矿石",
+
+  "item.vavs.crystal_sword": "水晶剑",
+  "item.vavs.crystal_shovel": "水晶锹",
+  "item.vavs.crystal_pickaxe": "水晶镐",
+  "item.vavs.crystal_axe": "水晶斧",
+  "item.vavs.crystal_hoe": "水晶锄",
+
+  "item.vavs.fused_amaranth_sword": "融苋剑",
+  "item.vavs.fused_amaranth_shovel": "融苋锹",
+  "item.vavs.fused_amaranth_pickaxe": "融苋镐",
+  "item.vavs.fused_amaranth_axe": "融苋斧",
+  "item.vavs.fused_amaranth_hoe": "融苋锄",
+
+  "item.vavs.flower_crown": "花环",
+
+  "item.vavs.amaranth": "苋菜",
+
+  "item.vavs.amaranth_seed": "苋菜种子",
+  "block.vavs.amaranth_crop": "苋菜种子",
+
+  "item.vavs.amaranth_salad": "苋菜沙拉",
+  "item.vavs.amaranth_soup": "苋菜汤",
+  "item.vavs.amaranth_pie": "苋菜派",
+
+  "item.vavs.amaranth_bread": "苋菜面包",
+  "item.vavs.amaranth_cookie": "苋菜曲奇",
+
+  "tooltip.vavs.flower_crown": "佩戴时有几率获得生命恢复 II",
+  "tooltip.vavs.fused_soul": "套装奖励：免疫凋零"
+}
