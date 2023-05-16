@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "vavs:cabbage"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "item": "vavs:red_cabbage"
+  }
+}

@@ -139,6 +139,7 @@ public class VanillaVariations
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
             // ingredients
             event.accept(ModItems.CABBAGE);
+            event.accept(ModItems.RED_CABBAGE);
             event.accept(ModItems.GINGER);
             event.accept(ModItems.AMARANTH);
             event.accept(ModItems.SOUL_SPROUT);
@@ -170,6 +171,7 @@ public class VanillaVariations
             event.accept(ModItems.GINGER_SALAD);
 
             // misc
+            event.accept(ModItems.RED_CABBAGE_ROLL);
             event.accept(ModItems.AMARANTH_BREAD);
             event.accept(ModItems.GINGER_BREAD);
             event.accept(ModItems.AMARANTH_GINGER_BREAD);

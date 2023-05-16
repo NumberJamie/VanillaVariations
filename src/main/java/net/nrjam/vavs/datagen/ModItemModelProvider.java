@@ -31,6 +31,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CABBAGE);
         simpleItem(ModItems.CABBAGE_SEED);
 
+        simpleItem(ModItems.RED_CABBAGE);
+        simpleItem(ModItems.RED_CABBAGE_ROLL);
+
         simpleItem(ModItems.AMARANTH);
         simpleItem(ModItems.GINGER);
         simpleItem(ModItems.AMARANTH_SEED);

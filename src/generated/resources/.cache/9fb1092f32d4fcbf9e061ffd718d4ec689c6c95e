@@ -1,4 +1,4 @@
-// 1.19.4	2023-05-04T13:16:24.0673915	Recipes
+// 1.19.4	2023-05-16T10:20:11.1309376	Recipes
 c138483024e8c617b6ecc1dadcc56824022bbb69 data/minecraft/advancements/recipes/misc/black_dye.json
 c6470014e6ad0a677a633ddb1bdaa1d2e91230ea data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 6c10603113634390774a4566f62f8a0bcac3ba10 data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -72,6 +72,8 @@ a5dd82888643dfadf26420ae9036a2d9985e42e7 data/vavs/advancements/recipes/food/gin
 0e4ba3eb54bafc720373767b922b2a89e7308121 data/vavs/advancements/recipes/food/ginger_salad.json
 b832f58a9bc4d37d3ebf96cb44ae75de5f32678e data/vavs/advancements/recipes/food/honey_cake.json
 91cb8b7d05ba3b9ef9ecfc9924104de03700ceee data/vavs/advancements/recipes/food/meat_salad.json
+bf7794f4a6ec9737c4512528dc37a15d952efade data/vavs/advancements/recipes/food/red_cabbage.json
+4300c3cfab61eefa1dfad8b35024e5567a0b3c3a data/vavs/advancements/recipes/food/red_cabbage_roll.json
 4dae125db5a15b8f7aaf271bbf847055c81fc467 data/vavs/advancements/recipes/food/salmon_salad.json
 86f5f500b1f12c1a277f61305fc999d35c3f9f2f data/vavs/advancements/recipes/food/soul_sprout_pie.json
 03ea71fea91c461dd82420d5ea8093749d1db90c data/vavs/advancements/recipes/food/soul_sprout_salad.json
@@ -132,6 +134,8 @@ f26663f63342fed2d70c51e0211bb1f4fe4e406b data/vavs/recipes/fused_soul_leggings.j
 b16f5df08af0f2951614e3e56719c09af8269afb data/vavs/recipes/ginger_salad.json
 11ab04d788687050e55f1afe785aa06384e2754f data/vavs/recipes/honey_cake.json
 9e24c365864e977c1408ad53654b0c5180b58bf5 data/vavs/recipes/meat_salad.json
+6ccfcb98e6d6df1f90ba1c21460857f247f42289 data/vavs/recipes/red_cabbage.json
+77b2cd1b302ba0dfad12360bfbd1224e8bb4aab9 data/vavs/recipes/red_cabbage_roll.json
 214d67a5b6c2f6a6ee16dbdb642bd7540a9994eb data/vavs/recipes/reinforced_leather.json
 2131ee0288e314b41444906ac9c3b8d8ae81c407 data/vavs/recipes/reinforced_leather_block.json
 42e93cf4b1e0d6e303a58c88efb2c440a8ae95d2 data/vavs/recipes/reinforced_leather_boots.json

@@ -9,6 +9,7 @@ public class ModFoodItems {
     public static final FoodProperties CABBAGE = (new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build());
     public static final FoodProperties AMARANTH = (new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2*20, 0), 1f)).build();
     public static final FoodProperties GINGER = (new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 2*20, 0), 1f)).build();
+    public static final FoodProperties RED_CABBAGE = (new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 2*20, 0), 1f)).build();
 
     public static final FoodProperties AMARANTH_BREAD = (new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 30*20, 0), 1f)).build();
     public static final FoodProperties AMARANTH_GINGER_BREAD = (new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 30*20, 0), 1f)).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 30*20, 0), 1f).build();
@@ -39,4 +40,6 @@ public class ModFoodItems {
     public static final FoodProperties SWEET_SALAD = (new FoodProperties.Builder().nutrition(5).saturationMod(1.5f).build());
     public static final FoodProperties AMARANTH_SALAD = (new FoodProperties.Builder().nutrition(7).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 15*20, 0), 1f).build());
     public static final FoodProperties GINGER_SALAD = (new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 15*20, 0), 1f).build());
+
+    public static final FoodProperties RED_CABBAGE_ROLL = (new FoodProperties.Builder().nutrition(3).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 5*20, 0), 1f).build());
 }

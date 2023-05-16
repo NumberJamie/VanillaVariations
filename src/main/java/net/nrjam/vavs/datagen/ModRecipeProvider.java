@@ -131,7 +131,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         surroundRecipe(consumer, ModItems.FUSED_SOUL_LEGGINGS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_LEGGINGS);
         surroundRecipe(consumer, ModItems.FUSED_SOUL_BOOTS.get(), ModItems.SOUL_ESSENCE.get(), Items.GOLDEN_BOOTS);
 
+        twoOneRecipe(consumer, ModItems.RED_CABBAGE_ROLL.get(), ModItems.RED_CABBAGE_ROLL.get(), Items.EGG);
+
         threeOneRecipe(consumer, ModItems.GINGER_BREAD.get(), ModItems.GINGER.get(), Items.BREAD);
+        threeOneRecipe(consumer, ModItems.RED_CABBAGE.get(), ModItems.CABBAGE.get(), Items.RED_DYE);
         threeOneRecipe(consumer, ModItems.AMARANTH_GINGER_BREAD.get(), ModItems.GINGER.get(), ModItems.AMARANTH_BREAD.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH_COOKIE.get()).requires(ModItems.AMARANTH_COOKIE.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH_COOKIE.get()), has(ModItems.AMARANTH_COOKIE.get())).save(consumer);
@@ -214,6 +217,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void threeOneRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item2){
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item).requires(item).requires(item2).unlockedBy(getHasName(item), has(item)).save(consumer);
+    }
+
+    protected static void twoOneRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item2){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item2).unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
     protected static void stewRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){
