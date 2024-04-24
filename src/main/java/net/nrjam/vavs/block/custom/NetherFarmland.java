@@ -85,7 +85,7 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
 
     public boolean canSurvive(@NotNull BlockState state, LevelReader lvl, BlockPos pos) {
         BlockState blockstate = lvl.getBlockState(pos.above());
-        return !blockstate.canBeReplaced() || blockstate.getBlock() instanceof FenceGateBlock || blockstate.getBlock() instanceof MovingPistonBlock;
+        return !blockstate.isSolid() || blockstate.getBlock() instanceof FenceGateBlock || blockstate.getBlock() instanceof MovingPistonBlock;
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext placeContext) {

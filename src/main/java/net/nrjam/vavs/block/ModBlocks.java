@@ -142,19 +142,19 @@ public class ModBlocks {
             () -> new PottedFlower(ModBlocks.DEAD_ROOTS.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).instabreak()));
 
     public static final RegistryObject<Block> SOUL_SPROUTS = BLOCKS.register("soul_sprouts",
-            () -> new SoulSprouts(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.CROP)));
+            () -> new SoulSprouts(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WARPED_BERRIES = BLOCKS.register("warped_berries",
-            () -> new WarpedBerry(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+            () -> new WarpedBerry(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
     public static final RegistryObject<Block> CRIMSON_BERRIES = BLOCKS.register("crimson_berries",
-            () -> new CrimsonBerry(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+            () -> new CrimsonBerry(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
-            () -> new CabbageCrop(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+            () -> new CabbageCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> AMARANTH_CROP = BLOCKS.register("amaranth_crop",
-            () -> new AmaranthCrop(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+            () -> new AmaranthCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> GINGER_CROP = BLOCKS.register("ginger_crop",
-            () -> new GingerCrop(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
+            () -> new GingerCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
             () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
