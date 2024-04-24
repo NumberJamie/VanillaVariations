@@ -2,8 +2,6 @@ package net.nrjam.vavs.events;
 
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WeatheringCopper;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,8 +13,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.item.enchantments.Scorching;
-
-import java.util.Optional;
 
 public class ModEvents {
     @Mod.EventBusSubscriber(modid = VanillaVariations.MOD_ID)

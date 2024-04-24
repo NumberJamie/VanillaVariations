@@ -13,6 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.nrjam.vavs.item.ModArmorMaterials;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -34,7 +35,7 @@ public class FusedSoulItem extends ArmorItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level lvl, List<Component> comp, TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level lvl, @NotNull List<Component> comp, @NotNull TooltipFlag flag) {
         super.appendHoverText(stack, lvl, comp, flag);
         comp.add(Component.translatable("tooltip.vavs.fused_soul").withStyle(ChatFormatting.GRAY));
     }

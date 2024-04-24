@@ -1,12 +1,9 @@
 package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.models.blockstates.*;
-import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -20,7 +17,7 @@ import net.nrjam.vavs.block.custom.ModCakeBlock;
 import net.nrjam.vavs.block.custom.NetherFarmland;
 import net.nrjam.vavs.block.natural.*;
 
-import java.util.function.Consumer;
+import java.util.Objects;
 import java.util.function.Function;
 
 
@@ -132,12 +129,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void makeCake(Block cake) {
-        String side = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_side";
-        String top = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_top";
-        String bottom = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_bottom";
-        String inside = "block/" + ForgeRegistries.BLOCKS.getKey(cake).getPath() + "_inner";
+        String side = "block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(cake)).getPath() + "_side";
+        String top = "block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(cake)).getPath() + "_top";
+        String bottom = "block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(cake)).getPath() + "_bottom";
+        String inside = "block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(cake)).getPath() + "_inner";
 
-        String path = ForgeRegistries.BLOCKS.getKey(cake).getPath();
+        String path = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(cake)).getPath();
 
         VariantBlockStateBuilder builder = getVariantBuilder(cake);
         builder.partialState().with(ModCakeBlock.BITES, 0).addModels(new ConfiguredModel(models().withExistingParent(path, this.mcLoc("cake"))
@@ -157,11 +154,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName, boolean isCross) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         if (isCross) {
-            models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(block.getAgeProperty()),
-                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+            models[0] = new ConfiguredModel(models().crop(modelName + block.getAge(state),
+                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + block.getAge(state))).renderType("cutout"));
         } else {
-            models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(block.getAgeProperty()),
-                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
+            models[0] = new ConfiguredModel(models().cross(modelName + block.getAge(state),
+                    new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + block.getAge(state))).renderType("cutout"));
         }
         return models;
     }
@@ -181,12 +178,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     public void farmland(Block block, Block dirtBlock) {
-        ModelFile farmland = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), this.mcLoc("block/template_farmland"))
-                .texture("dirt", "minecraft:block/" + ForgeRegistries.BLOCKS.getKey(dirtBlock).getPath())
-                .texture("top", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
-        ModelFile moist = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath() + "_moist", this.mcLoc("block/template_farmland"))
-                .texture("dirt", "minecraft:block/" + ForgeRegistries.BLOCKS.getKey(dirtBlock).getPath())
-                .texture("top", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block).getPath() + "_moist"));
+        ModelFile farmland = this.models().withExistingParent(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath(), this.mcLoc("block/template_farmland"))
+                .texture("dirt", "minecraft:block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(dirtBlock)).getPath())
+                .texture("top", this.modLoc("block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath()));
+        ModelFile moist = this.models().withExistingParent(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath() + "_moist", this.mcLoc("block/template_farmland"))
+                .texture("dirt", "minecraft:block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(dirtBlock)).getPath())
+                .texture("top", this.modLoc("block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath() + "_moist"));
         this.getVariantBuilder(block).forAllStatesExcept(state -> {
             int moisture = state.getValue(NetherFarmland.MOISTURE);
             return ConfiguredModel.builder()
@@ -196,7 +193,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     public void PottedPlant(Block block, Block flower) {
-        ModelFile pot = this.models().withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), this.mcLoc("block/flower_pot_cross")).texture("plant", this.modLoc("block/" + ForgeRegistries.BLOCKS.getKey(flower).getPath())).renderType("cutout");
+        ModelFile pot = this.models().withExistingParent(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath(), this.mcLoc("block/flower_pot_cross")).texture("plant", this.modLoc("block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(flower)).getPath())).renderType("cutout");
         this.getVariantBuilder(block).partialState().addModels(new ConfiguredModel(pot));
     }
 
@@ -206,6 +203,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
-                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+                models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 }

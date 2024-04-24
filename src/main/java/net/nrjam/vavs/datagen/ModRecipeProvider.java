@@ -3,7 +3,6 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -232,7 +231,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> consumer, @NotNull RecipeCategory recipeCategory, ItemLike itemLike, @NotNull RecipeCategory recipeCategory1, ItemLike itemLike1) {
-        nineBlockStorageRecipes(consumer, recipeCategory, itemLike, recipeCategory1, itemLike1, getSimpleRecipeName(itemLike1), (String)null, getSimpleRecipeName(itemLike), (String)null);
+        nineBlockStorageRecipes(consumer, recipeCategory, itemLike, recipeCategory1, itemLike1, getSimpleRecipeName(itemLike1), null, getSimpleRecipeName(itemLike), null);
     }
 
     protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> consumer, @NotNull RecipeCategory recipeCategory, ItemLike itemLike, @NotNull RecipeCategory recipeCategory1, ItemLike itemLike1, String s, @Nullable String s1, String s2, @Nullable String s3) {

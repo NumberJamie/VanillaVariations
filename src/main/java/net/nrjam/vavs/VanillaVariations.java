@@ -1,26 +1,20 @@
 package net.nrjam.vavs;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nrjam.vavs.block.ModBlocks;
 import net.nrjam.vavs.item.ModItems;
 import net.nrjam.vavs.item.enchantments.ModEnchantments;
-import org.slf4j.Logger;
 
 @Mod(VanillaVariations.MOD_ID)
 public class VanillaVariations
 {
     public static final String MOD_ID = "vavs";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public VanillaVariations()
     {
@@ -39,8 +33,8 @@ public class VanillaVariations
     {
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CRYSTAL);
             event.accept(ModItems.SOUL_ESSENCE);
             event.accept(ModItems.AMARANTH_ESSENCE);
@@ -49,7 +43,7 @@ public class VanillaVariations
             event.accept(ModItems.CABBAGE_SEED);
             event.accept(ModItems.AMARANTH_SEED);
         }
-        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.FUSED_AMARANTH_SHOVEL);
             event.accept(ModItems.FUSED_AMARANTH_PICKAXE);
             event.accept(ModItems.FUSED_AMARANTH_AXE);
@@ -59,7 +53,7 @@ public class VanillaVariations
             event.accept(ModItems.CRYSTAL_AXE);
             event.accept(ModItems.CRYSTAL_HOE);
         }
-        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ROCK_SALT_BLOCK);
             event.accept(ModBlocks.REINFORCED_LEATHER_BLOCK);
             event.accept(ModBlocks.CRYSTAL_BLOCK);
@@ -87,7 +81,7 @@ public class VanillaVariations
             event.accept(ModBlocks.SOUL_STONE_SLAB);
             event.accept(ModBlocks.SOUL_STONE_WALL);
         }
-        if(event.getTab() == CreativeModeTabs.COMBAT) {
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CRYSTAL_SWORD);
             event.accept(ModItems.CRYSTAL_AXE);
             event.accept(ModItems.FUSED_AMARANTH_SWORD);
@@ -110,7 +104,7 @@ public class VanillaVariations
             event.accept(ModItems.CRYSTAL_LEGGINGS);
             event.accept(ModItems.CRYSTAL_BOOTS);
         }
-        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WALNUT_LOG);
             event.accept(ModBlocks.WALNUT_LEAVES);
             event.accept(ModBlocks.WALNUT_SAPLING);
@@ -133,10 +127,10 @@ public class VanillaVariations
             event.accept(ModBlocks.LAVENDER);
             event.accept(ModBlocks.SNAPDRAGON);
         }
-        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.SOUL_LIGHT);
         }
-        if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             // ingredients
             event.accept(ModItems.CABBAGE);
             event.accept(ModItems.RED_CABBAGE);
@@ -182,16 +176,6 @@ public class VanillaVariations
             event.accept(ModBlocks.HONEY_CAKE);
             event.accept(ModBlocks.CRIMSON_CAKE);
             event.accept(ModBlocks.WARPED_CAKE);
-        }
-    }
-
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
         }
     }
 }

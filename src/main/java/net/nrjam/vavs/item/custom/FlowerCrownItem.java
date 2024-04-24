@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
@@ -18,6 +17,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.common.extensions.IForgeItem;
 import net.nrjam.vavs.item.ModArmorMaterials;
 import net.nrjam.vavs.item.ModItems;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -33,7 +33,7 @@ public class FlowerCrownItem extends ArmorItem implements IForgeItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level lvl, List<Component> comp, TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level lvl, @NotNull List<Component> comp, @NotNull TooltipFlag flag) {
         super.appendHoverText(stack, lvl, comp, flag);
         comp.add(Component.translatable("tooltip.vavs.flower_crown").withStyle(ChatFormatting.DARK_RED));
     }
@@ -44,10 +44,9 @@ public class FlowerCrownItem extends ArmorItem implements IForgeItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, Level lvl, Entity entity, int slot, boolean selected) {
+    public void inventoryTick(@NotNull ItemStack stack, Level lvl, @NotNull Entity entity, int slot, boolean selected) {
         if (!lvl.isClientSide()) {
-            if(entity instanceof Player) {
-                Player player = (Player)entity;
+            if(entity instanceof Player player) {
                 if(hasHelmetOn(player)){
                     evaluateArmorEffects(player);
                 }

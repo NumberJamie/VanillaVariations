@@ -5,13 +5,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -31,14 +27,9 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.common.extensions.IForgeBlock;
-import net.nrjam.vavs.block.ModBlocks;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Random;
 
 public class NetherFarmland extends FarmBlock implements IForgeBlock {
     public static final IntegerProperty MOISTURE = BlockStateProperties.MOISTURE;
@@ -56,7 +47,7 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
             if (i > 0) {
                 serverLevel.setBlock(blockPos, blockState.setValue(MOISTURE, i - 1), 2);
             } else if (!isNearLava(serverLevel, blockPos) || serverLevel.dimensionType().ultraWarm()) {
-                turnToSoil((Entity)null, blockState, serverLevel, blockPos);
+                turnToSoil(null, blockState, serverLevel, blockPos);
             }
         } else if (i < 7) {
             serverLevel.setBlock(blockPos, blockState.setValue(MOISTURE, 7), 2);
@@ -94,7 +85,7 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
 
     public boolean canSurvive(@NotNull BlockState state, LevelReader lvl, BlockPos pos) {
         BlockState blockstate = lvl.getBlockState(pos.above());
-        return !blockstate.getMaterial().isSolid() || blockstate.getBlock() instanceof FenceGateBlock || blockstate.getBlock() instanceof MovingPistonBlock;
+        return !blockstate.canBeReplaced() || blockstate.getBlock() instanceof FenceGateBlock || blockstate.getBlock() instanceof MovingPistonBlock;
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext placeContext) {
@@ -111,14 +102,14 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
 
     public void tick(BlockState blockState, @NotNull ServerLevel serverLevel, @NotNull BlockPos blockPos, @NotNull RandomSource randomSource) {
         if (!blockState.canSurvive(serverLevel, blockPos)) {
-            turnToSoil((Entity)null, blockState, serverLevel, blockPos);
+            turnToSoil(null, blockState, serverLevel, blockPos);
         }
 
     }
 
     public void fallOn(Level lvl, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull Entity entity, float ran) {
         if (!lvl.isClientSide && net.minecraftforge.common.ForgeHooks.onFarmlandTrample(lvl, pos, Blocks.SOUL_SOIL.defaultBlockState(), ran, entity)) {
-            turnToSoil((Entity)null, state, lvl, pos);
+            turnToSoil(null, state, lvl, pos);
         }
     }
 
