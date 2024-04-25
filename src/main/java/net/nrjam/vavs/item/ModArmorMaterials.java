@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.nrjam.vavs.VanillaVariations;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.EnumMap;
@@ -90,7 +91,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     public @NotNull String getName() {
-        return this.name;
+        return VanillaVariations.MOD_ID + ':' + this.name;
     }
 
     public float getToughness() {
