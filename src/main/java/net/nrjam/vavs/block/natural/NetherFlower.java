@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
 public class NetherFlower extends FlowerBlock {
-    public NetherFlower(MobEffect p_53512_, int p_53513_, Properties p_53514_) {
-        super(p_53512_, p_53513_, p_53514_);
+    public NetherFlower(MobEffect effect, int duration, Properties properties) {
+        super(effect, duration, properties);
     }
 
     @Override

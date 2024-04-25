@@ -34,8 +34,8 @@ public class AmaranthCrop extends CropBlock {
         return ModItems.AMARANTH_SEED.get();
     }
 
-    public @NotNull VoxelShape getShape(BlockState p_52297_, @NotNull BlockGetter p_52298_, @NotNull BlockPos p_52299_, @NotNull CollisionContext p_52300_) {
-        return SHAPE_BY_AGE[p_52297_.getValue(this.getAgeProperty())];
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];
     }
 
     @Override

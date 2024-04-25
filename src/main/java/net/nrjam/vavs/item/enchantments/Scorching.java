@@ -18,27 +18,17 @@ public class Scorching extends Enchantment {
         return EnchantmentHelper.getEnchantmentLevel(ModEnchantments.SCORCHING.get(), player) > 0;
     }
 
-    public int getMinCost(int p_44652_) {
-        return 5 + (p_44652_ - 1) * 8;
+    public int getMinCost(int minCost) {
+        return 5 + (minCost - 1) * 8;
     }
 
-    public int getMaxCost(int p_44660_) {
-        return super.getMinCost(p_44660_) + 50;
-    }
-
-    @Override
-    public int getMaxLevel() {
-        return 1;
+    public int getMaxCost(int maxCost) {
+        return super.getMinCost(maxCost) + 50;
     }
 
     @Override
     public boolean checkCompatibility(@NotNull Enchantment enchantment) {
         return super.checkCompatibility(enchantment) && enchantment != Enchantments.FROST_WALKER;
-    }
-
-    @Override
-    public boolean isAllowedOnBooks() {
-        return true;
     }
 
     @Override

@@ -96,7 +96,7 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
         return true;
     }
 
-    public @NotNull VoxelShape getShape(@NotNull BlockState p_53290_, @NotNull BlockGetter p_53291_, @NotNull BlockPos p_53292_, @NotNull CollisionContext p_53293_) {
+    public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return SHAPE;
     }
 
@@ -113,10 +113,10 @@ public class NetherFarmland extends FarmBlock implements IForgeBlock {
         }
     }
 
-    public static void turnToSoil(@Nullable Entity p_270981_, BlockState p_270402_, Level p_270568_, BlockPos p_270551_) {
-        BlockState blockstate = pushEntitiesUp(p_270402_, Blocks.SOUL_SOIL.defaultBlockState(), p_270568_, p_270551_);
-        p_270568_.setBlockAndUpdate(p_270551_, blockstate);
-        p_270568_.gameEvent(GameEvent.BLOCK_CHANGE, p_270551_, GameEvent.Context.of(p_270981_, blockstate));
+    public static void turnToSoil(@Nullable Entity entity, BlockState state, Level lvl, BlockPos pos) {
+        BlockState blockstate = pushEntitiesUp(state, Blocks.SOUL_SOIL.defaultBlockState(), lvl, pos);
+        lvl.setBlockAndUpdate(pos, blockstate);
+        lvl.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, blockstate));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> block) {

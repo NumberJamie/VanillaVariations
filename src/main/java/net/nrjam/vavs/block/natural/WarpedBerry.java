@@ -47,45 +47,45 @@ public class WarpedBerry extends SweetBerryBushBlock {
         return state.is(Blocks.WARPED_NYLIUM);
     }
 
-    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter p_57256_, @NotNull BlockPos p_57257_, @NotNull BlockState p_57258_) {
+    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull BlockState state) {
         return new ItemStack(ModItems.WARPED_BERRIES.get());
     }
 
-    public @NotNull VoxelShape getShape(BlockState p_57291_, @NotNull BlockGetter p_57292_, @NotNull BlockPos p_57293_, @NotNull CollisionContext p_57294_) {
-        if (p_57291_.getValue(AGE) == 0) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        if (state.getValue(AGE) == 0) {
             return SAPLING_SHAPE;
         } else {
-            return p_57291_.getValue(AGE) < 3 ? MID_GROWTH_SHAPE : super.getShape(p_57291_, p_57292_, p_57293_, p_57294_);
+            return state.getValue(AGE) < 3 ? MID_GROWTH_SHAPE : super.getShape(state, getter, pos, context);
         }
     }
 
-    public boolean isRandomlyTicking(BlockState p_57284_) {
-        return p_57284_.getValue(AGE) < 3;
+    public boolean isRandomlyTicking(BlockState state) {
+        return state.getValue(AGE) < 3;
     }
 
-    public void randomTick(BlockState p_57286_, @NotNull ServerLevel p_57287_, @NotNull BlockPos p_57288_, @NotNull RandomSource p_57289_) {
-        int i = p_57286_.getValue(AGE);
-        if (i < 3 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(p_57287_, p_57288_, p_57286_,p_57289_.nextInt(5) == 0)) {
-            p_57287_.setBlock(p_57288_, p_57286_.setValue(AGE, i + 1), 2);
-            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(p_57287_, p_57288_, p_57286_);
+    public void randomTick(BlockState state, @NotNull ServerLevel lvl, @NotNull BlockPos pos, @NotNull RandomSource source) {
+        int i = state.getValue(AGE);
+        if (i < 3 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(lvl, pos, state,source.nextInt(5) == 0)) {
+            lvl.setBlock(pos, state.setValue(AGE, i + 1), 2);
+            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(lvl, pos, state);
         }
 
     }
 
     @Override
-    public @NotNull InteractionResult use(BlockState p_57275_, @NotNull Level p_57276_, @NotNull BlockPos p_57277_, @NotNull Player player, @NotNull InteractionHand p_57279_, @NotNull BlockHitResult p_57280_) {
-        int i = p_57275_.getValue(AGE);
+    public @NotNull InteractionResult use(BlockState state, @NotNull Level lvl, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
+        int i = state.getValue(AGE);
         boolean flag = i == 3;
-        if (!flag && player.getItemInHand(p_57279_).is(Items.BONE_MEAL)) {
+        if (!flag && player.getItemInHand(hand).is(Items.BONE_MEAL)) {
             return InteractionResult.PASS;
         } else if (i > 2) {
-            int j = 1 + p_57276_.random.nextInt(2);
-            popResource(p_57276_, p_57277_, new ItemStack(ModItems.WARPED_BERRIES.get(), j + (flag ? 1 :  0)));
-            p_57276_.playSound(null, p_57277_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_57276_.random.nextFloat() * 0.4F);
-            p_57276_.setBlock(p_57277_, p_57275_.setValue(AGE, 1), 2);
-            return InteractionResult.sidedSuccess(p_57276_.isClientSide);
+            int j = 1 + lvl.random.nextInt(2);
+            popResource(lvl, pos, new ItemStack(ModItems.WARPED_BERRIES.get(), j + (flag ? 1 :  0)));
+            lvl.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + lvl.random.nextFloat() * 0.4F);
+            lvl.setBlock(pos, state.setValue(AGE, 1), 2);
+            return InteractionResult.sidedSuccess(lvl.isClientSide);
         } else {
-            return super.use(p_57275_, p_57276_, p_57277_, player, p_57279_, p_57280_);
+            return super.use(state, lvl, pos, player, hand, result);
         }
     }
 

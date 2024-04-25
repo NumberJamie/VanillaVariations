@@ -18,28 +18,28 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class SaltItem extends Item {
-    public SaltItem(Properties p_41383_) {
-        super(p_41383_);
+    public SaltItem(Properties properties) {
+        super(properties);
     }
 
     @Override
-    public @NotNull InteractionResult useOn(UseOnContext p_41341_) {
-        Level level = p_41341_.getLevel();
-        BlockPos blockpos = p_41341_.getClickedPos();
-        BlockState toolModifiedState = level.getBlockState(blockpos).getToolModifiedState(p_41341_, ModToolActions.SALT_OXIDIZE, false);
+    public @NotNull InteractionResult useOn(UseOnContext onUse) {
+        Level level = onUse.getLevel();
+        BlockPos blockpos = onUse.getClickedPos();
+        BlockState toolModifiedState = level.getBlockState(blockpos).getToolModifiedState(onUse, ModToolActions.SALT_OXIDIZE, false);
         Pair<Predicate<UseOnContext>, Consumer<UseOnContext>> pair = toolModifiedState == null ? null : Pair.of(ctx -> true, changeIntoState(toolModifiedState));
         if (pair == null) {
             return InteractionResult.PASS;
         } else {
             Predicate<UseOnContext> predicate = pair.getFirst();
             Consumer<UseOnContext> consumer = pair.getSecond();
-            if (predicate.test(p_41341_)) {
-                Player player = p_41341_.getPlayer();
+            if (predicate.test(onUse)) {
+                Player player = onUse.getPlayer();
                 level.playSound(player, blockpos, SoundEvents.HONEYCOMB_WAX_ON, SoundSource.BLOCKS, 1.0F, 1.0F);
                 if (!level.isClientSide) {
-                    consumer.accept(p_41341_);
+                    consumer.accept(onUse);
                     if (player != null) {
-                        p_41341_.getItemInHand().shrink(1);
+                        onUse.getItemInHand().shrink(1);
                     }
                 }
 
@@ -51,9 +51,9 @@ public class SaltItem extends Item {
     }
 
     public static Consumer<UseOnContext> changeIntoState(BlockState state) {
-        return (p_238241_) -> {
-            p_238241_.getLevel().setBlock(p_238241_.getClickedPos(), state, 11);
-            p_238241_.getLevel().gameEvent(GameEvent.BLOCK_CHANGE, p_238241_.getClickedPos(), GameEvent.Context.of(p_238241_.getPlayer(), state));
+        return (onUse) -> {
+            onUse.getLevel().setBlock(onUse.getClickedPos(), state, 11);
+            onUse.getLevel().gameEvent(GameEvent.BLOCK_CHANGE, onUse.getClickedPos(), GameEvent.Context.of(onUse.getPlayer(), state));
         };
     }
 

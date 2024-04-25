@@ -14,37 +14,37 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 public class TeleportItem extends Item {
-    public TeleportItem(Properties p_41383_) {
-        super(p_41383_);
+    public TeleportItem(Properties properties) {
+        super(properties);
     }
 
-    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack p_40712_, @NotNull Level p_40713_, @NotNull LivingEntity p_40714_) {
-        ItemStack itemstack = super.finishUsingItem(p_40712_, p_40713_, p_40714_);
-        if (!p_40713_.isClientSide) {
-            double d0 = p_40714_.getX();
-            double d1 = p_40714_.getY();
-            double d2 = p_40714_.getZ();
+    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack itemStack, @NotNull Level lvl, @NotNull LivingEntity entity) {
+        ItemStack itemstack = super.finishUsingItem(itemStack, lvl, entity);
+        if (!lvl.isClientSide) {
+            double d0 = entity.getX();
+            double d1 = entity.getY();
+            double d2 = entity.getZ();
 
             for(int i = 0; i < 16; ++i) {
-                double d3 = p_40714_.getX() + (p_40714_.getRandom().nextDouble() - 0.5D) * 16.0D;
-                double d4 = Mth.clamp(p_40714_.getY() + (double)(p_40714_.getRandom().nextInt(16) - 8), p_40713_.getMinBuildHeight(), p_40713_.getMinBuildHeight() + ((ServerLevel)p_40713_).getLogicalHeight() - 1);
-                double d5 = p_40714_.getZ() + (p_40714_.getRandom().nextDouble() - 0.5D) * 16.0D;
-                if (p_40714_.isPassenger()) {
-                    p_40714_.stopRiding();
+                double d3 = entity.getX() + (entity.getRandom().nextDouble() - 0.5D) * 16.0D;
+                double d4 = Mth.clamp(entity.getY() + (double)(entity.getRandom().nextInt(16) - 8), lvl.getMinBuildHeight(), lvl.getMinBuildHeight() + ((ServerLevel)lvl).getLogicalHeight() - 1);
+                double d5 = entity.getZ() + (entity.getRandom().nextDouble() - 0.5D) * 16.0D;
+                if (entity.isPassenger()) {
+                    entity.stopRiding();
                 }
 
-                net.minecraftforge.event.entity.EntityTeleportEvent.ChorusFruit event = net.minecraftforge.event.ForgeEventFactory.onChorusFruitTeleport(p_40714_, d3, d4, d5);
+                net.minecraftforge.event.entity.EntityTeleportEvent.ChorusFruit event = net.minecraftforge.event.ForgeEventFactory.onChorusFruitTeleport(entity, d3, d4, d5);
                 if (event.isCanceled()) return itemstack;
-                if (p_40714_.randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true)) {
-                    SoundEvent soundevent = p_40714_ instanceof Fox ? SoundEvents.FOX_TELEPORT : SoundEvents.CHORUS_FRUIT_TELEPORT;
-                    p_40713_.playSound(null, d0, d1, d2, soundevent, SoundSource.PLAYERS, 1.0F, 1.0F);
-                    p_40714_.playSound(soundevent, 1.0F, 1.0F);
+                if (entity.randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true)) {
+                    SoundEvent soundevent = entity instanceof Fox ? SoundEvents.FOX_TELEPORT : SoundEvents.CHORUS_FRUIT_TELEPORT;
+                    lvl.playSound(null, d0, d1, d2, soundevent, SoundSource.PLAYERS, 1.0F, 1.0F);
+                    entity.playSound(soundevent, 1.0F, 1.0F);
                     break;
                 }
             }
 
-            if (p_40714_ instanceof Player) {
-                ((Player)p_40714_).getCooldowns().addCooldown(this, 20);
+            if (entity instanceof Player) {
+                ((Player)entity).getCooldowns().addCooldown(this, 20);
             }
         }
 

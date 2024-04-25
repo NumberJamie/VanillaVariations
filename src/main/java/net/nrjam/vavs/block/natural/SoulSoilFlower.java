@@ -14,8 +14,8 @@ import org.jetbrains.annotations.NotNull;
 
 
 public class SoulSoilFlower extends FlowerBlock {
-    public SoulSoilFlower(MobEffect p_53512_, int p_53513_, Properties p_53514_) {
-        super(p_53512_, p_53513_, p_53514_);
+    public SoulSoilFlower(MobEffect effect, int duration, Properties properties) {
+        super(effect, duration, properties);
     }
 
     @Override

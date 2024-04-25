@@ -3,6 +3,7 @@ package net.nrjam.vavs.datagen;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -80,13 +81,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.WALNUT_LEAVES.get(), (block) -> createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
-        this.add(ModBlocks.BLOSSOMING_ROOT.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))));
-        this.add(ModBlocks.ENDER_ROOT.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block, LootItem.lootTableItem(Items.STICK).when(LootItemRandomChanceCondition.randomChance(0.125F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))));
-        this.add(ModBlocks.WILD_CABBAGE.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block, LootItem.lootTableItem(ModItems.CABBAGE_SEED.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))));
-        this.add(ModBlocks.WILD_GINGER.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block, LootItem.lootTableItem(ModItems.GINGER.get()).when(LootItemRandomChanceCondition.randomChance(0.05F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))));
-        this.add(ModBlocks.SOUL_FLOWER.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionDecay(block, LootItem.lootTableItem(ModItems.SOUL_ESSENCE.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))).withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(this.applyExplosionDecay(block, LootItem.lootTableItem(ModItems.SOUL_SPROUT.get()).when(LootItemRandomChanceCondition.randomChance(0.01F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1))))));
-
-        this.add(ModBlocks.DEAD_ROOTS.get(), (block) -> createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block, LootItem.lootTableItem(ModItems.AMARANTH_SEED.get()).when(LootItemRandomChanceCondition.randomChance(0.1F)).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1)))));
+        this.add(ModBlocks.BLOSSOMING_ROOT.get(), (block) -> dropSingleRandomChance(ModBlocks.BLOSSOMING_ROOT.get(), Items.STICK, 0.125F, 1));
+        this.add(ModBlocks.ENDER_ROOT.get(), (block) -> dropSingleRandomChance(block, Items.STICK, 0.125F, 1));
+        this.add(ModBlocks.WILD_CABBAGE.get(), (block) -> dropSingleRandomChance(block, ModItems.CABBAGE_SEED.get(), 0.1F, 0));
+        this.add(ModBlocks.WILD_GINGER.get(), (block) -> dropSingleRandomChance(block, ModItems.AMARANTH_SEED.get(), 0.1F, 0));
+        this.add(ModBlocks.SOUL_FLOWER.get(), (block) -> dropMultiRandomChance(block, ModItems.SOUL_ESSENCE.get(), 0.1F, 0, ModItems.SOUL_SPROUT.get(), 0.01F, 0));
+        this.add(ModBlocks.DEAD_ROOTS.get(), (block) -> dropSingleRandomChance(block, ModItems.AMARANTH_SEED.get(), 0.1F, 0));
 
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CABBAGE_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CropBlock.AGE, 7));
         this.add(ModBlocks.CABBAGE_CROP.get(), this.createCropDrops(ModBlocks.CABBAGE_CROP.get(), ModItems.CABBAGE.get(), ModItems.CABBAGE_SEED.get(), lootitemcondition$builder1));
@@ -112,6 +112,24 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropPottedContents(ModBlocks.POTTED_MARIGOLD.get());
         this.dropPottedContents(ModBlocks.POTTED_SNAPDRAGON.get());
 
+    }
+
+    protected LootTable.Builder dropSingleRandomChance(Block block, Item item, float chance, int bonus) {
+        return createSilkTouchOrShearsDispatchTable(block, this.applyExplosionCondition(block,
+                LootItem.lootTableItem(item)
+                        .when(LootItemRandomChanceCondition.randomChance(chance))
+                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, bonus))));
+    }
+
+    protected LootTable.Builder dropMultiRandomChance(Block block, Item item, float chance, int bonus, Item item2, float chance2, int bonus2) {
+        return createSilkTouchOrShearsDispatchTable(block, this.applyExplosionDecay(block,
+                LootItem.lootTableItem(item)
+                        .when(LootItemRandomChanceCondition.randomChance(chance))
+                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, bonus))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(this.applyExplosionDecay(block, LootItem.lootTableItem(item2)
+                                .when(LootItemRandomChanceCondition.randomChance(chance2))
+                                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, bonus2)))));
     }
 
     @Override

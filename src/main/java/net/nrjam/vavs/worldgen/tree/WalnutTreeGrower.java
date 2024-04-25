@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
 public class WalnutTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
-    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource p_222910_, boolean p_222911_) {
+    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource randomSource, boolean has_flowers) {
         return ModConfiguredFeatures.WALNUT_KEY;
     }
 }

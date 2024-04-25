@@ -43,7 +43,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "chance": 0.05,
+                  "chance": 0.1,
                   "condition": "minecraft:random_chance"
                 },
                 {
@@ -56,11 +56,11 @@
                   "formula": "minecraft:uniform_bonus_count",
                   "function": "minecraft:apply_bonus",
                   "parameters": {
-                    "bonusMultiplier": 1
+                    "bonusMultiplier": 0
                   }
                 }
               ],
-              "name": "vavs:ginger"
+              "name": "vavs:amaranth_seed"
             }
           ]
         }
