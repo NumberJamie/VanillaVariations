@@ -119,15 +119,15 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).strength(1.6f, 1.6f)));
 
     public static final RegistryObject<Block> BLOSSOMING_ROOT = registerBlock("blossoming_root",
-            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
+            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDER_ROOT = registerBlock("ender_root",
-            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower",
-            () -> new SoulSoilFlower(MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
+            () -> new SoulSoilFlower(MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots",
-            () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger",
-            () -> new BasaltFlower(MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new BasaltFlower(MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<FarmBlock> NETHER_FARMLAND = registerBlock("nether_farmland",
             () -> new NetherFarmland((BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).randomTicks().strength(1.6f, 1.6f))));
@@ -157,15 +157,15 @@ public class ModBlocks {
             () -> new GingerCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
-            () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> VIOLA = registerBlock("viola",
-            () -> new GrassFlower(MobEffects.POISON, 5*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(MobEffects.POISON, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> MARIGOLD = registerBlock("marigold",
-            () -> new GrassFlower(MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> SNAPDRAGON = registerBlock("snapdragon",
-            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
-            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> POTTED_WILD_CABBAGE = BLOCKS.register("potted_wild_cabbage",
             () -> new PottedFlower(ModBlocks.WILD_CABBAGE.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).instabreak()));
