@@ -73,6 +73,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodItems.RED_CABBAGE)));
     public static final RegistryObject<Item> RED_CABBAGE_ROLL = ITEMS.register("red_cabbage_roll",
             () -> new Item(new Item.Properties().food(ModFoodItems.RED_CABBAGE_ROLL)));
+    public static final RegistryObject<Item> RED_CABBAGE_SALAD = ITEMS.register("red_cabbage_salad",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.RED_CABBAGE_SALAD)));
+    public static final RegistryObject<Item> RED_CABBAGE_MASH = ITEMS.register("red_cabbage_mash",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.RED_CABBAGE_MASH)));
+    public static final RegistryObject<Item> RED_CABBAGE_SOUP = ITEMS.register("red_cabbage_soup",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.RED_CABBAGE_SOUP)));
+    public static final RegistryObject<Item> RED_CABBAGE_PORK_STEW = ITEMS.register("red_cabbage_pork_stew",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(ModFoodItems.RED_CABBAGE_PORK_STEW)));
 
     public static final RegistryObject<Item> AMARANTH_SEED = ITEMS.register("amaranth_seed",
             () -> new BlockItem(ModBlocks.AMARANTH_CROP.get(), (new Item.Properties())));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vavs:red_cabbage"
+    },
+    {
+      "item": "vavs:red_cabbage"
+    },
+    {
+      "item": "vavs:red_cabbage"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "vavs:red_cabbage_soup"
+  }
+}

@@ -41,5 +41,9 @@ public class ModFoodItems {
     public static final FoodProperties AMARANTH_SALAD = (new FoodProperties.Builder().nutrition(7).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 15*20, 0), 1f).build());
     public static final FoodProperties GINGER_SALAD = (new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 15*20, 0), 1f).build());
 
-    public static final FoodProperties RED_CABBAGE_ROLL = (new FoodProperties.Builder().nutrition(3).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 5*20, 0), 1f).build());
+    public static final FoodProperties RED_CABBAGE_ROLL = (new FoodProperties.Builder().nutrition(3).saturationMod(1f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 5*20, 0), 1f).build());
+    public static final FoodProperties RED_CABBAGE_SALAD = (new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 10*20, 0), 1f).build());
+    public static final FoodProperties RED_CABBAGE_MASH = (new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 10*20, 0), 1f).build());
+    public static final FoodProperties RED_CABBAGE_SOUP = (new FoodProperties.Builder().nutrition(6).saturationMod(0.8f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 30*20, 0), 1f).build());
+    public static final FoodProperties RED_CABBAGE_PORK_STEW = (new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 30*20, 0), 1f).build());
 }

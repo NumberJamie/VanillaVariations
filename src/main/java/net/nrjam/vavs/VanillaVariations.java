@@ -154,6 +154,8 @@ public class VanillaVariations
             event.accept(ModItems.DRIED_KELP_SOUP);
             event.accept(ModItems.SOUL_SPROUT_STEW);
             event.accept(ModItems.AMARANTH_SOUP);
+            event.accept(ModItems.RED_CABBAGE_SOUP);
+            event.accept(ModItems.RED_CABBAGE_PORK_STEW);
 
             // salads
             event.accept(ModItems.SWEET_SALAD);
@@ -163,6 +165,8 @@ public class VanillaVariations
             event.accept(ModItems.SOUL_SPROUT_SALAD);
             event.accept(ModItems.AMARANTH_SALAD);
             event.accept(ModItems.GINGER_SALAD);
+            event.accept(ModItems.RED_CABBAGE_SALAD);
+            event.accept(ModItems.RED_CABBAGE_MASH);
 
             // misc
             event.accept(ModItems.RED_CABBAGE_ROLL);

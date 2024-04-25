@@ -1,4 +1,4 @@
-// 1.20	2024-04-25T19:32:14.6280238	Recipes
+// 1.20	2024-04-25T23:56:54.0281777	Recipes
 bf8d8be424f8821e6bb6791a0f40d98000ee3b45 data/minecraft/advancements/recipes/misc/black_dye.json
 4239fbf1e3c4cd312c96851ac5874525c83dcfef data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 aece7367ebbddf313fb3aee4558cefd30474f24e data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -73,7 +73,11 @@ bd78a39f5cb8e1fa5f6ebdbcea2bed742c2fc038 data/vavs/advancements/recipes/food/gin
 e6855690782065ca52b7170b2c62c3dd594838c8 data/vavs/advancements/recipes/food/honey_cake.json
 bef16a83ada3ab508391aeb9342b8d09fb5d2ffa data/vavs/advancements/recipes/food/meat_salad.json
 6642d558a0ada3c08fa6e248de46ec816ad84fb9 data/vavs/advancements/recipes/food/red_cabbage.json
+dc5d82dbb4e0c1ce220f67bd2406d39fa0081e66 data/vavs/advancements/recipes/food/red_cabbage_mash.json
+8c0d1b4f7f4b80995ee07f9c669c98944923f92e data/vavs/advancements/recipes/food/red_cabbage_pork_stew.json
 a41897978a5aef5c85ece89a861addd41ace6b0f data/vavs/advancements/recipes/food/red_cabbage_roll.json
+1f1f001884768c1d9375ecbc38aa799d57754299 data/vavs/advancements/recipes/food/red_cabbage_salad.json
+00b18e76b0676b991616e358697446b53ef486f1 data/vavs/advancements/recipes/food/red_cabbage_soup.json
 b679450462e8e5a98a46f30c8ce5f8309873e528 data/vavs/advancements/recipes/food/salmon_salad.json
 24557fb1fa0a87c7a258dea628bd313b02fd34d4 data/vavs/advancements/recipes/food/soul_sprout_pie.json
 cbddbd9900480c96eb2b0ff55c6eacfaf72f63bd data/vavs/advancements/recipes/food/soul_sprout_salad.json
@@ -135,7 +139,11 @@ b16f5df08af0f2951614e3e56719c09af8269afb data/vavs/recipes/ginger_salad.json
 11ab04d788687050e55f1afe785aa06384e2754f data/vavs/recipes/honey_cake.json
 9e24c365864e977c1408ad53654b0c5180b58bf5 data/vavs/recipes/meat_salad.json
 6ccfcb98e6d6df1f90ba1c21460857f247f42289 data/vavs/recipes/red_cabbage.json
+30f5b7cda27cc1415693dc19ee8b9fd2f7d91384 data/vavs/recipes/red_cabbage_mash.json
+10e3fbe5106ef96f4f6c967fb864ce5ccb34d63a data/vavs/recipes/red_cabbage_pork_stew.json
 77b2cd1b302ba0dfad12360bfbd1224e8bb4aab9 data/vavs/recipes/red_cabbage_roll.json
+1af7399a71a2ccb9b012135ac01becfc10b7bf96 data/vavs/recipes/red_cabbage_salad.json
+b81f14583ad076d38939a7edd34eaee0b18f214f data/vavs/recipes/red_cabbage_soup.json
 214d67a5b6c2f6a6ee16dbdb642bd7540a9994eb data/vavs/recipes/reinforced_leather.json
 2131ee0288e314b41444906ac9c3b8d8ae81c407 data/vavs/recipes/reinforced_leather_block.json
 42e93cf4b1e0d6e303a58c88efb2c440a8ae95d2 data/vavs/recipes/reinforced_leather_boots.json

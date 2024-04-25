@@ -94,14 +94,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stewRecipe(consumer, ModItems.DRIED_KELP_SOUP.get(), Items.DRIED_KELP);
         stewRecipe(consumer, ModItems.SOUL_SPROUT_STEW.get(), ModItems.SOUL_SPROUT.get());
         stewRecipe(consumer, ModItems.AMARANTH_SOUP.get(), ModItems.AMARANTH.get());
+        stewRecipe(consumer, ModItems.RED_CABBAGE_SOUP.get(), ModItems.RED_CABBAGE.get());
 
-        saladRecipe(consumer, ModItems.MEAT_SALAD.get(), Items.COOKED_PORKCHOP, Items.COOKED_CHICKEN, Items.COOKED_BEEF);
-        saladRecipe(consumer, ModItems.SALMON_SALAD.get(), Items.DRIED_KELP, Items.DRIED_KELP, Items.COOKED_SALMON);
-        saladRecipe(consumer, ModItems.GARDEN_SALAD.get(), Items.SWEET_BERRIES, Items.APPLE, Items.MELON_SLICE);
-        saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get());
-        saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES);
-        saladRecipe(consumer, ModItems.AMARANTH_SALAD.get(), ModItems.AMARANTH.get(), Items.DRIED_KELP, ModItems.AMARANTH.get());
-        saladRecipe(consumer, ModItems.GINGER_SALAD.get(), ModItems.GINGER.get(), ModItems.GINGER.get(), ModItems.GINGER.get());
+        saladRecipe(consumer, ModItems.MEAT_SALAD.get(), Items.COOKED_PORKCHOP, Items.COOKED_CHICKEN, Items.COOKED_BEEF, ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.RED_CABBAGE_SALAD.get(), ModItems.RED_CABBAGE.get(), ModItems.RED_CABBAGE.get(), Items.CARROT, ModItems.RED_CABBAGE.get());
+        saladRecipe(consumer, ModItems.RED_CABBAGE_MASH.get(), ModItems.RED_CABBAGE.get(), Items.POTATO, Items.POTATO, ModItems.RED_CABBAGE.get());
+        saladRecipe(consumer, ModItems.RED_CABBAGE_PORK_STEW.get(), ModItems.RED_CABBAGE.get(), Items.PORKCHOP, ModItems.RED_CABBAGE.get(), ModItems.RED_CABBAGE.get());
+        saladRecipe(consumer, ModItems.SALMON_SALAD.get(), Items.DRIED_KELP, Items.DRIED_KELP, Items.COOKED_SALMON, ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.GARDEN_SALAD.get(), Items.SWEET_BERRIES, Items.APPLE, Items.MELON_SLICE, ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.SOUL_SPROUT_SALAD.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.SOUL_SPROUT.get(), ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.SWEET_SALAD.get(), Items.SWEET_BERRIES, Items.HONEY_BOTTLE, Items.SWEET_BERRIES, ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.AMARANTH_SALAD.get(), ModItems.AMARANTH.get(), Items.DRIED_KELP, ModItems.AMARANTH.get(), ModItems.CABBAGE.get());
+        saladRecipe(consumer, ModItems.GINGER_SALAD.get(), ModItems.GINGER.get(), ModItems.GINGER.get(), ModItems.GINGER.get(), ModItems.CABBAGE.get());
 
         cakeRecipe(consumer, ModBlocks.CHOCOLATE_CAKE.get(), Items.COCOA_BEANS);
         cakeRecipe(consumer, ModBlocks.HONEY_CAKE.get(), Items.HONEY_BOTTLE);
@@ -210,8 +214,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result, 1).requires(item).unlockedBy(getHasName(item), has(item)).save(consumer);
     }
 
-    protected static void saladRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item1, Item item2){
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item1).requires(item2).requires(ModItems.CABBAGE.get()).requires(Items.BOWL).unlockedBy(getHasName(ModItems.CABBAGE.get()), has(ModItems.CABBAGE.get())).save(consumer);
+    protected static void saladRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item1, Item item2, Item primaryItem){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, 1).requires(item).requires(item1).requires(item2).requires(primaryItem).requires(Items.BOWL).unlockedBy(getHasName(primaryItem), has(primaryItem)).save(consumer);
     }
 
     protected static void threeOneRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item, Item item2){

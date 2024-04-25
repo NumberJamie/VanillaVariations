@@ -32,6 +32,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.RED_CABBAGE);
         simpleItem(ModItems.RED_CABBAGE_ROLL);
+        simpleItem(ModItems.RED_CABBAGE_SALAD);
+        simpleItem(ModItems.RED_CABBAGE_MASH);
+        simpleItem(ModItems.RED_CABBAGE_SOUP);
+        simpleItem(ModItems.RED_CABBAGE_PORK_STEW);
 
         simpleItem(ModItems.AMARANTH);
         simpleItem(ModItems.GINGER);
