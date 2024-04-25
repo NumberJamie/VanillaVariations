@@ -11,7 +11,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:alternative",
+                  "condition": "minecraft:any_of",
                   "terms": [
                     {
                       "condition": "minecraft:match_tool",
@@ -49,6 +49,14 @@
               ],
               "functions": [
                 {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
+                  }
+                },
+                {
                   "function": "minecraft:explosion_decay"
                 }
               ],
@@ -72,6 +80,14 @@
           ],
           "functions": [
             {
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "function": "minecraft:apply_bonus",
+              "parameters": {
+                "bonusMultiplier": 1
+              }
+            },
+            {
               "function": "minecraft:explosion_decay"
             }
           ],
@@ -80,5 +96,6 @@
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "vavs:blocks/soul_flower"
 }
