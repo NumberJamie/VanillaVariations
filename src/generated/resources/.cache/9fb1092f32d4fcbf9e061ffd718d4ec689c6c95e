@@ -1,4 +1,4 @@
-// 1.20	2024-04-24T13:56:46.5193159	Recipes
+// 1.20	2024-04-25T19:32:14.6280238	Recipes
 bf8d8be424f8821e6bb6791a0f40d98000ee3b45 data/minecraft/advancements/recipes/misc/black_dye.json
 4239fbf1e3c4cd312c96851ac5874525c83dcfef data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 aece7367ebbddf313fb3aee4558cefd30474f24e data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -55,7 +55,7 @@ d0665ab9185cb4786a287991a5ae15ab17edb694 data/vavs/advancements/recipes/combat/r
 b9db75c71e29f14882621ce0a12b13dfbb10b84d data/vavs/advancements/recipes/combat/reinforced_leather_helmet.json
 6827a10cda2db37bfd564c216c4cda440d1ae72b data/vavs/advancements/recipes/combat/reinforced_leather_leggings.json
 eca4780501d632325827bf14438ac59097d3f67f data/vavs/advancements/recipes/decorations/walnut_fence.json
-42bd5a3c99461446fd40322648328aede017369c data/vavs/advancements/recipes/food/amaranth_cookie.json
+782e917b4638dc429c69bd4eb2a41df3a36a22f3 data/vavs/advancements/recipes/food/amaranth_cookie.json
 18679415a04e5f6e43a67da4dfff3b29d0793b46 data/vavs/advancements/recipes/food/amaranth_ginger_bread.json
 6a7cac83ba9a1645607fc7e70e5902fd49aea711 data/vavs/advancements/recipes/food/amaranth_pie.json
 80eb50eed461ff549be126e392f572355aecf2c1 data/vavs/advancements/recipes/food/amaranth_salad.json
@@ -91,7 +91,7 @@ e7ca86079919ef5c69647ca118ef727ed16653ba data/vavs/advancements/recipes/redstone
 b4a9608342b6f0250722ee336dc3d97cb13b9535 data/vavs/advancements/recipes/redstone/walnut_pressure_plate.json
 2823a0d81da326cf266dfe76c76639b0c1537c26 data/vavs/advancements/recipes/redstone/walnut_trapdoor.json
 4022a2c92a5b9d0b90074981d2cf0dd050306cda data/vavs/recipes/amaranth_bread.json
-a484fed79d7b44c2dc0532ae6fb229c00250288d data/vavs/recipes/amaranth_cookie.json
+99d72c4d5e9217e080b202cd6a87ae49ea3aa7b2 data/vavs/recipes/amaranth_cookie.json
 4fbf52ffb1d5618331963793e1cf268d89989159 data/vavs/recipes/amaranth_ginger_bread.json
 5a4665886aa69e6f1417efe85402eb410b83cc5b data/vavs/recipes/amaranth_pie.json
 f3fce1f5d6d048c67f11eea892f1b715ae1d3d86 data/vavs/recipes/amaranth_salad.json

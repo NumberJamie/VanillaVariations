@@ -136,7 +136,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         threeOneRecipe(consumer, ModItems.RED_CABBAGE.get(), ModItems.CABBAGE.get(), Items.RED_DYE);
         threeOneRecipe(consumer, ModItems.AMARANTH_GINGER_BREAD.get(), ModItems.GINGER.get(), ModItems.AMARANTH_BREAD.get());
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH_COOKIE.get()).requires(ModItems.AMARANTH_COOKIE.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH_COOKIE.get()), has(ModItems.AMARANTH_COOKIE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH.get()).requires(ModItems.AMARANTH.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AMARANTH_BREAD.get()).define('X', ModItems.AMARANTH.get()).pattern("XXX").unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
     }
 
