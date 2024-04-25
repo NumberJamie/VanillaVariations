@@ -84,7 +84,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.BLOSSOMING_ROOT.get(), (block) -> dropSingleRandomChance(ModBlocks.BLOSSOMING_ROOT.get(), Items.STICK, 0.125F, 1));
         this.add(ModBlocks.ENDER_ROOT.get(), (block) -> dropSingleRandomChance(block, Items.STICK, 0.125F, 1));
         this.add(ModBlocks.WILD_CABBAGE.get(), (block) -> dropSingleRandomChance(block, ModItems.CABBAGE_SEED.get(), 0.1F, 0));
-        this.add(ModBlocks.WILD_GINGER.get(), (block) -> dropSingleRandomChance(block, ModItems.AMARANTH_SEED.get(), 0.1F, 0));
+        this.add(ModBlocks.WILD_GINGER.get(), (block) -> dropSingleRandomChance(block, ModItems.GINGER.get(), 0.1F, 0));
         this.add(ModBlocks.SOUL_FLOWER.get(), (block) -> dropMultiRandomChance(block, ModItems.SOUL_ESSENCE.get(), 0.1F, 0, ModItems.SOUL_SPROUT.get(), 0.01F, 0));
         this.add(ModBlocks.DEAD_ROOTS.get(), (block) -> dropSingleRandomChance(block, ModItems.AMARANTH_SEED.get(), 0.1F, 0));
 
