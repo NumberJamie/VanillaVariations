@@ -20,8 +20,8 @@ public class VanillaVariations
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
         ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

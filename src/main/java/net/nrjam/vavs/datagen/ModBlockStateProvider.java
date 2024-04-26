@@ -91,8 +91,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeCrop((CabbageCrop)ModBlocks.CABBAGE_CROP.get(), "cabbage_stage", "cabbage_stage", false);
         makeCrop((AmaranthCrop)ModBlocks.AMARANTH_CROP.get(), "amaranth_stage", "amaranth_stage", false);
 
-        makeBush((WarpedBerry)ModBlocks.WARPED_BERRIES.get(), "warped_berries_stage", "warped_berries_stage");
-        makeBush((CrimsonBerry)ModBlocks.CRIMSON_BERRIES.get(), "crimson_berries_stage", "crimson_berries_stage");
+        makeBush((BerryBush)ModBlocks.WARPED_BERRIES.get(), "warped_berries_stage", "warped_berries_stage");
+        makeBush((BerryBush)ModBlocks.CRIMSON_BERRIES.get(), "crimson_berries_stage", "crimson_berries_stage");
 
         wallBlock(ModBlocks.SOUL_STONE_WALL.get(), blockTexture(ModBlocks.SOUL_STONE.get()));
 
@@ -163,17 +163,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return models;
     }
 
-    public void makeBush(WarpedBerry block, String modelName, String textureName) {
+    public void makeBush(BerryBush block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> bushStates(state, block, modelName, textureName);
-
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] bushStates(BlockState state, WarpedBerry block, String modelName, String textureName) {
+    private ConfiguredModel[] bushStates(BlockState state, BerryBush block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(block.getAgeProperty()),
-                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAgeProperty()))).renderType("cutout"));
-
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(block.getAge()),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + textureName + state.getValue(block.getAge()))).renderType("cutout"));
         return models;
     }
 

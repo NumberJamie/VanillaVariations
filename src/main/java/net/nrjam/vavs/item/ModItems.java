@@ -166,6 +166,9 @@ public class ModItems {
     public static final RegistryObject<Item> FLOWER_CROWN = ITEMS.register("flower_crown",
             () -> new FlowerCrownItem(ModArmorMaterials.FLOWER_CROWN, ArmorItem.Type.HELMET, new Item.Properties()));
 
+    public ModItems(Object o) {
+    }
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

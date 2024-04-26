@@ -17,8 +17,25 @@
         {
           "type": "minecraft:block_predicate_filter",
           "predicate": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:replaceable"
+              },
+              {
+                "type": "minecraft:matching_fluids",
+                "fluids": "minecraft:empty"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:netherrack",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
           }
         }
       ]

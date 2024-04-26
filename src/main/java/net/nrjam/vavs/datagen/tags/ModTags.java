@@ -11,6 +11,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> WALNUT_LOGS = tag("walnut_logs");
         public static final TagKey<Block> SOUL_STONES = tag("soul_stones");
+        public static final TagKey<Block> NETHER_FLOWER_PLACEABLE = tag("nether_flower_placeable");
+        public static final TagKey<Block> END_FLOWER_PLACEABLE = tag("end_flower_placeable");
 
         private static TagKey<Block> tag(String name) {
             return TagKey.create(Registries.BLOCK, new ResourceLocation(VanillaVariations.MOD_ID, name));

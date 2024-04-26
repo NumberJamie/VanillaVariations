@@ -1,5 +1,6 @@
 package net.nrjam.vavs.worldgen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -8,7 +9,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
@@ -16,13 +19,14 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.BlockPredicateFilter;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+import net.minecraftforge.fml.common.Mod;
 import net.nrjam.vavs.VanillaVariations;
 import net.nrjam.vavs.block.ModBlocks;
-import net.nrjam.vavs.block.natural.CrimsonBerry;
-import net.nrjam.vavs.block.natural.WarpedBerry;
+import net.nrjam.vavs.block.natural.BerryBush;
 
 import java.util.List;
 
@@ -71,33 +75,38 @@ public class ModConfiguredFeatures {
                 ModBlocks.CRYING_BASALT.get().defaultBlockState(), 24));
 
         register(context, BLOSSOMING_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
-                128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLOSSOMING_ROOT.get())))
+                128, 12, 5, PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLOSSOMING_ROOT.get())),
+                BlockPredicate.allOf(BlockPredicate.replaceable(), BlockPredicate.noFluid(), BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), ModBlocks.END_SOIL.get())))
         ));
 
         register(context, ENDER_ROOT_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
-                128, 12, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ENDER_ROOT.get())))
+                128, 12, 5, PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ENDER_ROOT.get())),
+                BlockPredicate.allOf(BlockPredicate.replaceable(), BlockPredicate.noFluid(), BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), ModBlocks.END_SOIL.get())))
         ));
 
         register(context, SOUL_FLOWER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
-                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SOUL_FLOWER.get()))
+                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SOUL_FLOWER.get())),
+                List.of(Blocks.SOUL_SOIL, Blocks.SOUL_SAND)
         ));
 
         register(context, GINGER_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
-                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WILD_GINGER.get()))
+                Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WILD_GINGER.get())),
+                List.of(Blocks.BASALT)
         ));
 
         register(context, DEAD_ROOTS_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
-                256, 12, 12, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEAD_ROOTS.get())))
+                256, 12, 12, PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEAD_ROOTS.get())),
+                BlockPredicate.allOf(BlockPredicate.replaceable(), BlockPredicate.noFluid(), BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.NETHERRACK)))
         ));
 
         register(context, CRIMSON_BERRIES_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
-                BlockStateProvider.simple(ModBlocks.CRIMSON_BERRIES.get().defaultBlockState().setValue(CrimsonBerry.AGE, 3))), List.of(Blocks.CRIMSON_NYLIUM)));
+                BlockStateProvider.simple(ModBlocks.CRIMSON_BERRIES.get().defaultBlockState().setValue(BerryBush.AGE, 3))), List.of(Blocks.CRIMSON_NYLIUM)));
 
         register(context, WARPED_BERRIES_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
-                BlockStateProvider.simple(ModBlocks.WARPED_BERRIES.get().defaultBlockState().setValue(WarpedBerry.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
+                BlockStateProvider.simple(ModBlocks.WARPED_BERRIES.get().defaultBlockState().setValue(BerryBush.AGE, 3))), List.of(Blocks.WARPED_NYLIUM)));
 
         register(context, WILD_CABBAGE_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                 BlockStateProvider.simple(ModBlocks.WILD_CABBAGE.get().defaultBlockState())), List.of(Blocks.GRASS_BLOCK)));

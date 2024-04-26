@@ -19,10 +19,9 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCon
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrjam.vavs.block.ModBlocks;
-import net.nrjam.vavs.block.natural.CrimsonBerry;
+import net.nrjam.vavs.block.natural.BerryBush;
 import net.nrjam.vavs.block.natural.GingerCrop;
 import net.nrjam.vavs.block.natural.SoulSprouts;
-import net.nrjam.vavs.block.natural.WarpedBerry;
 import net.nrjam.vavs.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
@@ -97,8 +96,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.GINGER_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GingerCrop.AGE, 3));
         this.add(ModBlocks.GINGER_CROP.get(), this.applyExplosionDecay(ModBlocks.GINGER_CROP.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(0.95F)).add(LootItem.lootTableItem(ModItems.GINGER.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder4).add(LootItem.lootTableItem(ModItems.GINGER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.2714286F, 2))))));
 
-        this.add(ModBlocks.WARPED_BERRIES.get(), this.applyExplosionDecay(ModBlocks.WARPED_BERRIES.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(ModItems.WARPED_BERRIES.get()))).withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.WARPED_BERRIES.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WarpedBerry.AGE, 3))))));
-        this.add(ModBlocks.CRIMSON_BERRIES.get(), this.applyExplosionDecay(ModBlocks.CRIMSON_BERRIES.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(ModItems.CRIMSON_BERRIES.get()))).withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CRIMSON_BERRIES.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrimsonBerry.AGE, 3))))));
+        this.add(ModBlocks.WARPED_BERRIES.get(), this.applyExplosionDecay(ModBlocks.WARPED_BERRIES.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(ModItems.WARPED_BERRIES.get()))).withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.WARPED_BERRIES.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BerryBush.AGE, 3))))));
+        this.add(ModBlocks.CRIMSON_BERRIES.get(), this.applyExplosionDecay(ModBlocks.CRIMSON_BERRIES.get().asItem(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(ModItems.CRIMSON_BERRIES.get()))).withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CRIMSON_BERRIES.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BerryBush.AGE, 3))))));
 
         this.dropPottedContents(ModBlocks.POTTED_BLOSSOMING_ROOT.get());
         this.dropPottedContents(ModBlocks.POTTED_ENDER_ROOT.get());

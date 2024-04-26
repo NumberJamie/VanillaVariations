@@ -118,16 +118,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_SOIL = registerBlock("end_soil",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).strength(1.6f, 1.6f)));
 
-    public static final RegistryObject<Block> BLOSSOMING_ROOT = registerBlock("blossoming_root",
-            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> ENDER_ROOT = registerBlock("ender_root",
-            () -> new EndSoilFlower(MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower",
-            () -> new SoulSoilFlower(MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots",
-            () -> new NetherFlower(MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger",
-            () -> new BasaltFlower(MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> BLOSSOMING_ROOT = registerBlock("blossoming_root", () -> new EndSoilFlower(
+            () -> MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> ENDER_ROOT = registerBlock("ender_root", () -> new EndSoilFlower(
+            () -> MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower", () -> new SoulSoilFlower(
+            () -> MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots", () -> new NetherFlower(
+            () -> MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger", () -> new NetherFlower(
+            () -> MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
 
     public static final RegistryObject<FarmBlock> NETHER_FARMLAND = registerBlock("nether_farmland",
             () -> new NetherFarmland((BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).randomTicks().strength(1.6f, 1.6f))));
@@ -145,9 +145,9 @@ public class ModBlocks {
             () -> new SoulSprouts(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WARPED_BERRIES = BLOCKS.register("warped_berries",
-            () -> new WarpedBerry(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+            () -> new BerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP), ModItems.WARPED_BERRIES, Blocks.WARPED_NYLIUM));
     public static final RegistryObject<Block> CRIMSON_BERRIES = BLOCKS.register("crimson_berries",
-            () -> new CrimsonBerry(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP)));
+            () -> new BerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission().randomTicks().instabreak().lightLevel((p_50886_) -> 5).sound(SoundType.CROP),  ModItems.CRIMSON_BERRIES, Blocks.CRIMSON_NYLIUM));
 
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
             () -> new CabbageCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));

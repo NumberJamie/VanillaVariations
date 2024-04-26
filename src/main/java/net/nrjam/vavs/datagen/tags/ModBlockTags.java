@@ -3,6 +3,8 @@ package net.nrjam.vavs.datagen.tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.nrjam.vavs.VanillaVariations;
@@ -83,5 +85,8 @@ public class ModBlockTags extends BlockTagsProvider {
                 .add(ModBlocks.LAVENDER.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.CRYSTAL_BLOCK.get())
                 .add(ModBlocks.CRYSTAL_ORE.get());
+        this.tag(ModTags.Blocks.NETHER_FLOWER_PLACEABLE).addTags(BlockTags.NYLIUM, BlockTags.BASE_STONE_NETHER,
+                BlockTags.SOUL_FIRE_BASE_BLOCKS, BlockTags.DIRT);
+        this.tag(ModTags.Blocks.END_FLOWER_PLACEABLE).addTags(BlockTags.DIRT).add(Blocks.END_STONE, ModBlocks.END_SOIL.get());
     }
 }
