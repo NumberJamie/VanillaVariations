@@ -1,0 +1,84 @@
+{
+	"ambientocclusion": false,
+	"parent": "minecraft:block/block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "vavs:block/water_lily",
+		"flower": "vavs:block/water_lily",
+		"base": "vavs:block/water_lily_base"
+	},
+	"elements": [
+		{
+			"from": [0, 0.1, 0],
+			"to": [16, 0.1, 16],
+			"shade": false,
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#base"}
+			}
+		},
+		{
+			"from": [4, 0.1, -1],
+			"to": [12, 0.1, 7],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 0, 7], "rescale": false },
+			"shade": false,
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#flower"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [4, 0.1, 9],
+			"to": [12, 0.1, 17],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 0, 9], "rescale": false },
+			"shade": false,
+			"faces": {
+				"up": {"uv": [16, 16, 0, 0], "texture": "#flower"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [-1, 0.1, 4],
+			"to": [7, 0.1, 12],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [7, 0, 8], "rescale": false },
+			"shade": false,
+			"faces": {
+				"up": {"uv": [16, 16, 0, 0], "rotation": 90, "texture": "#flower"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#flower"}
+			}
+		},
+		{
+			"from": [9, 0.1, 4],
+			"to": [17, 0.1, 12],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [9, 0, 8], "rescale": false },
+			"shade": false,
+			"faces": {
+				"up": {"uv": [16, 16, 0, 0], "rotation": 270, "texture": "#flower"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#flower"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 2],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 2],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"translation": [0, 4.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"translation": [0, 4.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	}
+
+}

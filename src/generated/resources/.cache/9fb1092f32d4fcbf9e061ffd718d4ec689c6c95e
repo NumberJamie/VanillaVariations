@@ -1,4 +1,4 @@
-// 1.20	2024-04-25T23:56:54.0281777	Recipes
+// 1.20	2024-04-27T18:50:32.9837831	Recipes
 bf8d8be424f8821e6bb6791a0f40d98000ee3b45 data/minecraft/advancements/recipes/misc/black_dye.json
 4239fbf1e3c4cd312c96851ac5874525c83dcfef data/minecraft/advancements/recipes/misc/crying_smooth_basalt_from_smelting_crying_basalt.json
 aece7367ebbddf313fb3aee4558cefd30474f24e data/minecraft/advancements/recipes/misc/crystal_from_smelting_crystal_ore.json
@@ -89,6 +89,7 @@ d2e9ed0c493326a9a1a6595987de8c4f2fbac47d data/vavs/advancements/recipes/food/swe
 36e0e0e530af55012b5e4f803febcbebfa8ca0f3 data/vavs/advancements/recipes/misc/crystal_block.json
 a769219812bcdf21a0985e64d0976d9fe1175212 data/vavs/advancements/recipes/misc/reinforced_leather.json
 31ff949e55a0569f5deb4f4b9f5de1845b138bab data/vavs/advancements/recipes/misc/reinforced_leather_block.json
+5fb979e27e413fb926ad47807682ebfcd155ee3e data/vavs/advancements/recipes/misc/water_lily.json
 18a233c36df53253f9e94617d7259855aa972b9c data/vavs/advancements/recipes/redstone/walnut_button.json
 e7ca86079919ef5c69647ca118ef727ed16653ba data/vavs/advancements/recipes/redstone/walnut_door.json
 3a22f403d6762e534ef72776d1fea9d772e1326f data/vavs/advancements/recipes/redstone/walnut_fence_gate.json
@@ -177,3 +178,4 @@ f4bf3bdd144e8b464f204aa40769884e55091d13 data/vavs/recipes/walnut_slab.json
 c0ab8d26d3537785bf3e2c41750ea9f4e873ad8b data/vavs/recipes/walnut_trapdoor.json
 4a3495e8cb4808eb657500348a8805a148c27302 data/vavs/recipes/warped_berry_pie.json
 2d47afb42d4622a1b5f1af007fee368868b64862 data/vavs/recipes/warped_cake.json
+1be7995afc6d51e8998db8b90f88f127d8e30fd9 data/vavs/recipes/water_lily.json

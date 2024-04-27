@@ -34,10 +34,14 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GINGER_PLACED_KEY = createKey("ginger_placed");
     public static final ResourceKey<PlacedFeature> CRYING_BASALT_PLACED_KEY = createKey("crying_basalt_placed");
     public static final ResourceKey<PlacedFeature> ROCK_SALT_PLACED_KEY = createKey("rock_salt_placed");
+    public static final ResourceKey<PlacedFeature> WATER_LILY_PLACED_KEY = createKey("water_lily_placed");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        register(context, WATER_LILY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WATER_LILY_KEY),
+                PlacementUtils.HEIGHTMAP_OCEAN_FLOOR);
 
         register(context, WALNUT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WALNUT_KEY),
                 VegetationPlacements.treePlacement(RarityFilter.onAverageOnceEvery(100), ModBlocks.WALNUT_SAPLING.get()));

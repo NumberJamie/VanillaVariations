@@ -122,6 +122,8 @@ public class VanillaVariations
             event.accept(ModItems.AMARANTH_SEED);
             event.accept(ModBlocks.WILD_CABBAGE);
             event.accept(ModBlocks.WILD_GINGER);
+            event.accept(ModBlocks.WATER_LILY);
+            event.accept(ModBlocks.WATER_LILY_PAD);
             event.accept(ModBlocks.VIOLA);
             event.accept(ModBlocks.MARIGOLD);
             event.accept(ModBlocks.LAVENDER);

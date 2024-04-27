@@ -142,6 +142,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.AMARANTH_COOKIE.get(), 8).requires(ModItems.AMARANTH.get()).requires(ModItems.AMARANTH.get()).requires(Items.COCOA_BEANS).unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AMARANTH_BREAD.get()).define('X', ModItems.AMARANTH.get()).pattern("XXX").unlockedBy(getHasName(ModItems.AMARANTH.get()), has(ModItems.AMARANTH.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.WATER_LILY.get()).requires(ModItems.WATER_LILY_PAD.get()).requires(Items.SPORE_BLOSSOM).unlockedBy(getHasName(Items.SPORE_BLOSSOM), has(Items.SPORE_BLOSSOM)).save(consumer);
     }
 
     protected static void hoeRecipe(Consumer<FinishedRecipe> consumer, Item result, Item item){

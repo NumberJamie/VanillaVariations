@@ -1,4 +1,4 @@
-// 1.20	2024-04-25T23:40:43.9698023	Item Models: vavs
+// 1.20	2024-04-27T18:44:40.7480173	Item Models: vavs
 ba93fb083e933b598ba1ac1a2063cbd835db9f66 assets/vavs/models/item/amaranth.json
 67ece498d37d8686947e0bf475dd25ff9a0fb83c assets/vavs/models/item/amaranth_bread.json
 1bb46306e9268c716c11dc4fa60a104ab0d5b8aa assets/vavs/models/item/amaranth_cookie.json
@@ -83,5 +83,7 @@ b6a44844c04dea2dc46d30a0142f49bba947907d assets/vavs/models/item/walnut_sapling.
 f3604ef99df7808b9931efadd177f8e501b0e08d assets/vavs/models/item/warped_berries.json
 e28f87933454b7a01bf3add4939049f27aa69e9a assets/vavs/models/item/warped_berry_pie.json
 c34e5ab9d104cf792e8753db771e16a6d14fc141 assets/vavs/models/item/warped_cake.json
+f0b1a629933666f2814c6d1e57eee1a9683b4262 assets/vavs/models/item/water_lily.json
+3fe236db6f39242f6740d9594a10a1f8e1fca20a assets/vavs/models/item/water_lily_pad.json
 f705d35d95560d29319a4b0e5dadec7d9db1a85a assets/vavs/models/item/wild_cabbage.json
 5d943f1f5dce72c59620b232973f825a81d0e3a0 assets/vavs/models/item/wild_ginger.json

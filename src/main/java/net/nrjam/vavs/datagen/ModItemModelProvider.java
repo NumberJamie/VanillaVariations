@@ -122,6 +122,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemFence(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
         itemButton(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
         customDoorItemBlock(ModBlocks.WALNUT_DOOR);
+
+        withParent(ModItems.WATER_LILY);
+        block2DItem(ModItems.WATER_LILY_PAD);
+    }
+
+    public void withParent(RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
+    private void block2DItem(RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VanillaVariations.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     public void itemButton(RegistryObject<ButtonBlock> block, RegistryObject<Block> baseBlock) {

@@ -1,4 +1,4 @@
-// 1.20	2024-04-26T16:12:30.9247267	Registries
+// 1.20	2024-04-27T21:03:55.973055	Registries
 47c258204cc9080cc57a394b5a42d7f89dcceb40 data/vavs/worldgen/configured_feature/blossoming_root.json
 1a8b2955008827d0df786b2a01a7ff5576f62c8d data/vavs/worldgen/configured_feature/crimson_berries.json
 e222f41f7072fdf7633c9b437d2cc4b8394da54f data/vavs/worldgen/configured_feature/crying_basalt.json
@@ -15,6 +15,7 @@ b5fb7a90240a4dd835e9208e343758ca2926cfb1 data/vavs/worldgen/configured_feature/e
 aa4fa7434b3c6dadf5bfbcf26609451813b05d1a data/vavs/worldgen/configured_feature/viola.json
 d1a0dc983f2b8c967c1880027e52b7174d2f3b37 data/vavs/worldgen/configured_feature/walnut.json
 a5897f1a5b01969b9aaa994fbd0f0eec91a37156 data/vavs/worldgen/configured_feature/warped_berries.json
+ee9636266d196610d9a085158b6c85013d06cdad data/vavs/worldgen/configured_feature/water_lily.json
 66edae4c3cc087258cbe09ad0e7ad2323d5a7ee9 data/vavs/worldgen/configured_feature/wild_cabbage.json
 cd5fd5189a4c9078311731e292915b71d7f0978a data/vavs/worldgen/placed_feature/blossoming_root_placed.json
 f5b85d7c3f66a40f7caadcb86dd5c59ad59df073 data/vavs/worldgen/placed_feature/crimson_berries_placed.json
@@ -32,4 +33,5 @@ e0be31cdf3091a8145425687466e7ca08e9ec202 data/vavs/worldgen/placed_feature/soul_
 42564bb732202c16d990e06cf5e7d566b8a27445 data/vavs/worldgen/placed_feature/viola_placed.json
 c30add8c9693f3f6674782030928ab4323c16536 data/vavs/worldgen/placed_feature/walnut_placed.json
 33723fd3c57ee6dacd4c7ee667afe19659443c8d data/vavs/worldgen/placed_feature/warped_berries_placed.json
+58cacab47ee99369d9725a1476602e67d2365326 data/vavs/worldgen/placed_feature/water_lily_placed.json
 fc4dbf0e48747f2a4ee18f449806299ff2fed15c data/vavs/worldgen/placed_feature/wild_cabbage_placed.json

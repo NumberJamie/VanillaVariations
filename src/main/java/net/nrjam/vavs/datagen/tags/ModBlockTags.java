@@ -88,5 +88,6 @@ public class ModBlockTags extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NETHER_FLOWER_PLACEABLE).addTags(BlockTags.NYLIUM, BlockTags.BASE_STONE_NETHER,
                 BlockTags.SOUL_FIRE_BASE_BLOCKS, BlockTags.DIRT);
         this.tag(ModTags.Blocks.END_FLOWER_PLACEABLE).addTags(BlockTags.DIRT).add(Blocks.END_STONE, ModBlocks.END_SOIL.get());
+        this.tag(BlockTags.FROG_PREFER_JUMP_TO).add(ModBlocks.WATER_LILY.get(), ModBlocks.WATER_LILY_PAD.get());
     }
 }

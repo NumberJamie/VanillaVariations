@@ -9,9 +9,11 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.function.Supplier;
+
 
 public class GrassFlower extends FlowerBlock {
-    public GrassFlower(MobEffect effect, int duration, Properties properties) {
+    public GrassFlower(Supplier<MobEffect> effect, int duration, Properties properties) {
         super(effect, duration, properties);
     }
 

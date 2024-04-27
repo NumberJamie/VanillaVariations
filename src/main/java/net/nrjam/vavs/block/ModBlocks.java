@@ -9,6 +9,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -157,15 +158,20 @@ public class ModBlocks {
             () -> new GingerCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
 
     public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
-            () -> new GrassFlower(MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(() -> MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> VIOLA = registerBlock("viola",
-            () -> new GrassFlower(MobEffects.POISON, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(() -> MobEffects.POISON, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> MARIGOLD = registerBlock("marigold",
-            () -> new GrassFlower(MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(() -> MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> SNAPDRAGON = registerBlock("snapdragon",
-            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(() -> MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
-            () -> new GrassFlower(MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+            () -> new GrassFlower(() -> MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+
+    public static final RegistryObject<Block> WATER_LILY = BLOCKS.register("water_lily",
+            () -> new ModWaterlily(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).instabreak().sound(SoundType.LILY_PAD).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WATER_LILY_PAD = BLOCKS.register("water_lily_pad",
+            () -> new ModWaterlily(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).instabreak().sound(SoundType.LILY_PAD).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_WILD_CABBAGE = BLOCKS.register("potted_wild_cabbage",
             () -> new PottedFlower(ModBlocks.WILD_CABBAGE.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).instabreak()));

@@ -1,4 +1,4 @@
-// 1.20	2024-04-24T14:46:48.0282751	Block States: vavs
+// 1.20	2024-04-27T20:33:50.3090972	Block States: vavs
 00e8efca4bede3d29edaff060dd82caf030fe339 assets/vavs/blockstates/amaranth_crop.json
 41f7171f95017d6e1d58dedf06b1dc8b0966d44e assets/vavs/blockstates/blossoming_root.json
 f3d95ec8f904232960f8957fc27d39f31eec2538 assets/vavs/blockstates/cabbage_crop.json
@@ -56,6 +56,8 @@ d8957393bddf6551783dd547f9062879059d304b assets/vavs/blockstates/walnut_slab.jso
 ccd9c212c5399e6874645d54f56f7cf1796ee598 assets/vavs/blockstates/walnut_wood.json
 13669818876bb800680a5710a848300a355d66ba assets/vavs/blockstates/warped_berries.json
 686011ecaa193578f746a4e8fa727dae1fbdb8d2 assets/vavs/blockstates/warped_cake.json
+a2b056b97fabfb6f6c177810cb2d43a0b0a5effd assets/vavs/blockstates/water_lily.json
+18f8cc38f29c21492c449647f64f10f4d3a9cd1c assets/vavs/blockstates/water_lily_pad.json
 879a333ce0f6f12978863d372ff93ffb6f230be3 assets/vavs/blockstates/wild_cabbage.json
 3181bf797c7e0a632d9e399fb2493467d196ec29 assets/vavs/blockstates/wild_ginger.json
 141e4196d7c234c828595f42a66af8d1580b716c assets/vavs/models/block/amaranth_stage0.json

@@ -1,0 +1,9 @@
+{
+  "feature": "vavs:water_lily",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    }
+  ]
+}

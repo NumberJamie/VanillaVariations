@@ -89,6 +89,11 @@ public class ModItems {
     public static final RegistryObject<Item> AMARANTH = ITEMS.register("amaranth",
             () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH)));
 
+    public static final RegistryObject<Item> WATER_LILY = ITEMS.register("water_lily",
+            () -> new PlaceOnWaterBlockItem(ModBlocks.WATER_LILY.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WATER_LILY_PAD = ITEMS.register("water_lily_pad",
+            () -> new PlaceOnWaterBlockItem(ModBlocks.WATER_LILY_PAD.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> AMARANTH_BREAD = ITEMS.register("amaranth_bread",
             () -> new Item(new Item.Properties().food(ModFoodItems.AMARANTH_BREAD)));
     public static final RegistryObject<Item> GINGER_BREAD = ITEMS.register("ginger_bread",

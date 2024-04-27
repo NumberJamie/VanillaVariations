@@ -72,6 +72,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MARIGOLD.get());
         this.dropSelf(ModBlocks.SNAPDRAGON.get());
 
+        this.dropSelf(ModBlocks.WATER_LILY.get());
+        this.dropSelf(ModBlocks.WATER_LILY_PAD.get());
+
         this.dropSelf(ModBlocks.CRYING_BASALT.get());
         this.dropSelf(ModBlocks.CRYING_POLISHED_BASALT.get());
         this.dropSelf(ModBlocks.CRYING_SMOOTH_BASALT.get());

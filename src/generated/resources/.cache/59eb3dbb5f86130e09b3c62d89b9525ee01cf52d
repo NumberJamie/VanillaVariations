@@ -1,4 +1,4 @@
-// 1.20	2024-04-25T19:17:39.7357621	Loot Tables
+// 1.20	2024-04-27T20:33:50.2934723	Loot Tables
 55f7ebadaff9a7f66820af8fb41051f4c54fe06f data/vavs/loot_tables/blocks/amaranth_crop.json
 69aba0902ef482a9439fe7809deaa503e4fa4da3 data/vavs/loot_tables/blocks/blossoming_root.json
 186d9a9937031052b5fae0f439babc5294cd858b data/vavs/loot_tables/blocks/cabbage_crop.json
@@ -56,5 +56,7 @@ c990358c7572d1809980532df5da1e94c02f5ccd data/vavs/loot_tables/blocks/walnut_tra
 52210e35a565b40647b3cef03a1047dae8c49daa data/vavs/loot_tables/blocks/walnut_wood.json
 b74a8127235d409a40b2e676e46e262d3072ee43 data/vavs/loot_tables/blocks/warped_berries.json
 dd0dac7b38b252d17cb29b44032167551eca8955 data/vavs/loot_tables/blocks/warped_cake.json
+97deaeb603a299025733db2c8ebe4c94c86e682b data/vavs/loot_tables/blocks/water_lily.json
+9ea21d444695c9ba977b21a02641c2bae2987379 data/vavs/loot_tables/blocks/water_lily_pad.json
 aa443ccf6b40cc131e5b9dd3dc7d86e0c1dcfbc2 data/vavs/loot_tables/blocks/wild_cabbage.json
 5097aa719f78d299c1bb4c986dc41ab038ac00b1 data/vavs/loot_tables/blocks/wild_ginger.json

@@ -1,7 +1,10 @@
 package net.nrjam.vavs.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.BlockStateGenerator;
+import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -48,6 +51,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(VanillaVariations.MOD_ID, "block/crying_basalt_top"));
 
         blockWithItem(ModBlocks.WALNUT_PLANKS);
+        simpleBlock(ModBlocks.WATER_LILY.get(), new ModelFile.UncheckedModelFile(modLoc("block/water_lily")));
+        simpleBlock(ModBlocks.WATER_LILY_PAD.get(), new ModelFile.UncheckedModelFile(modLoc("block/water_lily_pad")));
         blockWithItem(ModBlocks.WALNUT_LEAVES);
         saplingBlock(ModBlocks.WALNUT_SAPLING);
         saplingBlock(ModBlocks.BLOSSOMING_ROOT);
