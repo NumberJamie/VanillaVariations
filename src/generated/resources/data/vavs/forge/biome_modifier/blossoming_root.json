@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_end",
+  "biomes": "#minecraft:is_end",
   "features": "vavs:blossoming_root_placed",
   "step": "vegetal_decoration"
 }

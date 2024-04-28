@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_nether",
+  "biomes": "#minecraft:is_nether",
   "features": "vavs:warped_berries_placed",
   "step": "vegetal_decoration"
 }

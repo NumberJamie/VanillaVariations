@@ -28,9 +28,7 @@ public class SaltItem extends Item {
         BlockPos blockpos = onUse.getClickedPos();
         BlockState toolModifiedState = level.getBlockState(blockpos).getToolModifiedState(onUse, ModToolActions.SALT_OXIDIZE, false);
         Pair<Predicate<UseOnContext>, Consumer<UseOnContext>> pair = toolModifiedState == null ? null : Pair.of(ctx -> true, changeIntoState(toolModifiedState));
-        if (pair == null) {
-            return InteractionResult.PASS;
-        } else {
+        if (pair != null) {
             Predicate<UseOnContext> predicate = pair.getFirst();
             Consumer<UseOnContext> consumer = pair.getSecond();
             if (predicate.test(onUse)) {
@@ -42,12 +40,10 @@ public class SaltItem extends Item {
                         onUse.getItemInHand().shrink(1);
                     }
                 }
-
                 return InteractionResult.sidedSuccess(level.isClientSide);
-            } else {
-                return InteractionResult.PASS;
             }
         }
+        return InteractionResult.PASS;
     }
 
     public static Consumer<UseOnContext> changeIntoState(BlockState state) {

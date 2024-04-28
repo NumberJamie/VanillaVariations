@@ -2,6 +2,7 @@ package net.nrjam.vavs.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,6 +10,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,40 +27,40 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, VanillaVariations.MOD_ID);
 
-    public static final RegistryObject<Block> REINFORCED_LEATHER_BLOCK = registerBlock("reinforced_leather_block",
+    public static final RegistryObject<Block> REINFORCED_LEATHER_BLOCK = register("reinforced_leather_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).strength(1.6f).sound(SoundType.WOOL)));
-    public static final RegistryObject<Block> ROCK_SALT_BLOCK = registerBlock("rock_salt_block",
+    public static final RegistryObject<Block> ROCK_SALT_BLOCK = register("rock_salt_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).strength(4.2f).sound(SoundType.COPPER)));
 
-    public static final RegistryObject<Block> CRYING_BASALT = registerBlock("crying_basalt",
+    public static final RegistryObject<Block> CRYING_BASALT = register("crying_basalt",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25F, 4.2F).sound(SoundType.BASALT)));
-    public static final RegistryObject<Block> CRYING_SMOOTH_BASALT = registerBlock("crying_smooth_basalt",
+    public static final RegistryObject<Block> CRYING_SMOOTH_BASALT = register("crying_smooth_basalt",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25F, 4.2F).sound(SoundType.BASALT)));
-    public static final RegistryObject<Block> CRYING_POLISHED_BASALT = registerBlock("crying_polished_basalt",
+    public static final RegistryObject<Block> CRYING_POLISHED_BASALT = register("crying_polished_basalt",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25F, 4.2F).sound(SoundType.BASALT)));
 
-    public static final RegistryObject<Block> SOUL_LIGHT = registerBlock("soul_light",
+    public static final RegistryObject<Block> SOUL_LIGHT = register("soul_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).lightLevel((p_50886_) -> 14).sound(SoundType.GLASS).strength(1.6f, 1.6f)));
 
-    public static final RegistryObject<Block> SOUL_STONE = registerBlock("soul_stone",
+    public static final RegistryObject<Block> SOUL_STONE = register("soul_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25f, 4.2f)));
-    public static final RegistryObject<StairBlock> SOUL_STONE_STAIRS = registerBlock("soul_stone_stairs",
+    public static final RegistryObject<StairBlock> SOUL_STONE_STAIRS = register("soul_stone_stairs",
             () -> new StairBlock(() -> SOUL_STONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25f, 4.2f)));
-    public static final RegistryObject<SlabBlock> SOUL_STONE_SLAB = registerBlock("soul_stone_slab",
+    public static final RegistryObject<SlabBlock> SOUL_STONE_SLAB = register("soul_stone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25f, 4.2f)));
-    public static final RegistryObject<WallBlock> SOUL_STONE_WALL = registerBlock("soul_stone_wall",
+    public static final RegistryObject<WallBlock> SOUL_STONE_WALL = register("soul_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.25f, 4.2f)));
 
-    public static final RegistryObject<Block> WALNUT_LOG = registerBlock("walnut_log",
+    public static final RegistryObject<Block> WALNUT_LOG = register("walnut_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(2.0F, 3.0F)));
-    public static final RegistryObject<Block> WALNUT_WOOD = registerBlock("walnut_wood",
+    public static final RegistryObject<Block> WALNUT_WOOD = register("walnut_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2.0F, 3.0F)));
-    public static final RegistryObject<Block> STRIPPED_WALNUT_LOG = registerBlock("stripped_walnut_log",
+    public static final RegistryObject<Block> STRIPPED_WALNUT_LOG = register("stripped_walnut_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(2.0F, 3.0F)));
-    public static final RegistryObject<Block> STRIPPED_WALNUT_WOOD = registerBlock("stripped_walnut_wood",
+    public static final RegistryObject<Block> STRIPPED_WALNUT_WOOD = register("stripped_walnut_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(2.0F, 3.0F)));
 
-    public static final RegistryObject<Block> WALNUT_PLANKS = registerBlock("walnut_planks",
+    public static final RegistryObject<Block> WALNUT_PLANKS = register("walnut_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F, 3.0F)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -75,7 +77,7 @@ public class ModBlocks {
                     return 20;
                 }
             });
-    public static final RegistryObject<Block> WALNUT_LEAVES = registerBlock("walnut_leaves",
+    public static final RegistryObject<Block> WALNUT_LEAVES = register("walnut_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -93,44 +95,44 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> WALNUT_SAPLING = registerBlock("walnut_sapling",
+    public static final RegistryObject<Block> WALNUT_SAPLING = register("walnut_sapling",
             () -> new SaplingBlock(new WalnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> POTTED_WALNUT_SAPLING = BLOCKS.register("potted_walnut_sapling",
             () -> new PottedFlower(ModBlocks.WALNUT_SAPLING.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).instabreak()));
 
-    public static final RegistryObject<StairBlock> WALNUT_STAIRS = registerBlock("walnut_stairs",
+    public static final RegistryObject<StairBlock> WALNUT_STAIRS = register("walnut_stairs",
             () -> new StairBlock(() -> WALNUT_PLANKS.get().defaultBlockState(), Block.Properties.copy(ModBlocks.WALNUT_PLANKS.get())));
-    public static final RegistryObject<SlabBlock> WALNUT_SLAB = registerBlock("walnut_slab",
+    public static final RegistryObject<SlabBlock> WALNUT_SLAB = register("walnut_slab",
             () -> new SlabBlock(Block.Properties.copy(ModBlocks.WALNUT_PLANKS.get()).strength(2.0F, 3.0F)));
 
-    public static final RegistryObject<FenceBlock> WALNUT_FENCE = registerBlock("walnut_fence",
+    public static final RegistryObject<FenceBlock> WALNUT_FENCE = register("walnut_fence",
             () -> new FenceBlock(Block.Properties.copy(Blocks.OAK_FENCE)));
-    public static final RegistryObject<FenceGateBlock> WALNUT_FENCE_GATE = registerBlock("walnut_fence_gate",
+    public static final RegistryObject<FenceGateBlock> WALNUT_FENCE_GATE = register("walnut_fence_gate",
             () -> new FenceGateBlock(Block.Properties.copy(Blocks.OAK_FENCE_GATE), ModWoodTypes.WALNUT));
-    public static final RegistryObject<DoorBlock> WALNUT_DOOR = registerBlock("walnut_door",
+    public static final RegistryObject<DoorBlock> WALNUT_DOOR = register("walnut_door",
             () -> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR), ModWoodTypes.WALNUT_BLOCK_SET));
-    public static final RegistryObject<TrapDoorBlock> WALNUT_TRAPDOOR = registerBlock("walnut_trapdoor",
+    public static final RegistryObject<TrapDoorBlock> WALNUT_TRAPDOOR = register("walnut_trapdoor",
             () -> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR), ModWoodTypes.WALNUT_BLOCK_SET));
-    public static final RegistryObject<ButtonBlock> WALNUT_BUTTON = registerBlock("walnut_button",
+    public static final RegistryObject<ButtonBlock> WALNUT_BUTTON = register("walnut_button",
             () -> new ButtonBlock(Block.Properties.copy(Blocks.OAK_BUTTON), ModWoodTypes.WALNUT_BLOCK_SET, 30, true));
-    public static final RegistryObject<PressurePlateBlock> WALNUT_PRESSURE_PLATE = registerBlock("walnut_pressure_plate",
+    public static final RegistryObject<PressurePlateBlock> WALNUT_PRESSURE_PLATE = register("walnut_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.copy(Blocks.OAK_PRESSURE_PLATE), ModWoodTypes.WALNUT_BLOCK_SET));
 
-    public static final RegistryObject<Block> END_SOIL = registerBlock("end_soil",
+    public static final RegistryObject<Block> END_SOIL = register("end_soil",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).strength(1.6f, 1.6f)));
 
-    public static final RegistryObject<Block> BLOSSOMING_ROOT = registerBlock("blossoming_root", () -> new EndSoilFlower(
+    public static final RegistryObject<Block> BLOSSOMING_ROOT = register("blossoming_root", () -> new EndSoilFlower(
             () -> MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_152607_) -> 12).sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> ENDER_ROOT = registerBlock("ender_root", () -> new EndSoilFlower(
+    public static final RegistryObject<Block> ENDER_ROOT = register("ender_root", () -> new EndSoilFlower(
             () -> MobEffects.LEVITATION, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower", () -> new SoulSoilFlower(
+    public static final RegistryObject<Block> SOUL_FLOWER = register("soul_flower", () -> new SoulSoilFlower(
             () -> MobEffects.MOVEMENT_SPEED, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().lightLevel((p_50886_) -> 7).sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> DEAD_ROOTS = registerBlock("dead_roots", () -> new NetherFlower(
+    public static final RegistryObject<Block> DEAD_ROOTS = register("dead_roots", () -> new NetherFlower(
             () -> MobEffects.FIRE_RESISTANCE, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger", () -> new NetherFlower(
+    public static final RegistryObject<Block> WILD_GINGER = register("wild_ginger", () -> new NetherFlower(
             () -> MobEffects.NIGHT_VISION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
 
-    public static final RegistryObject<FarmBlock> NETHER_FARMLAND = registerBlock("nether_farmland",
+    public static final RegistryObject<FarmBlock> NETHER_FARMLAND = register("nether_farmland",
             () -> new NetherFarmland((BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SOUL_SOIL).randomTicks().strength(1.6f, 1.6f))));
 
     public static final RegistryObject<Block> POTTED_BLOSSOMING_ROOT = BLOCKS.register("potted_blossoming_root",
@@ -157,16 +159,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> GINGER_CROP = BLOCKS.register("ginger_crop",
             () -> new GingerCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
 
-    public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
-            () -> new GrassFlower(() -> MobEffects.CONFUSION, 4*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> VIOLA = registerBlock("viola",
-            () -> new GrassFlower(() -> MobEffects.POISON, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> MARIGOLD = registerBlock("marigold",
-            () -> new GrassFlower(() -> MobEffects.FIRE_RESISTANCE, 3*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> SNAPDRAGON = registerBlock("snapdragon",
-            () -> new GrassFlower(() -> MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
-    public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
-            () -> new GrassFlower(() -> MobEffects.CONFUSION, 5*20, BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> WILD_CABBAGE = register("wild_cabbage", () -> dirtFlower(MobEffects.CONFUSION, 4));
+    public static final RegistryObject<Block> VIOLA = register("viola", () -> dirtFlower(MobEffects.POISON, 5));
+    public static final RegistryObject<Block> MARIGOLD = register("marigold", () -> dirtFlower(MobEffects.FIRE_RESISTANCE, 3));
+    public static final RegistryObject<Block> SNAPDRAGON = register("snapdragon", () -> dirtFlower(MobEffects.CONFUSION, 5));
+    public static final RegistryObject<Block> LAVENDER = register("lavender", () -> dirtFlower(MobEffects.CONFUSION, 5));
 
     public static final RegistryObject<Block> WATER_LILY = BLOCKS.register("water_lily",
             () -> new ModWaterlily(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).instabreak().sound(SoundType.LILY_PAD).pushReaction(PushReaction.DESTROY)));
@@ -184,23 +181,28 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_LAVENDER = BLOCKS.register("potted_lavender",
             () -> new PottedFlower(ModBlocks.LAVENDER.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).instabreak()));
 
-    public static final RegistryObject<Block> CHOCOLATE_CAKE = registerBlock("chocolate_cake",
+    public static final RegistryObject<Block> CHOCOLATE_CAKE = register("chocolate_cake",
             () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
-    public static final RegistryObject<Block> HONEY_CAKE = registerBlock("honey_cake",
-            () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
-
-    public static final RegistryObject<Block> CRIMSON_CAKE = registerBlock("crimson_cake",
-            () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
-    public static final RegistryObject<Block> WARPED_CAKE = registerBlock("warped_cake",
+    public static final RegistryObject<Block> HONEY_CAKE = register("honey_cake",
             () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
 
-    public static final RegistryObject<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
+    public static final RegistryObject<Block> CRIMSON_CAKE = register("crimson_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> WARPED_CAKE = register("warped_cake",
+            () -> new ModCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).sound(SoundType.WOOL)));
+
+    public static final RegistryObject<Block> CRYSTAL_BLOCK = register("crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).strength(4.5f, 7.5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CRYSTAL_ORE = registerBlock( "crystal_ore",
+    public static final RegistryObject<Block> CRYSTAL_ORE = register( "crystal_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3f, 6f).requiresCorrectToolForDrops()));
 
+    private static DirtFlower dirtFlower(MobEffect effect, int durationS) {
+        return new DirtFlower(() -> effect, durationS*20, BlockBehaviour.Properties.of()
+                .mapColor(MapColor.PLANT).noOcclusion().noCollission().instabreak().sound(SoundType.GRASS)
+                .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+    }
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+    private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;

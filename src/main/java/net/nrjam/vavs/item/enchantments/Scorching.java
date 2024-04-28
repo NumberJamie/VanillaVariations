@@ -40,5 +40,4 @@ public class Scorching extends Enchantment {
     public boolean canApplyAtEnchantingTable(@NotNull ItemStack stack) {
         return true;
     }
-
 }

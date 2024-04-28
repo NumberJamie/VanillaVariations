@@ -38,8 +38,7 @@ public class FlowerCrownItem extends ArmorItem implements IForgeItem {
         comp.add(Component.translatable("tooltip.vavs.flower_crown").withStyle(ChatFormatting.DARK_RED));
     }
 
-    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity)
-    {
+    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity) {
         return stack.getItem() == ModItems.FLOWER_CROWN.get();
     }
 
@@ -47,7 +46,7 @@ public class FlowerCrownItem extends ArmorItem implements IForgeItem {
     public void inventoryTick(@NotNull ItemStack stack, Level lvl, @NotNull Entity entity, int slot, boolean selected) {
         if (!lvl.isClientSide()) {
             if(entity instanceof Player player) {
-                if(hasHelmetOn(player)){
+                if(hasHelmetOn(player)) {
                     evaluateArmorEffects(player);
                 }
             }

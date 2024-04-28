@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 
-public class GrassFlower extends FlowerBlock {
-    public GrassFlower(Supplier<MobEffect> effect, int duration, Properties properties) {
+public class DirtFlower extends FlowerBlock {
+    public DirtFlower(Supplier<MobEffect> effect, int duration, Properties properties) {
         super(effect, duration, properties);
     }
 

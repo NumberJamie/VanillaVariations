@@ -1,4 +1,22 @@
-// 1.20	2024-04-27T21:03:55.973055	Registries
+// 1.20	2024-04-28T15:51:35.9304026	Registries
+ca25e2a04e121caa06de2fa01911eadd8acc2c4f data/vavs/forge/biome_modifier/blossoming_root.json
+7b95fe252bb9fdede4faadeb7a0cb9f0df502d28 data/vavs/forge/biome_modifier/crimson_berries.json
+a6d10e66efee9323a2a2044e83a5917c86c61d73 data/vavs/forge/biome_modifier/crying_basalt.json
+0ed014ee9b4579fb25c60d759234a3cb8aa2f6a9 data/vavs/forge/biome_modifier/crystal_ore.json
+75c10966674f36060f61b3a4e86dce1239f2ad34 data/vavs/forge/biome_modifier/dead_roots.json
+163aa6b09d8fdd93cc417e42fb208eb348fe78f6 data/vavs/forge/biome_modifier/ender_root.json
+2882319b7792496ebfa896fd93a5d70d940b981a data/vavs/forge/biome_modifier/end_soil.json
+887eeba5d11d143360f71e3fedc231ec189c756a data/vavs/forge/biome_modifier/lavender.json
+9dddc75c10998b20e4436a74c5e7d1cec29d0fc6 data/vavs/forge/biome_modifier/marigold.json
+83b9d411124ab1dfa605478bcaedeb36b671cb46 data/vavs/forge/biome_modifier/rock_salt.json
+4e984c82211c4b4bffcc7b01d7267af96b8fc041 data/vavs/forge/biome_modifier/snapdragon.json
+d142def73f269f2c62cfc0bf329851416d381c9b data/vavs/forge/biome_modifier/soul_flower.json
+81b333f8ec49129a220e43790edb9b3dc66f76c0 data/vavs/forge/biome_modifier/viola.json
+6bc8a66227cbd4b40b0162c73f0c19fb6e4fcb47 data/vavs/forge/biome_modifier/walnut_tree.json
+e5081fe24bcab2161f1421f91a6b4dae5969dc01 data/vavs/forge/biome_modifier/warped_berries.json
+abb43901e23d0d140a487896d4644969f44be83c data/vavs/forge/biome_modifier/water_lily.json
+4d91517a046d20299334a00818a20ac3eef31236 data/vavs/forge/biome_modifier/wild_cabbage.json
+b4e979c2544ec890857e80f54d2e3f4394a5a971 data/vavs/forge/biome_modifier/wild_ginger.json
 47c258204cc9080cc57a394b5a42d7f89dcceb40 data/vavs/worldgen/configured_feature/blossoming_root.json
 1a8b2955008827d0df786b2a01a7ff5576f62c8d data/vavs/worldgen/configured_feature/crimson_berries.json
 e222f41f7072fdf7633c9b437d2cc4b8394da54f data/vavs/worldgen/configured_feature/crying_basalt.json
