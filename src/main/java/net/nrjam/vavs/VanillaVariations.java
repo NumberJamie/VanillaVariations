@@ -1,19 +1,13 @@
 package net.nrjam.vavs;
 
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nrjam.vavs.block.ModBlocks;
-import net.nrjam.vavs.entity.ModEntities;
-import net.nrjam.vavs.entity.client.SquirrelRenderer;
 import net.nrjam.vavs.item.ModItems;
 import net.nrjam.vavs.item.enchantments.ModEnchantments;
 
@@ -29,7 +23,6 @@ public class VanillaVariations
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModEnchantments.register(modEventBus);
-        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -38,14 +31,6 @@ public class VanillaVariations
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-    }
-
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            EntityRenderers.register(ModEntities.SQUIRREL.get(), SquirrelRenderer::new);
-        }
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
